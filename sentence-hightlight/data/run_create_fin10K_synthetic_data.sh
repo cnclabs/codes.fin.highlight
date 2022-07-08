@@ -33,7 +33,7 @@ if [[ "$1" == *train* ]]; then
 fi
 
 if [[ "$1" == *eval* ]]; then
-    echo "Createing data for bert...(eval)" > fin10k.eval-wo.dat 
+    echo "Createing data for bert...(eval)" > fin10k.eval.dat 
     python3 scripts/create_fin10k_data.py \
         -input $1 \
         -output $1.jsonl \
@@ -42,7 +42,7 @@ if [[ "$1" == *eval* ]]; then
         -random 0 \
         -nosep \
         -lexicon_sent 'LM.master_dictionary.sentiment.dict' \
-        -lexicon_stop 'LM.master_dictionary.stopwords.dict' >> fin10k.eval-wo.dat
+        -lexicon_stop 'LM.master_dictionary.stopwords.dict' >> fin10k.eval.dat
 fi
 
 if [[ "$1" == *annotation* ]]; then

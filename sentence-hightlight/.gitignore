@@ -8,7 +8,8 @@ data/esnli/*
 !data/esnli/esnli.test.sent_highlight.contradiction.jsonl
 
 # Fin10k Data
-!data/fin10k/*
+data/fin10k/*jsonl
+data/fin10k/*jsonl.bak
 
 # Results 
 results/esnli/
@@ -19,3 +20,6 @@ results/fin10k/
 logs/
 wandb/
 *.swp
+
+# Excepted run file (for local experiments)
+run_training_highlighter.sh

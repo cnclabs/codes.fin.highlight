@@ -11,16 +11,6 @@ from spacy.lang.en import English
 from utils import read_fin10K, load_master_dict, load_stopwords, extract_marks
 
 def token_extraction(srcA, srcB, fully_seperated=False, marks_annotation=False):
-    """ Convert the sentence pairs into the extracted tokens, which are ready to predict.
-    [TODO] 
-        1. position-sensitive keyword
-        2. integrate this function for data preprocessing codes with (for training)
-    [CONCERN] 
-        1. for now, i only truncate ",.!?"
-    Args:
-        fully_seperated: whether or not the tokenize with nlp parser.
-    """
-
     if fully_seperated:
         tokens_A, tokens_B = list(), list()
         for tok in nlp(srcA):
@@ -168,9 +158,11 @@ def convert_to_bert_synthetic(args):
     j = 0
     pos, neg = 0, 0
     for i, (sa, sb) in enumerate(zip(data['sentA'], data['sentB'])):
-        example = {'type': 2}
+        example = {}
         example_info = token_extraction(sa, sb, fully_seperated=True)
         example.update(example_info)
+
+        # synthetic label prepreocessing
         flag = lexicon_based_labeling(
             args, example,
             onlyB=not args.labeling_on_sentA,
@@ -182,7 +174,7 @@ def convert_to_bert_synthetic(args):
         if flag:
             f.write(json.dumps(example) + '\n')
             j += 1
-            # counting 
+            # counting label distribution
             pos += (np.array(example['labels'])==1).sum()
             neg += (np.array(example['labels'])==0).sum()
 
