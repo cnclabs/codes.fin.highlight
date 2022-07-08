@@ -3,7 +3,7 @@ checkpoints/
 !checkpoints/CHECKPOINTS_DECRIPTIONS.md
 
 # Esnli Data
-data/esnli/
+data/esnli/*
 !data/esnli/esnli.dev.sent_highlight.contradiction.jsonl
 !data/esnli/esnli.test.sent_highlight.contradiction.jsonl
 
