@@ -1,0 +1,14 @@
+# Finetunned checkpoints
+checkpoints/
+!checkpoints/CHECKPOINTS_DECRIPTIONS.md
+
+# Data
+logs/
+data/esnli/
+data/fin10k/
+results/esnli/
+results/fin10k/
+
+# Others
+*/__pycache__/
+*.swp
