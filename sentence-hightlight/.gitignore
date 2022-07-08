@@ -11,4 +11,5 @@ results/fin10k/
 
 # Others
 */__pycache__/
+wandb/
 *.swp
