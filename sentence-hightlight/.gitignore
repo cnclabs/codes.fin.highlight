@@ -5,6 +5,7 @@ checkpoints/
 # Data
 logs/
 data/esnli/
+!data/esnli/esnli/esnli.train.sent_highlight.contradiction.jsonl
 data/fin10k/
 results/esnli/
 results/fin10k/
