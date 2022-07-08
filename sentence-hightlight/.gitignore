@@ -2,15 +2,20 @@
 checkpoints/
 !checkpoints/CHECKPOINTS_DECRIPTIONS.md
 
-# Data
-logs/
+# Esnli Data
 data/esnli/
-!data/esnli/esnli/esnli.train.sent_highlight.contradiction.jsonl
-data/fin10k/
+!data/esnli/esnli.dev.sent_highlight.contradiction.jsonl
+!data/esnli/esnli.test.sent_highlight.contradiction.jsonl
+
+# Fin10k Data
+!data/fin10k/*
+
+# Results 
 results/esnli/
 results/fin10k/
 
 # Others
 */__pycache__/
+logs/
 wandb/
 *.swp
