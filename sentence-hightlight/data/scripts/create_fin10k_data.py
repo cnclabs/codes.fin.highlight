@@ -8,7 +8,7 @@ import numpy as np
 from nltk.corpus import stopwords
 from collections import defaultdict
 from spacy.lang.en import English
-from utils import read_fin10K, load_master_dict, load_stopwords, extract_marks
+from utils import read_fin10k, read_fin10k_with_window, load_master_dict, load_stopwords, extract_marks
 
 def token_extraction(srcA, srcB, fully_seperated=False, marks_annotation=False):
     if fully_seperated:
@@ -153,14 +153,22 @@ def lexicon_based_labeling(args,
 
 def convert_to_bert_synthetic(args):
     nlp = English()
-    data = read_fin10K(args.path_input_file)
+    if args.merge_global_window:
+        data = read_fin10k_with_window(args.path_input_file)
+    else:
+        data = read_fin10k(args.path_input_file)
+
     f = open(args.path_output_file, 'w')
     j = 0
     pos, neg = 0, 0
-    for i, (sa, sb) in enumerate(zip(data['sentA'], data['sentB'])):
-        example = {}
-        example_info = token_extraction(sa, sb, fully_seperated=True)
-        example.update(example_info)
+    # for i, (sa, sb) in enumerate(zip(data['sentA'], data['sentB'])):
+    for i, example in enumerate(data):
+        example_token = token_extraction(
+                example['sentA'], 
+                example['sentB'], 
+                fully_seperated=args.no_seperation
+        )
+        example.update(example_token)
 
         # synthetic label prepreocessing
         flag = lexicon_based_labeling(
@@ -183,20 +191,24 @@ def convert_to_bert_synthetic(args):
 
 def convert_to_bert(args):
     nlp = English()
-    data = read_fin10K(args.path_input_file)
+    if args.merge_global_window:
+        data = read_fin10k_with_window(args.path_input_file, True)
+    else:
+        data = read_fin10k(args.path_input_file, True)
+
     f = open(args.path_output_file, 'w')
-    for i, (sa, sb) in enumerate(zip(data['sentA'], data['sentB'])):
-        example = token_extraction(
-                sa, sb, 
+    for i, example in enumerate(data):
+        example['type'] = 2
+        example_token = token_extraction(
+                example['sentA'], 
+                example['sentB'],
                 fully_seperated=args.no_seperation,
                 marks_annotation=args.is_truth
         )
-        # other pair information
-        example['idA'] = data['idA'][i]
-        example['idB'] = data['idB'][i]
-        example['type'] = 2
-        f.write(json.dumps(example) + '\n')
+        example.update(example_token)
 
+        # other pair information
+        f.write(json.dumps(example) + '\n')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -212,8 +224,10 @@ if __name__ == '__main__':
     # negative
     parser.add_argument("-lexicon_stop", "--path_lexicon_stop_file", type=str, default=None)
     parser.add_argument("-stopword", "--stopword_source", type=str, default='nltk')
+    # empirical
     parser.add_argument("-nosep", "--no_seperation", action='store_false', default=True)
     parser.add_argument("-annotation", "--is_truth", action='store_true', default=False)
+    parser.add_argument("-global", "--merge_global_window", action='store_true', default=False)
     args = parser.parse_args()
     nlp = English()
 

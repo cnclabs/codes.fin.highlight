@@ -29,7 +29,16 @@ if args.model_name == 'bert-base-uncased':
 
 for line in fin:
     data = json.loads(line.strip())
-    if len(data['sentA'].split()) <= 256 and len(data['sentB'].split()) <= 256:
+    lengthA = len(data['sentA'].split())
+    lengthB = len(data['sentA'].split())
+    if lengthA <= 256 and lengthB <= 256:
         if len(tokenizer(data['sentA'])) <= 256 and len(tokenizer(data['sentB'])) <= 256:
-               fout.write(json.dumps(data) + '\n')
+           fout.write(json.dumps(data) + '\n')
+    else:
+        print("Over-length sentence pair found: {} and {}".format(
+             len(data['sentA'].split()), len(data['sentB'].split())
+        ))
+        print(data['sentA'][:100])
+        print(data['sentB'][:100])
+
     

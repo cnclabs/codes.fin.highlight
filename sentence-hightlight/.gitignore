@@ -16,7 +16,7 @@ results/esnli/
 results/fin10k/
 
 # Others
-*/__pycache__/
+__pycache__/
 logs/
 wandb/
 *.swp

@@ -161,6 +161,7 @@ def main():
         )   
         # esnli: pad to max length in datacollator if needed, otherwise maximum length of batch
         # fin10k: pad to max length if over the max length, otherwise 
+        # remove over-length instances
 
         # 1) transforme the label to token-level
         # 2) Preserve the word ids (for evaluation)
@@ -181,6 +182,7 @@ def main():
         "train": data_args.train_file,
         "dev": data_args.eval_file,
     })
+
 
     ## Preprocessing: training dataset
     dataset['train'] = dataset['train'].map(

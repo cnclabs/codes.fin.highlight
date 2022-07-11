@@ -28,9 +28,9 @@ def load_stopwords(source, max_num=None):
 
     return [w.casefold() for w in stopwords_list][:max_num]
 
+def read_fin10k(path, is_eval=False):
+    """ function for reading the sentence a/b from parsed financial 10k report."""
 
-def read_fin10K(path):
-    """ Function for reading the sentence A/B from parsed financial 10K report."""
     data = collections.defaultdict(list)
 
     with open(path, 'r') as f:
@@ -38,19 +38,25 @@ def read_fin10K(path):
             try:
                 idA, idB, sentA, sentB = line.strip().split('\t')
             except:
-                print("************* ERROR FORMATTING *************")
+                print("************* error formatting *************")
                 print(line.strip().split('\t'))
-                print("************* ERROR FORMATTING *************")
+                print("************* error formatting *************")
 
-            data['idA'].append(idA)
-            data['sentA'].append(sentA)
-            data['idB'].append(idB)
-            data['sentB'].append(sentB)
+            data[f'{idA}#{idB}'] = {
+                    "idA": idA, 
+                    "idB": idB, 
+                    "sentA": sentA, 
+                    "sentB": sentB
+            }
 
-            # score = list(map(float, scores.strip().split()))
-            # data['scores'].append( (scores) )
+    print(f"Total number of exampels: {len(data)}")
 
-    return data
+    # sort by idb if using evaluation ser
+    if is_eval:
+        data_sorted = [v for k, v in sorted(data.items(), key=lambda x: x[0])]
+        return data_sorted
+    else:
+        return data
 
 def read_esnli(path, class_selected, reverse):
     """ Function for reading the sentence A/B and highlight A/B with the corresponding labels """
@@ -100,3 +106,47 @@ def extract_marks(tokens):
     return extracted
 
 
+def read_fin10k_with_window(path, is_eval=True):
+    data = collections.defaultdict(dict)
+
+    # append the window == 1 (main sentences)
+    with open(path, 'r') as f:
+        for i, line in enumerate(f):
+            try:
+                idA, idB, w_no, sentA, sentB = line.strip().split('\t')
+            except:
+                print("************* error formatting *************")
+                print(line.strip().split('\t'))
+                print("************* error formatting *************")
+
+            if int(w_no) == 1:
+                data[f'{idB}'] = {
+                        "idA": idA, 
+                        "idB": idB, 
+                        "sentA": sentA, 
+                        "sentB": sentB
+                }
+    print(f"Total number of exampels: {len(data)}")
+
+    # append the window != 1 (context sentences)
+    with open(path, 'r') as f:
+        for i, line in enumerate(f):
+            try:
+                idA, idB, w_no, sentA, sentB = line.strip().split('\t')
+            except:
+                print("************* error formatting *************")
+                print(line.strip().split('\t'))
+                print("************* error formatting *************")
+
+            if int(w_no) > 1: # right context
+                data[f'{idB}']['sentA'] = data[f'{idB}']['sentA'] + " " + sentA
+
+            if int(w_no) < 1: # left context
+                data[f'{idB}']['sentA'] = sentA + " " + data[f'{idB}']['sentA']
+
+    # sort by idb if using evaluation ser
+    if is_eval:
+        data_sorted = [v for k, v in sorted(data.items(), key=lambda x: x[0])]
+        return data_sorted
+    else:
+        return data

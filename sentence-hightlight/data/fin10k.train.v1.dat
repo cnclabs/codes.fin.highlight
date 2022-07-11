@@ -1,1 +1,17 @@
 Createing data for bert...(train)
+0 / 1 synthetic examples with 0 positve and 28 negative.
+5000 / 5001 synthetic examples with 10112 positve and 83148 negative.
+10000 / 10001 synthetic examples with 20323 positve and 166282 negative.
+15000 / 15001 synthetic examples with 30187 positve and 248568 negative.
+20000 / 20001 synthetic examples with 40444 positve and 331817 negative.
+25000 / 25001 synthetic examples with 50435 positve and 414178 negative.
+30000 / 30001 synthetic examples with 60437 positve and 496492 negative.
+Done
+Truncating overlenght sentence pair (>256)
+Calculating statisitcs of dataset
+n_examples: 34589
+sentA_length: 32.562288588857726
+sentB_length: 33.69814102749429
+pos_label: 2.0023706958859755
+neg_label: 16.477926508427533
+no_label: 47.78013241203851

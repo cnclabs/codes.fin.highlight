@@ -24,12 +24,7 @@ python3 scripts/create_fin10k_data.py \
 echo "Truncating overlenght sentence pair (>256)" >> fin10k.train.v$VERSION.dat
 python3 scripts/filter_fin10k_overlength.py \
   -in fin10k/$OUTPUT_FILE \
-  -tokenizer naive 
-
-# python3 scripts/filter_fin10k_overlength.py \
-#   -in fin10k/$OUTPUT_FILE \
-#   -tokenizer bert-base-uncased
-# rm fin10k/$OUTPUT_FILE.naive_filtered
+  -tokenizer bert-base-uncased 
 
 echo "Calculating statisitcs of dataset" >> fin10k.train.v$VERSION.dat
 python3 scripts/get_dataset_stats.py \

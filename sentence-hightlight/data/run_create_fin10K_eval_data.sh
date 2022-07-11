@@ -13,7 +13,7 @@ python3 scripts/create_fin10k_data.py \
 
 # Windowed version
 python3 scripts/create_fin10k_data.py \
-    -marge_global_window \
+    -global \
     -input fin10k/eval.type2.segments.all.window \
     -output fin10k/fin10k.eval.type2.segments.all.window.jsonl \
     -model_type bert \
