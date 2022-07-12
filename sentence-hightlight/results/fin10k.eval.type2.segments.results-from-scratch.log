@@ -135,7 +135,7 @@ n examples annotated.
 # These overhauls and asset replacement projects are included in Property and equipment, at cost in the Consolidated Balance Sheets.                        
  - Performance: (R: 0.0; P: 0.0)                        
  - Truth: ['overhauls', 'asset', 'replacement', 'projects']                        
- - Predict: ['cost', 'Property', 'Sheets.', 'Balance', 'are']
+ - Predict: ['cost', 'Property', 'Sheets.', 'Balance']
 # The 70,431 square foot property was 98% leased at the time of purchase and is located in Fort Worth, Texas.
 # The 128,934 square foot property was 85% leased at the time of purchase and is located in Austin, Texas.                        
  - Performance: (R: 1.0; P: 0.6)                        
@@ -510,7 +510,7 @@ n examples annotated.
 # The following discussion of costs and expenses excludes the effect of currency translation.                        
  - Performance: (R: 0.0; P: 0.0)                        
  - Truth: ['costs', 'expenses']                        
- - Predict: ['currency', 'translation.', 'The', 'of', 'excludes']
+ - Predict: ['currency', 'translation.', 'The', 'of']
 # Gross margin from manufacturing operations as a percentage of manufacturing revenues increased to 27% for the year ended December 31, 2014 from 23% for the comparable prior year period.
 # Gross margin from manufacturing operations as a percentage of manufacturing revenues decreased to 15% for the year ended December 31, 2016 from 23% for the comparable prior year period.                        
  - Performance: (R: 1.0; P: 0.4)                        
@@ -548,9 +548,9 @@ n examples annotated.
  - Predict: ['$9.0', '$8.6', '2017', 'repayment', 'common']
 # Financial Statements and Supplementary Data for further information.
 # Financial Statements and Supplementary Data for further information on the ASR transaction.                        
- - Performance: (R: 0.5; P: 0.2)                        
+ - Performance: (R: 0.0; P: 0.0)                        
  - Truth: ['ASR', 'transaction.']                        
- - Predict: ['Financial', 'Data', 'Statements', 'on', 'transaction.']
+ - Predict: ['Financial', 'Data', 'Statements']
 # General and administrative expense from Search decreased primarily due to lower professional fees, including a decrease in litigation related expenses, and the inclusion in 2010 of lease termination costs associated with the Ask.com restructuring, partially offset by an increase in compensation and other employee-related costs at Mindspark and CityGrid Media.
 # The decrease in general and administrative expense is primarily due to a decrease in compensation and other employee-related costs, lower professional fees, including a decrease in litigation related expenses, and the inclusion in 2010 of lease termination costs associated with the Ask.com restructuring.                        
  - Performance: (R: 0.2; P: 0.2)                        
@@ -578,9 +578,9 @@ n examples annotated.
  - Predict: ['impairment', 'accounting', 'periods', 'changes', 'material']
 # We do not believe there is a reasonable likelihood that there will be a material change in the future estimates or assumptions we use to calculate impairment.
 # We do not believe there is a reasonable likelihood that there will be a material change in the reserves established for tax benefits not recognized.                        
- - Performance: (R: 0.3333333333333333; P: 0.4)                        
+ - Performance: (R: 0.3333333333333333; P: 0.5)                        
  - Truth: ['reserves', 'established', 'tax', 'benefits', 'not', 'recognized.']                        
- - Predict: ['recognized.', 'not', 'change', 'We', 'material']
+ - Predict: ['recognized.', 'not', 'change', 'We']
 # We have not made any material changes in the accounting methodology used to establish our vendor support reserves in the financial periods presented.
 # We have not made any material changes in the accounting methodology used to establish our tax contingencies in the financial periods presented.                        
  - Performance: (R: 0.5; P: 0.2)                        
@@ -613,8 +613,8 @@ n examples annotated.
  - Predict: ['$13.4', '$5.3', '$18.7', 'pro-rata', 'result']
 ********************************            
 File: fin10k.eval.type2.segments.results-from-scratch            
-Mean precision: 0.2573770491803279            
-Mean recall   : 0.47104000280229785            
-Mean f1-score : 0.2870680298479671            
+Mean precision: 0.25655737704918036            
+Mean recall   : 0.46694164214656014            
+Mean f1-score : 0.28502417206640446            
 Num of evaluated samples: 123            
 ********************************

@@ -18,9 +18,9 @@ n examples annotated.
  - Predict: ['makeup']
 # Our future capital requirements will depend on many other factors, including our progress in commercializing Uplyso in Brazil, the progress and results of our clinical trials, the duration and cost of discovery and preclinical development and laboratory testing and clinical trials for our product candidates, conversions of our convertible notes from time to time, the timing and outcome of regulatory review of our product candidates, the costs involved in preparing, filing, prosecuting, maintaining, defending and enforcing patent claims and other intellectual property rights, the number and development requirements of other product candidates that we pursue and the costs of commercialization activities, including product marketing, sales and distribution.
 # Our future capital requirements will depend on many other factors, including our progress in commercializing alfataliglicerase in Brazil, the progress and results of our clinical trials, the duration and cost of discovery and preclinical development and laboratory testing and clinical trials for our product candidates, conversions of our convertible notes from time to time, the timing and outcome of regulatory review of our product candidates, the costs involved in preparing, filing, prosecuting, maintaining, defending and enforcing patent claims and other intellectual property rights, the number and development requirements of other product candidates that we pursue and the costs of commercialization activities, including product marketing, sales and distribution.                        
- - Performance: (R: 1.0; P: 0.25)                        
+ - Performance: (R: 1.0; P: 1.0)                        
  - Truth: ['alfataliglicerase']                        
- - Predict: ['alfataliglicerase', 'convertible', 'notes', 'product']
+ - Predict: ['alfataliglicerase']
 # During the same time, corporate bond yields, which are used in determining the discount rate for future pension obligations, remained unchanged .
 # During the same time, corporate bond yields, which are used in determining the discount rate for future pension obligations, decreased .                        
  - Performance: (R: 1.0; P: 1.0)                        
@@ -53,14 +53,14 @@ n examples annotated.
  - Predict: ['expenses', 'utilities', 'along', 'increase']
 # This, in turn, is affected by several factors such as local or national economic conditions, the amount of new apartment construction and interest rates on single-family mortgage loans.
 # This, in turn, is affected by several factors such as local or national economic conditions, the amount of new apartment construction and the affordability of single-family homes.                        
- - Performance: (R: 1.0; P: 0.3333333333333333)                        
+ - Performance: (R: 1.0; P: 0.5)                        
  - Truth: ['affordability']                        
- - Predict: ['affordability', 'homes.', 'single-family']
+ - Predict: ['affordability', 'homes.']
 # (2) Stabilization is generally defined as 90% occupancy for 90 days and an achievement of 1.15 times debt service coverage ratio on amortizing debt service.
 # (3) A property is considered stabilized once it reaches 90% occupancy for 90 days and an achievement of 1.15 times debt service coverage ratio on amortizing debt service.                        
- - Performance: (R: 0.75; P: 0.6)                        
+ - Performance: (R: 0.75; P: 0.75)                        
  - Truth: ['property', 'is', 'considered', 'stabilized']                        
- - Predict: ['stabilized', 'property', 'considered', 'reaches', '90%']
+ - Predict: ['stabilized', 'property', 'considered', 'reaches']
 # This balance fluctuates due to the timing of the prepayments.
 # This balance fluctuates due to the timing of the prepayments and to the timing of the premium receipts by APSL.                        
  - Performance: (R: 0.3; P: 1.0)                        
@@ -158,9 +158,9 @@ n examples annotated.
  - Predict: ['Peripheral', 'Coronary', 'ancillary', 'OAS', 'OAS,']
 # Other Miscellaneous R evenues Miscellaneous revenues includes disconnect/reconnect fees and other discretionary revenues for services requested by REPs, services provided on a time and materials basis, rents, energy efficiency performance bonuses approved by the PUCT and other miscellaneous revenues .
 # A Decrease in Other Miscellaneous Revenues Miscellaneous revenues includes disconnect/reconnect fees and other discretionary revenues for services requested by REPs, services provided on a time and materials basis, rents, energy efficiency performance bonuses approved by the PUCT and other miscellaneous revenues .                        
- - Performance: (R: 1.0; P: 0.2)                        
+ - Performance: (R: 1.0; P: 0.5)                        
  - Truth: ['Decrease']                        
- - Predict: ['Decrease', 'Revenues', 'Miscellaneous', 'Miscellaneous', 'revenues']
+ - Predict: ['Decrease', 'Revenues']
 # The investment general partner will continue to work with the operating general partner and the management company to monitor and improve operations.
 # The investment general partner continues to work with the operating general partner and the management company to reduce operating costs.                        
  - Performance: (R: 0.5; P: 0.3333333333333333)                        
@@ -203,19 +203,19 @@ n examples annotated.
  - Predict: ['three', 'years', 'entered', '3.65%', 'agreement']
 # This term loan bears interest at a variable rate equal to an internally calculated rate based on Farm Credit West s internal monthly operations and their cost of funds and generally follows the changes in the 90-day treasury rates in increments divisible by 0.25% and is payable in quarterly installments through November 2022.
 # On November 1, 2014, the rate became variable at a rate equal to an internally calculated rate based on Farm Credit West s internal monthly operations and their cost of funds and generally follows the changes in the 90-day treasury rates in increments divisible by 0.25% until the loan matures.                        
- - Performance: (R: 0.4166666666666667; P: 1.0)                        
+ - Performance: (R: 0.3333333333333333; P: 1.0)                        
  - Truth: ['On', 'November', '1,', '2014,', 'the', 'rate', 'became', 'variable', 'until', 'the', 'loan', 'matures.']                        
- - Predict: ['became', 'matures.', '2014,', '1,', 'loan']
+ - Predict: ['became', 'matures.', '2014,', '1,']
 # Depreciation expense in fiscal year 2016 was $1.0 million higher than fiscal year 2015 primarily due to the acquisition of Sheldon Ranches in December 2015 and placement of our new, expanded lemon packing facility into service in March 2016.
 # The 29% increase of $1.0 million was primarily due to the acquisition of Sheldon Ranches in December 2015 and placement of our new, expanded lemon packing facility into service in March 2016.                        
- - Performance: (R: 1.0; P: 0.4)                        
+ - Performance: (R: 1.0; P: 1.0)                        
  - Truth: ['29%', 'increase']                        
- - Predict: ['increase', '29%', '$1.0', 'facility', 'packing']
+ - Predict: ['increase', '29%']
 # The senior subordinated notes are fully and unconditionally guaranteed on a joint and several senior subordinated unsecured basis by certain of Cinemark USA, Inc. s subsidiaries that guarantee, assume or become liable with respect to any of Cinemark USA, Inc. s or a guarantor s other debt.
 # The 5.125% Senior Notes are fully and unconditionally guaranteed on a joint and several senior unsecured basis by certain of Cinemark USA, Inc. s subsidiaries that guarantee, assume or become liable with respect to any of Cinemark USA, Inc. s or a guarantor s debt.                        
- - Performance: (R: 1.0; P: 1.0)                        
+ - Performance: (R: 0.3333333333333333; P: 1.0)                        
  - Truth: ['5.125%', 'Senior', 'Notes']                        
- - Predict: ['5.125%', 'Notes', 'Senior']
+ - Predict: ['5.125%']
 # We estimate the remaining capital expenditures for the development of these 181 domestic screens will be approximately $110 million.
 # the remaining capital expenditures for the development of these 109 international screens will be approximately $89 million.                        
  - Performance: (R: 0.4; P: 1.0)                        
@@ -228,9 +228,9 @@ n examples annotated.
  - Predict: ['Inc.', 'Inc.', 'amended', 'Cinemark', 'Cinemark']
 # The Senior Subordinated Notes are fully and unconditionally guaranteed on a joint and several senior subordinated unsecured basis by certain of Cinemark USA, Inc. s subsidiaries that guarantee, assume or become liable with respect to any of Cinemark USA, Inc. s or a guarantor s other debt.
 # The 5.125% Senior Notes are fully and unconditionally guaranteed on a joint and several senior unsecured basis by certain of Cinemark USA, Inc. s subsidiaries that guarantee, assume or become liable with respect to any of Cinemark USA, Inc. s or a guarantor s debt.                        
- - Performance: (R: 1.0; P: 1.0)                        
+ - Performance: (R: 0.3333333333333333; P: 1.0)                        
  - Truth: ['5.125%', 'Senior', 'Notes']                        
- - Predict: ['5.125%', 'Notes', 'Senior']
+ - Predict: ['5.125%']
 # We are currently evaluating the impact of ASU 2014-09, as amended by ASU 2015-14, on our consolidated financial statements.
 # We are currently evaluating the impact of ASU 2016-02 on our consolidated financial statements.                        
  - Performance: (R: 0.0; P: 0)                        
@@ -298,9 +298,9 @@ n examples annotated.
  - Predict: ['backwardation.', 'higher', 'positive']
 # In April 2013, we received a cash payment of $12.5 million from Securus Technologies Holdings, Inc. in full satisfaction of all obligations under the loan agreement.
 # In April 2015, we received a cash payment of $2.5 million from Total Military Management, Inc. in full satisfaction of all obligations under the loan agreement.                        
- - Performance: (R: 0.6666666666666666; P: 0.8)                        
+ - Performance: (R: 0.6666666666666666; P: 1.0)                        
  - Truth: ['$2.5', 'million', 'Total', 'Military', 'Management,', 'Inc.']                        
- - Predict: ['Total', 'Military', 'Management,', '$2.5', 'agreement.']
+ - Predict: ['Total', 'Military', 'Management,', '$2.5']
 # In January 2013, we received a cash payment of $30.2 million from NDSSI Holdings, Inc. in full satisfaction of all obligations under the loan agreement.
 # In April 2015, we received a cash payment of $16.8 million from Digi-Star Acquisition Holdings, Inc. in full satisfaction of all obligations under the loan agreement.                        
  - Performance: (R: 0.5; P: 0.6)                        
@@ -308,14 +308,14 @@ n examples annotated.
  - Predict: ['Digi-Star', 'April', 'Acquisition', '$16.8', '2015,']
 # In October 2012, we received a cash payment of $5.4 million from Bojangles in full satisfaction of all obligations under the loan agreement.
 # In October 2015, we received a cash payment of $7.4 million from Idera, Inc. in full satisfaction of all obligations under the loan agreement.                        
- - Performance: (R: 0.75; P: 0.75)                        
+ - Performance: (R: 0.75; P: 1.0)                        
  - Truth: ['$7.4', 'million', 'Idera,', 'Inc.']                        
- - Predict: ['Inc.', 'Idera,', '$7.4', 'agreement.']
+ - Predict: ['Inc.', 'Idera,', '$7.4']
 # Messrs. Berman, Dimitrov, Owens and Sandeep K. Khorana, each an interested member of our Board of Directors, have a direct or indirect pecuniary interest in Fifth Street Management.
 # Messrs. Berman, Dimitrov, Owens and Sandeep K. Khorana, each an interested member of our Board of Directors, have a direct or indirect pecuniary interest in our Investment Adviser.                        
- - Performance: (R: 0.6666666666666666; P: 0.4)                        
+ - Performance: (R: 0.6666666666666666; P: 1.0)                        
  - Truth: ['our', 'Investment', 'Adviser.']                        
- - Predict: ['Adviser.', 'Investment', 'Berman,', 'Directors,', 'K.']
+ - Predict: ['Adviser.', 'Investment']
 # We expect the trend will continue in fiscal 2012 and our gross margin will continuously be negatively affected by the devalued U.S. dollar.
 # Although the U.S. dollar devaluation appears slowing down, we anticipate the trend will continue in fiscal 2013 and our gross margin will continue to be negatively affected by the devalued U.S. dollar.                        
  - Performance: (R: 0.5; P: 0.8)                        
@@ -333,9 +333,9 @@ n examples annotated.
  - Predict: ['investment']
 # related to amortization of intangible assets associated with recent acquisitions of $22.1 million, partially offset by $3.3 million of amortization of intangible assets associated with prior acquisitions that have been fully amortized.
 # The increase was primarily related to amortization of intangible assets associated with recent acquisitions of $22.1 million, partially offset by $2.9 million of amortization of intangible assets associated with prior acquisitions that have been fully amortized.                        
- - Performance: (R: 0.6666666666666666; P: 0.4)                        
+ - Performance: (R: 0.6666666666666666; P: 0.6666666666666666)                        
  - Truth: ['increase', '$2.9', 'million']                        
- - Predict: ['primarily', 'increase', '$2.9', 'related', '$22.1']
+ - Predict: ['primarily', 'increase', '$2.9']
 # to our consolidated financial statements included in this annual report on Form 10-K.
 # See Note 9 to our consolidated financial statements included in this annual report on Form 10-K for the preliminary purchase price allocations.                        
  - Performance: (R: 1.0; P: 0.8)                        
@@ -348,9 +348,9 @@ n examples annotated.
  - Predict: ['rent', 'expense', 'fees.', 'professional', 'consulting']
 # This decline was partially offset by 3.6% growth in the Cooking Group which primarily serves the restaurant and convenience store markets.
 # This decline was partially offset by 3.6% growth in the AAI segment of the Cooking Group which primarily serves the restaurant and convenience store markets.                        
- - Performance: (R: 1.0; P: 0.2)                        
+ - Performance: (R: 1.0; P: 0.5)                        
  - Truth: ['AAI']                        
- - Predict: ['segment', 'AAI', '3.6%', 'Group', 'Cooking']
+ - Predict: ['segment', 'AAI']
 # As a result, we expect our actual cash receipts relating to these outstanding repurchase requests to be significantly lower than this amount.
 # As a result, we expect our actual cash receipts relating to these outstanding repurchase requests to be significantly lower than the unpaid principal balance of the loan.                        
  - Performance: (R: 0.5714285714285714; P: 1.0)                        
@@ -368,9 +368,9 @@ n examples annotated.
  - Predict: ['Alt-A']
 # When derivative commitments to sell securities settle, we include the fair value of the commitment on the settlement date in the cost basis of the security we sell.
 # When derivative purchase commitments settle, we include the fair value of the commitment on the settlement date in the cost basis of the loan or security we purchase.                        
- - Performance: (R: 1.0; P: 0.4)                        
+ - Performance: (R: 1.0; P: 0.6666666666666666)                        
  - Truth: ['purchase', 'purchase.']                        
- - Predict: ['loan', 'purchase.', 'purchase', 'derivative', 'commitments']
+ - Predict: ['loan', 'purchase.', 'purchase']
 # Pay-fixed swap refers to an interest rate swap trade under which we pay a predetermined fixed rate of interest based upon a set notional amount and receive a variable interest payment based upon a stated index, with the index resetting at regular intervals over a specified period of time.
 # Receive-fixed swap refers to an interest rate swap trade under which we make a variable interest payment based upon a stated index, with the index resetting at regular intervals, and receive a predetermined fixed rate of interest based upon a set notional amount and over a specified period of time.                        
  - Performance: (R: 0.1111111111111111; P: 0.5)                        
@@ -378,9 +378,9 @@ n examples annotated.
  - Predict: ['make', 'Receive-fixed']
 # We amortize cost basis adjustments, including premiums and discounts on mortgage loans and securities, as a yield adjustment over the contractual life of the loan or security as a component of net interest income.
 # Amortization income refers to income resulting from the amortization of cost basis adjustments, including premiums and discounts on mortgage loans and securities, as a yield adjustment over the contractual life of the loan or security.                        
- - Performance: (R: 0.25; P: 0.4)                        
+ - Performance: (R: 0.25; P: 0.5)                        
  - Truth: ['resulting', 'from', 'the', 'amortization', 'of', 'cost', 'basis', 'adjustments,']                        
- - Predict: ['resulting', 'refers', 'Amortization', 'amortization', 'income']
+ - Predict: ['resulting', 'refers', 'Amortization', 'amortization']
 # Liquidity risk is the risk that we will not be able to meet our funding obligations in a timely manner.
 # Our liquidity risk management framework is designed to address our liquidity risk, which is the risk that we will not be able to meet our funding obligations in a timely manner.                        
  - Performance: (R: 0.5; P: 0.6)                        
@@ -403,9 +403,9 @@ n examples annotated.
  - Predict: ['PSNH']
 # In addition, our production volumes are impacted by curtailed volumes of natural gas due to operational requirements associated with fracture stimulation and other operations on near-by horizontal wells, seasonal supply and demand conditions from end users and general maintenance and repairs to our wells.
 # Our production volumes in shale operations are impacted by curtailed volumes of natural gas due to operational requirements associated with fracture stimulation and other operations on nearby horizontal wells, seasonal supply and demand conditions from end users and general maintenance and repairs to our wells.                        
- - Performance: (R: 1.0; P: 0.6666666666666666)                        
+ - Performance: (R: 0.5; P: 0.5)                        
  - Truth: ['shale', 'operations']                        
- - Predict: ['shale', 'nearby', 'operations']
+ - Predict: ['shale', 'nearby']
 # The lower commodity prices primarily impacted properties located in Texas because production taxes are based on a fixed percentage of gross value of production sold.
 # The higher oil prices primarily impacted properties located in Texas because production taxes are based on a fixed percentage of gross value of production sold.                        
  - Performance: (R: 0.6666666666666666; P: 1.0)                        
@@ -433,9 +433,9 @@ n examples annotated.
  - Predict: ['lower', 'jurisdictions,', 'jurisdictions.The', 'provision', 'partially']
 # The adoption is not expected to have a material impact on our consolidated financial position, results of operations and cash flows.
 # The adoption of this accounting policy did not have a material impact on our consolidated financial position, results of operations and cash flows.                        
- - Performance: (R: 0.5; P: 0.6666666666666666)                        
+ - Performance: (R: 0.5; P: 1.0)                        
  - Truth: ['accounting', 'policy', 'did', 'not']                        
- - Predict: ['accounting', 'policy', 'adoption']
+ - Predict: ['accounting', 'policy']
 # As a result of adjustments to deferred revenue related to certain acquisitions required by business combination rules, we did not recognize $2.9 million of revenue in our Human Health segment for fiscal year 2014 and $7.3 million of revenue in our Human Health segment for fiscal year 2013 that otherwise would have been recorded by the acquired businesses during each of the respective periods.
 # As a result of adjustments to deferred revenue related to certain acquisitions required by business combination rules, we did not recognize $27 thousand of revenue in our Discovery Analytical Solutions segment for fiscal year 2015 that otherwise would have been recorded by the acquired businesses during each of the respective periods.                        
  - Performance: (R: 0.8333333333333334; P: 1.0)                        
@@ -443,19 +443,19 @@ n examples annotated.
  - Predict: ['Analytical', 'Discovery', 'Solutions', '$27', 'thousand']
 # The 2026 Notes were issued at 99.118% of the principal amount, which resulted in a discount of 4.4 million .
 # The 2021 Notes were issued at 99.4% of the principal amount, which resulted in a discount of $3.1 million .                        
- - Performance: (R: 0.8; P: 1.0)                        
+ - Performance: (R: 0.2; P: 1.0)                        
  - Truth: ['2021', 'Notes', '99.4%', '$3.1', 'million']                        
- - Predict: ['$3.1', '99.4%', 'Notes', '2021']
+ - Predict: ['$3.1']
 # Arizant Inc. is a leading manufacturer of patient warming solutions designed to prevent hypothermia in surgical settings.
 # Acquisition growth primarily related to Arizant Inc., a leading manufacturer of patient warming solutions designed to prevent hypothermia in surgical settings.                        
- - Performance: (R: 1.0; P: 0.4)                        
+ - Performance: (R: 1.0; P: 0.5)                        
  - Truth: ['Acquisition', 'growth']                        
- - Predict: ['Acquisition', 'growth', 'primarily', 'related', 'Arizant']
+ - Predict: ['Acquisition', 'growth', 'primarily', 'related']
 # The increase in salaries and employee benefits expenses during the year ended May 31, 2013 was due to the voluntary $13 million contribution that CFC made to its NRECA sponsored Retirement Security Plan in January 2013.
 # The decrease in salaries and employee benefits during the year ended May 31, 2014 was due to the voluntary $13 million contribution that CFC made to its NRECA-sponsored Retirement Security Plan in January 2013.                        
- - Performance: (R: 1.0; P: 0.5)                        
+ - Performance: (R: 1.0; P: 1.0)                        
  - Truth: ['decrease']                        
- - Predict: ['decrease', 'NRECA-sponsored']
+ - Predict: ['decrease']
 # Prior to issuing a letter of credit, we would confirm that there has been no material adverse change in the business or condition, financial or otherwise, of the borrower since the time the loan was approved and confirm that the borrower is currently in compliance with the letter of credit terms and conditions.
 # Prior to making an advance on these facilities, we confirm that there has been no material adverse change in the business or condition, financial or otherwise, of the borrower since the time the loan was approved and confirm that the borrower is currently in compliance with loan terms and conditions.                        
  - Performance: (R: 0.5; P: 1.0)                        
@@ -498,14 +498,14 @@ n examples annotated.
  - Predict: ['decreased', 'decrease']
 # These proved undeveloped reserve additions were offset by transfers of 315 million BOE to the proved developed category as a result of the 2014 development programs including 214 million BOE from Al Hosn gas project reserves.
 # These proved undeveloped reserve additions were offset by transfers of 106 million BOE to the proved developed category as a result of the 2015 development programs.                        
- - Performance: (R: 0.3333333333333333; P: 1.0)                        
+ - Performance: (R: 0.0; P: 0)                        
  - Truth: ['106', 'million', '2015']                        
- - Predict: ['2015']
+ - Predict: []
 # In addition, we also experienced loss of production due to the unexpected shut-in of some of our production from operational issues experienced at a third party facility that processes our Segno field production.
 # In addition, our 2010 production was curtailed because of the unexpected shut-in of some of our production from operational issues experienced at a third party facility that processes our Segno field production.                        
- - Performance: (R: 0.6666666666666666; P: 0.5)                        
+ - Performance: (R: 0.3333333333333333; P: 1.0)                        
  - Truth: ['2010', 'production', 'curtailed']                        
- - Predict: ['curtailed', '2010', 'because', 'facility']
+ - Predict: ['curtailed']
 # The following discussion of international net income excludes the effect of currency translation.
 # The following discussion of costs and expenses excludes the effect of currency translation.                        
  - Performance: (R: 1.0; P: 1.0)                        
@@ -513,14 +513,14 @@ n examples annotated.
  - Predict: ['expenses', 'costs']
 # Gross margin from manufacturing operations as a percentage of manufacturing revenues increased to 27% for the year ended December 31, 2014 from 23% for the comparable prior year period.
 # Gross margin from manufacturing operations as a percentage of manufacturing revenues decreased to 15% for the year ended December 31, 2016 from 23% for the comparable prior year period.                        
- - Performance: (R: 1.0; P: 1.0)                        
+ - Performance: (R: 0.5; P: 1.0)                        
  - Truth: ['decreased', '15%']                        
- - Predict: ['decreased', '15%']
+ - Predict: ['decreased']
 # Years Ended December 31, 2016 and 2015 Net sales for the year ended December 31, 2016 decreased by $94 million ( 26% ) compared to the comparable prior year period.
 # Years Ended December 31, 2016 and 2015 Net sales for the year ended December 31, 2016 increased by $41 million as compared to the comparable prior year period.                        
  - Performance: (R: 0.0; P: 0.0)                        
  - Truth: ['$41', 'million']                        
- - Predict: ['increased', 'compared']
+ - Predict: ['increased']
 # (1) Excludes the effect of consolidated trusts with beneficial interests owned by third parties.
 # (4) Includes the effect of consolidated trusts with beneficial interests owned by third parties.                        
  - Performance: (R: 1.0; P: 1.0)                        
@@ -553,9 +553,9 @@ n examples annotated.
  - Predict: ['transaction.', 'ASR']
 # General and administrative expense from Search decreased primarily due to lower professional fees, including a decrease in litigation related expenses, and the inclusion in 2010 of lease termination costs associated with the Ask.com restructuring, partially offset by an increase in compensation and other employee-related costs at Mindspark and CityGrid Media.
 # The decrease in general and administrative expense is primarily due to a decrease in compensation and other employee-related costs, lower professional fees, including a decrease in litigation related expenses, and the inclusion in 2010 of lease termination costs associated with the Ask.com restructuring.                        
- - Performance: (R: 0.0; P: 0.0)                        
+ - Performance: (R: 0.0; P: 0)                        
  - Truth: ['decrease', 'in', 'compensation', 'employee-related', 'costs,']                        
- - Predict: ['Ask.com', 'general']
+ - Predict: []
 # Non-Cash Expenses That Are Excluded From IAC's Non-GAAP Measure Stock-based compensation expense consists principally of expense associated with the grants of stock options, restricted stock units ("RSUs"), performance-based RSUs and market-based awards.
 # Non-Cash Expenses That Are Excluded From Non-GAAP Measure Stock-based compensation expense consists principally of expense associated with the grants, including unvested grants assumed in acquisitions (including the Combination), of stock options, restricted stock units ("RSUs"), performance-based RSUs and market-based awards.                        
  - Performance: (R: 0.0; P: 0.0)                        
@@ -563,14 +563,14 @@ n examples annotated.
  - Predict: ['Combination),', '(including', 'including', 'assumed', 'acquisitions']
 # 2011 Note Offering, the Company obtained the consent of Bank of America to the 2011 Note Offering and the agreement of Bank of America that the 2011 Note Offering will not constitute a default under the Credit Agreement.
 # In connection with the 2008 Note Offering, the Company obtained the consent of Bank of America to the 2008 Note Offering and the agreement of Bank of America that the 2008 Note Offering will not constitute a default under the Credit Agreement.                        
- - Performance: (R: 0.42857142857142855; P: 0.6)                        
+ - Performance: (R: 0.14285714285714285; P: 1.0)                        
  - Truth: ['In', 'connection', 'with', 'the', '2008', 'Note', 'Offering,']                        
- - Predict: ['connection', '2008', 'Agreement.', 'Credit', 'Note']
+ - Predict: ['connection']
 # (2) On January 14, 2011, we entered into a new credit agreement for a five-year $750 million Revolver, which matures in January of 2016.
 # (1) On January 14, 2011, we entered into a new credit agreement for a five-year $750 million Revolving Credit Facility, which matures in January of 2016.                        
- - Performance: (R: 1.0; P: 0.6)                        
+ - Performance: (R: 1.0; P: 1.0)                        
  - Truth: ['Revolving', 'Credit', 'Facility,']                        
- - Predict: ['Revolving', 'Facility,', 'Credit', 'credit', 'agreement']
+ - Predict: ['Revolving', 'Facility,', 'Credit']
 # We have not made any material changes in the methodology used to recognize shrinkage in the financial periods presented.
 # We have not made any material changes in the accounting methodology used to recognize inventory impairment reserves in the financial periods presented.                        
  - Performance: (R: 1.0; P: 0.5)                        
@@ -593,28 +593,28 @@ n examples annotated.
  - Predict: ['shrinkage']
 # This decrease was mainly the result of our previously announced cost management program as well as reduction in force tied to volume declines, primarily in mortgage services.
 # These decreases were mainly the result of our cost management program as well as reduction in force tied to volume declines, primarily in the ancillary services operations.                        
- - Performance: (R: 1.0; P: 0.75)                        
+ - Performance: (R: 0.6666666666666666; P: 1.0)                        
  - Truth: ['ancillary', 'services', 'operations.']                        
- - Predict: ['operations.', 'ancillary', 'decreases', 'services']
+ - Predict: ['operations.', 'ancillary']
 # We funded this redemption with cash on hand and borrowings under our revolving credit facility.
 # We funded this acquisition using cash on hand and borrowings under our unsecured revolving credit facility.                        
- - Performance: (R: 1.0; P: 0.2)                        
+ - Performance: (R: 1.0; P: 0.3333333333333333)                        
  - Truth: ['acquisition']                        
- - Predict: ['acquisition', 'using', 'unsecured', 'facility.', 'credit']
+ - Predict: ['acquisition', 'using', 'unsecured']
 # No. 1 agreement using cash on hand and borrowings under our revolving credit facility.
 # No. 234 agreement using cash on hand and borrowings under our revolving credit facility.                        
- - Performance: (R: 0.5; P: 0.3333333333333333)                        
+ - Performance: (R: 0.0; P: 0)                        
  - Truth: ['No.', '234']                        
- - Predict: ['facility.', '234', 'credit']
+ - Predict: []
 # As a result of this analysis, the Company recognized a long-lived asset impairment charge of $18.7 million in the fiscal quarter ended September 30, 2011 which was allocated to the intangible assets of $13.4 million and $5.3 million to equipment and improvements, primarily related to our leasehold improvements.
 # As a result of this analysis, the Company recognized a long-lived asset impairment charge of $18.7 million in the fiscal quarter ended September 30, 2011 which was allocated pro-rata to the intangible assets of $13.4 million and $5.3 million to equipment and improvements, primarily related to our leasehold improvements.                        
- - Performance: (R: 1.0; P: 0.2)                        
+ - Performance: (R: 1.0; P: 1.0)                        
  - Truth: ['pro-rata']                        
- - Predict: ['pro-rata', '$13.4', '$5.3', '$18.7', 'Company']
+ - Predict: ['pro-rata']
 ********************************            
 File: fin10k.eval.type2.segments.results-from-scratch-101            
-Mean precision: 0.7349726775956285            
-Mean recall   : 0.7036349806841611            
-Mean f1-score : 0.6740231921413853            
+Mean precision: 0.7830601092896174            
+Mean recall   : 0.6642712023859565            
+Mean f1-score : 0.6813792133836166            
 Num of evaluated samples: 123            
 ********************************
