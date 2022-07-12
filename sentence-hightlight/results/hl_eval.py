@@ -13,7 +13,6 @@ def main(args):
     truth, strings = load_truth_from_json(path_truth_file)
     pred, prob = load_pred_from_json(
             args.path_pred_file,
-            topk=args.topk,
             prob_threshold=args.threshold,
             sentA=args.highlight_on_a
     )
@@ -31,8 +30,12 @@ def main(args):
 
         try:
             pred_tokens = pred[pair_id]
+            prob_tokens = prob[pair_id]
         except:
             pred_tokens = []
+
+        # get topk
+        pred_tokens = [t for (t, p) in sorted(zip(pred_tokens, prob_tokens), key=lambda x: x[1], reverse=True)[:args.topk]]
 
         hits = set(truth_tokens) & set(pred_tokens)
         precision = (len(hits) / len(pred_tokens)) if len(pred_tokens) != 0 else 0
@@ -51,6 +54,7 @@ def main(args):
 
             if args.verbose:
                 print(f"{strings[pair_id]}\
+                        \n - Performance: (R: {recall}; P: {precision})\
                         \n - Truth: {truth_tokens}\
                         \n - Predict: {pred_tokens}")
 
@@ -73,8 +77,7 @@ if __name__ == "__main__":
     parser.add_argument("-split", "--validate_split", type=str, default=None)
     parser.add_argument("-truth", "--path_truth_file", type=str, \
             default='../data/esnli/esnli.split.sent_highlight.contradiction.jsonl')
-    parser.add_argument("-pred", "--path_pred_file", type=str, \
-            default='esnli/esnli.split.sent_highlight.contradiction.jsonl.results')
+    parser.add_argument("-pred", "--path_pred_file", type=str)
     parser.add_argument("-hl_on_a", "--highlight_on_a", action='store_true', default=False)
     parser.add_argument("--verbose", action='store_true', default=False)
     parser.add_argument("-thres", "--threshold", type=float, default=0)

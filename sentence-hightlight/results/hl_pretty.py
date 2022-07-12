@@ -9,7 +9,6 @@ def main(args):
     truth, strings = load_truth_from_json(args.path_truth_file)
     pred, prob = load_pred_from_json(
             args.path_pred_file,
-            topk=args.topk,
             prob_threshold=args.threshold,
             sentA=args.highlight_on_a
     )
@@ -20,7 +19,7 @@ def main(args):
 
         topk = list(zip(pred[pair_id], prob[pair_id]))
         topk = sorted(topk, key=lambda x: x[1], reverse=True)
-        # topk = topk[:args.topk]
+        topk = topk[:args.topk]
 
         fout.write(f'{strings[pair_id]}\n')
         string_topk = ", ".join([f"{i}: {round(j, 3)}" for (i, j) in topk])

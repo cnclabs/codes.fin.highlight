@@ -43,12 +43,13 @@ def load_pred_from_json(file_path, topk=None, prob_threshold=0, sentA=False):
             flag = None
 
             # consider the final threshold by topk and defined-threshold
-            threshold = max(sorted(data['prob'], reverse=True)[:topk][-1], prob_threshold)
+            # [CONCERN] since the label @ sentence is not considered, cannot chose topk 
+            # threshold = max(sorted(data['prob'], reverse=True)[:topk][-1], prob_threshold) 
 
             for j, (w, p) in enumerate(zip(data['words'], data['prob'])):
                 if p == -1:
                     flag = sentA if j == 0 else True
-                if (flag) and (p >= threshold):
+                if (flag) and (p >= prob_threshold):
                     pred[pair_id].append(w)
                     prob[pair_id].append(p)
 

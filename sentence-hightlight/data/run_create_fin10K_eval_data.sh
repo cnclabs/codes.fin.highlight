@@ -23,15 +23,30 @@ python3 scripts/create_fin10k_data.py \
     -lexicon_sent 'LM.master_dictionary.sentiment.dict' \
     -lexicon_stop 'LM.master_dictionary.stopwords.dict' >> fin10k.eval.dat
 
-# Annotation
+
+# # Annotation tsv
 # python3 scripts/create_fin10k_data.py \
 #     -annotation \
-#     -input $1 \
-#     -output $1.jsonl \
+#     -format tsv \
+#     -input fin10k/eval.type2.segments.annotation.highlight \
+#     -output fin10k/eval.type2.segments.annotation.highlight.csv \
 #     -model_type bert \
 #     -version 1 \
 #     -random 0 \
 #     -nosep \
 #     -lexicon_sent 'LM.master_dictionary.sentiment.dict' \
-#     -lexicon_stop 'LM.master_dictionary.stopwords.dict'
+#     -lexicon_stop 'LM.master_dictionary.stopwords.dict' >> fin10k.eval.dat
 #
+# # Annotation jsonl
+# python3 scripts/create_fin10k_data.py \
+#     -annotation \
+#     -format jsonl \
+#     -input fin10k/eval.type2.segments.annotation.highlight \
+#     -output fin10k/eval.type2.segments.annotation.highlight.jsonl \
+#     -model_type bert \
+#     -version 1 \
+#     -random 0 \
+#     -nosep \
+#     -lexicon_sent 'LM.master_dictionary.sentiment.dict' \
+#     -lexicon_stop 'LM.master_dictionary.stopwords.dict' >> fin10k.eval.dat
+# #

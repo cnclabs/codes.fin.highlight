@@ -14,12 +14,14 @@ data/fin10k/*jsonl.bak
 # Results 
 results/esnli/
 results/fin10k/
+results/esnli*
 
 # Others
 __pycache__/
 logs/
 wandb/
 *.swp
+diff
 
 # Excepted run file (for local experiments)
 run_training_highlighter.sh

@@ -42,12 +42,19 @@ def read_fin10k(path, is_eval=False):
                 print(line.strip().split('\t'))
                 print("************* error formatting *************")
 
-            data[f'{idA}#{idB}'] = {
-                    "idA": idA, 
-                    "idB": idB, 
-                    "sentA": sentA, 
-                    "sentB": sentB
-            }
+            if is_eval:
+                data[f'{idA}#{idB}'] = {
+                        "idA": idA, 
+                        "idB": idB, 
+                        "sentA": sentA, 
+                        "sentB": sentB
+                }
+            else:
+                data[f'{idA}#{idB}'] = {
+                        "sentA": sentA, 
+                        "sentB": sentB
+                }
+
 
     print(f"Total number of exampels: {len(data)}")
 
@@ -56,7 +63,8 @@ def read_fin10k(path, is_eval=False):
         data_sorted = [v for k, v in sorted(data.items(), key=lambda x: x[0])]
         return data_sorted
     else:
-        return data
+        data_unsorted = [v for k, v in data.items()]
+        return data_unsorted
 
 def read_esnli(path, class_selected, reverse):
     """ Function for reading the sentence A/B and highlight A/B with the corresponding labels """
@@ -90,6 +98,7 @@ def read_esnli(path, class_selected, reverse):
 
 def extract_marks(tokens):
 
+    labels = []
     extracted = []
     p_marks = re.compile(r"[\*].*?[\*]")
     # p_punct = re.compile("[" + re.escape(string.punctuation) + "]")
@@ -102,11 +111,14 @@ def extract_marks(tokens):
             # extracted += [p_punct.sub("", tok)]
             tokens[i] = tok.replace("*", "")
             extracted += [tokens[i]]
+            labels.append(1)
+        else:
+            labels.append(0)
 
-    return extracted
+    return extracted, labels
 
 
-def read_fin10k_with_window(path, is_eval=True):
+def read_fin10k_with_window(path, is_eval=False):
     data = collections.defaultdict(dict)
 
     # append the window == 1 (main sentences)

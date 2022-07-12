@@ -7,7 +7,6 @@ import argparse
 from nltk.corpus import stopwords
 from collections import defaultdict
 from spacy.lang.en import English
-from utils import read_fin10K, load_master_dict, load_stopwords
 from transformers import AutoTokenizer
 
 parser = argparse.ArgumentParser()
