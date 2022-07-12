@@ -1,9 +1,4 @@
+*/__pycache__/
+
+# deprecated
 document-segmentation/wiki_727/*
-sentence-highlighting/checkpoints/*
-sentence-highlighting/data/scripts/esnli*
-sentence-highlighting/logs/*
-sentence-highlighting/data/*
-sentence-highlighting/data/esnli/*
-sentence-highlighting/data/fin10k/*
-*/__pycache__/*
-./sentence-highlighting/results/fin10k/type2.segments.result.jsonl
