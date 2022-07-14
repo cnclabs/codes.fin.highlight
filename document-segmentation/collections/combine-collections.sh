@@ -13,6 +13,13 @@
 #     cat $line >> /tmp2/cwlin/fintext-new/collections/prediction/rand100/rand100-predict-collections.txt;
 # done < "/tmp2/cwlin/fintext-new/collections/prediction/rand100/rand100-prediction-CIKS-filelist.txt"
 
+# rand0-100
+for file in "/tmp2/cwlin/fintext-new/tmp-collections/rand0-100/company/*/collections.txt"
+do
+    cat $file >> /tmp2/cwlin/fintext-new/tmp-collections/rand0-100/collections.txt
+done
+
+# rand100-200
 for file in "/tmp2/cwlin/fintext-new/tmp-collections/rand100-200/company/*/collections.txt"
 do
     cat $file >> /tmp2/cwlin/fintext-new/tmp-collections/rand100-200/collections.txt
