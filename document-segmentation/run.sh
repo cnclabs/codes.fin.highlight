@@ -83,3 +83,7 @@ bash run_prediction_fin10k.sh /tmp2/cwlin/fintext-new/tmp-collections/rand200/ra
 cd /tmp2/cwlin/fintext-new/codes/codes.fin.highlight/document-segmentation/collections
 # create prediction segment of rand100, rand100-200, and rand200-all-item
 bash create_prediction_segment.sh
+
+# print statistics
+cd /tmp2/cwlin/fintext-new/codes/codes.fin.highlight/document-segmentation/collections-stats
+bash print_stats.sh >> logs.collections.statistics
