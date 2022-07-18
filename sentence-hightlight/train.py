@@ -1,18 +1,3 @@
-"""
-Training functions for sentence highlighting, 
-which includes two methods based on deep NLP pretrained models.
-
-Methods:
-    (1) Bert: Highlight prediction tasks.
-        (*) Task1: sequence labeling
-        (*) Task2: span detection
-    (2) T5: highlight generation.
-        (*) Task3: marks generation.
-
-Packages requirments:
-    - hugginface 
-    - datasets 
-"""
 import os
 import sys
 import multiprocessing
@@ -91,14 +76,6 @@ class OurTrainingArguments(TrainingArguments):
 
 
 def main():
-    """
-    (1) Prepare parser with the 3 types of arguments
-        * Detailed argument parser by kwargs
-    (2) Load the corresponding tokenizer and config 
-    (3) Load the self-defined models
-    (4)
-    """
-
     # Parseing argument for huggingface packages
     parser = HfArgumentParser((OurModelArguments, OurDataArguments, OurTrainingArguments))
     # model_args, data_args, training_args = parser.parse_args_into_datalcasses()
@@ -159,9 +136,6 @@ def main():
             truncation=True,
             padding=True
         )   
-        # esnli: pad to max length in datacollator if needed, otherwise maximum length of batch
-        # fin10k: pad to max length if over the max length, otherwise 
-        # remove over-length instances
 
         # 1) transforme the label to token-level
         # 2) Preserve the word ids (for evaluation)
@@ -243,12 +217,8 @@ def main():
                 eval_dataset=dataset['dev'],
                 data_collator=data_collator,
         )
-    # trainer.model_args = model_args
     
     # ***** strat training *****
-    model_path = ( model_args.model_name_or_path if (model_args.model_name_or_path is not None \
-                and os.path.isdir(model_args.model_name_or_path)) else None
-    )
     results = trainer.train(
             resume_from_checkpoint=training_args.resume_from_checkpoint
             # model_path=model_pathk

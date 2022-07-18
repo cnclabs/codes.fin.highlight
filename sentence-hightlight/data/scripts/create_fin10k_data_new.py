@@ -43,6 +43,7 @@ def lexicon_based_labeling(args,
                            onlyB=True, 
                            positive_threshold=0,
                            random_ratio=0,
+                           negative_sampling=False,
                            stopword_removal=True,
                            version=4):
 
@@ -121,6 +122,14 @@ def lexicon_based_labeling(args,
             else:
                 pseudo_labels_B += [0]
 
+    if negative_sampling:
+        negative_indices = [i for i, l in enumerate(pseudo_labels_B) if l == 0]
+        # 1:1 sampling (relax (n - n_pos))
+        n_relaxed = max(len(negative_indices) - len(tokens_B_hl), 0)
+
+        for relaxed_index in random.sample(negative_indices, n_relaxed):
+            pseudo_labels_B[relaxed_index] = -100
+
     example.update({
             'keywordsA': tokens_A_hl,
             'keywordsB': tokens_B_hl,
@@ -159,6 +168,7 @@ def convert_to_bert_synthetic(args):
             positive_threshold=args.n_hard_positive,
             stopword_removal=True,
             random_ratio=args.random_ratio,
+            negative_sampling=args.negative_sampling,
             version=args.version
         )
         if flag:
@@ -213,6 +223,7 @@ if __name__ == '__main__':
     parser.add_argument("-version", "--version", default=4, type=int)
     parser.add_argument("-n_hard", "--n_hard_positive", default=None, type=int)
     parser.add_argument("-random", "--random_ratio", default=0, type=float)
+    parser.add_argument("-neg_sampling", "--negative_sampling", action='store_true', default=False)
     parser.add_argument("-highlight_A", "--labeling_on_sentA", action='store_true', default=False)
     # positive 
     parser.add_argument("-lexicon_sent", "--path_lexicon_sent_file", type=str)

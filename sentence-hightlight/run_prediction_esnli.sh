@@ -1,10 +1,10 @@
-export HF_DATASETS_CACHE=/tmp2/jhju/cache/
-export CUDA_VISIBLE_DEVICES=2
+export CUDA_VISIBLE_DEVICES=0
 
 BS=16
 STEPS=12500
 
-for TYPE in esnli-zs-highlighter from-scratch-101;do
+# for TYPE in cross-domain-transfer-0.125 cross-domain-transfer-0.125-old esnli-zs-highlighter from-scratch further-finetune;do
+for TYPE in cross-domain-transfer-0.125;do
     for EVAL in esnli.dev.sent_highlight.contradiction.jsonl;do
         python3 inference.py \
           --model_name_or_path checkpoints/${TYPE}/checkpoint-${STEPS}/ \

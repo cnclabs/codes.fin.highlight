@@ -17,15 +17,19 @@ if [[ "$1" == *train* ]]; then
             -lexicon_sent 'LM.master_dictionary.sentiment.dict' \
             -lexicon_stop 'LM.master_dictionary.stopwords.dict' >> fin10k.train.v$VERSION.dat
     fi
-    # python3 scripts/create_fin10k_data.py \
-    #     -input $1 \
-    #     -output ${1/fin10k/fin10k\/$FILE}.jsonl \
-    #     -model_type synthetic \
-    #     -version ${VERSION} \
-    #     -n_hard ${N_HARD} \
-    #     -random ${RAND} \
-    #     -lexicon_sent 'LM.master_dictionary.sentiment.dict' \
-    #     -lexicon_stop 'LM.master_dictionary.stopwords.dict' >> fin10k.train.v$VERSION.dat
+
+    if [[ "$2" == *102* ]]; then
+        python3 scripts/create_fin10k_data_new.py \
+            -input $1 \
+            -output $OUTPUT.jsonl \
+            -model_type synthetic \
+            -version ${VERSION} \
+            -n_hard ${N_HARD} \
+            -random ${RAND} \
+            -neg_sampling \
+            -lexicon_sent 'LM.master_dictionary.sentiment.dict' \
+            -lexicon_stop 'LM.master_dictionary.stopwords.dict' >> fin10k.train.v$VERSION.dat
+    fi
 
     echo "Truncating overlenght sentence pair (>256)" >> fin10k.train.v$VERSION.dat
 

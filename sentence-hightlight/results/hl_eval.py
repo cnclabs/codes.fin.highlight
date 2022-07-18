@@ -28,11 +28,8 @@ def main(args):
     i = 0
     for (pair_id, truth_tokens) in truth.items():
 
-        try:
-            pred_tokens = pred[pair_id]
-            prob_tokens = prob[pair_id]
-        except:
-            pred_tokens = []
+        pred_tokens = pred[pair_id]
+        prob_tokens = prob[pair_id]
 
         # get topk
         pred_tokens = [t for (t, p) in sorted(zip(pred_tokens, prob_tokens), key=lambda x: x[1], reverse=True)[:args.topk]]
