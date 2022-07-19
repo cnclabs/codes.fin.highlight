@@ -5,7 +5,7 @@ echo "Createing data for bert...(demo)" > fin10k.demo.dat
 
 for FILE in fin10k-demo/data/*/*;do
     echo Convert $FILE into jsonl format
-    python3 scripts/create_fin10k_data_new.py \
+    python3 scripts/create_fin10k_data.py \
         -input $FILE \
         -output ${FILE/data\//} \
         -type ${FILE##*type} \

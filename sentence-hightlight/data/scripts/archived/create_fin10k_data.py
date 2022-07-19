@@ -8,9 +8,9 @@ import numpy as np
 from nltk.corpus import stopwords
 from collections import defaultdict
 from spacy.lang.en import English
-from utils import read_fin10k, load_master_dict, load_stopwords, extract_marks
+from utils import read_fin10k, read_fin10k_with_window, load_master_dict, load_stopwords, extract_marks
 
-def token_extraction(srcA, srcB, pair_type=2, fully_seperated=False, marks_annotation=False):
+def token_extraction(srcA, srcB, fully_seperated=False, marks_annotation=False):
     if fully_seperated:
         tokens_A, tokens_B = list(), list()
         for tok in nlp(srcA):
@@ -30,27 +30,19 @@ def token_extraction(srcA, srcB, pair_type=2, fully_seperated=False, marks_annot
         tokens_A_hl, tokens_B_hl = [], []
         labelsA, labelsB = [], []
 
-        if pair_type != 2:
-            labelsA = [-1] + [pair_type] * len(tokens_A) + [-1] 
-            labelsB = [-1] + [pair_type] * len(tokens_B) + [-1]
-
-    return {'type': pair_type,
-            'sentA': srcA,
+    return {'sentA': srcA,
             'sentB': srcB,
-            'words': ["<tag1>"] + tokens_A + ["<tag2>"] + tokens_B + ["<tag3>"],
             'wordsA': tokens_A,
             'wordsB': tokens_B,
             'keywordsA': tokens_A_hl,
             'keywordsB': tokens_B_hl,
-            'labels': labelsA,
-            'prob': labelsB}
+            'labels': labelsB}
 
 def lexicon_based_labeling(args, 
                            example, 
                            onlyB=True, 
                            positive_threshold=0,
                            random_ratio=0,
-                           negative_sampling=False,
                            stopword_removal=True,
                            version=4):
 
@@ -82,60 +74,72 @@ def lexicon_based_labeling(args,
     stops = (lambda x: x in stopwords)
     finstops = (lambda x: x in finstopwords)
     fins = (lambda x: x in finwords)
-    selfs = (lambda i: overlaps[i] == 1) # if index i appeard in sentA
-    neighbors = (lambda i, x: ((overlaps+[1])[i+1] * ([1]+overlaps)[i]) == 1) # if index i's neighbors are appered
+    selfs = (lambda i: overlaps[i] != 0)
+    neighbors = (lambda i, x: ((overlaps+[1])[i+1] * ([1]+overlaps)[i]) == 1)
     numbers = (lambda x: x.isdigit())
     times = (lambda x: x in list(map(str, range(2010, 2018))))
 
     # Extract sentence A
     for i, tok in enumerate(example['wordsA']):
         tokc = tok.casefold()
-        if onlyB:
-            tokens_A_hl = []
-            pseudo_labels_A += [-100] 
+        if stops(tokc) or punc(tokc) or (numbers(tokc)):
+            pseudo_labels_A += [0]
+        elif fins(tokc):
+            tokens_A_hl += [tok]
+            pseudo_labels_A += [1]
         else:
-            if stops(tokc) or punc(tokc) or finstops(tokc):
-                pseudo_labels_A += [0]
-            elif fins(tokc):
-                tokens_A_hl += [tok]
-                pseudo_labels_A += [1]
-            else:
-                pseudo_labels_A += [-100]
+            pseudo_labels_A += [-100]
 
+    if onlyB:
+        tokens_A_hl = []
+        pseudo_labels_A = [-100] * len(pseudo_labels_A)
 
     # Extract sentence B (fs_fin10k_v1)
     for i, tok in enumerate(example['wordsB']):
         tokc = tok.casefold()
-        if selfs(i):
-            pseudo_labels_B += [0]
-        elif stops(tokc) or punc(tokc) or finstops(tokc):
-            pseudo_labels_B += [0]
+        if stops(tokc) or punc(tokc):
+            pseudo_labels_B += [0 if version == 0 else -100]
         elif numbers(tokc):
+            if neighbors(i, tokc) and not selfs(i):
+                tokens_B_hl += [tok]
+                pseudo_labels_B += [1]
+            else:
+                pseudo_labels_B += [0]
+        elif (fins(tokc)):
+            if neighbors(i, tokc) and selfs(i):
+                pseudo_labels_B += [0]
+            else:
+                tokens_B_hl += [tok]
+                pseudo_labels_B += [1]
+        elif (finstops(tokc)) or times(tokc):
+            if neighbors(i, tokc) and selfs(i):
+                pseudo_labels_B += [0]
+            else:
+                pseudo_labels_B += [-100]
+        elif not selfs(i):
+            if neighbors(i, tokc):
+                tokens_B_hl += [tok]
+                pseudo_labels_B += [1]
+            elif random_ratio > random.uniform(0, 1):
+                tokens_B_hl += [tok]
+                pseudo_labels_B += [1]
+            else:
+                pseudo_labels_B += [0]
+        elif version == 4:
+            if neighbors(i, tokc) and random_ratio > random.uniform(0, 1):
+                pseudo_labels_B += [0]
+            else:
+                pseudo_labels_B += [-100]
+        elif version == 3:
             if neighbors(i, tokc):
                 pseudo_labels_B += [0]
             else:
-                pseudo_labels_B += [1]
-                tokens_B_hl += [tok]
-        elif fins(tokc):
-            pseudo_labels_B += [1]
-            tokens_B_hl += [tok]
-        elif not neighbors(i, tokc):
-            pseudo_labels_B += [1]
-            tokens_B_hl += [tok]
-        else:
-            if random_ratio >= random.uniform(0, 1):
-                pseudo_labels_B += [1]
-                tokens_B_hl += [tok]
-            else:
-                pseudo_labels_B += [0]
+                pseudo_labels_B += [-100]
+        elif version == 2:
+            pseudo_labels_B += [-100]
+        elif version == 1:
+            pseudo_labels_B += [0]
 
-    if negative_sampling:
-        negative_indices = [i for i, l in enumerate(pseudo_labels_B) if l == 0]
-        # 1:1 sampling (relax (n - n_pos))
-        n_relaxed = max(len(negative_indices) - len(tokens_B_hl), 0)
-
-        for relaxed_index in random.sample(negative_indices, n_relaxed):
-            pseudo_labels_B[relaxed_index] = -100
 
     example.update({
             'keywordsA': tokens_A_hl,
@@ -150,8 +154,10 @@ def lexicon_based_labeling(args,
 
 def convert_to_bert_synthetic(args):
     nlp = English()
-    is_eval = ("eval" in args.path_input_file)
-    data = read_fin10k(args.path_input_file, is_eval)
+    if args.merge_global_window:
+        data = read_fin10k_with_window(args.path_input_file)
+    else:
+        data = read_fin10k(args.path_input_file)
 
     f = open(args.path_output_file, 'w')
     j = 0
@@ -172,7 +178,6 @@ def convert_to_bert_synthetic(args):
             positive_threshold=args.n_hard_positive,
             stopword_removal=True,
             random_ratio=args.random_ratio,
-            negative_sampling=args.negative_sampling,
             version=args.version
         )
         if flag:
@@ -187,14 +192,17 @@ def convert_to_bert_synthetic(args):
 
 def convert_to_bert(args):
     nlp = English()
-    data = read_fin10k(args.path_input_file, True)
+    if args.merge_global_window:
+        data = read_fin10k_with_window(args.path_input_file, True)
+    else:
+        data = read_fin10k(args.path_input_file, True)
 
     f = open(args.path_output_file, 'w')
     for i, example in enumerate(data):
+        example['type'] = 2
         example_token = token_extraction(
                 example['sentA'], 
                 example['sentB'],
-                pair_type=args.fin10k_type,
                 fully_seperated=args.no_seperation,
                 marks_annotation=args.is_truth
         )
@@ -217,24 +225,23 @@ def convert_to_bert(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    # For all data
-    parser.add_argument("-highlight_A", "--labeling_on_sentA", action='store_true', default=False)
     parser.add_argument("-input", "--path_input_file", type=str)
     parser.add_argument("-output", "--path_output_file", type=str)
     parser.add_argument("-format", "--output_format", type=str, default='jsonl')
     parser.add_argument("-model_type", "--model_type", type=str)
-    parser.add_argument("-type", "--fin10k_type", type=int, default=-1)
-    # For synthetic data
-    parser.add_argument("-lexicon_sent", "--path_lexicon_sent_file", type=str)
-    parser.add_argument("-lexicon_stop", "--path_lexicon_stop_file", type=str, default=None)
-    parser.add_argument("-stopword", "--stopword_source", type=str, default='nltk')
     parser.add_argument("-version", "--version", default=4, type=int)
     parser.add_argument("-n_hard", "--n_hard_positive", default=None, type=int)
     parser.add_argument("-random", "--random_ratio", default=0, type=float)
-    parser.add_argument("-neg_sampling", "--negative_sampling", action='store_true', default=False)
+    parser.add_argument("-highlight_A", "--labeling_on_sentA", action='store_true', default=False)
+    # positive 
+    parser.add_argument("-lexicon_sent", "--path_lexicon_sent_file", type=str)
+    # negative
+    parser.add_argument("-lexicon_stop", "--path_lexicon_stop_file", type=str, default=None)
+    parser.add_argument("-stopword", "--stopword_source", type=str, default='nltk')
     # empirical
     parser.add_argument("-nosep", "--no_seperation", action='store_false', default=True)
     parser.add_argument("-annotation", "--is_truth", action='store_true', default=False)
+    parser.add_argument("-global", "--merge_global_window", action='store_true', default=False)
     args = parser.parse_args()
     nlp = English()
 

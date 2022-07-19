@@ -148,7 +148,7 @@ class BertTrainer(Trainer):
             # predictions.update(unused[i])
 
             # in a example (sentence pairs)
-            for j, word_i in enumerate(word_id):
+            for j, (word_i, _) in enumerate(zip(word_id, predictions['words'])):
                 if word_i == None:
                     predictions['label'].append(-1)
                     predictions['prob'].append(-1)

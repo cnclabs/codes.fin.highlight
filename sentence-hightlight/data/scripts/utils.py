@@ -30,17 +30,11 @@ def load_stopwords(source, max_num=None):
 
 def read_fin10k(path, is_eval=False):
     """ function for reading the sentence a/b from parsed financial 10k report."""
-
     data = collections.defaultdict(list)
 
     with open(path, 'r') as f:
         for i, line in enumerate(f):
-            try:
-                idA, idB, sentA, sentB = line.strip().split('\t')
-            except:
-                print("************* error formatting *************")
-                print(line.strip().split('\t'))
-                print("************* error formatting *************")
+            idA, idB, sentA, sentB = line.strip().split('\t')
 
             if is_eval:
                 data[f'{idA}#{idB}'] = {
@@ -54,7 +48,6 @@ def read_fin10k(path, is_eval=False):
                         "sentA": sentA, 
                         "sentB": sentB
                 }
-
 
     print(f"Total number of exampels: {len(data)}")
 
@@ -118,47 +111,38 @@ def extract_marks(tokens):
     return extracted, labels
 
 
-def read_fin10k_with_window(path, is_eval=False):
-    data = collections.defaultdict(dict)
-
-    # append the window == 1 (main sentences)
-    with open(path, 'r') as f:
-        for i, line in enumerate(f):
-            try:
-                idA, idB, w_no, sentA, sentB = line.strip().split('\t')
-            except:
-                print("************* error formatting *************")
-                print(line.strip().split('\t'))
-                print("************* error formatting *************")
-
-            if int(w_no) == 1:
-                data[f'{idB}'] = {
-                        "idA": idA, 
-                        "idB": idB, 
-                        "sentA": sentA, 
-                        "sentB": sentB
-                }
-    print(f"Total number of exampels: {len(data)}")
-
-    # append the window != 1 (context sentences)
-    with open(path, 'r') as f:
-        for i, line in enumerate(f):
-            try:
-                idA, idB, w_no, sentA, sentB = line.strip().split('\t')
-            except:
-                print("************* error formatting *************")
-                print(line.strip().split('\t'))
-                print("************* error formatting *************")
-
-            if int(w_no) > 1: # right context
-                data[f'{idB}']['sentA'] = data[f'{idB}']['sentA'] + " " + sentA
-
-            if int(w_no) < 1: # left context
-                data[f'{idB}']['sentA'] = sentA + " " + data[f'{idB}']['sentA']
-
-    # sort by idb if using evaluation ser
-    if is_eval:
-        data_sorted = [v for k, v in sorted(data.items(), key=lambda x: x[0])]
-        return data_sorted
+def token_extraction(srcA, srcB, pair_type=2, fully_seperated=False, marks_annotation=False):
+    if fully_seperated:
+        tokens_A, tokens_B = list(), list()
+        for tok in nlp(srcA):
+            tokens_A += [tok.text]
+        for tok in nlp(srcB):
+            tokens_B += [tok.text]
     else:
-        return data
+        tokens_A = srcA.split(' ')
+        tokens_B = srcB.split(' ')
+
+    if marks_annotation:
+        srcA = srcA.replace("*", "")
+        srcB = srcB.replace("*", "")
+        tokens_A_hl, labelsA = extract_marks(tokens_A)
+        tokens_B_hl, labelsB = extract_marks(tokens_B)
+    else:
+        tokens_A_hl, tokens_B_hl = [], []
+        labelsA, labelsB = [], []
+
+        if pair_type != 2:
+            labelsA = [-1] + [pair_type] * len(tokens_A) + [-1] 
+            labelsB = [-1] + [pair_type] * len(tokens_B) + [-1]
+
+    return {'type': pair_type,
+            'sentA': srcA,
+            'sentB': srcB,
+            'words': ["<tag1>"] + tokens_A + ["<tag2>"] + tokens_B + ["<tag3>"],
+            'wordsA': tokens_A,
+            'wordsB': tokens_B,
+            'keywordsA': tokens_A_hl,
+            'keywordsB': tokens_B_hl,
+            'labels': labelsA,
+            'prob': labelsB}
+
