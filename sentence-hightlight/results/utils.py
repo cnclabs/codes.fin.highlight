@@ -24,33 +24,33 @@ def load_truth_from_json(file_path, sentA=True):
 
     return truth, sent
 
+# pred jsonl file
 def load_pred_from_json(file_path, topk=None, prob_threshold=0, sentA=False):
-    pred = collections.OrderedDict()
-    prob = collections.OrderedDict()
-    # punc = (lambda x: x in [",", ".", "?", "!"])
-
+    prediction = {}
     with open(file_path, 'r') as f:
         for i, line in enumerate(f):
             data = json.loads(line)
-
             try:
-                pair_id = data['idA'] + "#" + data['idB']
+                pair_id = data.pop('idA') + "#" + data.pop('idB')
             except:
                 pair_id = i
 
-            pred[pair_id] = []
-            prob[pair_id] = []
-            flag = None
-
+            prediction[pair_id] = {
+                    'type': data['type'],
+                    'words': [],
+                    'probs': []
+            }
             # consider the final threshold by topk and defined-threshold
             # [CONCERN] since the label @ sentence is not considered, cannot chose topk 
             # threshold = max(sorted(data['prob'], reverse=True)[:topk][-1], prob_threshold) 
 
+            flag = None
             for j, (w, p) in enumerate(zip(data['words'], data['prob'])):
+
                 if p == -1:
                     flag = sentA if j == 0 else True
                 if (flag) and (p >= prob_threshold):
-                    pred[pair_id].append(w)
-                    prob[pair_id].append(p)
+                    prediction[pair_id]['words'].append(w)
+                    prediction[pair_id]['probs'].append(p)
 
-    return pred, prob
+    return prediction

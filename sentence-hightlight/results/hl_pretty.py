@@ -30,7 +30,6 @@ if __name__ == "__main__":
     parser.add_argument("-truth", "--path_truth_file", type=str, default='')
     parser.add_argument("-pred", "--path_pred_file", type=str, default='')
     parser.add_argument("-out", "--path_output_file", type=str, default='')
-    # parser.add_argument("-hl_type", "--output_type", type=str, default='bert-seq-labeling')
     parser.add_argument("-hl_on_a", "--highlight_on_a", action='store_true', default=False)
     parser.add_argument("-thres", "--threshold", type=float, default=0)
     parser.add_argument("-topk", "--topk", type=int, default=None)

@@ -131,11 +131,16 @@ def token_extraction(srcA, srcB, pair_type=2, fully_seperated=False, marks_annot
         tokens_A_hl, tokens_B_hl = [], []
         labelsA, labelsB = [], []
 
-        if pair_type != 2:
-            labelsA = [-1] + [pair_type] * len(tokens_A) + [-1] 
-            labelsB = [-1] + [pair_type] * len(tokens_B) + [-1]
+    if pair_type == 2:
+        labelsA = [0] * len(tokens_A)
+        labelsB = [1] * len(tokens_B)
+        probsA, probsB = labelsA, labelsB
+    else:
+        labelsA = [pair_type] * len(tokens_A) 
+        labelsB = [pair_type] * len(tokens_B)
+        probsA, probsB = labelsA, labelsB
 
-    return {'type': pair_type,
+    return {'type': int(pair_type),
             'sentA': srcA,
             'sentB': srcB,
             'words': ["<tag1>"] + tokens_A + ["<tag2>"] + tokens_B + ["<tag3>"],
@@ -143,6 +148,6 @@ def token_extraction(srcA, srcB, pair_type=2, fully_seperated=False, marks_annot
             'wordsB': tokens_B,
             'keywordsA': tokens_A_hl,
             'keywordsB': tokens_B_hl,
-            'labels': labelsA,
-            'prob': labelsB}
+            'labels': [-1] + labelsA + [-1] + labelsB + [-1],
+            'probs': [-1] + probsA + [-1] + probsB + [-1],}
 
