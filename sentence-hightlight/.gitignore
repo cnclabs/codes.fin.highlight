@@ -10,6 +10,7 @@ data/esnli/*
 # Fin10k Data
 data/fin10k/*jsonl
 data/fin10k/*jsonl.bak
+data/fin10k-demo/
 
 # Results 
 results/esnli/

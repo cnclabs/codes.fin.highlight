@@ -10,7 +10,7 @@ from collections import defaultdict
 from spacy.lang.en import English
 from utils import read_fin10k, read_fin10k_with_window, load_master_dict, load_stopwords, extract_marks
 
-def token_extraction(srcA, srcB, fully_seperated=False, marks_annotation=False):
+def token_extraction(srcA, srcB, pair_type=2, fully_seperated=False, marks_annotation=False):
     if fully_seperated:
         tokens_A, tokens_B = list(), list()
         for tok in nlp(srcA):
@@ -30,13 +30,20 @@ def token_extraction(srcA, srcB, fully_seperated=False, marks_annotation=False):
         tokens_A_hl, tokens_B_hl = [], []
         labelsA, labelsB = [], []
 
-    return {'sentA': srcA,
+        if pair_type != 2:
+            labelsA = [-1] + [pair_type] * len(tokens_A) + [-1] 
+            labelsB = [-1] + [pair_type] * len(tokens_B) + [-1]
+
+    return {'type': pair_type,
+            'sentA': srcA,
             'sentB': srcB,
+            'words': ["<tag1>"] + tokens_A + ["<tag2>"] + tokens_B + ["<tag3>"],
             'wordsA': tokens_A,
             'wordsB': tokens_B,
             'keywordsA': tokens_A_hl,
             'keywordsB': tokens_B_hl,
-            'labels': labelsB}
+            'labels': labelsA,
+            'prob': labelsB}
 
 def lexicon_based_labeling(args, 
                            example, 
@@ -190,10 +197,10 @@ def convert_to_bert(args):
 
     f = open(args.path_output_file, 'w')
     for i, example in enumerate(data):
-        example['type'] = 2
         example_token = token_extraction(
                 example['sentA'], 
                 example['sentB'],
+                pair_type=args.fin10k_type,
                 fully_seperated=args.no_seperation,
                 marks_annotation=args.is_truth
         )
@@ -216,20 +223,21 @@ def convert_to_bert(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
+    # For all data
+    parser.add_argument("-highlight_A", "--labeling_on_sentA", action='store_true', default=False)
     parser.add_argument("-input", "--path_input_file", type=str)
     parser.add_argument("-output", "--path_output_file", type=str)
     parser.add_argument("-format", "--output_format", type=str, default='jsonl')
     parser.add_argument("-model_type", "--model_type", type=str)
+    parser.add_argument("-type", "--fin10k_type", type=int, default=-1)
+    # For synthetic data
+    parser.add_argument("-lexicon_sent", "--path_lexicon_sent_file", type=str)
+    parser.add_argument("-lexicon_stop", "--path_lexicon_stop_file", type=str, default=None)
+    parser.add_argument("-stopword", "--stopword_source", type=str, default='nltk')
     parser.add_argument("-version", "--version", default=4, type=int)
     parser.add_argument("-n_hard", "--n_hard_positive", default=None, type=int)
     parser.add_argument("-random", "--random_ratio", default=0, type=float)
     parser.add_argument("-neg_sampling", "--negative_sampling", action='store_true', default=False)
-    parser.add_argument("-highlight_A", "--labeling_on_sentA", action='store_true', default=False)
-    # positive 
-    parser.add_argument("-lexicon_sent", "--path_lexicon_sent_file", type=str)
-    # negative
-    parser.add_argument("-lexicon_stop", "--path_lexicon_stop_file", type=str, default=None)
-    parser.add_argument("-stopword", "--stopword_source", type=str, default='nltk')
     # empirical
     parser.add_argument("-nosep", "--no_seperation", action='store_false', default=True)
     parser.add_argument("-annotation", "--is_truth", action='store_true', default=False)
