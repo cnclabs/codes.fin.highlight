@@ -87,3 +87,6 @@ bash create_prediction_segment.sh
 # print statistics
 cd /tmp2/cwlin/fintext-new/codes/codes.fin.highlight/document-segmentation/collections-stats
 bash print_stats.sh >> logs.collections.statistics
+
+# split collections by all item
+bash split_collections_by_all-item.sh

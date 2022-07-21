@@ -3,15 +3,16 @@ import pandas as pd
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--sent_and_seg_length_file', help='csv file')
+parser.add_argument('--total_documents', type=int, default=800)
 args = parser.parse_args()
 
-def print_stats(df):
+def print_stats(df, total_documents=800):
     # number of sentences per documents
-    print('number of total documents', 800)
+    print('number of total documents', total_documents)
     print('number of total sentences', len(df))
     print('number of total segment/paragraphs', df['position'].iloc[-1]+1)
-    print('number of sentences per document', len(df) / 800)
-    print('number of segment/paragraph per document', (df['position'].iloc[-1]+1) / 800)
+    print('number of sentences per document', len(df) / total_documents)
+    print('number of segment/paragraph per document', (df['position'].iloc[-1]+1) / total_documents)
 
     # s = 0
     # for i in list(set(df.position)):
@@ -38,7 +39,7 @@ def print_stats(df):
 def main(args):
     f = args.sent_and_seg_length_file
     df = pd.read_csv(f)
-    print_stats(df)
+    print_stats(df, total_documents=args.total_documents)
 
 if __name__ == '__main__':
     main(args)

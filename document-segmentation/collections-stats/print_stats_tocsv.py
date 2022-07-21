@@ -5,7 +5,7 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--collection')
-parser.add_argument('--output_dir')
+parser.add_argument('--output')
 
 args = parser.parse_args()
 
@@ -24,14 +24,27 @@ def read_collections(file):
 
     return data, df
 
-def get_num_of_seg(df):
-    df1 = df['fullID'].str.split('_', expand=True)
-    last_pid_indexes = [idx-1 for idx in df1[(df1[3]=='P0') & (df1[4]=='S0')].index][1:]
-    li = df1.loc[last_pid_indexes, 3].str.replace('P', '').astype('int')
-    last_para = int(df1.iloc[-1][3].replace('P', '')) # last
-    # for idx in last_pid_indexes[:20]:
-    #     print(idx, df1.loc[idx, 3])
-    return (sum(li)+last_para) / 800
+# def get_num_of_seg(df):
+#     df1 = df['fullID'].str.split('_', expand=True)
+#     last_pid_indexes = [idx-1 for idx in df1[(df1[3]=='P0') & (df1[4]=='S0')].index][1:]
+#     li = df1.loc[last_pid_indexes, 3].str.replace('P', '').astype('int')
+#     last_para = int(df1.iloc[-1][3].replace('P', '')) # last
+#     # for idx in last_pid_indexes[:20]:
+#     #     print(idx, df1.loc[idx, 3])
+#     return (sum(li)+last_para) / 800
+
+def get_num_of_total_doc_and_company(data):
+    fullIDs = list(data.keys())
+    CIKs = []
+    all_docs = []
+    for fullID in fullIDs:
+        cik, year, item, para, sent = fullID.split('_')
+        all_docs.append(f'{cik}_{year}_{item}')
+        CIKs.append(cik)
+    CIKs = list(set(CIKs))
+    all_docs = list(set(all_docs))
+    return len(CIKs), len(all_docs)
+
 
 def len_sent(tokenizer, text):
     return len(tokenizer.tokenize(text))
@@ -78,10 +91,13 @@ def main(args):
     file = args.collection
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
     data, df = read_collections(file)
+    total_company, total_docs = get_num_of_total_doc_and_company(data)
+    print(f'total company: {total_company}')
+    print(f'total docs: {total_docs}')
     df_sent = get_sentence_length(df, tokenizer)
     df_seg, positions = get_segment_length(df_sent)
 
-    df_seg[['sent_length', 'position', 'segment_length']].to_csv(f'{args.output_dir}/sent_and_seg_length.csv', index=False)
+    df_seg[['sent_length', 'position', 'segment_length']].to_csv(f'{args.output}', index=False)
 
 if __name__=='__main__':
     main(args)
