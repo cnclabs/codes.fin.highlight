@@ -167,7 +167,7 @@ def main():
     dataset = dataset.map(
             function=preprare_esnli_seq_labeling,
             batched=True, 
-            remove_columns=(['keywordsA', 'keywordsB', 'labels']), #[TODO] Remove sentA, sentB
+            remove_columns=(['keywordsA', 'keywordsB', 'labels', 'probs']), #[TODO] Remove sentA, sentB
             num_proc=multiprocessing.cpu_count()
     )
     # dataset = dataset.remove_columns(['wordsA', 'wordsB'])

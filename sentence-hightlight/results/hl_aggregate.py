@@ -8,9 +8,6 @@ import numpy as np
 import json
 from utils import load_pred_from_json
 
-def average(x, n):
-    return np.array(x).reshape(-1, n).mean(0).tolist()
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-pred", "--path_pred_file", type=str, \
@@ -52,20 +49,25 @@ if __name__ == "__main__":
                     'idA': [idA],
                     'idB': idB,
                     'words': predictions[pair_id]['words'],
-                    'probs': importances
+                    'probs': np.array(importances)
             }
         else:
+            # Noted that the words in idA-2,3,4.... will never be appended
             predictions_agg[idB]['idA'].append(idA)
-            predictions_agg[idB]['probs'] += importances
+            anchor = np.argwhere(predictions_agg[idB]['probs']==-1).flatten()[1] # start of sentence B
+            anchor_other = np.argwhere(np.array(importances)==-1).flatten()[1] # start of sentence B
+            predictions_agg[idB]['probs'][(anchor+1):] += importances[(anchor_other+1):]
 
     with open(args.path_output_file, 'w') as f:
         for idB in predictions_agg:
-            if len(predictions_agg[idB]['idA']) > 1:
+            n_pairs = len(predictions_agg[idB]['idA'])
+            if n_pairs > 1:
                 print(predictions_agg[idB]['idA'], idB)
                 # post-process (average with first dimension)
-                predictions_agg[idB]['probs'] = average(
-                        predictions_agg[idB]['probs'], len(predictions_agg[idB]['idA'])
-                )
+                anchor = np.argwhere(predictions_agg[idB]['probs']==-1).flatten()[1] # start of sentence B
+                predictions_agg[idB]['probs'][(anchor+1):] = predictions_agg[idB]['probs'][(anchor+1):] / n_pairs
+
+            predictions_agg[idB]['probs'] = predictions_agg[idB]['probs'].tolist()
 
             f.write(json.dumps(predictions_agg[idB])+'\n')
 

@@ -145,25 +145,29 @@ class BertTrainer(Trainer):
             # Add unsed columns
             for k in unused.keys():
                 predictions[k] = unused[k][i]
-            # predictions.update(unused[i])
+
+            # intialized probs and labesl
+            predictions['probs'] = []
+            predictions['labels'] = []
 
             # in a example (sentence pairs)
-            for j, (word_i, _) in enumerate(zip(word_id, predictions['words'])):
+            for j, word_i  in enumerate(word_id):
+                # outsides loop of word ids and words
                 if word_i == None:
-                    predictions['label'].append(-1)
-                    predictions['prob'].append(-1)
+                    predictions['labels'].append(-1)
+                    predictions['probs'].append(-1)
                 elif word_id[j-1] == word_i:
                     if prob_aggregate_strategy == 'max':
-                        predictions['prob'][-1] = max(prob[j], predictions['prob'][-1])
+                        predictions['probs'][-1] = max(prob[j], predictions['probs'][-1])
                     if prob_aggregate_strategy == 'mean':
                         dist = (j - len(prob) - 1)
-                        predictions['prob'][-1] = \
-                                (predictions['prob'][-1] * dist + prob[j]) / (dist + 1)
+                        predictions['probs'][-1] = \
+                                (predictions['probs'][-1] * dist + prob[j]) / (dist + 1)
                     else: 
                         pass 
                 else:
-                    predictions['label'].append(label[j])
-                    predictions['prob'].append(prob[j])
+                    predictions['labels'].append(label[j])
+                    predictions['probs'].append(prob[j])
 
             if save_to_json:
                 f.write(json.dumps(predictions) + '\n')
@@ -174,8 +178,8 @@ class BertTrainer(Trainer):
                 print("Output: {}".format(
                     [(w, p, l) for w, p, l in zip(
                         predictions['words'][sosB:], 
-                        predictions['prob'][sosB:], 
-                        predictions['label'][sosB:]
+                        predictions['probs'][sosB:], 
+                        predictions['labels'][sosB:]
                     )]
                 ))
 

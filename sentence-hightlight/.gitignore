@@ -16,6 +16,7 @@ data/fin10k-demo/
 results/esnli/
 results/fin10k/
 results/esnli*
+results/fin10k-demo/
 
 # Others
 __pycache__/

@@ -45,7 +45,8 @@ def load_pred_from_json(file_path, topk=None, prob_threshold=0, sentA=False):
             # threshold = max(sorted(data['prob'], reverse=True)[:topk][-1], prob_threshold) 
 
             flag = None
-            for j, (w, p) in enumerate(zip(data['words'], data['prob'])):
+            # TODO: re-inference the results, align the key to probs instead of prob
+            for j, (w, p) in enumerate(zip(data['words'], data['probs'])):
 
                 if p == -1:
                     flag = sentA if j == 0 else True
