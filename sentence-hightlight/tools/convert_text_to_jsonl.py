@@ -19,6 +19,7 @@ def convert_to_bert(args):
                 example['sentA'], 
                 example['sentB'],
                 pair_type=args.fin10k_type,
+                spacy_sep=args.use_spacy_sep
         )
         example.update(example_info)
         f.write(json.dumps(example) + '\n')
@@ -31,7 +32,7 @@ if __name__ == '__main__':
     parser.add_argument("-input", "--path_input_file", type=str)
     parser.add_argument("-output", "--path_output_file", type=str)
     parser.add_argument("-type", "--fin10k_type", type=int, default=-1)
-    parser.add_argument("-nosep", "--no_seperation", action='store_false', default=True)
+    parser.add_argument("-spacy_sep", "--use_spacy_sep", action='store_true', default=False)
     args = parser.parse_args()
 
     os.makedirs(os.path.dirname(args.path_output_file), exist_ok=True)

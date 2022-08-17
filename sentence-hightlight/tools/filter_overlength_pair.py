@@ -31,7 +31,10 @@ def filtering(args):
                fout.write(json.dumps(data) + '\n')
         else:
             print(f"Over-length sentence pair found (untokenized): {lengthA} and {lengthB}")
-            path_ol_output = args.path_input_file.replace("type2", "type1")
+            if args.path_overlength_file is None:
+                path_ol_output = args.path_input_file.replace("type2", "type1")
+            else:
+                path_ol_output = args.path_overlength_file
             with open(path_ol_output, 'a') as fol:
                 data['type'] = 1
                 fol.write(json.dumps(data) + '\n')
@@ -45,6 +48,7 @@ def filtering(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("-in", "--path_input_file", type=str)
+    parser.add_argument("-out_ol", "--path_overlength_file", type=str, default=None)
     parser.add_argument("-tokenizer", "--tokenizer_name", type=str, default='bert-base-uncased')
     args = parser.parse_args()
 
