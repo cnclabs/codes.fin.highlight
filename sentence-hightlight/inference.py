@@ -1,37 +1,20 @@
-"""
-Training functions for sentence highlighting, 
-which includes two methods based on deep NLP pretrained models.
-
-Methods:
-    (1) Bert: Highlight prediction tasks.
-        (*) Task1: sequence labeling
-        (*) Task2: span detection
-    (2) T5: highlight generation.
-        (*) Task3: marks generation.
-
-Packages requirments:
-    - hugginface 
-    - datasets 
-"""
+import json
 import sys
 import multiprocessing
 from dataclasses import dataclass, field
 from typing import Optional
-
 from transformers import (
     AutoConfig,
     AutoTokenizer,
     TrainingArguments,
-    default_data_collator,
-    Trainer,
     HfArgumentParser,
-    DataCollatorForTokenClassification,
     DataCollatorWithPadding
 )
 
-from datasets import load_dataset, DatasetDict
+from datasets import load_dataset, Dataset
 from models import BertForHighlightPrediction
-from trainers import BertTrainer
+from torch.utils.data import DataLoader
+from datacollator import Fin10KDataCollator
 
 # Arguments: (1) Model arguments (2) DataTraining arguments (3)
 @dataclass
@@ -46,11 +29,6 @@ class OurModelArguments:
     use_fast_tokenizer: bool = field(default=True)
     model_revision: str = field(default="main")
     use_auth_token: bool = field(default=False)
-    # Cutomized arguments
-    pooler_type: str = field(default="cls")
-    temp: float = field(default=0.05)
-    num_labels: float = field(default=2)
-
 
 @dataclass
 class OurDataArguments:
@@ -64,6 +42,7 @@ class OurDataArguments:
     # Customized arguments
     eval_file: Optional[str] = field(default="")
     test_file: Optional[str] = field(default="")
+    output_file: Optional[str] = field(default="")
     max_seq_length: Optional[int] = field(default=512)
 
 @dataclass
@@ -80,135 +59,109 @@ class OurTrainingArguments(TrainingArguments):
     logging_dir: Optional[str] = field(default='./logs')
     warmup_steps: int = field(default=1000)
     resume_from_checkpiint: Optional[str] = field(default=None)
-    result_json: Optional[str] = field(default='results/')
-    remove_unused_columns: Optional[bool] = field(default=True)
+    remove_unused_columns: Optional[bool] = field(default=False)
     # Customeized argument for inferencing
     prob_aggregate_strategy: Optional[str] = field(default='first')
 
 def main():
-    """
-    (1) Prepare parser with the 3 types of arguments
-        * Detailed argument parser by kwargs
-    (2) Load the corresponding tokenizer and config 
-    (3) Load the self-defined models
-    (4)
-    """
-
-    # Parseing argument for huggingface packages
     parser = HfArgumentParser((OurModelArguments, OurDataArguments, OurTrainingArguments))
-    # model_args, data_args, training_args = parser.parse_args_into_datalcasses()
     if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
         model_args, data_args, training_args = parser.parse_json_file(json_file=os.path.abspath(sys.argv[1]))
     else:
-        # [CONCERN] Deprecated? or any parser issue.
         model_args, data_args, training_args = parser.parse_args_into_dataclasses()
 
     # config and tokenizers
     # [TODO] If the additional arguments are fixed for putting in the function,
-    # make it consistent to the function calls.
-    config_kwargs = {
-            "num_labels": model_args.num_labels,
-            "output_hidden_states": True,
-            "classifier_dropout": None
-    }
-    tokenizer_kwargs = {
-            # "cache_dir": model_args.cache_dir, 
-            # "use_fast": model_args.use_fast_tokenizer
-    }
-    config = AutoConfig.from_pretrained(model_args.config_name, **config_kwargs)
+    tokenizer_kwargs = {"use_fast": model_args.use_fast_tokenizer }
     tokenizer = AutoTokenizer.from_pretrained(model_args.tokenizer_name, **tokenizer_kwargs)
 
+    config_kwargs = {"output_hidden_states": True, }
+    config = AutoConfig.from_pretrained(model_args.config_name, **config_kwargs)
 
     # model 
-    model_kwargs = {
-            "cache_dir": model_args.cache_dir,
-    }
+    model_kwargs = {"cache_dir": model_args.cache_dir,}
     model = BertForHighlightPrediction.from_pretrained(
             model_args.model_name_or_path,
             config=config, 
             model_args=model_args
     )
 
-    # Dataset 
-    # (1) loading the jsonl file
-    # (2) Preprocessing 
-    def preprare_esnli_seq_labeling(examples):
+    # evaluation dataset
+    dataset = Dataset.from_json(data_args.eval_file)
 
-        size = len(examples['wordsA'])
-        features = tokenizer(
-            examples['wordsA'], examples['wordsB'],
-            is_split_into_words=True, # allowed the pre-tokenization process, to match the seq-order
-            max_length=data_args.max_seq_length, # [TODO] make it callable
-            truncation="only_first" if 'fin10k' in data_args.eval_file else True,
-            padding='max_length', # all the example should batched into max length 
-        )
-
-        # 1) transforme the label to token-level
-        # 2) Preserve the word ids (for evaluation)
-        features['word_ids'] = [None] * size
-        features['words'] = [None] * size
-
-        for b in range(size):
-            features['word_ids'][b] = features.word_ids(b)
-            features['words'][b] = ['<tag1>'] + examples['wordsA'][b] + ['<tag2>'] + examples['wordsB'][b] + ['<tag3>']
-
-        return features
-
-    ## Loading form json
-    ## Preprocessing: training dataset
-    if training_args.do_test:
-        dataset = DatasetDict.from_json({
-            "dev": data_args.eval_file,
-            "test": data_args.test_file
-        })
-    else:
-        dataset = DatasetDict.from_json({"dev": data_args.eval_file})
-
-    dataset = dataset.map(
-            function=preprare_esnli_seq_labeling,
-            batched=True, 
-            remove_columns=(['keywordsA', 'keywordsB', 'labels', 'probs']), #[TODO] Remove sentA, sentB
-            num_proc=multiprocessing.cpu_count()
-    )
-    # dataset = dataset.remove_columns(['wordsA', 'wordsB'])
-    # (['sentA', 'sentB', 'words', 'wordsA', 'wordsB', 'label', 'prob'])
-
-    # Dataset
-    # (2) data collator: transform the datset into the training mini-batch
-    data_collator = DataCollatorForTokenClassification(
-        tokenizer=tokenizer,
-        max_length=data_args.max_seq_length,
-        return_tensors="pt",
-        padding=True
+    # ## preprocessing function (batch tokenization and wordid)
+    # datacollator
+    data_collator = Fin10KDataCollator(
+            tokenizer=tokenizer,
+            padding=True,
+            truncation='only_first',
+            max_length=data_args.max_seq_length,
     )
 
-    # Trainer
-    trainer = BertTrainer(
-            model=model, 
-            args=training_args,
-            eval_dataset=dataset['dev'],
-            data_collator=data_collator
+    # loader
+    dataloader = DataLoader(
+            dataset,
+            batch_size=training_args.per_device_eval_batch_size,
+            shuffle=False,
+            collate_fn=data_collator
     )
-    
-    # ***** start inferencing/prediciton *****
-    # on dev set
-    if training_args.do_eval:
-        results = trainer.inference(
-                output_jsonl=training_args.result_json.replace('split', 'dev'),
-                prob_aggregate_strategy=training_args.prob_aggregate_strategy,
-                save_to_json=True
-        )
 
-    # on test set
-    if training_args.do_test:
-        results = trainer.inference(
-                output_jsonl=training_args.result_json.replace('split', 'test'),
-                eval_dataset=dataset['test'],
-                prob_aggregate_strategy=training_args.prob_aggregate_strategy,
-                save_to_json=True
-        )
+    f = open(data_args.output_file, 'w')
+    # run prediction
+    for b, batch in enumerate(dataloader):
 
-    return "DONE"
+        predictions = {}
+        output, info = model.inference(batch)
+
+        # output
+        word_ids = info.pop('word_ids')
+        word_probs = (output['probabilities'] * output['active_tokens']).cpu().tolist()
+        word_labels = output['active_predictions'].cpu().tolist()
+
+        # merge info
+        for i in range(len(word_ids)):
+
+            # for each example
+            predictions = {k: info[k][i] for k in info}
+            sosB = info['probs'][i][1:].index(-1) + 1
+            probs_holder = []
+            labels_holder = []
+            spec = 0
+
+            for j, (w_i, p, l) in enumerate(zip(word_ids[i], word_probs[i], word_labels[i])):
+                if w_i==None:
+                    if (spec==1) or (spec==2): # start of sentB and end of sentB
+                        probs_holder.append(-1)
+                        labels_holder.append(-1)
+                    spec += 1
+                elif (spec==2) and (word_ids[i][j-1] != w_i):
+                    probs_holder.append(p)
+                    labels_holder.append(l)
+                elif (spec==2) and (word_ids[i][j-1] == w_i):
+                    # [TODO] implement mean aggregation ?
+                    probs_holder[-1] = max(p, probs_holder[-1])
+                    labels_holder[-1] = max(l, labels_holder[-1])
+                
+            # allocate prob/label 
+            predictions['probs'][sosB:] = probs_holder
+            predictions['labels'][sosB:] = labels_holder
+
+            assert len(predictions['words']) == len(predictions['probs']),\
+                    "Inconsistent length of words and probs."
+            f.write(json.dumps(predictions) + '\n')
+
+        if b % 10 == 0:
+            print(f"Output post-processing {b} batch...")
+            print("Output: {}".format(
+                [(w, p, l) for w, p, l in zip(
+                    predictions['words'][sosB:],
+                    predictions['probs'][sosB:],
+                    predictions['labels'][sosB:]
+                )]
+            ))
+
+    f.close()
+
 
 if __name__ == '__main__':
     main()

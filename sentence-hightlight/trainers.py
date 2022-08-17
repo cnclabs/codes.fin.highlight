@@ -101,88 +101,6 @@ class BertTrainer(Trainer):
                     seed=seed,
                 )
 
-    def inference(self,
-                  output_jsonl='results.jsonl',
-                  eval_dataset=None, 
-                  prob_aggregate_strategy='first',
-                  save_to_json=True):
-
-        f = open(output_jsonl, 'w')
-        output_dict = collections.defaultdict(dict)
-        eval_dataset = self.eval_dataset if eval_dataset is None else eval_dataset
-
-        words, word_ids = [], []
-        probs, labels = [], []
-        # other unused columns
-        unused = collections.defaultdict(list)
-
-        for b, batch_idx in enumerate(range(0, len(eval_dataset), self.args.per_device_eval_batch_size)):
-            batch = eval_dataset[batch_idx: batch_idx+self.args.per_device_eval_batch_size]
-            word_ids += batch.pop('word_ids')
-            # unused_batch = [{}] * len(batch)
-
-            # remove unused and pass to unused columns
-            for k in list(batch.keys()):
-                if k in ['attention_mask', 'input_ids', 'labels', 'token_type_ids']:
-                    batch[k] = torch.tensor(batch[k]).to(self.args.device)
-                else:
-                    unused[k] += batch.pop(k)
-                    # for i, v in enumerate(batch.pop(k)):
-                    #     unused_batch[i].update({k: v})
-
-            # unused += [unused_batc[i] for i in range(len(un]
-            output = self.model.inference(batch)
-            probs += (output['probabilities'] * output['active_tokens']).cpu().tolist()
-            labels += output['active_predictions'].cpu().tolist()
-
-            if b % 100 == 0:
-                print(f'Inferecning {b} batchs...')
-
-        # per example in batch
-        for i, (word_id, prob, label) in enumerate(zip(word_ids, probs, labels)):
-            predictions = collections.defaultdict(list)
-            # predictions['word'] += words[i]
-            # Add unsed columns
-            for k in unused.keys():
-                predictions[k] = unused[k][i]
-
-            # intialized probs and labesl
-            predictions['probs'] = []
-            predictions['labels'] = []
-
-            # in a example (sentence pairs)
-            for j, word_i  in enumerate(word_id):
-                # outsides loop of word ids and words
-                if word_i == None:
-                    predictions['labels'].append(-1)
-                    predictions['probs'].append(-1)
-                elif word_id[j-1] == word_i:
-                    if prob_aggregate_strategy == 'max':
-                        predictions['probs'][-1] = max(prob[j], predictions['probs'][-1])
-                    if prob_aggregate_strategy == 'mean':
-                        dist = (j - len(prob) - 1)
-                        predictions['probs'][-1] = \
-                                (predictions['probs'][-1] * dist + prob[j]) / (dist + 1)
-                    else: 
-                        pass 
-                else:
-                    predictions['labels'].append(label[j])
-                    predictions['probs'].append(prob[j])
-
-            if save_to_json:
-                f.write(json.dumps(predictions) + '\n')
-
-            if i % 100 == 0:
-                print(f"Output post-processing {i} example...")
-                sosB = predictions['words'].index('<tag2>')
-                print("Output: {}".format(
-                    [(w, p, l) for w, p, l in zip(
-                        predictions['words'][sosB:], 
-                        predictions['probs'][sosB:], 
-                        predictions['labels'][sosB:]
-                    )]
-                ))
-
 
 class DualTasksRandomSampler(Sampler[int]):
     data_source: Sized
@@ -244,4 +162,3 @@ class DualTasksRandomSampler(Sampler[int]):
             # return iter(a)
         else:
             yield from torch.randperm(n, generator=generator).tolist()
-

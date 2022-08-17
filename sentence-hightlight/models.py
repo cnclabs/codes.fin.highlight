@@ -72,22 +72,31 @@ class BertForHighlightPrediction(BertPreTrainedModel):
             attentions=outputs.attentions,
         )
 
-    def inference(self, inputs):
+    def inference(self, batch):
+
+        batch_inputs, batch_info = batch
+
+        for k in batch_inputs:
+            batch_inputs[k] = batch_inputs[k].to(self.device)
 
         with torch.no_grad():
-            outputs = self.forward(**inputs)
+            outputs = self.forward(**batch_inputs)
             probabilities = self.softmax(self.tokens_clf(outputs.hidden_states[-1]))
             predictions = torch.argmax(probabilities, dim=-1)
 
             # active filtering
-            active_tokens = inputs['attention_mask'] == 1
+            active_tokens = batch_inputs['attention_mask'] == 1
             active_predictions = torch.where(
                 active_tokens,
                 predictions,
                 torch.tensor(-1).type_as(predictions)
             )
 
-            return {"probabilities": probabilities[:, :, 1].detach(), # shape: (batch, length)
+            batch_outputs = {
+                    "probabilities": probabilities[:, :, 1].detach(), # shape: (batch, length)
                     "active_predictions": predictions.detach(),
-                    "active_tokens": active_tokens,}
+                    "active_tokens": active_tokens,
+            } 
+
+            return batch_outputs, batch_info
 

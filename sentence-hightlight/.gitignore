@@ -8,9 +8,10 @@ data/esnli/*
 !data/esnli/esnli.test.sent_highlight.contradiction.jsonl
 
 # Fin10k Data
+data/archived/
 data/fin10k/*jsonl
 data/fin10k/*jsonl.bak
-data/fin10k-demo/
+data/fin10k/archived/
 
 # Results 
 results/esnli/
