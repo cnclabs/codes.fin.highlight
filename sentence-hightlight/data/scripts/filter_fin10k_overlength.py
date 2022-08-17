@@ -11,6 +11,7 @@ from transformers import AutoTokenizer
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-in", "--path_input_file", type=str)
+parser.add_argument("-ol_out", "--path_overlength_file", type=str, default='overlength.txt')
 parser.add_argument("-tokenizer", "--model_name", type=str, default='naive')
 args = parser.parse_args()
 
@@ -30,14 +31,18 @@ for line in fin:
     data = json.loads(line.strip())
     lengthA = len(data['sentA'].split())
     lengthB = len(data['sentA'].split())
-    if lengthA <= 256 and lengthB <= 256:
-        if len(tokenizer(data['sentA'])) <= 256 and len(tokenizer(data['sentB'])) <= 256:
+    if lengthA <= 512 and lengthB <= 512:
+        if len(tokenizer(data['sentB'])) <= 509:
            fout.write(json.dumps(data) + '\n')
     else:
         print("Over-length sentence pair found: {} and {}".format(
              len(data['sentA'].split()), len(data['sentB'].split())
         ))
-        print(data['sentA'][:100])
-        print(data['sentB'][:100])
+        with open(args.path_overlength_file, 'a') as fol:
+            fol.write(json.dumps(data) + '\n')
+
+fin.close()
+fout.close()
+
 
     

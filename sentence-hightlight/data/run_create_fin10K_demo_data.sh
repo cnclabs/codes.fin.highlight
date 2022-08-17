@@ -15,6 +15,15 @@ for FILE in fin10k-demo/data/*/*;do
             -nosep \
             -format jsonl \
             -model_type bert >> fin10k.demo.dat
+
+        if [[ "$OUTFILE" = *type2* ]]; then
+            echo Check overlength
+            python3 scripts/filter_fin10k_overlength.py \
+              -in $OUTFILE \
+              -ol_out ${OUTFILE/type2/type1} \
+              -tokenizer bert-base-uncased
+        fi
+
     else
         echo File $FILE empty
         mkdir -p ${OUTFILE%/*}
