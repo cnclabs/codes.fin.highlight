@@ -31,7 +31,8 @@ def read_fin10k(path):
 
 def token_extraction(srcA, srcB, pair_type=2, spacy_sep=False):
     """
-    spacy_sep: separate by using `spacy tokenizer`, only used when creating train data.
+    Args:
+        spacy_sep: separate by using `spacy tokenizer`, used when creating train data.
     """
     if spacy_sep:
         nlp = English()
@@ -57,3 +58,4 @@ def token_extraction(srcA, srcB, pair_type=2, spacy_sep=False):
             'keywordsA': [], 'keywordsB': [],
             'labels': [-1] + labelsA + [-1] + labelsB + [-1],
             'probs': [-1] + probsA + [-1] + probsB + [-1],}
+

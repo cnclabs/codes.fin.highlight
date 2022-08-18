@@ -12,21 +12,6 @@ def load_master_dict(path, max_num=None):
 
     return [w.casefold() for w in lexicon][:max_num]
 
-def load_stopwords(source, max_num=None):
-    stopwords_list = []
-    if source == 'nltk':
-        from nltk.corpus import stopwords
-        stopwords_list = [w.casefold() for w in stopwords.words('english')]
-    elif source == 'anserini':
-        with open("stopwords_en.txt", 'r') as f:
-            for line in f:
-                if "#" not in line.strip():
-                    stopwords_list += [line.strip()]
-    elif source is not None:
-        with open(source, 'r') as f:
-            stopwords_list = [line.strip() for line in f.readlines()]
-
-    return [w.casefold() for w in stopwords_list][:max_num]
 
 def read_fin10k(path, is_eval=False):
     """ function for reading the sentence a/b from parsed financial 10k report."""
