@@ -44,6 +44,7 @@ class OurDataArguments:
     test_file: Optional[str] = field(default="")
     output_file: Optional[str] = field(default="")
     max_seq_length: Optional[int] = field(default=512)
+    blind_predict: Optional[bool] = field(default=False)
 
 @dataclass
 class OurTrainingArguments(TrainingArguments):
@@ -96,6 +97,7 @@ def main():
             padding=True,
             truncation='only_first',
             max_length=data_args.max_seq_length,
+            sentA_removal=data_args.blind_predict
     )
 
     # loader
@@ -146,8 +148,9 @@ def main():
             predictions['probs'][sosB:] = probs_holder
             predictions['labels'][sosB:] = labels_holder
 
-            assert len(predictions['words']) == len(predictions['probs']),\
-                    "Inconsistent length of words and probs."
+            assert len(predictions['words']) == len(predictions['probs']), \
+                    f"Inconsistent length of words and probs: {len(predictions['words'])} and {len(predictions['words'])}"
+
             f.write(json.dumps(predictions) + '\n')
 
         if b % 10 == 0:

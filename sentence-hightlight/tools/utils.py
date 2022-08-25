@@ -1,6 +1,39 @@
 import collections
 from spacy.lang.en import English
 
+def read_esnli(path, class_selected=('contradiction', 'neutral', 'entailment')):
+    """
+    Returns:
+        data_sorted: dictionary of sent pair information of a `List`.
+        class_selected: string of selected class (one of above 3 classes)
+    """
+
+    # train files are split into two, need to merge before used
+    import pandas as pd
+    df = pd.read_csv(path)
+    df.reset_index(inplace=True)
+    df = df.rename(columns={
+        'Sentence1': 'sentA', 'Sentence2': 'sentB',
+        'Sentence1_marked_1': 'sentA_marked', 'Sentence2_marked_1': 'sentB_marked'
+    })
+    df = df.loc[:, ['pairID', 'gold_label', 'sentA', 'sentB', 'sentA_marked', 'sentB_marked']]
+    data = collections.defaultdict(list)
+
+    # Extract the e-snli data
+    for index, row in df.iterrows():
+
+        example = row.to_dict()
+        if (example.pop('gold_label') in class_selected) and (row.isna().sum() == 0):
+            data[example.pop('pairID')] = example
+
+    # sanity check
+    n_pairs = len(data)
+    print(f"Total number of example: {n_pairs}")
+
+    # sort by idb if using evaluation ser
+    data_sorted = [v for k, v in sorted(data.items(), key=lambda x: x[0])]
+    return data_sorted
+
 def read_fin10k(path):
     """
     Returns:
@@ -32,6 +65,7 @@ def read_fin10k(path):
 def token_extraction(srcA, srcB, pair_type=2, spacy_sep=False):
     """
     Args:
+        srcA, srcB: Strings of sentence pair.
         spacy_sep: separate by using `spacy tokenizer`, used when creating train data.
     """
     if spacy_sep:

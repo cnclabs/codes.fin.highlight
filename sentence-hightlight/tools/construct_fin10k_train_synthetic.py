@@ -143,7 +143,7 @@ def lexicon_based_labeling(example,
     else:
         return True
 
-def convert_to_bert_synthetic(args):
+def convert_to_highlight(args):
 
     fin = open(args.path_input_file, 'r')
     fout = open(args.path_output_file, 'w')
@@ -205,11 +205,11 @@ if __name__ == '__main__':
     STOPWORDS = load_stopwords(args.stopword_source)
 
     if args.synthetic_type == 'heuristic':
-        convert_to_bert_synthetic(args)
+        convert_to_highlight(args)
 
     if args.synthetic_type == 'lexicon-based':
         FINWORDS = load_master_dict(args.path_lexicon_sent_file)
         FINSTOPWORDS = load_stopwords(args.path_lexicon_stop_file)
-        convert_to_bert_synthetic(args)
+        convert_to_highlight(args)
 
     print("Done")

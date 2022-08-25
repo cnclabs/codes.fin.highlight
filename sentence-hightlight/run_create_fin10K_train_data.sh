@@ -32,9 +32,7 @@ python3 tools/construct_fin10k_train_synthetic.py \
     -synthetic heuristic \
     -n_hard 0 \
     -random 1 \
-    -neg_sampling 3 \
-    -lexicon_sent 'LM.master_dictionary.sentiment.dict' \
-    -lexicon_stop 'LM.master_dictionary.stopwords.dict' 
+    -neg_sampling 3
 
 python3 tools/get_dataset_stats.py \
   -data data/fin10k/fin10k.heuristic.synthetic.balance.train.type2.jsonl

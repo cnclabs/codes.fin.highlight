@@ -13,12 +13,16 @@ class Fin10KDataCollator:
     max_length: Optional[int] = None
     pad_to_multiple_of: Optional[int] = None
     return_tensors: str = "pt"
+    sentA_removal: bool = False
 
     def __call__(self, features: List[Dict[str, Any]]) -> Dict[str, Any]:
 
         n = len(features)
         wordsA_features = [ft['wordsA'] for ft in features]
         wordsB_features = [ft['wordsB'] for ft in features]
+
+        if self.sentA_removal:
+            wordsA_features = [["[PAD]"] for ft in features]
 
         # process input
         features_input = self.tokenizer(
