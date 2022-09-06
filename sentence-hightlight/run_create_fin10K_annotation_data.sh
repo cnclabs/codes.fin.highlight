@@ -20,3 +20,5 @@ python3 tools/construct_fin10k_eval_annotation.py \
     -input data/fin10k/fin10k.annotation.type2.jsonl.raw \
     -output data/fin10k/fin10k.annotation.type2.jsonl
 
+python3 tools/get_dataset_stats.py \
+    -data data/fin10k/fin10k.annotation.type2.jsonl

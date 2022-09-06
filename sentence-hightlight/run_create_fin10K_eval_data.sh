@@ -1,8 +1,5 @@
-# Heuristic Labeling (neg-sampling)
-      # fin10k.eval.type1.easy.jsonl
-      # fin10k.eval.type1.hard.jsonl
-      # fin10k.eval.type2.jsonl
 for EVAL_FILE in data/fin10k/fin10k.eval*;do
+    echo ${EVAL_FILE##*/}
     OUTPUT_FILE=${EVAL_FILE/eval/heuristic.synthetic.balance.eval}
     python3 tools/construct_fin10k_train_synthetic.py \
         -input $EVAL_FILE \
