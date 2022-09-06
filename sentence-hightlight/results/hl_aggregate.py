@@ -10,8 +10,7 @@ from utils import load_pred_from_json
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-pred", "--path_pred_file", type=str, \
-            default='fin10k/fin10k.eval.type2.segments.results-from-scratch-101')
+    parser.add_argument("-pred", "--path_pred_file", type=str, default=None)
     parser.add_argument("-out", "--path_output_file", type=str, default='aggregate.jsonl')
     parser.add_argument("-topk", "--topk", type=int, default=None)
     parser.add_argument("-hl_on_a", "--highlight_on_a", action='store_true', default=False)

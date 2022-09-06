@@ -1,5 +1,6 @@
 import re
 import os
+import re
 import json
 import string
 import argparse
@@ -11,6 +12,7 @@ def extract_marks_esnli(sentence):
     This extraction method is different from fin10k's annotation,
     since esnli is used for training, need to tokenized by SpaCy
     """
+    sentence = re.sub("\s\s+" , " ", sentence)
     tokens = list()
     tokens_hl = list()
     labels = list()
@@ -65,6 +67,9 @@ def convert_to_highlight(args):
             if n_words_parsed != (nA+nB):
                 print(f'Inconsistent un-marked tokens w/ sentences. {n_words_parsed}, {nA+nB}')
                 print('This example will not be included in the training data of highlighting.')
+                print(data_dict['words'])
+                print(tokensA)
+                print(tokensB)
             else:
                 fout.write(json.dumps(data_dict) + '\n')
 

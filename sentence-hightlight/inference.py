@@ -128,8 +128,8 @@ def main():
             sosB = info['probs'][i][1:].index(-1) + 1
             probs_holder = []
             labels_holder = []
-            spec = 0
 
+            spec = 0
             for j, (w_i, p, l) in enumerate(zip(word_ids[i], word_probs[i], word_labels[i])):
                 if w_i==None:
                     if (spec==1) or (spec==2): # start of sentB and end of sentB
@@ -148,20 +148,22 @@ def main():
             predictions['probs'][sosB:] = probs_holder
             predictions['labels'][sosB:] = labels_holder
 
-            assert len(predictions['words']) == len(predictions['probs']), \
-                    f"Inconsistent length of words and probs: {len(predictions['words'])} and {len(predictions['words'])}"
+            if len(predictions['words']) != len(predictions['probs']):
+                print(predictions)
+            # assert len(predictions['words']) == len(predictions['probs']), \
+            #         f"Inconsistent length of words and probs: {len(predictions['words'])} and {len(predictions['probs'])}"
 
             f.write(json.dumps(predictions) + '\n')
 
         if b % 10 == 0:
             print(f"Output post-processing {b} batch...")
-            print("Output: {}".format(
-                [(w, p, l) for w, p, l in zip(
-                    predictions['words'][sosB:],
-                    predictions['probs'][sosB:],
-                    predictions['labels'][sosB:]
-                )]
-            ))
+            # print("Output: {}".format(
+            #     [(w, p, l) for w, p, l in zip(
+            #         predictions['words'][sosB:],
+            #         predictions['probs'][sosB:],
+            #         predictions['labels'][sosB:]
+            #     )]
+            # ))
 
     f.close()
 

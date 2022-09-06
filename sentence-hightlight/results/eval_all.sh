@@ -14,11 +14,11 @@ done
 #       -thres 0 >> ${RESULT##*/}.log
 # done
 
-# for RESULT in esnli/esnli*dev*;do
-#     echo Loading prediction ${RESULT##*/} > ${RESULT##*/}.log
-#     python3 hl_eval.py \
-#       -truth ../data/esnli/esnli.dev.sent_highlight.contradiction.jsonl \
-#       -pred $RESULT --verbose \
-#       -thres 0 >> ${RESULT##*/}.log
-# done
-#
+for RESULT in esnli/esnli*dev*;do
+    echo Loading prediction ${RESULT##*/} > ${RESULT##*/}.log
+    python3 hl_eval.py \
+      -truth ../data/esnli/esnli.dev.highlight.contradiction.jsonl \
+      -pred $RESULT --verbose \
+      -thres 0 >> ${RESULT##*/}.log
+done
+

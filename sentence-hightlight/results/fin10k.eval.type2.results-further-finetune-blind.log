@@ -1,0 +1,991 @@
+Loading prediction fin10k.eval.type2.results-further-finetune-blind
+[WARNING] Inconsisent sizes of truth and prediction,  {len(truth)} and {len(prediction)}
+n examples annotated.
+# The impact of foreign currency translation on hair care net sales was de minimis.
+# The impact of foreign currency translation on fragrance net sales was de minimis.                        
+ - Performance: (R: 1.0; P: 0.07692307692307693)                        
+ - Truth: ['fragrance']                        
+ - Predict: ['minimis.', 'impact', 'fragrance', 'net', 'currency', 'sales', 'translation', 'foreign', 'de', 'was', 'on', 'of', 'The']
+# Partially offsetting these increases were lower net sales of Ojon brand products due, in part, to softness in our business in the direct response television channel.
+# Partially offsetting these increases were lower sales of Bumble and bumble brand products to salons and lower net sales of Ojon brand products due, in part, to a reduction in our business in the DRTV channel.                        
+ - Performance: (R: 1.0; P: 0.19444444444444445)                        
+ - Truth: ['Bumble', 'bumble', 'brand', 'salons', 'reduction', 'DRTV', 'channel.']                        
+ - Predict: ['offsetting', 'DRTV', 'Bumble', 'reduction', 'bumble', 'net', 'salons', 'lower', 'increases', 'lower', 'due,', 'brand', 'brand', 'Partially', 'sales', 'business', 'Ojon', 'channel.', 'sales', 'products', 'part,', 'products', 'in', 'and', 'in', 'the', 'these', 'in', 'to', 'to', 'a', 'were', 'and', 'our', 'of', 'of']
+# Adjusting for the impact of the accelerated orders, reported net sales in the Americas would have increased 4%.
+# Adjusting for the impact of the accelerated orders, reported net sales in makeup would have increased 5%.                        
+ - Performance: (R: 1.0; P: 0.11764705882352941)                        
+ - Truth: ['makeup', '5%.']                        
+ - Predict: ['accelerated', 'Adjusting', 'impact', 'net', 'makeup', 'orders,', 'sales', 'reported', 'increased', '5%.', 'would', 'for', 'the', 'in', 'the', 'of', 'have']
+# The net sales increase for skin care was adversely affected by approximately $60 million of unfavorable foreign currency translation.
+# The fiscal 2017 reported net sales increase was adversely affected by approximately $187 million of unfavorable foreign currency translation.                        
+ - Performance: (R: 1.0; P: 0.05263157894736842)                        
+ - Truth: ['$187']                        
+ - Predict: ['unfavorable', 'net', 'currency', 'fiscal', 'sales', 'translation.', '$187', 'increase', 'reported', 'adversely', 'affected', 'million', 'foreign', 'approximately', '2017', 'of', 'by', 'was', 'The']
+# The decrease in non-current liabilities was primarily due to $5,936,000 in contributions made to our pension plans.
+# The decrease in non-current liabilities was primarily due to $11,211,000 in contributions made to our pension plans.                        
+ - Performance: (R: 1.0; P: 0.058823529411764705)                        
+ - Truth: ['$11,211,000']                        
+ - Predict: ['liabilities', 'contributions', '$11,211,000', 'pension', 'non-current', 'plans.', 'decrease', 'primarily', 'due', 'made', 'in', 'to', 'in', 'to', 'our', 'was', 'The']
+# The decrease resulted primarily from a decrease of $2.1 million in payroll and related expenses primarily due to a decrease in share-based compensation and a decrease of $1.2 million resulting from the winding down of certain clinical trials for taliglucerase alfa.
+# The decrease resulted primarily from a decrease of $1.5 million in payroll and related expenses primarily due to a decrease in share-based compensation.                        
+ - Performance: (R: 1.0; P: 0.08695652173913043)                        
+ - Truth: ['$1.5', 'million']                        
+ - Predict: ['$1.5', 'expenses', 'compensation.', 'share-based', 'payroll', 'decrease', 'million', 'decrease', 'decrease', 'related', 'resulted', 'due', 'primarily', 'primarily', 'of', 'from', 'in', 'in', 'to', 'and', 'a', 'a', 'The']
+# Our future capital requirements will depend on many other factors, including our progress in commercializing Uplyso in Brazil, the progress and results of our clinical trials, the duration and cost of discovery and preclinical development and laboratory testing and clinical trials for our product candidates, conversions of our convertible notes from time to time, the timing and outcome of regulatory review of our product candidates, the costs involved in preparing, filing, prosecuting, maintaining, defending and enforcing patent claims and other intellectual property rights, the number and development requirements of other product candidates that we pursue and the costs of commercialization activities, including product marketing, sales and distribution.
+# Our future capital requirements will depend on many other factors, including our progress in commercializing alfataliglicerase in Brazil, the progress and results of our clinical trials, the duration and cost of discovery and preclinical development and laboratory testing and clinical trials for our product candidates, conversions of our convertible notes from time to time, the timing and outcome of regulatory review of our product candidates, the costs involved in preparing, filing, prosecuting, maintaining, defending and enforcing patent claims and other intellectual property rights, the number and development requirements of other product candidates that we pursue and the costs of commercialization activities, including product marketing, sales and distribution.                        
+ - Performance: (R: 1.0; P: 0.009345794392523364)                        
+ - Truth: ['alfataliglicerase']                        
+ - Predict: ['alfataliglicerase', 'convertible', 'prosecuting,', 'conversions', 'enforcing', 'defending', 'capital', 'preparing,', 'marketing,', 'review', 'maintaining,', 'duration', 'filing,', 'discovery', 'commercializing', 'sales', 'regulatory', 'intellectual', 'depend', 'distribution.', 'factors,', 'notes', 'testing', 'trials,', 'commercialization', 'pursue', 'clinical', 'activities,', 'preclinical', 'timing', 'progress', 'laboratory', 'Brazil,', 'claims', 'costs', 'outcome', 'development', 'trials', 'cost', 'requirements', 'property', 'results', 'requirements', 'patent', 'candidates', 'future', 'costs', 'development', 'progress', 'product', 'many', 'product', 'candidates,', 'rights,', 'clinical', 'including', 'candidates,', 'time', 'number', 'including', 'involved', 'product', 'product', 'time,', 'and', 'other', 'will', 'to', 'and', 'and', 'on', 'from', 'and', 'and', 'we', 'and', 'and', 'in', 'and', 'other', 'in', 'and', 'and', 'of', 'and', 'other', 'of', 'in', 'Our', 'the', 'of', 'of', 'of', 'for', 'the', 'the', 'our', 'the', 'the', 'of', 'our', 'the', 'that', 'of', 'our', 'our', 'our']
+# OG E s operations are subject to the Federal Clean Air Act as amended, and comparable state laws and regulations.
+# OG E's operations are subject to the Federal Clean Water Act, and comparable state laws and regulations.                        
+ - Performance: (R: 1.0; P: 0.23529411764705882)                        
+ - Truth: ['Federal', 'Clean', 'Water', 'Act,']                        
+ - Predict: ['Clean', 'subject', 'Federal', 'state', 'comparable', 'Water', 'Act,', 'regulations.', 'laws', 'operations', 'OG', "E's", 'to', 'and', 'the', 'are', 'and']
+# During the same time, corporate bond yields, which are used in determining the discount rate for future pension obligations, remained unchanged .
+# During the same time, corporate bond yields, which are used in determining the discount rate for future pension obligations, decreased .                        
+ - Performance: (R: 1.0; P: 0.047619047619047616)                        
+ - Truth: ['decreased']                        
+ - Predict: ['pension', 'decreased', 'discount', 'bond', 'obligations,', 'determining', 'corporate', 'rate', 'yields,', 'future', 'used', 'time,', 'same', 'During', 'the', 'for', 'in', 'the', 'are', 'which', '.']
+# Dollar retention the percentage of the dollar value of all client membership contracts renewed during the most recent twelve-month period to the total dollar value of all client membership contracts that expired during the period.
+# Enrichment the percentage of the dollar value of client membership contracts renewed during the most recent twelve-month period to the dollar value of the corresponding expiring contracts.                        
+ - Performance: (R: 1.0; P: 0.037037037037037035)                        
+ - Truth: ['Enrichment']                        
+ - Predict: ['expiring', 'Enrichment', 'dollar', 'corresponding', 'twelve-month', 'client', 'percentage', 'renewed', 'membership', 'period', 'contracts.', 'contracts', 'value', 'recent', 'dollar', 'value', 'most', 'to', 'the', 'during', 'of', 'the', 'of', 'the', 'the', 'the', 'of']
+# Other Income, Net Other income, net primarily consists of interest income on our investments as well as gains and losses on foreign currency.
+# Other Income, Net Other income, net primarily consists of interest income on our investments as well as gains and losses on foreign currency and remained essentially consistent during 2015 as compared to the prior year.                        
+ - Performance: (R: 1.0; P: 0.08571428571428572)                        
+ - Truth: ['remained', 'essentially', 'consistent']                        
+ - Predict: ['investments', 'gains', 'consistent', 'currency', 'losses', 'interest', 'primarily', 'compared', 'Net', 'income', 'prior', 'essentially', 'Income,', 'foreign', 'net', 'consists', '2015', 'well', 'income,', 'remained', 'year.', 'and', 'on', 'on', 'as', 'Other', 'to', 'during', 'of', 'the', 'our', 'as', 'Other', 'as', 'and']
+# Property expenses from acquired properties increased $0.4 million due to properties acquired subsequent to December 31, 2009.
+# Depreciation and other amortization from acquired properties increased $0.9 million due to properties acquired subsequent to December 31, 2011.                        
+ - Performance: (R: 1.0; P: 0.15789473684210525)                        
+ - Truth: ['increased', '$0.9', 'million']                        
+ - Predict: ['Depreciation', '$0.9', 'amortization', 'subsequent', 'increased', 'properties', 'acquired', 'due', '31,', 'million', 'properties', 'December', 'acquired', '2011.', 'and', 'to', 'from', 'other', 'to']
+# Equity in income of joint ventures increased $3.4 million during the year ended December 31, 2014 as compared to the year ended December 31, 2013 primarily due to an increase in our pro rata share of gain and earn outs from the sales of industrial properties from the 2003 Net Lease Joint Venture.
+# Equity in income of joint ventures decreased $3.4 million during the year ended December 31, 2015 as compared to the year ended December 31, 2014 primarily due to a decrease in our pro rata share of gain and earn outs from the sales of industrial properties from a previous joint venture.                        
+ - Performance: (R: 1.0; P: 0.0784313725490196)                        
+ - Truth: ['decreased', '$3.4', '2015', 'decrease']                        
+ - Predict: ['$3.4', 'Equity', 'decrease', 'decreased', 'rata', 'income', 'gain', 'industrial', 'earn', 'million', 'sales', 'properties', 'primarily', 'ventures', 'share', 'compared', 'ended', 'ended', '31,', 'outs', '31,', 'pro', 'December', 'due', 'previous', 'December', 'joint', 'venture.', '2015', 'year', 'joint', 'year', '2014', 'in', 'of', 'to', 'a', 'to', 'in', 'and', 'of', 'of', 'the', 'from', 'the', 'during', 'the', 'as', 'from', 'our', 'a']
+# The Company anticipates that the program will result in an annual reduction in fixed costs of approximately $10 million, split approximately 35% in manufacturing and 65% in selling, general, and administrative expenses.
+# We will realize an annual reduction in fixed costs of approximately $10 million, split approximately 35% in manufacturing and 65% in selling, general, and administrative expenses.                        
+ - Performance: (R: 1.0; P: 0.07692307692307693)                        
+ - Truth: ['will', 'realize']                        
+ - Predict: ['fixed', 'administrative', 'selling,', 'general,', 'annual', 'manufacturing', 'expenses.', 'reduction', 'realize', 'split', 'million,', '$10', '35%', '65%', 'costs', 'approximately', 'approximately', 'We', 'will', 'and', 'in', 'an', 'of', 'in', 'and', 'in']
+# Operating margin for the third fiscal quarter of 2015 includes $63.0 million of goodwill and depreciable and amortizable long-lived asset impairment charges (see Note 3 to our consolidated financial statements).
+# Operating margin for the third fiscal quarter of 2016 includes $1.6 million of intangible asset impairment charges (see Note 3 to our consolidated financial statements).                        
+ - Performance: (R: 1.0; P: 0.04)                        
+ - Truth: ['$1.6']                        
+ - Predict: ['intangible', '$1.6', 'margin', 'impairment', 'asset', 'Operating', 'charges', 'quarter', 'financial', 'consolidated', 'fiscal', 'statements).', 'includes', 'million', 'third', 'Note', '2016', '3', '(see', 'to', 'of', 'of', 'for', 'our', 'the']
+# Interest income allocated from the Master for the three and twelve months ended December 31, 2015 decreased by $504 and $2,107, respectively, as compared to the corresponding periods in 2014.
+# Interest income allocated from the Master for the three and twelve months ended December 31, 2016 increased by $9,457 and $43,361, respectively, as compared to the corresponding periods in 2015.                        
+ - Performance: (R: 1.0; P: 0.1)                        
+ - Truth: ['increased', '$9,457', '$43,361,']                        
+ - Predict: ['$43,361,', '$9,457', 'Interest', 'corresponding', 'periods', 'compared', 'allocated', 'income', 'ended', 'increased', '31,', 'twelve', 'months', 'three', 'December', 'respectively,', 'Master', '2016', '2015.', 'and', 'and', 'from', 'by', 'in', 'to', 'the', 'the', 'as', 'the', 'for']
+# This evaluation did determine that a portion of the taxable property loans were potentially impaired and that an additional allowance or bad debt should be recorded.
+# During 2011 and 2010, the Company determined that a portion of the taxable property loans were potentially impaired and an additional allowance for bad debt should be recorded.                        
+ - Performance: (R: 1.0; P: 0.14285714285714285)                        
+ - Truth: ['During', '2011', 'and', '2010,']                        
+ - Predict: ['taxable', 'debt', 'impaired', 'allowance', 'loans', 'determined', 'potentially', 'property', 'portion', 'recorded.', 'bad', 'additional', '2011', '2010,', 'Company', 'should', 'and', 'were', 'that', 'be', 'During', 'a', 'an', 'for', 'of', 'the', 'the', 'and']
+# The decrease in net operating income is due to a decrease in economic occupancy.
+# The decrease in net operating income is due to an increase in utilities expenses along with a decrease in economic occupancy.                        
+ - Performance: (R: 1.0; P: 0.14285714285714285)                        
+ - Truth: ['increase', 'utilities', 'expenses']                        
+ - Predict: ['expenses', 'utilities', 'occupancy.', 'economic', 'net', 'income', 'operating', 'decrease', 'decrease', 'increase', 'due', 'along', 'in', 'in', 'in', 'to', 'with', 'an', 'a', 'The', 'is']
+# This, in turn, is affected by several factors such as local or national economic conditions, the amount of new apartment construction and interest rates on single-family mortgage loans.
+# This, in turn, is affected by several factors such as local or national economic conditions, the amount of new apartment construction and the affordability of single-family homes.                        
+ - Performance: (R: 1.0; P: 0.037037037037037035)                        
+ - Truth: ['affordability']                        
+ - Predict: ['single-family', 'affordability', 'homes.', 'economic', 'conditions,', 'factors', 'apartment', 'affected', 'national', 'several', 'construction', 'local', 'amount', 'new', 'turn,', 'by', 'in', 'of', 'of', 'as', 'and', 'This,', 'or', 'the', 'is', 'the', 'such']
+# Arbors of Hickory Ridge's operations resulted in net operating income of $568,000 before payment of bond debt service on net revenue of approximately $1.23 million in 2012.
+# Avistar at Chase Hill's operations resulted in net operating income of approximately $660,000 before payment of bond debt service on net revenue of approximately $1.46 million in 2013.                        
+ - Performance: (R: 1.0; P: 0.07142857142857142)                        
+ - Truth: ['$660,000', '$1.46']                        
+ - Predict: ['$660,000', '$1.46', 'income', 'Avistar', 'bond', 'debt', 'revenue', 'operating', 'net', 'payment', 'million', 'net', 'operations', 'resulted', 'service', 'Chase', "Hill's", 'approximately', '2013.', 'approximately', 'before', 'of', 'in', 'of', 'of', 'at', 'in', 'on']
+# The majority of the increase is attributable to the gain of approximately $1.8 million from the recognition of the sale of the Ohio Properties and approximately $1.4 million from the recognition of the sale of the Greens Property in 2013.
+# The decrease from 2014 as compared to 2013 is attributable to the gain of approximately $1.8 million from the recognition of the sale of the Ohio Properties and approximately $1.4 million from the recognition of the sale of the Greens Property in 2013.                        
+ - Performance: (R: 1.0; P: 0.06976744186046512)                        
+ - Truth: ['decrease', 'from', '2014']                        
+ - Predict: ['$1.4', 'decrease', 'Greens', 'gain', '$1.8', 'Ohio', 'recognition', 'Properties', 'recognition', 'compared', 'attributable', 'Property', 'sale', 'sale', 'million', '2014', 'approximately', 'million', 'approximately', '2013', '2013.', 'the', 'from', 'of', 'the', 'of', 'to', 'to', 'of', 'in', 'as', 'from', 'from', 'of', 'of', 'is', 'the', 'the', 'the', 'The', 'the', 'the', 'and']
+# Additionally, the Company calculated the sensitivity of the key assumption used in calculating the fair values of these bonds.
+# Additionally, the Company calculated the sensitivity of the key assumption used in calculating the fair values of the MBS which is the effective yield on new issuances of similarly rated MBS.                        
+ - Performance: (R: 1.0; P: 0.3225806451612903)                        
+ - Truth: ['MBS', 'effective', 'yield', 'on', 'new', 'issuances', 'of', 'similarly', 'rated', 'MBS.']                        
+ - Predict: ['issuances', 'yield', 'sensitivity', 'fair', 'effective', 'calculated', 'calculating', 'assumption', 'MBS.', 'rated', 'MBS', 'key', 'values', 'similarly', 'Additionally,', 'new', 'Company', 'used', 'the', 'the', 'the', 'of', 'on', 'of', 'the', 'in', 'the', 'is', 'of', 'the', 'which']
+# (2) Stabilization is generally defined as 90% occupancy for 90 days and an achievement of 1.15 times debt service coverage ratio on amortizing debt service.
+# (3) A property is considered stabilized once it reaches 90% occupancy for 90 days and an achievement of 1.15 times debt service coverage ratio on amortizing debt service.                        
+ - Performance: (R: 1.0; P: 0.14285714285714285)                        
+ - Truth: ['property', 'is', 'considered', 'stabilized']                        
+ - Predict: ['amortizing', 'stabilized', '1.15', 'coverage', 'property', 'ratio', 'debt', 'debt', 'service.', 'achievement', 'occupancy', 'service', '90%', 'days', 'considered', '90', 'times', '(3)', 'reaches', 'once', 'of', 'it', 'for', 'is', 'an', 'and', 'on', 'A']
+# The decrease in realized gains primarily related to decreased sales of equity securities in an unrealized gain position in 2012 compared to 2011.
+# The increase in realized gains primarily related to increased sales of equity securities in an unrealized gain position in 2013 compared to 2012.                        
+ - Performance: (R: 1.0; P: 0.08695652173913043)                        
+ - Truth: ['increase', 'increased']                        
+ - Predict: ['gains', 'realized', 'equity', 'unrealized', 'gain', 'sales', 'primarily', 'securities', 'increased', 'related', 'increase', 'compared', 'position', '2013', '2012.', 'of', 'to', 'in', 'to', 'in', 'an', 'The', 'in']
+# This balance fluctuates due to the timing of the prepayments.
+# This balance fluctuates due to the timing of the prepayments and to the timing of the premium receipts by APSL.                        
+ - Performance: (R: 0.9; P: 0.45)                        
+ - Truth: ['and', 'to', 'the', 'timing', 'of', 'the', 'premium', 'receipts', 'by', 'APSL.']                        
+ - Predict: ['prepayments', 'receipts', 'premium', 'APSL.', 'balance', 'fluctuates', 'due', 'timing', 'timing', 'by', 'to', 'and', 'the', 'the', 'This', 'of', 'the', 'of', 'to', 'the']
+# The table below presents the percentage within a range by which the fair value exceeded the carrying value of our radio broadcasting licenses as of December 31, 2016 for 24 units of accounting (24 geographical markets) where the carrying value of the licenses is considered material to our financial statements.
+# The table below, which includes the Charlotte market and excludes the Merger markets and the two markets acquired as part of an exchange of radio stations, presents the percentage within a range by which the fair value exceeded the carrying value of our radio broadcasting licenses as of December 31, 2017 for 25 units of accounting (25 geographical markets) where the carrying value of the licenses is considered material to our financial statements.                        
+ - Performance: (R: 1.0; P: 0.0410958904109589)                        
+ - Truth: ['2017', '25', '(25']                        
+ - Predict: ['geographical', 'carrying', 'exceeded', 'accounting', 'financial', 'excludes', 'fair', 'exchange', 'statements.', 'carrying', 'units', 'Charlotte', 'percentage', 'markets', 'material', '25', 'licenses', 'range', 'Merger', 'markets', 'market', '31,', 'value', 'licenses', 'stations,', 'markets)', 'acquired', 'December', 'considered', '(25', 'broadcasting', 'value', 'value', 'radio', 'table', 'includes', 'presents', 'radio', '2017', 'two', 'part', 'within', 'below,', 'of', 'is', 'by', 'to', 'of', 'a', 'as', 'of', 'as', 'of', 'the', 'the', 'the', 'where', 'which', 'of', 'and', 'the', 'an', 'the', 'the', 'the', 'the', 'our', 'of', 'and', 'for', 'The', 'our', 'which']
+# The Partnership experienced a net trading loss, through investments in the Funds, before fees and expenses in 2013 of $386,776.
+# The Partnership experienced a net trading gain, through investments in the Funds, before fees and expenses in 2014 of $ 2,513,437.                        
+ - Performance: (R: 1.0; P: 0.23809523809523808)                        
+ - Truth: ['net', 'trading', 'gain,', '$', '2,513,437.']                        
+ - Predict: ['investments', 'Funds,', '2,513,437.', 'trading', 'expenses', 'fees', 'net', 'gain,', 'Partnership', '2014', 'experienced', 'in', 'before', '$', 'and', 'the', 'through', 'of', 'a', 'in', 'The']
+# The Partnership experienced a net trading gain, through investments in the Funds, before fees and expenses in 2015 of $841,906.
+# The Partnership experienced a net trading loss, through investments in the Funds, before fees and expenses in 2016 of $1,514,623.                        
+ - Performance: (R: 1.0; P: 0.15)                        
+ - Truth: ['loss,', '2016', '$1,514,623.']                        
+ - Predict: ['investments', 'Funds,', 'trading', '$1,514,623.', 'expenses', 'loss,', 'fees', 'net', 'Partnership', '2016', 'experienced', 'in', 'and', 'before', 'the', 'through', 'a', 'of', 'in', 'The']
+# Please refer to Note 10 Indebtedness to our consolidated financial statements included in Item 8 of this Annual Report on Form 10-K for further details regarding this matter.
+# Please refer to Note 7 Goodwill and Other Intangible Assets to our consolidated financial statements included in Item 8 of this Annual Report on Form 10-K for further details regarding this matter.                        
+ - Performance: (R: 1.0; P: 0.21875)                        
+ - Truth: ['Note', '7', 'Goodwill', 'and', 'Other', 'Intangible', 'Assets']                        
+ - Predict: ['Intangible', 'Goodwill', 'financial', 'consolidated', 'statements', 'Form', 'Assets', 'Item', 'included', 'details', 'Annual', 'Note', 'Report', '10-K', 'refer', '7', '8', 'matter.', 'regarding', 'Please', 'and', 'for', 'Other', 'further', 'to', 'to', 'of', 'on', 'in', 'this', 'our', 'this']
+# Cash provided by operating activities during the year ended December 31, 2013 was primarily related to net income of $73.7 million and various non-cash add backs in operating activities and changes in operating assets and liabilities.
+# Cash provided by operating activities during the year ended December 31, 2015 was primarily related to net income of $47.4 million, $23.4 million loss from discontinued operations, in addition to other non-cash add backs in operating activities and changes in operating assets and liabilities.                        
+ - Performance: (R: 1.0; P: 0.13636363636363635)                        
+ - Truth: ['$47.4', '$23.4', 'loss', 'from', 'discontinued', 'operations,']                        
+ - Predict: ['liabilities.', 'discontinued', 'loss', '$23.4', '$47.4', 'add', 'assets', 'non-cash', 'income', 'net', 'ended', 'changes', 'related', 'backs', 'Cash', 'primarily', 'addition', 'million', 'million,', 'year', '31,', 'operations,', 'provided', 'December', 'operating', 'operating', 'activities', '2015', 'operating', 'activities', 'and', 'in', 'of', 'during', 'the', 'and', 'in', 'to', 'was', 'in', 'other', 'from', 'to', 'by']
+# When we reduce our valuation allowance in an accounting period, we record a corresponding tax benefit in our statement of income.
+# When we establish a valuation allowance or increase this allowance in an accounting period, we record a corresponding tax expense in our statement of income.                        
+ - Performance: (R: 1.0; P: 0.16)                        
+ - Truth: ['establish', 'increase', 'tax', 'expense']                        
+ - Predict: ['valuation', 'statement', 'income.', 'accounting', 'expense', 'increase', 'period,', 'allowance', 'establish', 'tax', 'record', 'allowance', 'corresponding', 'of', 'we', 'in', 'a', 'a', 'this', 'or', 'our', 'we', 'When', 'an', 'in']
+# In addition to purchasing defaulted receivables, Baycorp offers portfolio management services to banks for non-performing loans.
+# In addition to purchasing defaulted receivables, Refinancia offers portfolio management services to banks for non-performing loans.                        
+ - Performance: (R: 1.0; P: 0.0625)                        
+ - Truth: ['Refinancia']                        
+ - Predict: ['portfolio', 'defaulted', 'non-performing', 'loans.', 'receivables,', 'Refinancia', 'purchasing', 'management', 'banks', 'offers', 'services', 'addition', 'to', 'In', 'for', 'to']
+# We believe these fees and expenses are not indicative of ongoing operations; therefore adjusting for these expenses enhances comparability to prior periods, anticipated future periods, and our competitors results.
+# We adjust for this amount because we believe these expenses are not indicative of ongoing operations; therefore adjusting for these expenses enhances comparability to prior periods, anticipated future periods, and our competitors results.                        
+ - Performance: (R: 1.0; P: 0.12121212121212122)                        
+ - Truth: ['adjust', 'for', 'this', 'amount']                        
+ - Predict: ['ongoing', 'anticipated', 'prior', 'indicative', 'comparability', 'periods,', 'competitors', 'periods,', 'future', 'enhances', 'believe', 'expenses', 'operations;', 'expenses', 'results.', 'amount', 'adjusting', 'adjust', 'therefore', 'not', 'are', 'of', 'we', 'for', 'because', 'to', 'We', 'this', 'and', 'these', 'our', 'for', 'these']
+# Cash provided by operating activities during the year ended December 31, 2014 was primarily related to net income of $98.3 million and various non-cash add backs in operating activities and changes in operating assets and liabilities.
+# Cash provided by operating activities during the year ended December 31, 2015 was primarily related to net income of $47.4 million, $23.4 million loss from discontinued operations, in addition to other non-cash add backs in operating activities and changes in operating assets and liabilities.                        
+ - Performance: (R: 1.0; P: 0.18181818181818182)                        
+ - Truth: ['$47.4', 'million,', '$23.4', 'million', 'loss', 'from', 'discontinued', 'operations,']                        
+ - Predict: ['liabilities.', 'discontinued', 'loss', '$23.4', '$47.4', 'add', 'assets', 'non-cash', 'income', 'net', 'ended', 'changes', 'related', 'backs', 'Cash', 'primarily', 'addition', 'million', 'million,', 'year', '31,', 'operations,', 'provided', 'December', 'operating', 'operating', 'activities', '2015', 'operating', 'activities', 'and', 'in', 'of', 'during', 'the', 'and', 'in', 'to', 'was', 'in', 'other', 'from', 'to', 'by']
+# As of December 31, 2015 the Company had an accumulated deficit of $88.7 million.
+# As of December 31, 2016, the Company had an accumulated deficit of $96.0 million.                        
+ - Performance: (R: 1.0; P: 0.07142857142857142)                        
+ - Truth: ['$96.0']                        
+ - Predict: ['deficit', 'accumulated', '$96.0', '31,', 'December', 'million.', '2016,', 'Company', 'of', 'of', 'had', 'As', 'an', 'the']
+# Labor and overhead costs decreased by $65 million compared to the prior fiscal year.
+# Labor and overhead costs decreased by $51 million compared to the prior year.                        
+ - Performance: (R: 1.0; P: 0.15384615384615385)                        
+ - Truth: ['$51', 'million']                        
+ - Predict: ['overhead', 'decreased', '$51', 'Labor', 'million', 'costs', 'compared', 'prior', 'year.', 'by', 'to', 'the', 'and']
+# The ultimate cost of resolving pending and future claims is estimated based on the history of claims and expenses for plaintiffs represented by law firms in jurisdictions with an established history with Rockwell.
+# The ultimate cost of resolving pending and future claims is estimated based on the history of claims and expenses for plaintiffs represented by law firms in jurisdictions with an established history with Maremont.                        
+ - Performance: (R: 1.0; P: 0.030303030303030304)                        
+ - Truth: ['Maremont.']                        
+ - Predict: ['established', 'resolving', 'Maremont.', 'expenses', 'ultimate', 'estimated', 'jurisdictions', 'cost', 'pending', 'plaintiffs', 'based', 'history', 'claims', 'represented', 'future', 'history', 'claims', 'firms', 'law', 'with', 'with', 'of', 'and', 'and', 'on', 'an', 'by', 'The', 'of', 'for', 'is', 'in', 'the']
+# The ultimate indemnity cost of resolving nonmalignant claims with plaintiff s law firms in jurisdictions without an established history with Rockwell cannot be reasonably estimated.
+# The ultimate indemnity cost of resolving nonmalignant claims with plaintiff s law firms in jurisdictions without an established history with Maremont cannot be reasonably estimated.                        
+ - Performance: (R: 1.0; P: 0.04)                        
+ - Truth: ['Maremont']                        
+ - Predict: ['indemnity', 'ultimate', 'resolving', 'plaintiff', 'nonmalignant', 'estimated.', 'reasonably', 'established', 'jurisdictions', 'claims', 'Maremont', 'history', 'cost', 'firms', 'without', 'law', 'cannot', 'an', 'be', 's', 'with', 'with', 'The', 'of', 'in']
+# Equity Repurchase Authorization- On July 21, 2016, our Board of Directors authorized the repurchase of up to $100 million of our common stock from time to time through open market purchases, privately negotiated transactions or otherwise, until September 30, 2019, subject to compliance with legal and regulatory requirements and our debt covenants.
+# On November 2, 2018, our Board of Directors authorized the repurchase of up to $100 million aggregate principal amount of any of our debt securities (including convertible debt securities) from time to time through open market purchases, privately negotiated transactions or otherwise, subject to compliance with legal and regulatory requirements and our debt covenants.                        
+ - Performance: (R: 0.9166666666666666; P: 0.2037037037037037)                        
+ - Truth: ['November', '2,', '2018,', '$100', 'million', 'aggregate', 'principal', 'debt', 'securities', 'convertible', 'debt', 'securities)']                        
+ - Predict: ['convertible', 'covenants.', 'privately', 'market', 'aggregate', 'compliance', 'negotiated', 'repurchase', 'regulatory', 'transactions', 'authorized', 'principal', 'purchases,', 'requirements', 'subject', 'open', 'million', 'debt', 'legal', '$100', 'securities', '(including', 'securities)', 'debt', 'debt', 'amount', 'November', 'Directors', 'time', 'otherwise,', 'Board', '2,', '2018,', 'time', 'up', 'of', 'to', 'to', 'to', 'and', 'or', 'the', 'from', 'of', 'of', 'with', 'On', 'of', 'through', 'any', 'and', 'our', 'our', 'our']
+# Currently, GAAP lacks guidance about management s responsibility to evaluate whether there is substantial doubt about the organization s ability to continue as a going concern or to provide related footnote disclosures.
+# The amendment defines management's responsibility to evaluate whether there is substantial doubt about an organization's ability to continue as a going concern and to provide related footnote disclosures.                        
+ - Performance: (R: 1.0; P: 0.14285714285714285)                        
+ - Truth: ['amendment', 'defines', "management's", 'responsibility']                        
+ - Predict: ['doubt', 'disclosures.', 'evaluate', 'footnote', 'substantial', 'provide', 'defines', 'concern', 'amendment', 'responsibility', "management's", 'continue', 'related', 'ability', 'going', "organization's", 'whether', 'to', 'about', 'there', 'as', 'is', 'a', 'to', 'an', 'to', 'The', 'and']
+# The impact of the change in estimate was an increase in net sales of $77.8 million in 2011.
+# The impact of the change in estimate was an increase in gross profit of $66.5 million in 2011.                        
+ - Performance: (R: 1.0; P: 0.16666666666666666)                        
+ - Truth: ['gross', 'profit', '$66.5']                        
+ - Predict: ['profit', '$66.5', 'impact', 'gross', 'estimate', 'million', 'increase', 'change', '2011.', 'of', 'in', 'in', 'of', 'the', 'an', 'was', 'in', 'The']
+# The $8.0 million increase in cash used in investing activities in fiscal year 2012 compared to fiscal year 2011 was primarily due to the following:
+# The $221.8 million decrease in cash used in investing activities in fiscal year 2013 compared to fiscal year 2012 was primarily due to the following:                        
+ - Performance: (R: 1.0; P: 0.12)                        
+ - Truth: ['$221.8', 'million', 'decrease']                        
+ - Predict: ['$221.8', 'cash', 'decrease', 'investing', 'primarily', 'activities', 'million', 'year', 'year', 'compared', 'due', 'fiscal', 'used', '2013', 'fiscal', '2012', 'following:', 'in', 'to', 'to', 'the', 'in', 'in', 'The', 'was']
+# We have budgeted approximately $50 million of capital expenditures during fiscal 2014 to include normal ongoing capital expenditures and maintenance activities.
+# We have budgeted approximately $85 million of capital expenditures during fiscal 2015 to include some facility expansion, along with normal ongoing capital expenditures and maintenance activities.                        
+ - Performance: (R: 1.0; P: 0.19230769230769232)                        
+ - Truth: ['$85', 'million', '2015', 'facility', 'expansion,']                        
+ - Predict: ['capital', 'budgeted', 'capital', '$85', 'maintenance', 'ongoing', 'expenditures', 'normal', 'million', 'facility', 'expenditures', 'activities.', 'expansion,', 'fiscal', '2015', 'include', 'approximately', 'along', 'of', 'We', 'to', 'with', 'during', 'and', 'have', 'some']
+# Research and development expense increased 8% due to ongoing development activities for new products and additional engineering personnel throughout fiscal year 2015.
+# Research and development expense increased 10% due to ongoing development activities for new products and additional engineering personnel throughout the 53-weeks ended December 31, 2016.                        
+ - Performance: (R: 1.0; P: 0.24)                        
+ - Truth: ['10%', '53-weeks', 'ended', 'December', '31,', '2016.']                        
+ - Predict: ['expense', 'ongoing', 'engineering', 'ended', 'activities', 'Research', 'increased', 'development', 'products', 'development', '53-weeks', 'December', 'personnel', '31,', 'additional', '10%', 'new', 'due', '2016.', 'throughout', 'the', 'and', 'to', 'for', 'and']
+# Our revenue is predominately derived from business services that we provide on an ongoing basis.
+# Our revenue is predominately derived from core athenahealth business services that we provide on an ongoing basis.                        
+ - Performance: (R: 1.0; P: 0.11764705882352941)                        
+ - Truth: ['core', 'athenahealth']                        
+ - Predict: ['ongoing', 'athenahealth', 'services', 'derived', 'core', 'predominately', 'revenue', 'business', 'basis.', 'provide', 'from', 'we', 'an', 'on', 'is', 'Our', 'that']
+# Total revenue for the year ended December 31, 2011 , increased almost entirely due to an increase in business services revenue.
+# Total revenue for the year ended December 31, 2013 increased by 41% due to an increase in business services revenue.                        
+ - Performance: (R: 1.0; P: 0.05)                        
+ - Truth: ['41%']                        
+ - Predict: ['services', 'business', '41%', 'increased', 'Total', 'increase', 'revenue', 'ended', '31,', 'December', 'revenue.', 'due', '2013', 'year', 'by', 'in', 'the', 'to', 'an', 'for']
+# The increase was primarily driven by higher payroll-related costs, including bonuses, which resulted from our improved operating performance and the REIM Acquisitions.
+# The increase was primarily driven by higher payroll-related costs, including bonuses, which resulted from increased headcount and improved operating performance.                        
+ - Performance: (R: 1.0; P: 0.1)                        
+ - Truth: ['increased', 'headcount']                        
+ - Predict: ['payroll-related', 'bonuses,', 'driven', 'operating', 'improved', 'headcount', 'costs,', 'performance.', 'increased', 'including', 'increase', 'resulted', 'higher', 'primarily', 'by', 'from', 'and', 'was', 'The', 'which']
+# On December 21, 2010, CBRE Capital Markets entered into a secured credit agreement with TD Bank to establish a warehouse line of credit.
+# On April 16, 2008, CBRE Capital Markets entered into a secured credit agreement with BofA to establish a warehouse line of credit.                        
+ - Performance: (R: 1.0; P: 0.18181818181818182)                        
+ - Truth: ['On', 'April', '16,', '2008,']                        
+ - Predict: ['secured', 'warehouse', 'Capital', 'BofA', 'credit', 'CBRE', 'Markets', 'April', 'agreement', 'entered', 'credit.', '16,', 'establish', 'line', '2008,', 'into', 'of', 'with', 'a', 'a', 'to', 'On']
+# The decrease is attributable to a change in the mix of the Company s business operations resulting from the acquisition of Con-way and the cost savings measures being implemented as part of the integration of acquired businesses.
+# The decrease is attributable to a reduction in acquisition-related costs, a change in the mix of the Company s business operations resulting from the acquisition of Con-way, and the cost saving measures being implemented as part of the integration of acquired businesses, particularly in our LTL service offering.                        
+ - Performance: (R: 1.0; P: 0.08333333333333333)                        
+ - Truth: ['reduction', 'in', 'acquisition-related', 'costs,']                        
+ - Predict: ['saving', 'LTL', 'offering.', 'cost', 'reduction', 'integration', 'decrease', 'service', 'acquisition-related', 'Con-way,', 'mix', 'acquisition', 'businesses,', 'implemented', 'costs,', 'acquired', 'operations', 'particularly', 'measures', 'resulting', 'business', 'attributable', 'change', 'part', 'Company', 'being', 's', 'of', 'of', 'of', 'to', 'the', 'of', 'a', 'from', 'the', 'as', 'the', 'in', 'our', 'is', 'in', 'the', 'in', 'and', 'a', 'The', 'the']
+# Such amounts are included in Property and equipment, at cost in the accompanying Consolidated Balance Sheets.
+# These overhauls and asset replacement projects are included in Property and equipment, at cost in the Consolidated Balance Sheets.                        
+ - Performance: (R: 1.0; P: 0.21052631578947367)                        
+ - Truth: ['overhauls', 'asset', 'replacement', 'projects']                        
+ - Predict: ['Balance', 'Consolidated', 'asset', 'Property', 'Sheets.', 'overhauls', 'replacement', 'projects', 'included', 'equipment,', 'cost', 'and', 'in', 'at', 'in', 'and', 'the', 'These', 'are']
+# New Store labor and other expenses increased $311,000 for the year ended December 31, 2012 as compared to 2011.
+# New Store labor and other expenses increased $404,000 for the year ended December 31, 2014 as compared to 2013 .                        
+ - Performance: (R: 1.0; P: 0.05)                        
+ - Truth: ['$404,000']                        
+ - Predict: ['$404,000', 'expenses', 'labor', 'increased', 'Store', 'ended', 'compared', '31,', 'December', 'New', 'year', '2014', '2013', 'to', 'and', 'the', 'other', 'for', 'as', '.']
+# The 89,134 square foot property was 100% leased at the time of purchase and is located in Plano, Texas.
+# The 113,281 square foot property was 86% leased at the time of purchase and is located in Chandler, Arizona.                        
+ - Performance: (R: 1.0; P: 0.21052631578947367)                        
+ - Truth: ['113,281', '86%', 'Chandler,', 'Arizona.']                        
+ - Predict: ['Chandler,', 'leased', 'Arizona.', '113,281', '86%', 'square', 'property', 'purchase', 'foot', 'time', 'located', 'of', 'in', 'at', 'the', 'was', 'is', 'The', 'and']
+# The 70,431 square foot property was 98% leased at the time of purchase and is located in Fort Worth, Texas.
+# The 128,934 square foot property was 85% leased at the time of purchase and is located in Austin, Texas.                        
+ - Performance: (R: 1.0; P: 0.15789473684210525)                        
+ - Truth: ['128,934', '85%', 'Austin,']                        
+ - Predict: ['leased', 'Austin,', '85%', '128,934', 'property', 'square', 'Texas.', 'foot', 'purchase', 'located', 'time', 'of', 'in', 'at', 'was', 'the', 'The', 'is', 'and']
+# New Store labor and other expenses increased $404,000 for the year ended December 31, 2014 as compared to 2013 .
+# New Store labor and other expenses increased $518,000 for the year ended December 31, 2015 as compared to 2014 .                        
+ - Performance: (R: 1.0; P: 0.05)                        
+ - Truth: ['$518,000']                        
+ - Predict: ['expenses', 'labor', 'increased', '$518,000', 'Store', 'compared', '31,', 'ended', 'December', 'New', '2015', 'year', '2014', 'to', 'and', 'the', 'other', 'as', 'for', '.']
+# During the year ended December 31, 2014, our gains on sales of investments in available-for-sale securities decreased $41,000, our dividend income decreased $12,000 and our interest income increased $7,000 as compared to the amounts realized during the year ended December 31, 2013.
+# During the year ended December 31, 2015, our interest income increased $191,000, our gains on sales of investments in available-for-sale securities increased $44,000 and our dividend income decreased $12,000 as compared to the amounts realized during the year ended December 31, 2014.                        
+ - Performance: (R: 0.8333333333333334; P: 0.11904761904761904)                        
+ - Truth: ['increased', '$191,000,', 'increased', '$44,000', 'decreased', '$12,000']                        
+ - Predict: ['gains', 'decreased', '$44,000', 'investments', '$191,000,', 'realized', '$12,000', 'income', 'compared', 'securities', 'interest', 'dividend', 'amounts', 'sales', 'income', 'ended', 'available-for-sale', 'increased', 'ended', 'increased', 'year', 'year', 'December', 'December', '31,', '31,', '2015,', '2014.', 'on', 'of', 'During', 'to', 'in', 'during', 'the', 'our', 'the', 'as', 'and', 'the', 'our', 'our']
+# We may incur increased operating losses as we proceed with our collaborative research efforts with respect to PRO 140 and continue to advance it through the product development and regulatory process.
+# We expect to continue to incur operating losses as we proceed with our clinical trials with respect to PRO 140 and continue to advance it through the product development and regulatory process.                        
+ - Performance: (R: 1.0; P: 0.09375)                        
+ - Truth: ['our', 'clinical', 'trials']                        
+ - Predict: ['losses', 'regulatory', 'operating', 'clinical', 'incur', 'advance', 'trials', 'product', 'development', 'expect', 'proceed', 'respect', 'process.', 'continue', 'PRO', '140', 'continue', 'with', 'to', 'through', 'We', 'it', 'we', 'to', 'and', 'with', 'to', 'and', 'to', 'the', 'our', 'as']
+# Research and development expenses relate to the specific projects to develop new products or expand into new markets, such as the development of new versions of our PAD and CAD Systems, shaft designs, crown design, and PAD and CAD clinical studies.
+# Research and development expenses relate to the specific projects to develop new products or expand into new markets, such as the development of new versions of our Peripheral OAS and Coronary OAS, and ancillary products, and PAD and CAD clinical studies.                        
+ - Performance: (R: 1.0; P: 0.14634146341463414)                        
+ - Truth: ['Peripheral', 'OAS', 'Coronary', 'OAS,', 'ancillary', 'products,']                        
+ - Predict: ['clinical', 'CAD', 'Peripheral', 'Coronary', 'specific', 'expenses', 'markets,', 'projects', 'PAD', 'studies.', 'OAS', 'expand', 'develop', 'ancillary', 'OAS,', 'versions', 'products', 'relate', 'development', 'products,', 'development', 'Research', 'new', 'new', 'new', 'and', 'and', 'and', 'into', 'of', 'as', 'our', 'or', 'of', 'to', 'and', 'to', 'the', 'the', 'such', 'and']
+# Instead, pursuant to the terms of a separate agreement with certain cities we serve, we will make retrospective franchise fee payments to cities that accept the terms of the separate agreement.
+# Instead, pursuant to the terms of a separate agreement with certain cities we serve, through December 31, 2012, we have made $22 million in retrospective franchise fee payments to cities that accepted the terms of the separate agreement.                        
+ - Performance: (R: 1.0; P: 0.21052631578947367)                        
+ - Truth: ['through', 'December', '31,', '2012,', '$22', 'million', 'in', 'retrospective']                        
+ - Predict: ['retrospective', 'accepted', 'pursuant', 'payments', 'fee', 'million', '$22', 'franchise', '31,', 'terms', 'terms', 'December', 'separate', 'cities', 'cities', 'separate', 'agreement', 'serve,', 'made', 'certain', 'agreement.', '2012,', 'Instead,', 'through', 'we', 'the', 'with', 'to', 'in', 'to', 'the', 'have', 'we', 'the', 'of', 'that', 'of', 'a']
+# Other Miscellaneous R evenues Miscellaneous revenues includes disconnect/reconnect fees and other discretionary revenues for services requested by REPs, services provided on a time and materials basis, rents, energy efficiency performance bonuses approved by the PUCT and other miscellaneous revenues .
+# A Decrease in Other Miscellaneous Revenues Miscellaneous revenues includes disconnect/reconnect fees and other discretionary revenues for services requested by REPs, services provided on a time and materials basis, rents, energy efficiency performance bonuses approved by the PUCT and other miscellaneous revenues .                        
+ - Performance: (R: 1.0; P: 0.023809523809523808)                        
+ - Truth: ['Decrease']                        
+ - Predict: ['discretionary', 'disconnect/reconnect', 'Miscellaneous', 'Miscellaneous', 'efficiency', 'rents,', 'Decrease', 'performance', 'miscellaneous', 'bonuses', 'requested', 'PUCT', 'materials', 'basis,', 'REPs,', 'approved', 'energy', 'fees', 'provided', 'includes', 'time', 'Revenues', 'services', 'services', 'revenues', 'revenues', 'revenues', 'and', 'and', 'A', 'on', 'in', 'a', 'by', 'the', 'and', '.', 'by', 'for', 'other', 'Other', 'other']
+# The 15-year low income housing tax credit compliance period with respect to Hillsboro Fountainhead, L.P., expires on December 31, 2019.
+# The 15-year low income housing tax credit compliance period with respect to Meadow Glen Apartments, Limited Partnership, expires on December 31, 2019.                        
+ - Performance: (R: 1.0; P: 0.22727272727272727)                        
+ - Truth: ['Meadow', 'Glen', 'Apartments,', 'Limited', 'Partnership,']                        
+ - Predict: ['credit', 'compliance', 'respect', 'expires', 'low', '31,', 'income', 'December', '15-year', 'Limited', 'Apartments,', 'housing', 'tax', 'period', 'Meadow', 'Glen', 'Partnership,', '2019.', 'on', 'with', 'to', 'The']
+# The investment general partner will continue to work with the operating general partner and the management company to monitor and improve operations.
+# The investment general partner continues to work with the operating general partner and the management company to reduce operating costs.                        
+ - Performance: (R: 1.0; P: 0.1)                        
+ - Truth: ['operating', 'costs.']                        
+ - Predict: ['investment', 'general', 'operating', 'general', 'management', 'partner', 'operating', 'reduce', 'partner', 'work', 'costs.', 'company', 'continues', 'with', 'to', 'and', 'the', 'the', 'The', 'to']
+# The major components of the current year amount were share of losses from operating partnerships, impairment loss, and partnership management fees.
+# The major components of the current year amount were share of gain from operating partnerships and partnership management fees.                        
+ - Performance: (R: 1.0; P: 0.05263157894736842)                        
+ - Truth: ['gain']                        
+ - Predict: ['operating', 'partnerships', 'partnership', 'gain', 'fees.', 'management', 'share', 'amount', 'components', 'current', 'year', 'major', 'of', 'and', 'of', 'the', 'from', 'were', 'The']
+# Under these agreements, Holly agreed to transport, store and throughput volumes of refined product and crude oil on our pipelines and terminal, tankage and loading rack facilities that result in minimum annual payments to us.
+# Under these agreements, HFC agreed to transport, store and throughput volumes of refined product and crude oil on our pipelines and terminal, tankage and loading rack facilities that result in minimum annual payments to us.                        
+ - Performance: (R: 1.0; P: 0.02857142857142857)                        
+ - Truth: ['HFC']                        
+ - Predict: ['annual', 'minimum', 'payments', 'refined', 'rack', 'throughput', 'store', 'tankage', 'pipelines', 'volumes', 'agreements,', 'crude', 'loading', 'agreed', 'facilities', 'transport,', 'terminal,', 'product', 'HFC', 'us.', 'oil', 'result', 'Under', 'to', 'of', 'to', 'in', 'on', 'and', 'these', 'our', 'and', 'and', 'and', 'that']
+# In addition, our 2011 results included $1.6 million of expense for the accelerated amortization of certain trade names and the impairment of one trade name.
+# Amortization expense was also down in 2012 because of a favorable comparison with 2011, when our results included $1.6 million of expense for the accelerated amortization of certain trade names and the impairment of one trade name.                        
+ - Performance: (R: 1.0; P: 0.1891891891891892)                        
+ - Truth: ['Amortization', 'expense', 'down', 'favorable', 'comparison', 'with', '2011,']                        
+ - Predict: ['$1.6', 'impairment', 'accelerated', 'one', 'favorable', 'Amortization', 'million', 'names', 'comparison', 'included', 'amortization', 'trade', 'expense', 'trade', 'name.', 'expense', 'results', 'certain', '2012', '2011,', 'also', 'down', 'was', 'of', 'in', 'with', 'when', 'because', 'and', 'of', 'a', 'of', 'our', 'of', 'the', 'the', 'for']
+# Full-year bonus expense was flat in 2012; however, in the first quarter of 2012, we paid a greater portion of the 2011 bonus to employees in this category compared with our initial estimate, contributing $1.0 million to the bonus expense recorded in 2012.
+# In addition, in the first quarter of 2011, we paid a greater portion of the 2010 bonus to employees in this category compared with our initial estimate, contributing $2.6 million to the bonus expense recorded in 2011.                        
+ - Performance: (R: 1.0; P: 0.05405405405405406)                        
+ - Truth: ['$2.6', 'million']                        
+ - Predict: ['contributing', '$2.6', 'expense', 'initial', 'quarter', 'greater', 'bonus', 'bonus', 'million', 'estimate,', 'paid', 'category', 'compared', 'recorded', 'portion', 'addition,', 'first', '2010', 'employees', '2011,', '2011.', 'a', 'of', 'In', 'of', 'to', 'to', 'the', 'with', 'we', 'in', 'the', 'our', 'in', 'the', 'this', 'in']
+# In addition, we update our estimate of the forfeiture rate that will be applied to awards not yet vested.
+# We adjust the stock-based compensation expense to reflect those awards that ultimately vested and update our estimate of the forfeiture rate that will be applied to awards not yet vested.                        
+ - Performance: (R: 1.0; P: 0.3)                        
+ - Truth: ['adjust', 'the', 'stock-based', 'compensation', 'expense', 'to', 'reflect', 'those', 'awards']                        
+ - Predict: ['vested.', 'stock-based', 'forfeiture', 'adjust', 'compensation', 'vested', 'reflect', 'update', 'expense', 'ultimately', 'applied', 'awards', 'awards', 'rate', 'estimate', 'yet', 'not', 'will', 'We', 'of', 'our', 'to', 'the', 'be', 'the', 'and', 'those', 'to', 'that', 'that']
+# Other operating revenues for the year ended December 31, 2010 decreased approximately $0.2 million or 4.4% to approximately $4.4 million compared to other operating revenues for the year ended December 31, 2009 of approximately $4.6 million.
+# Other operating revenues for the year ended December 31, 2011 increased approximately $0.1 million or 2.6% to approximately $4.5 million compared to other operating revenues for the year ended December 31, 2010 of approximately $4.4 million.                        
+ - Performance: (R: 0.8888888888888888; P: 0.2222222222222222)                        
+ - Truth: ['increased', '$0.1', 'million', '2.6%', '$4.5', 'million', '2010', '$4.4', 'million.']                        
+ - Predict: ['$4.4', '2.6%', '$4.5', 'increased', '$0.1', 'compared', 'December', 'December', 'million.', 'year', '31,', 'ended', '2011', 'approximately', '31,', 'ended', 'million', 'year', 'million', 'approximately', 'approximately', '2010', 'operating', 'revenues', 'operating', 'revenues', 'or', 'to', 'of', 'the', 'the', 'to', 'for', 'for', 'Other', 'other']
+# The loss predominantly was attributable to the modification to the Warrant agreement in December 2011 whereby the exercise price will be adjusted for any and all dividends declared and paid after December 31, 2011.
+# The current year loss was predominantly attributable to the increase in market price of the underlying common stock whereas the prior year loss was predominantly attributable to the modification to the Warrant agreement in December 2011 whereby the exercise price will be adjusted for any and all dividends declared and paid after December 31, 2011.                        
+ - Performance: (R: 1.0; P: 0.16363636363636364)                        
+ - Truth: ['increase', 'in', 'market', 'price', 'of', 'the', 'underlying', 'common', 'stock']                        
+ - Predict: ['dividends', 'adjusted', 'common', 'modification', 'exercise', 'increase', 'declared', 'underlying', 'stock', 'Warrant', 'prior', 'market', '31,', 'price', 'agreement', 'December', 'loss', 'paid', 'December', 'price', 'loss', 'current', 'whereby', 'year', 'year', '2011', 'attributable', 'attributable', 'predominantly', 'whereas', '2011.', 'predominantly', 'any', 'after', 'all', 'will', 'be', 'for', 'and', 'and', 'in', 'of', 'the', 'to', 'in', 'to', 'the', 'the', 'the', 'the', 'the', 'The', 'to', 'was', 'was']
+# Hotel operating expenses, which consist of room expenses, food and beverage expenses, other direct expenses, indirect expenses, and management fees, increased approximately $11.7 million, or 12.9%, for the year ended December 31, 2015, to approximately $101.9 million compared to hotel operating expenses for the year ended December 31, 2014 of approximately $90.2 million.
+# Hotel operating expenses, which consist of room expenses, food and beverage expenses, other direct expenses, indirect expenses, and management fees, increased approximately $0.4 million, or 0.4%, for the y ear ended December 31, 2017 to approximately $113.3 million compared to hotel operating expenses for the year ended December 31, 2016 of approximately $112.8 million.                        
+ - Performance: (R: 1.0; P: 0.1111111111111111)                        
+ - Truth: ['$0.4', 'million,', '0.4%,', '$113.3', 'million', '$112.8']                        
+ - Predict: ['indirect', 'direct', '$112.8', 'beverage', '$113.3', '0.4%,', '$0.4', 'increased', 'room', 'food', 'compared', 'consist', 'management', 'fees,', 'ended', 'ended', 'year', 'operating', 'ear', 'expenses,', 'December', '31,', 'December', 'approximately', 'million.', 'expenses,', 'expenses,', 'million', '31,', 'expenses,', 'approximately', 'Hotel', '2017', 'y', 'operating', 'expenses,', 'approximately', 'expenses', '2016', 'hotel', 'million,', 'and', 'to', 'or', 'of', 'of', 'and', 'the', 'the', 'for', 'to', 'other', 'for', 'which']
+# In addition to the increase in student enrollment, the revenue increase was also positively impacted by the 5% tuition increase effective April 1, 2009 and the decision to move to a single credit hour price for all undergraduate students at Ashford University.
+# In addition to the increase in student enrollment, the revenue increase was also positively impacted by the 5% tuition increase effective April 1, 2011.                        
+ - Performance: (R: 1.0; P: 0.125)                        
+ - Truth: ['April', '1,', '2011.']                        
+ - Predict: ['tuition', 'enrollment,', 'positively', 'revenue', '5%', 'student', 'impacted', 'addition', 'effective', 'April', 'increase', 'increase', 'increase', '1,', '2011.', 'also', 'in', 'In', 'to', 'the', 'the', 'was', 'by', 'the']
+# On June 6, 2011, pursuant to the Purchase Agreement, the Company issued to BIA a warrant to purchase from the Company 634,648 shares of the Company s common stock, at an exercise price equal to $1.144 per share (as adjusted from time to time as provided in the Purchase Agreement).
+# On December 31, 2012, the Company issued to Plexus an additional warrant to purchase from the Company 178,378 shares of the Company s common stock, at an exercise price equal to $2.542 per share (as adjusted from time to time as provided in the warrant).                        
+ - Performance: (R: 1.0; P: 0.2)                        
+ - Truth: ['issued', 'to', 'Plexus', 'an', 'additional', 'warrant', '178,378', 'shares', '$2.542']                        
+ - Predict: ['$2.542', 'adjusted', 'issued', 'exercise', 'common', 'shares', '178,378', 'equal', 'stock,', 'December', '31,', 'provided', 'share', 'purchase', 'warrant', 'time', 'price', 'additional', 'Plexus', 'per', 'time', '2012,', 'warrant).', 'Company', 'Company', 'Company', 'from', 'to', 'to', 'to', 'an', 's', 'in', '(as', 'of', 'to', 'an', 'at', 'as', 'On', 'from', 'the', 'the', 'the', 'the']
+# Under the Third Forbearance Agreement, the Bank has agreed to forbear from exercising certain of its rights and remedies arising as a result of the Company s non-compliance with certain financial covenants under the Loan Agreement commencing retroactively on April 1, 2014 and extending until no later than July 31, 2014.
+# Under each Forbearance Agreement, the Bank agreed to extend the forbearance period and to forbear from exercising certain of its rights and remedies arising as a result of the Company s non-compliance with certain financial covenants under the Loan Agreement.                        
+ - Performance: (R: 1.0; P: 0.125)                        
+ - Truth: ['each', 'extend', 'the', 'forbearance', 'period']                        
+ - Predict: ['Loan', 'covenants', 'non-compliance', 'remedies', 'exercising', 'financial', 'arising', 'extend', 'period', 'result', 'agreed', 'Agreement.', 'rights', 'Bank', 'Agreement,', 'Company', 'forbear', 'certain', 'Forbearance', 'forbearance', 'certain', 'each', 'Under', 's', 'its', 'to', 'with', 'as', 'of', 'a', 'under', 'to', 'the', 'of', 'from', 'and', 'the', 'the', 'the', 'and']
+# The interest rate on this term loan is fixed at 6.73% until November 2011, at which time the rate becomes variable at a rate equal to an internally calculated rate based on Farm Credit West s internal monthly operations and their cost of funds and generally follows the changes in the 90-day treasury rates in increments divisible by 0.25% until the loan matures.
+# Effective November 2011, we entered into an agreement with Farm Credit West fixing the interest rate at 3.65% for three years after which time the rate becomes variable at a rate equal to an internally calculated rate based on Farm Credit West s internal monthly operations and their cost of funds and generally follows the changes in the 90-day treasury rates in increments divisible by 0.25% until the loan matures.                        
+ - Performance: (R: 1.0; P: 0.12857142857142856)                        
+ - Truth: ['fixing', 'the', 'interest', 'rate', 'at', '3.65%', 'for', 'three', 'years']                        
+ - Predict: ['increments', '3.65%', 'internally', '0.25%', 'fixing', 'treasury', 'loan', 'matures.', 'monthly', 'internal', 'generally', 'funds', 'equal', 'interest', 'rates', 'variable', 'cost', 'Farm', 'calculated', 'divisible', 'changes', 'three', '90-day', 'Farm', 'operations', 'rate', 'rate', 'Credit', 'years', 'Effective', 'West', 'Credit', 'rate', 'follows', 'agreement', 'West', 'rate', 'based', 'November', 'entered', 'time', 'becomes', '2011,', 'into', 'after', 'until', 'by', 'an', 'with', 'to', 'at', 'of', 'we', 'the', 'the', 'in', 'in', 'the', 'the', 's', 'on', 'and', 'a', 'an', 'the', 'at', 'their', 'for', 'which', 'and']
+# This term loan bears interest at a variable rate equal to an internally calculated rate based on Farm Credit West s internal monthly operations and their cost of funds and generally follows the changes in the 90-day treasury rates in increments divisible by 0.25% and is payable in quarterly installments through November 2022.
+# On November 1, 2014, the rate became variable at a rate equal to an internally calculated rate based on Farm Credit West s internal monthly operations and their cost of funds and generally follows the changes in the 90-day treasury rates in increments divisible by 0.25% until the loan matures.                        
+ - Performance: (R: 0.9166666666666666; P: 0.22)                        
+ - Truth: ['On', 'November', '1,', '2014,', 'the', 'rate', 'became', 'variable', 'until', 'the', 'loan', 'matures.']                        
+ - Predict: ['increments', 'loan', 'internally', 'treasury', '0.25%', 'matures.', 'monthly', 'generally', 'funds', 'equal', 'variable', 'Farm', 'internal', 'rates', 'calculated', 'cost', 'rate', '90-day', 'divisible', 'operations', 'Credit', 'changes', 'rate', 'rate', 'West', 'follows', 'based', 'November', '2014,', '1,', 'became', 'until', 'by', 'of', 'to', 'in', 'on', 'On', 'the', 'in', 'the', 's', 'at', 'the', 'a', 'an', 'and', 'their', 'the', 'and']
+# Depreciation expense in fiscal year 2016 was $1.0 million higher than fiscal year 2015 primarily due to the acquisition of Sheldon Ranches in December 2015 and placement of our new, expanded lemon packing facility into service in March 2016.
+# The 29% increase of $1.0 million was primarily due to the acquisition of Sheldon Ranches in December 2015 and placement of our new, expanded lemon packing facility into service in March 2016.                        
+ - Performance: (R: 1.0; P: 0.0625)                        
+ - Truth: ['29%', 'increase']                        
+ - Predict: ['Sheldon', '$1.0', 'March', 'Ranches', 'December', 'primarily', 'increase', 'expanded', 'placement', 'lemon', 'acquisition', 'packing', 'facility', 'million', '29%', 'due', 'service', '2016.', '2015', 'new,', 'into', 'of', 'of', 'of', 'in', 'the', 'to', 'in', 'our', 'and', 'The', 'was']
+# In March 2013, we completed a private placement of 1,533,742 of our common stock to Biolding for aggregate proceeds of $5.0 million .
+# In March 2014, we completed a private placement of 943,396 shares of our common stock to Kuraray for aggregate proceeds of $4.0 million .                        
+ - Performance: (R: 1.0; P: 0.16666666666666666)                        
+ - Truth: ['943,396', 'Kuraray', '$4.0', 'million']                        
+ - Predict: ['private', 'aggregate', '$4.0', 'proceeds', '943,396', 'placement', 'common', 'shares', 'March', 'stock', 'completed', 'million', 'Kuraray', '2014,', 'of', 'of', 'we', 'of', 'to', 'a', 'our', 'In', 'for', '.']
+# As a percentage of revenue, cost of sales for UAS decreased from 60% to 58%.
+# As a percentage of revenue, cost of sales increased from 60% to 61%.                        
+ - Performance: (R: 1.0; P: 0.38461538461538464)                        
+ - Truth: ['increased', 'from', '60%', 'to', '61%.']                        
+ - Predict: ['cost', 'sales', 'revenue,', 'percentage', '60%', '61%.', 'increased', 'to', 'of', 'from', 'of', 'a', 'As']
+# Net cash provided by operating activities for the fiscal year ended April 30, 2015 increased by $5.4 million to $39.4 million, compared to net cash provided by operating activities of $34.0 million for the fiscal year ended April 30, 2014.
+# Net cash provided by operating activities for the fiscal year ended April 30, 2016 decreased by $38.8 million to $0.6 million, compared to net cash provided by operating activities of $39.4 million for the fiscal year ended April 30, 2015.                        
+ - Performance: (R: 0.8888888888888888; P: 0.2)                        
+ - Truth: ['decreased', 'by', '$38.8', 'million', 'to', '$0.6', 'million,', '$39.4', 'million']                        
+ - Predict: ['$38.8', '$39.4', 'decreased', '$0.6', 'compared', 'April', 'April', 'million', 'ended', 'million', 'ended', 'year', 'Net', 'million,', 'net', 'provided', 'year', 'cash', '2016', 'fiscal', 'provided', '30,', 'fiscal', '30,', 'cash', 'activities', 'operating', '2015.', 'activities', 'operating', 'to', 'by', 'of', 'to', 'for', 'the', 'for', 'the', 'by', 'by']
+# The senior subordinated notes are fully and unconditionally guaranteed on a joint and several senior subordinated unsecured basis by certain of Cinemark USA, Inc. s subsidiaries that guarantee, assume or become liable with respect to any of Cinemark USA, Inc. s or a guarantor s other debt.
+# The 5.125% Senior Notes are fully and unconditionally guaranteed on a joint and several senior unsecured basis by certain of Cinemark USA, Inc. s subsidiaries that guarantee, assume or become liable with respect to any of Cinemark USA, Inc. s or a guarantor s debt.                        
+ - Performance: (R: 1.0; P: 0.06666666666666667)                        
+ - Truth: ['5.125%', 'Senior', 'Notes']                        
+ - Predict: ['guarantor', 'debt.', 'liable', 'assume', 'guaranteed', 'Notes', '5.125%', 'guarantee,', 'unsecured', 'unconditionally', 'respect', 'fully', 'subsidiaries', 'basis', 'Senior', 'Cinemark', 'joint', 'senior', 'Cinemark', 'USA,', 'USA,', 'several', 'certain', 'become', 'Inc.', 'Inc.', 's', 's', 'with', 'to', 'any', 'or', 'or', 's', 'and', 'of', 'a', 'a', 'and', 'that', 'on', 'are', 'of', 'by', 'The']
+# We estimate the remaining capital expenditures for the development of these 181 domestic screens will be approximately $110 million.
+# the remaining capital expenditures for the development of these 109 international screens will be approximately $89 million.                        
+ - Performance: (R: 1.0; P: 0.29411764705882354)                        
+ - Truth: ['109', 'international', 'screens', '$89', 'million.']                        
+ - Predict: ['capital', 'expenditures', '$89', 'screens', 'international', 'development', '109', 'approximately', 'million.', 'remaining', 'will', 'be', 'for', 'the', 'the', 'of', 'these']
+# our guarantor s existing and future secured debt to the extent of the value of the assets securing such debt, including all borrowings under our senior secured credit facility.
+# The 8.625% Senior Notes and the guarantees are effectively subordinated to all of Cinemark USA, Inc. s and its guarantor s existing and future secured debt to the extent of the value of the assets securing such debt, including all borrowings under Cinemark USA, Inc. s amended senior secured credit facility.                        
+ - Performance: (R: 0.8; P: 0.23529411764705882)                        
+ - Truth: ['8.625%', 'Senior', 'Notes', 'and', 'the', 'guarantees', 'are', 'effectively', 'subordinated', 'Cinemark', 'USA,', 'Inc.', 'Cinemark', 'USA,', 'Inc.']                        
+ - Predict: ['borrowings', 'guarantor', 'subordinated', 'credit', 'guarantees', 'Notes', 'amended', 'secured', 'senior', '8.625%', 'existing', 'extent', 'facility.', 'secured', 'Senior', 'assets', 'future', 'securing', 'effectively', 'including', 'value', 'debt', 'debt,', 'Cinemark', 'USA,', 'USA,', 'Inc.', 'Cinemark', 'Inc.', 'under', 'all', 's', 'and', 'and', 'all', 'and', 'such', 's', 'the', 's', 'to', 'the', 'the', 'its', 'to', 'of', 'are', 'the', 'of', 'of', 'The']
+# The Senior Subordinated Notes are fully and unconditionally guaranteed on a joint and several senior subordinated unsecured basis by certain of Cinemark USA, Inc. s subsidiaries that guarantee, assume or become liable with respect to any of Cinemark USA, Inc. s or a guarantor s other debt.
+# The 5.125% Senior Notes are fully and unconditionally guaranteed on a joint and several senior unsecured basis by certain of Cinemark USA, Inc. s subsidiaries that guarantee, assume or become liable with respect to any of Cinemark USA, Inc. s or a guarantor s debt.                        
+ - Performance: (R: 1.0; P: 0.06666666666666667)                        
+ - Truth: ['5.125%', 'Senior', 'Notes']                        
+ - Predict: ['guarantor', 'debt.', 'liable', 'assume', 'guaranteed', 'Notes', '5.125%', 'guarantee,', 'unsecured', 'unconditionally', 'respect', 'fully', 'subsidiaries', 'basis', 'Senior', 'Cinemark', 'joint', 'senior', 'Cinemark', 'USA,', 'USA,', 'several', 'certain', 'become', 'Inc.', 'Inc.', 's', 's', 'with', 'to', 'any', 'or', 'or', 's', 'and', 'of', 'a', 'a', 'and', 'that', 'on', 'are', 'of', 'by', 'The']
+# We are currently evaluating the impact of ASU 2014-09, as amended by ASU 2015-14, on our consolidated financial statements.
+# We are currently evaluating the impact of ASU 2016-02 on our consolidated financial statements.                        
+ - Performance: (R: 1.0; P: 0.14285714285714285)                        
+ - Truth: ['ASU', '2016-02']                        
+ - Predict: ['evaluating', 'statements.', 'consolidated', 'financial', 'impact', 'ASU', '2016-02', 'currently', 'of', 'the', 'on', 'We', 'our', 'are']
+# Conversely, if the price of a near month contract is lower than the next month contract (a situation referred to as contango in the futures market), then absent any other change there is a tendency for the price of a next month contract to decline in value as it becomes the near month contract and approaches expiration.
+# For example, if the price of the near month contract is higher than the next month contract (a situation referred to as backwardation in the futures market), then absent any other change there is a tendency for the price of a next month contract to rise in value as it becomes the near month contract and approaches expiration.                        
+ - Performance: (R: 1.0; P: 0.05172413793103448)                        
+ - Truth: ['higher', 'backwardation', 'rise']                        
+ - Predict: ['futures', 'expiration.', 'backwardation', 'tendency', 'rise', 'market),', 'absent', 'approaches', 'value', 'referred', 'higher', 'price', 'change', 'situation', 'month', 'price', 'becomes', 'month', 'contract', 'month', 'contract', 'month', 'contract', 'contract', 'example,', 'next', 'near', 'next', 'near', 'is', 'in', 'than', 'if', 'to', 'For', 'any', 'other', 'and', 'then', 'in', 'to', 'as', 'for', 'the', 'as', 'the', 'it', 'a', 'is', 'the', 'of', 'the', 'the', '(a', 'the', 'of', 'there', 'a']
+# In this example, the value of the $2.00 investment would tend to rise faster than the spot price of gasoline, or fall slower.
+# In this example, the value of an investment in the second month contract would tend to rise faster than the spot price of gasoline, or fall slower.                        
+ - Performance: (R: 1.0; P: 0.18518518518518517)                        
+ - Truth: ['in', 'the', 'second', 'month', 'contract']                        
+ - Predict: ['fall', 'investment', 'spot', 'rise', 'gasoline,', 'month', 'value', 'price', 'tend', 'slower.', 'second', 'contract', 'faster', 'example,', 'would', 'than', 'to', 'of', 'the', 'an', 'or', 'of', 'the', 'in', 'this', 'In', 'the']
+# As a result, it would be possible in this hypothetical example for the spot price of gasoline to have risen 10% after some period of time, while the value of the investment in the second month futures contract would have risen 12%, assuming backwardation is large enough or enough time has elapsed.
+# As a result, it would be possible in this hypothetical example for the spot price of gasoline to have risen 10% after some period of time, while the value of the investment in the second month futures contract will have risen only 8%, assuming contango is large enough or enough time has elapsed.                        
+ - Performance: (R: 1.0; P: 0.03773584905660377)                        
+ - Truth: ['8%,', 'contango']                        
+ - Predict: ['futures', 'spot', 'elapsed.', 'investment', 'contango', 'gasoline', '8%,', 'hypothetical', 'period', 'month', 'risen', 'price', 'assuming', 'value', 'risen', 'large', 'contract', '10%', 'result,', 'second', 'example', 'time,', 'possible', 'time', 'enough', 'enough', 'would', 'only', 'has', 'is', 'after', 'of', 'have', 'will', 'of', 'or', 'As', 'some', 'be', 'have', 'a', 'to', 'it', 'in', 'for', 'of', 'in', 'the', 'the', 'the', 'while', 'this', 'the']
+# The return of approximately 9.34% on the Benchmark Futures Contract listed above is a hypothetical return only and could not actually be achieved by an investor holding Futures Contracts.
+# The increase of approximately 3.92% on the Benchmark Futures Contract listed above is a hypothetical return only and could not actually be achieved by an investor holding Futures Contracts.                        
+ - Performance: (R: 1.0; P: 0.06896551724137931)                        
+ - Truth: ['increase', '3.92%']                        
+ - Predict: ['Futures', '3.92%', 'Futures', 'Benchmark', 'hypothetical', 'holding', 'return', 'investor', 'Contracts.', 'increase', 'approximately', 'Contract', 'achieved', 'actually', 'listed', 'only', 'could', 'not', 'be', 'above', 'of', 'is', 'an', 'on', 'by', 'The', 'a', 'the', 'and']
+# For the year ended December 31, 2012, UGA incurred $20,911 in ongoing registration fees and other expenses relating to the registration and offering of additional units.
+# For the year ended December 31, 2013, UGA incurred $46,454 in ongoing registration fees and other expenses relating to the registration and offering of additional shares.                        
+ - Performance: (R: 1.0; P: 0.038461538461538464)                        
+ - Truth: ['$46,454']                        
+ - Predict: ['$46,454', 'expenses', 'incurred', 'ongoing', 'shares.', 'offering', 'relating', 'fees', 'registration', 'registration', 'UGA', 'additional', 'ended', '31,', 'December', 'year', '2013,', 'of', 'to', 'and', 'in', 'the', 'and', 'the', 'For', 'other']
+# Income from dividends and interest and Authorized Purchaser collections net of expenses was $(526,458) which is equivalent to a weighted average net income rate of approximately (0.90)% for the year ended December 31, 2013.
+# Income from dividends and interest and Authorized Participant collections net of expenses was $(382,730) which is equivalent to a weighted average net income rate of approximately (0.78)% for the year ended December 31, 2014.                        
+ - Performance: (R: 1.0; P: 0.058823529411764705)                        
+ - Truth: ['$(382,730)', '(0.78)%']                        
+ - Predict: ['Participant', 'expenses', 'weighted', 'collections', 'Authorized', 'dividends', 'ended', '(0.78)%', 'equivalent', '31,', 'net', 'approximately', 'net', 'interest', 'income', 'average', '$(382,730)', 'rate', 'December', 'Income', 'year', '2014.', 'of', 'and', 'of', 'to', 'from', 'is', 'a', 'the', 'for', 'was', 'and', 'which']
+# As a percentage of the daily movement of the Benchmark Futures Contract, the average error in daily tracking by the per share NAV was (0.936)%, meaning that over this time period UGA s tracking error was within the plus or minus 10% range established as its benchmark tracking goal.
+# NAV was 0.185%, meaning that over this time period UGA s tracking error was within the plus or minus 10% range established as its benchmark tracking goal.                        
+ - Performance: (R: 1.0; P: 0.037037037037037035)                        
+ - Truth: ['0.185%,']                        
+ - Predict: ['benchmark', '0.185%,', 'UGA', 'tracking', 'established', 'tracking', 'NAV', 'goal.', 'minus', 'range', 'error', 'plus', 'period', '10%', 'meaning', 'within', 'time', 'or', 's', 'over', 'was', 'the', 'as', 'was', 'its', 'that', 'this']
+# Conversely, if the price of a near month futures contract is lower than the next month futures contract (a situation referred to as contango ), then absent any other change, the price of a next month futures contract tends to decline in value as it becomes the near month futures contract and approaches expiration.
+# For example, if the price of the near month futures contract is higher than the next futures month contract (a situation referred to as backwardation ), then absent any other change, the price of a next month futures contract tends to rise in value as it becomes the near month futures contract and approaches expiration.                        
+ - Performance: (R: 1.0; P: 0.09090909090909091)                        
+ - Truth: ['higher', 'backwardation', 'tends', 'to', 'rise']                        
+ - Predict: ['backwardation', 'futures', 'expiration.', 'futures', 'futures', 'futures', 'tends', 'rise', 'absent', 'approaches', 'value', 'change,', 'referred', 'higher', 'situation', 'price', 'month', 'month', 'price', 'month', 'month', 'becomes', 'contract', 'contract', 'contract', 'contract', 'example,', 'next', 'next', 'near', 'near', 'in', 'is', 'than', 'to', 'other', 'if', 'any', 'For', 'and', 'as', 'then', 'to', 'as', 'the', 'it', 'the', 'the', '(a', 'the', 'of', 'a', 'of', 'the', '),']
+# This increase is associated with the expensing of the fair value of options granted to all staff and executives during 2011.
+# This decrease is associated with the expensing of the fair value of options granted to all staff and executives during 2011.                        
+ - Performance: (R: 1.0; P: 0.047619047619047616)                        
+ - Truth: ['decrease']                        
+ - Predict: ['expensing', 'fair', 'options', 'value', 'decrease', 'granted', 'associated', 'executives', 'staff', '2011.', 'all', 'and', 'of', 'of', 'to', 'during', 'the', 'with', 'the', 'is', 'This']
+# This was a result of increased activity during the current year.
+# This was a result of decreased production activity during the current year.                        
+ - Performance: (R: 1.0; P: 0.25)                        
+ - Truth: ['decreased', 'production', 'activity']                        
+ - Predict: ['decreased', 'production', 'activity', 'year.', 'result', 'current', 'of', 'during', 'was', 'a', 'the', 'This']
+# We also issued 114,335,711 ordinary shares at the same price to raise $2.7 million in the rights offering to our existing shareholders.
+# We also issued 114,335,711 ordinary shares priced at 2.5 cents (Australian) each and 45,733,371 new warrants to raise $2.7 million in the rights offering to our existing shareholders.                        
+ - Performance: (R: 1.0; P: 0.21428571428571427)                        
+ - Truth: ['2.5', 'cents', '(Australian)', '45,733,371', 'new', 'warrants']                        
+ - Predict: ['ordinary', 'shares', 'warrants', '45,733,371', '2.5', '$2.7', '114,335,711', 'existing', 'cents', 'priced', 'shareholders.', 'raise', 'offering', 'issued', '(Australian)', 'million', 'rights', 'new', 'also', 'each', 'at', 'We', 'to', 'and', 'in', 'the', 'to', 'our']
+# The increase in the total commissions accrued to brokers for the year ended December 31, 2011 as compared to the year ended December 31, 2010, was primarily a function of increased brokerage fees due to a lower number of futures contracts being held and traded as a result of the decrease in US12OF s total net assets and the increase in redemptions and creations of units during the year ended December 31, 2011.
+# The decrease in the total commissions accrued to brokers for the year ended December 31, 2013 as compared to the year ended December 31, 2012, was primarily a function of decreased brokerage fees due to a lower number of futures contracts being held and traded as a result of the decrease in USL s total net assets during the year ended December 31, 2013.                        
+ - Performance: (R: 0.8; P: 0.0625)                        
+ - Truth: ['decrease', 'decreased', 'decrease', 'in', 'USL']                        
+ - Predict: ['futures', 'commissions', 'assets', 'USL', 'decreased', 'net', 'lower', 'decrease', 'brokerage', 'traded', 'fees', 'total', 'decrease', 'accrued', 'total', 'compared', 'contracts', 'ended', 'primarily', 'result', 'brokers', 'ended', 'function', 'ended', 'due', 'number', 'held', 'December', 'year', 'December', 'year', '31,', 'December', '31,', 'year', '31,', '2013', '2012,', '2013.', 'being', 'to', 's', 'of', 'in', 'to', 'in', 'during', 'a', 'a', 'the', 'as', 'the', 'to', 'the', 'the', 'as', 'of', 'of', 'for', 'the', 'The', 'and', 'a', 'was']
+# The increase in registration fees and expenses incurred by US12OF for the three months ended December 31, 2012, as compared to the three months ended December 31, 2011, was primarily due to a higher amortization rate of registration fees and expenses during the three months ended December 31, 2012.
+# The increase in registration fees and expenses incurred by USL for the three months ended December 31, 2012, as compared to the three months ended December 31, 2011, was primarily due to a higher amortization rate of registration fees and expenses during the three months ended December 31, 2012.                        
+ - Performance: (R: 1.0; P: 0.02040816326530612)                        
+ - Truth: ['USL']                        
+ - Predict: ['amortization', 'USL', 'rate', 'registration', 'compared', 'increase', 'primarily', 'incurred', 'registration', 'December', 'expenses', 'due', 'expenses', 'higher', 'December', 'December', '31,', 'three', 'fees', 'three', 'three', '31,', 'ended', 'months', '31,', 'fees', 'months', 'ended', '2011,', 'ended', 'months', '2012,', '2012.', 'and', 'in', 'as', 'and', 'a', 'to', 'to', 'during', 'the', 'the', 'the', 'of', 'The', 'was', 'for', 'by']
+# For the three months ended December 31, 2012, US12OF earned $10,242 in dividend and interest income on such Treasuries, cash and/or cash equivalents.
+# For the year ended December 31, 2013, USL earned $24,631 in dividend and interest income on such Treasuries, cash and/or cash equivalents.                        
+ - Performance: (R: 1.0; P: 0.13636363636363635)                        
+ - Truth: ['USL', 'earned', '$24,631']                        
+ - Predict: ['$24,631', 'USL', 'equivalents.', 'Treasuries,', 'dividend', 'interest', 'earned', 'income', 'cash', 'ended', '31,', 'December', 'cash', 'year', '2013,', 'and/or', 'in', 'and', 'such', 'on', 'the', 'For']
+# By comparison, for the three months ended December 31, 2011 and 2010, US12OF earned $7,824 and $18,543, respectively, in dividend and interest income on such Treasuries, cash and/or cash equivalents.
+# For the three months ended December 31, 2013, USL earned $5,174 in dividend and interest income on such Treasuries, cash and/or cash equivalents.                        
+ - Performance: (R: 1.0; P: 0.13043478260869565)                        
+ - Truth: ['USL', 'earned', '$5,174']                        
+ - Predict: ['$5,174', 'equivalents.', 'USL', 'Treasuries,', 'dividend', 'interest', 'earned', 'income', '31,', 'cash', 'three', 'December', 'months', 'ended', 'cash', '2013,', 'and/or', 'in', 'and', 'such', 'the', 'on', 'For']
+# Such market conditions could prevent US12OF from promptly liquidating its positions in Oil Futures Contracts.
+# Such market conditions could prevent USL from promptly liquidating its positions in Oil Futures Contracts.                        
+ - Performance: (R: 1.0; P: 0.06666666666666667)                        
+ - Truth: ['USL']                        
+ - Predict: ['liquidating', 'Futures', 'USL', 'conditions', 'market', 'positions', 'Contracts.', 'Oil', 'promptly', 'prevent', 'could', 'its', 'from', 'Such', 'in']
+# If the resulting number is a negative number, then the near month price is lower than the average price of the near 12 months and the market could be described as being in contango.
+# If the resulting number is a positive number, then the near month price is higher than the average price of the near 12 months and the market could be described as being in backwardation.                        
+ - Performance: (R: 1.0; P: 0.029411764705882353)                        
+ - Truth: ['backwardation.']                        
+ - Predict: ['backwardation.', 'positive', 'month', 'average', 'months', 'resulting', 'market', 'price', '12', 'price', 'number,', 'described', 'higher', 'number', 'near', 'could', 'near', 'If', 'than', 'in', 'being', 'is', 'is', 'as', 'be', 'a', 'the', 'the', 'of', 'the', 'and', 'the', 'the', 'then']
+# In April 2013, we received a cash payment of $12.5 million from Securus Technologies Holdings, Inc. in full satisfaction of all obligations under the loan agreement.
+# In April 2015, we received a cash payment of $2.5 million from Total Military Management, Inc. in full satisfaction of all obligations under the loan agreement.                        
+ - Performance: (R: 1.0; P: 0.23076923076923078)                        
+ - Truth: ['$2.5', 'million', 'Total', 'Military', 'Management,', 'Inc.']                        
+ - Predict: ['$2.5', 'loan', 'satisfaction', 'obligations', 'cash', 'payment', 'Total', 'agreement.', 'April', 'full', 'Management,', 'Military', 'million', 'Inc.', '2015,', 'received', 'all', 'we', 'of', 'under', 'of', 'a', 'from', 'the', 'in', 'In']
+# In January 2014, we received a payment of $5.1 million from BMC Acquisition, Inc. in full satisfaction of all obligations under the loan agreement.
+# In May 2015, we received a cash payment of $5.1 million from Garretson Firm Resolution Group, Inc. in full satisfaction of all obligations under the loan agreement.                        
+ - Performance: (R: 1.0; P: 0.18518518518518517)                        
+ - Truth: ['Garretson', 'Firm', 'Resolution', 'Group,', 'Inc.']                        
+ - Predict: ['obligations', 'loan', '$5.1', 'satisfaction', 'cash', 'payment', 'Garretson', 'Resolution', 'full', 'agreement.', 'million', 'May', 'Firm', 'Group,', 'Inc.', '2015,', 'received', 'under', 'we', 'all', 'of', 'of', 'a', 'the', 'from', 'in', 'In']
+# In January 2013, we received a cash payment of $30.2 million from NDSSI Holdings, Inc. in full satisfaction of all obligations under the loan agreement.
+# In April 2015, we received a cash payment of $16.8 million from Digi-Star Acquisition Holdings, Inc. in full satisfaction of all obligations under the loan agreement.                        
+ - Performance: (R: 1.0; P: 0.23076923076923078)                        
+ - Truth: ['$16.8', 'million', 'Digi-Star', 'Acquisition', 'Holdings,', 'Inc.']                        
+ - Predict: ['obligations', '$16.8', 'loan', 'satisfaction', 'Digi-Star', 'cash', 'payment', 'Acquisition', 'agreement.', 'April', 'full', 'Holdings,', 'million', 'Inc.', '2015,', 'received', 'under', 'we', 'all', 'of', 'of', 'a', 'the', 'from', 'in', 'In']
+# In October 2012, we received a cash payment of $5.4 million from Bojangles in full satisfaction of all obligations under the loan agreement.
+# In October 2015, we received a cash payment of $7.4 million from Idera, Inc. in full satisfaction of all obligations under the loan agreement.                        
+ - Performance: (R: 1.0; P: 0.16666666666666666)                        
+ - Truth: ['$7.4', 'million', 'Idera,', 'Inc.']                        
+ - Predict: ['$7.4', 'obligations', 'loan', 'Idera,', 'satisfaction', 'cash', 'payment', 'October', 'agreement.', 'full', 'million', 'Inc.', '2015,', 'received', 'all', 'we', 'of', 'under', 'of', 'from', 'a', 'the', 'in', 'In']
+# Messrs. Berman, Dimitrov, Owens and Sandeep K. Khorana, each an interested member of our Board of Directors, have a direct or indirect pecuniary interest in Fifth Street Management.
+# Messrs. Berman, Dimitrov, Owens and Sandeep K. Khorana, each an interested member of our Board of Directors, have a direct or indirect pecuniary interest in our Investment Adviser.                        
+ - Performance: (R: 1.0; P: 0.10714285714285714)                        
+ - Truth: ['our', 'Investment', 'Adviser.']                        
+ - Predict: ['indirect', 'direct', 'Sandeep', 'Investment', 'Berman,', 'Owens', 'pecuniary', 'Adviser.', 'interest', 'interested', 'Dimitrov,', 'Directors,', 'Board', 'Messrs.', 'Khorana,', 'K.', 'member', 'each', 'of', 'and', 'in', 'or', 'have', 'our', 'of', 'a', 'an', 'our']
+# We expect the trend will continue in fiscal 2012 and our gross margin will continuously be negatively affected by the devalued U.S. dollar.
+# Although the U.S. dollar devaluation appears slowing down, we anticipate the trend will continue in fiscal 2013 and our gross margin will continue to be negatively affected by the devalued U.S. dollar.                        
+ - Performance: (R: 1.0; P: 0.25)                        
+ - Truth: ['Although', 'the', 'U.S.', 'dollar', 'devaluation', 'appears', 'slowing', 'down,']                        
+ - Predict: ['negatively', 'margin', 'gross', 'dollar', 'dollar.', 'fiscal', 'devalued', 'affected', 'trend', 'slowing', 'devaluation', 'anticipate', 'U.S.', '2013', 'appears', 'continue', 'continue', 'U.S.', 'down,', 'Although', 'we', 'will', 'be', 'will', 'by', 'to', 'the', 'in', 'the', 'our', 'and', 'the']
+# ________ (1) Average leverage during the period was calculated by dividing the daily weighted average repurchase agreements and other debt outstanding, less amounts used to fund short-term investments in U.S. treasury securities, for the period by our average month-ended stockholders equity for the period.
+# Average leverage during the period was calculated by dividing the daily weighted average repurchase agreements and debt of consolidated VIEs outstanding for the period by our average month-ended stockholders equity for the period.                        
+ - Performance: (R: 1.0; P: 0.06060606060606061)                        
+ - Truth: ['consolidated', 'VIEs']                        
+ - Predict: ['leverage', 'stockholders', 'weighted', 'equity', 'repurchase', 'dividing', 'month-ended', 'consolidated', 'agreements', 'debt', 'VIEs', 'calculated', 'Average', 'outstanding', 'daily', 'average', 'average', 'period', 'period', 'period.', 'and', 'during', 'the', 'of', 'for', 'our', 'the', 'by', 'was', 'the', 'by', 'for', 'the']
+# Our general and administrative expenses primarily consisted of prime broker fees, information technology costs, accounting fees, legal fees, Board of Director fees, insurance expense and general overhead expense.
+# General and administrative expenses were $32 million and $31 million for fiscal years 2013 and 2012 , respectively, primarily consisting of prime broker fees, information technology costs, accounting fees, legal fees, Board of Director fees, insurance expense and general overhead expense.                        
+ - Performance: (R: 0.8333333333333334; P: 0.12195121951219512)                        
+ - Truth: ['$32', 'million', '$31', 'million', '2013', '2012']                        
+ - Predict: ['insurance', 'overhead', 'accounting', 'million', 'fiscal', 'broker', 'expense', '$31', 'information', 'expense.', 'prime', 'legal', 'million', 'expenses', 'Director', 'administrative', 'technology', 'primarily', '$32', 'costs,', 'consisting', 'General', 'Board', 'fees,', 'fees,', 'fees,', 'fees,', 'general', 'years', 'respectively,', '2013', '2012', 'and', 'of', 'and', 'and', 'of', 'were', 'and', 'for', ',']
+# The principal elements impacting our interest income are our average agency MBS portfolio size and the yield on our investments.
+# The principal elements impacting our interest income are the size of our average investment portfolio and the yield on our investments.                        
+ - Performance: (R: 1.0; P: 0.09523809523809523)                        
+ - Truth: ['investment', 'portfolio']                        
+ - Predict: ['yield', 'portfolio', 'investments.', 'average', 'income', 'investment', 'interest', 'impacting', 'size', 'elements', 'principal', 'on', 'our', 'of', 'the', 'and', 'the', 'our', 'our', 'are', 'The']
+# This decrease was offset by a $2.4 million increase in interest expense due to a decrease in the amount of interest capitalized in the current period.
+# The increase in other expense for CPE Resources is due to a $2.4 million increase in interest expense caused by a decrease in the amount of interest capitalized in the current period.                        
+ - Performance: (R: 1.0; P: 0.0625)                        
+ - Truth: ['CPE', 'Resources']                        
+ - Predict: ['$2.4', 'capitalized', 'CPE', 'decrease', 'interest', 'period.', 'million', 'interest', 'Resources', 'current', 'expense', 'caused', 'due', 'amount', 'increase', 'increase', 'expense', 'of', 'in', 'other', 'in', 'a', 'by', 'the', 'in', 'to', 'for', 'the', 'in', 'is', 'a', 'The']
+# related to amortization of intangible assets associated with recent acquisitions of $22.1 million, partially offset by $3.3 million of amortization of intangible assets associated with prior acquisitions that have been fully amortized.
+# The increase was primarily related to amortization of intangible assets associated with recent acquisitions of $22.1 million, partially offset by $2.9 million of amortization of intangible assets associated with prior acquisitions that have been fully amortized.                        
+ - Performance: (R: 1.0; P: 0.08333333333333333)                        
+ - Truth: ['increase', '$2.9', 'million']                        
+ - Predict: ['intangible', 'amortized.', 'intangible', 'amortization', '$2.9', 'amortization', '$22.1', 'fully', 'offset', 'prior', 'acquisitions', 'acquisitions', 'increase', 'related', 'recent', 'partially', 'primarily', 'associated', 'associated', 'million', 'million,', 'assets', 'assets', 'been', 'of', 'of', 'was', 'to', 'of', 'have', 'that', 'by', 'with', 'with', 'of', 'The']
+# to our consolidated financial statements included in this annual report on Form 10-K.
+# See Note 9 to our consolidated financial statements included in this annual report on Form 10-K for the preliminary purchase price allocations.                        
+ - Performance: (R: 1.0; P: 0.18181818181818182)                        
+ - Truth: ['preliminary', 'purchase', 'price', 'allocations.']                        
+ - Predict: ['preliminary', 'financial', 'allocations.', 'purchase', 'statements', 'consolidated', 'Form', 'price', 'report', 'included', 'annual', 'Note', '10-K', '9', 'See', 'to', 'on', 'in', 'our', 'for', 'the', 'this']
+# Our recent acquisitions within the Decision Analytics segment accounted for an increase of $83.7 million in SGA of which $20.7 million were non-recurring transaction costs associated with the Wood Mackenzie acquisition and the remaining amount was primarily related to salaries and employee benefits.
+# Our recent acquisitions accounted for an increase of $83.7 million in SGA, of which $20.7 million were non-recurring transaction costs associated with the Wood Mackenzie acquisition and the remaining amount was primarily related to salaries and employee benefits, rent expense and professional consulting fees.                        
+ - Performance: (R: 1.0; P: 0.11363636363636363)                        
+ - Truth: ['rent', 'expense', 'professional', 'consulting', 'fees.']                        
+ - Predict: ['non-recurring', '$83.7', 'SGA,', 'rent', 'transaction', '$20.7', 'consulting', 'acquisitions', 'salaries', 'professional', 'benefits,', 'expense', 'increase', 'employee', 'primarily', 'fees.', 'associated', 'remaining', 'costs', 'related', 'accounted', 'acquisition', 'Mackenzie', 'recent', 'Wood', 'amount', 'million', 'million', 'of', 'and', 'to', 'in', 'for', 'were', 'an', 'and', 'the', 'which', 'of', 'the', 'was', 'with', 'Our', 'and']
+# WHEREAS, GHHC, L.L.C., a Delaware limited liability company ( GHHC ), has acquired shares of common stock, par value $0.01 per share, of Hyatt Hotels Corporation (the Common Stock WHEREAS, Thomas J. Pritzker, Marshall E. Eisenberg and Karl J. Breyer, not individually, but solely in their capacity as trustees, and certain others entered into that certain Amended and Restated Global Hyatt Agreement, dated October 1, 2009 (as the same may be amended from time to time, the A/R Global Hyatt Agreement ) (capitalized terms used but not defined herein shall have the meanings set forth in the A/R Global Hyatt Agreement); and WHEREAS, in connection with the receipt by GHHC of Common Stock, GHHC is executing and delivering this Joinder Agreement.
+# WHEREAS, THHC, L.L.C., a Delaware limited liability company ( THHC ), has acquired shares of common stock, par value $0.01 per share, of Hyatt Hotels Corporation (the Common Stock WHEREAS, Thomas J. Pritzker, Marshall E. Eisenberg and Karl J. Breyer, not individually, but solely in their capacity as trustees, and certain others entered into that certain Amended and Restated Global Hyatt Agreement, dated October 1, 2009 (as the same may be amended from time to time, the A/R Global Hyatt Agreement ) (capitalized terms used but not defined herein shall have the meanings set forth in the A/R Global Hyatt Agreement); and WHEREAS, in connection with the receipt by THHC of Common Stock, THHC is executing and delivering this Joinder Agreement.                        
+ - Performance: (R: 1.0; P: 0.01652892561983471)                        
+ - Truth: ['THHC,', 'THHC']                        
+ - Predict: ['(capitalized', 'liability', 'executing', 'limited', 'Restated', 'connection', 'trustees,', 'delivering', '$0.01', 'defined', 'individually,', 'Delaware', 'acquired', 'Global', 'receipt', 'terms', 'Hotels', 'par', 'shares', 'meanings', 'value', 'capacity', 'Joinder', 'set', 'Amended', 'dated', 'amended', 'solely', 'common', 'Global', 'entered', 'L.L.C.,', 'share,', 'October', 'Global', 'Common', 'Hyatt', 'Hyatt', 'used', 'Corporation', 'Karl', 'forth', 'certain', 'Hyatt', 'Stock', 'stock,', 'Common', 'Marshall', 'Pritzker,', 'time', 'Thomas', 'Breyer,', 'per', 'certain', 'Agreement', 'Eisenberg', 'Agreement,', 'may', 'THHC', 'J.', 'Agreement);', 'Agreement.', 'time,', 'J.', 'E.', 'company', '1,', 'Hyatt', '2009', 'THHC,', 'shall', 'Stock,', 'others', 'THHC', 'THHC', 'WHEREAS,', 'herein', 'A/R', 'A/R', 'same', 'WHEREAS,', '(the', 'WHEREAS,', '(as', 'not', 'from', 'to', 'as', 'and', 'in', 'into', 'not', 'have', 'their', 'be', 'and', 'in', 'with', 'and', 'but', 'and', '(', 'the', 'but', 'the', 'of', 'by', 'is', 'this', 'in', 'that', 'the', 'has', 'and', 'a', 'the', ')', 'the', '),', 'of', 'of']
+# Variabilities continue to exist in our ASPAC region that may negatively impact 2014 results, such as the rate of economic growth in China and renovations at several of our larger managed hotels.
+# Variabilities continue to exist in our ASPAC region that may negatively impact 2015 results, such as the rate of economic growth in China and market saturation in South Korea.                        
+ - Performance: (R: 1.0; P: 0.1724137931034483)                        
+ - Truth: ['market', 'saturation', 'in', 'South', 'Korea.']                        
+ - Predict: ['negatively', 'Variabilities', 'saturation', 'Korea.', 'market', 'impact', 'growth', 'China', 'rate', 'South', 'economic', 'ASPAC', 'exist', 'results,', 'region', 'continue', '2015', 'may', 'to', 'of', 'and', 'in', 'in', 'as', 'the', 'in', 'our', 'such', 'that']
+# During the year ended December 31, 2014, we sold a portfolio of 38 select service properties, a portfolio of nine select service properties and one full service property, and five select service properties to unrelated third parties for a combined sale price of $943 million, net of closing costs, resulting in a pre-tax gain of $231 million.
+# During the year ended December 31, 2014, we sold a portfolio of 38 select service properties, a portfolio of nine select service properties and one full service property, and five select service properties resulting in pre-tax gains of $231 million and we sold our vacation ownership business resulting in a gain of $80 million.                        
+ - Performance: (R: 1.0; P: 0.2222222222222222)                        
+ - Truth: ['sold', 'our', 'vacation', 'ownership', 'business', 'resulting', 'in', 'a', 'gain', 'of', '$80', 'million.']                        
+ - Predict: ['gain', 'gains', 'vacation', 'pre-tax', 'portfolio', 'ownership', 'property,', 'portfolio', 'ended', 'full', 'sold', 'million.', '31,', 'nine', 'five', '$80', 'select', 'business', 'properties', 'select', 'sold', 'properties', '38', 'properties,', 'select', 'resulting', '$231', 'service', 'December', 'year', 'service', 'resulting', 'service', 'service', 'million', '2014,', 'one', 'of', 'of', 'of', 'we', 'a', 'of', 'in', 'a', 'we', 'in', 'our', 'During', 'the', 'a', 'and', 'and', 'and']
+# Based on the nature of the business and operations of the Partnership, Altegris Funds believes that the estimates utilized in preparing the Partnership s financial statements are appropriate and reasonable, however actual results could differ from these estimates.
+# Based on the nature of the business and operations of the Partnership, the General Partner believes that the estimates utilized in preparing the Partnership s financial statements are appropriate and reasonable, however actual results could differ from these estimates.                        
+ - Performance: (R: 1.0; P: 0.05128205128205128)                        
+ - Truth: ['General', 'Partner']                        
+ - Predict: ['actual', 'financial', 'operations', 'preparing', 'statements', 'results', 'estimates', 'estimates.', 'reasonable,', 'differ', 'utilized', 'business', 'General', 'appropriate', 'Partnership,', 'believes', 'Partnership', 'Based', 'Partner', 'nature', 'however', 'could', 'from', 'are', 's', 'and', 'that', 'on', 'and', 'of', 'these', 'in', 'the', 'the', 'the', 'the', 'the', 'of', 'the']
+# This decline was partially offset by 3.6% growth in the Cooking Group which primarily serves the restaurant and convenience store markets.
+# This decline was partially offset by 3.6% growth in the AAI segment of the Cooking Group which primarily serves the restaurant and convenience store markets.                        
+ - Performance: (R: 1.0; P: 0.04)                        
+ - Truth: ['AAI']                        
+ - Predict: ['3.6%', 'offset', 'growth', 'decline', 'markets.', 'convenience', 'primarily', 'store', 'restaurant', 'partially', 'AAI', 'Cooking', 'segment', 'serves', 'Group', 'and', 'was', 'by', 'the', 'in', 'of', 'This', 'the', 'the', 'which']
+# As a result, we expect our actual cash receipts relating to these outstanding repurchase requests to be significantly lower than this amount.
+# As a result, we expect our actual cash receipts relating to these outstanding repurchase requests to be significantly lower than the unpaid principal balance of the loan.                        
+ - Performance: (R: 0.8571428571428571; P: 0.2222222222222222)                        
+ - Truth: ['the', 'unpaid', 'principal', 'balance', 'of', 'the', 'loan.']                        
+ - Predict: ['repurchase', 'actual', 'principal', 'receipts', 'balance', 'cash', 'unpaid', 'lower', 'relating', 'outstanding', 'requests', 'loan.', 'result,', 'expect', 'significantly', 'be', 'than', 'we', 'to', 'As', 'a', 'to', 'the', 'of', 'our', 'the', 'these']
+# We have classified private-label mortgage-related securities held in our investment portfolio as subprime if the securities were labeled as such when issued.
+# We have classified private-label mortgage-related securities held in our investment portfolio as Alt-A if the securities were labeled as such when issued.                        
+ - Performance: (R: 1.0; P: 0.045454545454545456)                        
+ - Truth: ['Alt-A']                        
+ - Predict: ['classified', 'mortgage-related', 'portfolio', 'investment', 'private-label', 'Alt-A', 'labeled', 'securities', 'issued.', 'securities', 'held', 'such', 'as', 'if', 'were', 'as', 'in', 'We', 'our', 'have', 'the', 'when']
+# We have classified private-label mortgage-related securities held in our investment portfolio as subprime if the securities were labeled as such when issued.
+# We have classified private-label mortgage-related securities held in our investment portfolio as Alt-A if the securities were labeled as such when issued.                        
+ - Performance: (R: 1.0; P: 0.045454545454545456)                        
+ - Truth: ['Alt-A']                        
+ - Predict: ['classified', 'mortgage-related', 'portfolio', 'investment', 'private-label', 'Alt-A', 'labeled', 'securities', 'issued.', 'securities', 'held', 'such', 'as', 'if', 'were', 'as', 'in', 'We', 'our', 'have', 'the', 'when']
+# When derivative commitments to sell securities settle, we include the fair value of the commitment on the settlement date in the cost basis of the security we sell.
+# When derivative purchase commitments settle, we include the fair value of the commitment on the settlement date in the cost basis of the loan or security we purchase.                        
+ - Performance: (R: 1.0; P: 0.07142857142857142)                        
+ - Truth: ['purchase', 'purchase.']                        
+ - Predict: ['derivative', 'loan', 'security', 'commitments', 'commitment', 'fair', 'purchase', 'basis', 'cost', 'settlement', 'value', 'include', 'date', 'purchase.', 'settle,', 'or', 'we', 'When', 'of', 'we', 'in', 'the', 'the', 'on', 'of', 'the', 'the', 'the']
+# Pay-fixed swap refers to an interest rate swap trade under which we pay a predetermined fixed rate of interest based upon a set notional amount and receive a variable interest payment based upon a stated index, with the index resetting at regular intervals over a specified period of time.
+# Receive-fixed swap refers to an interest rate swap trade under which we make a variable interest payment based upon a stated index, with the index resetting at regular intervals, and receive a predetermined fixed rate of interest based upon a set notional amount and over a specified period of time.                        
+ - Performance: (R: 1.0; P: 0.18)                        
+ - Truth: ['Receive-fixed', 'variable', 'interest', 'payment', 'based', 'upon', 'a', 'stated', 'index,']                        
+ - Predict: ['resetting', 'regular', 'intervals,', 'rate', 'Receive-fixed', 'predetermined', 'index', 'swap', 'rate', 'notional', 'specified', 'index,', 'variable', 'stated', 'period', 'swap', 'payment', 'interest', 'amount', 'interest', 'set', 'trade', 'fixed', 'interest', 'refers', 'time.', 'receive', 'make', 'based', 'upon', 'upon', 'based', 'under', 'of', 'of', 'we', 'over', 'a', 'a', 'at', 'a', 'a', 'a', 'the', 'to', 'an', 'and', 'with', 'and', 'which']
+# We amortize cost basis adjustments, including premiums and discounts on mortgage loans and securities, as a yield adjustment over the contractual life of the loan or security as a component of net interest income.
+# Amortization income refers to income resulting from the amortization of cost basis adjustments, including premiums and discounts on mortgage loans and securities, as a yield adjustment over the contractual life of the loan or security.                        
+ - Performance: (R: 1.0; P: 0.22857142857142856)                        
+ - Truth: ['resulting', 'from', 'the', 'amortization', 'of', 'cost', 'basis', 'adjustments,']                        
+ - Predict: ['yield', 'cost', 'loan', 'security.', 'securities,', 'loans', 'basis', 'contractual', 'adjustments,', 'premiums', 'mortgage', 'adjustment', 'Amortization', 'discounts', 'income', 'resulting', 'amortization', 'income', 'life', 'including', 'refers', 'or', 'and', 'over', 'of', 'and', 'on', 'from', 'the', 'of', 'to', 'the', 'a', 'the', 'as']
+# Liquidity risk is the risk that we will not be able to meet our funding obligations in a timely manner.
+# Our liquidity risk management framework is designed to address our liquidity risk, which is the risk that we will not be able to meet our funding obligations in a timely manner.                        
+ - Performance: (R: 1.0; P: 0.1935483870967742)                        
+ - Truth: ['designed', 'to', 'address', 'our', 'liquidity', 'risk,']                        
+ - Predict: ['funding', 'timely', 'obligations', 'risk', 'framework', 'risk,', 'management', 'address', 'liquidity', 'manner.', 'liquidity', 'meet', 'risk', 'able', 'designed', 'not', 'be', 'will', 'we', 'to', 'to', 'a', 'in', 'the', 'our', 'that', 'our', 'Our', 'is', 'is', 'which']
+# These increases were partially offset by declining revenues from products divested or discontinued in the current or prior year which reduced comparative period revenues by $3.3 million.
+# These increases were partially offset by a decrease in revenues from products divested or discontinued in the current or prior year which reduced comparative period revenues by $17.0 million and a decrease in acquisition revenues from the Hettlingen acquisition of $8.7 million .                        
+ - Performance: (R: 0.8461538461538461; P: 0.2558139534883721)                        
+ - Truth: ['$17.0', 'million', 'decrease', 'in', 'acquisition', 'revenues', 'from', 'the', 'Hettlingen', 'acquisition', 'of', '$8.7', 'million']                        
+ - Predict: ['$8.7', 'divested', '$17.0', 'reduced', 'decrease', 'discontinued', 'decrease', 'acquisition', 'offset', 'period', 'increases', 'Hettlingen', 'prior', 'comparative', 'acquisition', 'products', 'current', 'partially', 'revenues', 'revenues', 'year', 'revenues', 'million', 'million', 'of', 'or', 'were', 'the', 'in', 'by', 'in', 'or', 'a', 'and', 'a', 'in', 'the', 'by', 'from', 'from', 'These', 'which', '.']
+# Lower distribution revenues related to the portions that are included in PURA approved tracking mechanisms that track and recover certain incurred costs that do not impact earnings.
+# Lower electric distribution segment revenues related to the portions that are included in regulatory commission approved tracking mechanisms that recover certain incurred costs and do not impact earnings.                        
+ - Performance: (R: 1.0; P: 0.10714285714285714)                        
+ - Truth: ['electric', 'regulatory', 'commission']                        
+ - Predict: ['impact', 'earnings.', 'electric', 'incurred', 'recover', 'tracking', 'regulatory', 'mechanisms', 'portions', 'segment', 'distribution', 'revenues', 'Lower', 'related', 'approved', 'included', 'commission', 'costs', 'certain', 'not', 'do', 'in', 'are', 'to', 'the', 'that', 'that', 'and']
+# The following table provides the amounts and variances in operating revenues and expense line items for the consolidated statements of income for NU included in this Annual Report on Form 10-K for the years ended December 31, 2012, 2011, and 2010.
+# The following table provides the amounts and variances in operating revenues and expense line items for the consolidated statements of income for PSNH included in this Annual Report on Form 10-K for the years ended December 31, 2013 and 2012:                        
+ - Performance: (R: 1.0; P: 0.025)                        
+ - Truth: ['PSNH']                        
+ - Predict: ['statements', 'revenues', 'variances', 'consolidated', 'expense', 'amounts', 'operating', 'ended', 'PSNH', 'income', 'Form', 'items', 'included', '31,', 'Report', 'provides', 'Annual', 'table', 'December', 'years', 'line', '10-K', '2013', '2012:', 'following', 'of', 'and', 'and', 'the', 'for', 'the', 'in', 'and', 'for', 'on', 'in', 'for', 'the', 'The', 'this']
+# These costs are included in DPU approved tracking mechanisms and do not impact earnings.
+# Purchased Power and Transmission costs are included in regulatory-approved tracking mechanisms and do not impact earnings.                        
+ - Performance: (R: 1.0; P: 0.5625)                        
+ - Truth: ['Purchased', 'Power', 'and', 'Transmission', 'costs', 'are', 'included', 'in', 'regulatory-approved']                        
+ - Predict: ['earnings.', 'impact', 'tracking', 'Purchased', 'regulatory-approved', 'mechanisms', 'Transmission', 'included', 'costs', 'Power', 'not', 'do', 'and', 'in', 'are', 'and']
+# In addition, our production volumes are impacted by curtailed volumes of natural gas due to operational requirements associated with fracture stimulation and other operations on near-by horizontal wells, seasonal supply and demand conditions from end users and general maintenance and repairs to our wells.
+# Our production volumes in shale operations are impacted by curtailed volumes of natural gas due to operational requirements associated with fracture stimulation and other operations on nearby horizontal wells, seasonal supply and demand conditions from end users and general maintenance and repairs to our wells.                        
+ - Performance: (R: 1.0; P: 0.044444444444444446)                        
+ - Truth: ['shale', 'operations']                        
+ - Predict: ['curtailed', 'shale', 'seasonal', 'natural', 'fracture', 'horizontal', 'maintenance', 'impacted', 'gas', 'general', 'end', 'repairs', 'requirements', 'production', 'stimulation', 'supply', 'demand', 'operational', 'users', 'conditions', 'associated', 'operations', 'operations', 'volumes', 'nearby', 'volumes', 'wells,', 'due', 'wells.', 'and', 'of', 'and', 'from', 'to', 'and', 'in', 'on', 'and', 'to', 'with', 'are', 'other', 'our', 'by', 'Our']
+# The lower commodity prices primarily impacted properties located in Texas because production taxes are based on a fixed percentage of gross value of production sold.
+# The higher oil prices primarily impacted properties located in Texas because production taxes are based on a fixed percentage of gross value of production sold.                        
+ - Performance: (R: 1.0; P: 0.12)                        
+ - Truth: ['higher', 'oil', 'prices']                        
+ - Predict: ['fixed', 'gross', 'taxes', 'production', 'sold.', 'production', 'value', 'prices', 'oil', 'percentage', 'properties', 'impacted', 'primarily', 'Texas', 'higher', 'based', 'located', 'of', 'of', 'on', 'a', 'in', 'are', 'because', 'The']
+# The excess of the purchase price over the fair value of the acquired net assets has been allocated to goodwill, none of which is tax deductible.
+# The excess of the purchase price over the fair value of the acquired net assets represents cost and revenue synergies specific to us, as well as non-capitalizable intangible assets, such as the employee workforce acquired, and has been allocated to goodwill, none of which is tax deductible.                        
+ - Performance: (R: 1.0; P: 0.2978723404255319)                        
+ - Truth: ['represents', 'cost', 'and', 'revenue', 'synergies', 'specific', 'to', 'us,', 'non-capitalizable', 'intangible', 'assets,', 'employee', 'workforce', 'acquired,']                        
+ - Predict: ['non-capitalizable', 'intangible', 'excess', 'net', 'fair', 'deductible.', 'allocated', 'tax', 'employee', 'goodwill,', 'purchase', 'synergies', 'workforce', 'specific', 'us,', 'revenue', 'cost', 'value', 'assets', 'price', 'acquired', 'none', 'represents', 'well', 'assets,', 'acquired,', 'is', 'as', 'over', 'of', 'to', 'to', 'of', 'the', 'and', 'has', 'been', 'The', 'as', 'which', 'the', 'and', 'of', 'the', 'the', 'as', 'such']
+# The excess of the purchase price over the fair value of the acquired net assets represents cost and revenue synergies specific to us as well as non-capitalizable intangible assets, such as the employee workforce acquired.
+# The excess of the purchase price over the fair value of the acquired net assets represents cost and revenue synergies specific to us, as well as non-capitalizable intangible assets, such as the employee workforce acquired, and has been allocated to goodwill, none of which is tax deductible.                        
+ - Performance: (R: 1.0; P: 0.19148936170212766)                        
+ - Truth: ['allocated', 'to', 'goodwill,', 'none', 'of', 'which', 'is', 'tax', 'deductible.']                        
+ - Predict: ['non-capitalizable', 'intangible', 'excess', 'net', 'fair', 'deductible.', 'allocated', 'tax', 'employee', 'goodwill,', 'purchase', 'synergies', 'workforce', 'specific', 'us,', 'revenue', 'cost', 'value', 'assets', 'price', 'acquired', 'none', 'represents', 'well', 'assets,', 'acquired,', 'is', 'as', 'over', 'of', 'to', 'to', 'of', 'the', 'and', 'has', 'been', 'The', 'as', 'which', 'the', 'and', 'of', 'the', 'the', 'as', 'such']
+# As a result of adjustments to deferred revenue related to certain acquisitions required by business combination rules, we did not recognize $26.2 million of revenue in our Human Health segment for fiscal year 2012 and $30.8 million of revenue in our Human Health segment for fiscal year 2011 that otherwise would have been recorded by the acquired businesses during each of the respective periods.
+# As a result of adjustments to deferred revenue related to certain acquisitions required by business combination rules, we did not recognize $0.01 million of revenue for fiscal year 2013 that otherwise would have been recorded by the acquired businesses during each of the respective periods.                        
+ - Performance: (R: 1.0; P: 0.044444444444444446)                        
+ - Truth: ['$0.01', 'million']                        
+ - Predict: ['$0.01', 'adjustments', 'acquisitions', 'periods.', 'recognize', 'acquired', 'respective', 'combination', 'deferred', 'million', 'business', 'recorded', 'related', 'revenue', 'otherwise', 'rules,', 'fiscal', 'required', 'businesses', 'revenue', 'year', 'result', '2013', 'would', 'certain', 'each', 'did', 'not', 'have', 'of', 'we', 'of', 'been', 'As', 'a', 'that', 'of', 'during', 'by', 'to', 'for', 'the', 'to', 'the', 'by']
+# lapses in statutes of limitations during the first quarter of fiscal year 2013 and $9.2 million primarily for lapses in statutes of limitations and audit settlements in the fourth quarter of fiscal year 2013.
+# The benefit from income taxes in fiscal year 2013 was primarily due to a tax benefit of $24.0 million related to discrete items and losses in higher tax rate jurisdictions, partially offset by a provision from income taxes related to profits in lower tax rate jurisdictions.The $24.0 million of discrete items includes $9.4 million for lapses in statutes of limitations during the first quarter of fiscal year 2013 and $9.2 million primarily for lapses in statutes of limitations and audit settlements in the fourth quarter of fiscal year 2013.                        
+ - Performance: (R: 0.7333333333333333; P: 0.12359550561797752)                        
+ - Truth: ['tax', 'benefit', '$24.0', 'million', 'discrete', 'items', 'losses', 'higher', 'tax', 'rate', 'jurisdictions,', '$24.0', 'million', '$9.4', 'million']                        
+ - Predict: ['lapses', 'settlements', 'profits', 'lapses', 'losses', 'discrete', 'lower', 'statutes', 'audit', 'offset', 'statutes', '$9.4', 'quarter', '$9.2', 'quarter', 'partially', 'fourth', 'higher', 'discrete', 'related', 'provision', 'limitations', 'related', 'year', 'year', 'year', 'includes', 'limitations', 'benefit', 'benefit', 'fiscal', 'taxes', 'due', 'rate', 'fiscal', 'first', 'jurisdictions,', '$24.0', 'rate', 'million', 'tax', '$24.0', 'income', 'million', 'million', 'items', 'million', 'tax', 'fiscal', 'primarily', 'jurisdictions.The', '2013', '2013', '2013.', 'tax', 'income', 'items', 'taxes', 'primarily', 'of', 'of', 'to', 'for', 'and', 'and', 'for', 'of', 'of', 'and', 'in', 'was', 'to', 'the', 'of', 'in', 'during', 'of', 'in', 'in', 'the', 'to', 'from', 'in', 'by', 'a', 'a', 'in', 'The', 'from']
+# The adoption is not expected to have a material impact on our consolidated financial position, results of operations and cash flows.
+# The adoption of this accounting policy did not have a material impact on our consolidated financial position, results of operations and cash flows.                        
+ - Performance: (R: 1.0; P: 0.17391304347826086)                        
+ - Truth: ['accounting', 'policy', 'did', 'not']                        
+ - Predict: ['financial', 'consolidated', 'cash', 'operations', 'flows.', 'accounting', 'material', 'results', 'adoption', 'impact', 'position,', 'policy', 'have', 'not', 'did', 'and', 'of', 'a', 'our', 'on', 'of', 'The', 'this']
+# As a result of adjustments to deferred revenue related to certain acquisitions required by business combination rules, we did not recognize $0.8 million of revenue in our Human Health segment for fiscal year 2015 and $2.9 million of revenue in our Human Health segment for fiscal year 2014 that otherwise would have been recorded by the acquired businesses during each of the respective periods.
+# As a result of adjustments to deferred revenue related to certain acquisitions required by business combination rules, we did not recognize $27 thousand of revenue in our Discovery Analytical Solutions segment for fiscal year 2015 that otherwise would have been recorded by the acquired businesses during each of the respective periods.                        
+ - Performance: (R: 1.0; P: 0.09803921568627451)                        
+ - Truth: ['$27', 'Discovery', 'Analytical', 'Solutions', '2015']                        
+ - Predict: ['Analytical', 'Discovery', 'adjustments', 'periods.', 'acquisitions', '$27', 'acquired', 'respective', 'combination', 'thousand', 'fiscal', 'recognize', 'deferred', 'business', 'related', 'rules,', 'Solutions', 'recorded', 'year', 'otherwise', 'required', 'segment', 'revenue', 'revenue', 'businesses', 'result', '2015', 'would', 'certain', 'each', 'did', 'not', 'of', 'have', 'of', 'we', 'a', 'As', 'in', 'of', 'been', 'during', 'by', 'to', 'to', 'for', 'the', 'the', 'that', 'by', 'our']
+# As a result of adjustments to deferred revenue related to certain acquisitions required by business combination rules, we did not recognize $2.9 million of revenue in our Human Health segment for fiscal year 2014 and $7.3 million of revenue in our Human Health segment for fiscal year 2013 that otherwise would have been recorded by the acquired businesses during each of the respective periods.
+# As a result of adjustments to deferred revenue related to certain acquisitions required by business combination rules, we did not recognize $27 thousand of revenue in our Discovery Analytical Solutions segment for fiscal year 2015 that otherwise would have been recorded by the acquired businesses during each of the respective periods.                        
+ - Performance: (R: 1.0; P: 0.11764705882352941)                        
+ - Truth: ['$27', 'thousand', 'Discovery', 'Analytical', 'Solutions', '2015']                        
+ - Predict: ['Analytical', 'Discovery', 'adjustments', 'periods.', 'acquisitions', '$27', 'acquired', 'respective', 'combination', 'thousand', 'fiscal', 'recognize', 'deferred', 'business', 'related', 'rules,', 'Solutions', 'recorded', 'year', 'otherwise', 'required', 'segment', 'revenue', 'revenue', 'businesses', 'result', '2015', 'would', 'certain', 'each', 'did', 'not', 'of', 'have', 'of', 'we', 'a', 'As', 'in', 'of', 'been', 'during', 'by', 'to', 'to', 'for', 'the', 'the', 'that', 'by', 'our']
+# The 2026 Notes were issued at 99.118% of the principal amount, which resulted in a discount of 4.4 million .
+# The 2021 Notes were issued at 99.4% of the principal amount, which resulted in a discount of $3.1 million .                        
+ - Performance: (R: 1.0; P: 0.25)                        
+ - Truth: ['2021', 'Notes', '99.4%', '$3.1', 'million']                        
+ - Predict: ['$3.1', 'discount', 'principal', '99.4%', 'Notes', 'million', 'amount,', 'resulted', '2021', 'issued', 'of', 'of', 'at', 'the', 'in', 'a', 'The', 'were', 'which', '.']
+# The amount of capitalized internal costs for salaries and related benefits for development and redevelopment activities, other property improvements, and leasing activities were $6 million , $1 million , and $5 million , respectively, for 2013 and $5 million , $1 million , and $5 million , respectively, for 2012 .
+# for salaries and related benefits for development and redevelopment activities, other property improvements, and leasing activities were $7 million , $1 million , and $6 million , respectively, for 2014 and $6 million , $1 million , and $5 million , respectively, for 2013 .                        
+ - Performance: (R: 1.0; P: 0.08888888888888889)                        
+ - Truth: ['$7', '$1', '$6', '2014']                        
+ - Predict: ['leasing', 'salaries', 'redevelopment', 'property', 'improvements,', 'benefits', 'development', 'related', 'activities,', 'activities', 'million', '$7', '$5', 'million', 'million', 'million', 'million', '$6', '$6', '2014', 'million', '$1', '$1', 'respectively,', '2013', 'respectively,', 'and', 'and', 'and', 'and', 'for', 'and', 'were', 'other', 'for', 'and', 'for', 'for', ',', ',', ',', ',', ',', ',', '.']
+# All of the pending U.S. federal cases in which we have been named as a defendant, have been filed in or have been transferred to the U.S. District Court for the Northern District of Ohio under the name In re: Polyurethane Foam Antitrust Litigation , Case No. 1:10-MD-2196.
+# We have been named as a defendant in 35 individual direct purchaser cases filed between March 22, 2011 and October 16, 2013, which were filed in or transferred to the U.S. District Court for the Northern District of Ohio under the name In re: Polyurethane Foam Antitrust Litigation , Case No. 1:10-MD-2196.                        
+ - Performance: (R: 1.0; P: 0.19230769230769232)                        
+ - Truth: ['35', 'individual', 'direct', 'purchaser', 'March', '22,', '2011', 'October', '16,', '2013,']                        
+ - Predict: ['Polyurethane', 'transferred', 'direct', 'purchaser', 'Ohio', 'Antitrust', 'Foam', '1:10-MD-2196.', 'Northern', '35', 'Litigation', 'defendant', 'October', 'March', 'individual', 'cases', 'District', '16,', 'Case', 'filed', 'U.S.', '22,', 'District', '2013,', '2011', 'Court', 'filed', 'named', 'name', 're:', 'No.', 'between', 'We', 'of', 'and', 'to', 'under', 'as', 'a', 'or', 'the', 'the', 'In', 'for', 'in', 'in', 'have', 'the', 'which', 'been', 'were', ',']
+# Annual sales for Techalloy at the date of acquisition were approximately $70,000.
+# Annual sales for MGM at the date of acquisition were approximately $30,000 .                        
+ - Performance: (R: 1.0; P: 0.15384615384615385)                        
+ - Truth: ['MGM', '$30,000']                        
+ - Predict: ['$30,000', 'Annual', 'sales', 'MGM', 'approximately', 'acquisition', 'date', 'of', 'for', 'the', 'were', 'at', '.']
+# excluded a special item charge of $1,381 , related to a change in Venezuelan labor law, which provides for increased employee severance obligations.In 2011 , EBIT, as adjusted, for the Europe Welding and Asia Pacific Welding segments excluded special items net charges of $188 and $93 , respectively, primarily related to employee severance and other costs associated with the consolidation of manufacturing operations.
+# In 2012 , EBIT, as adjusted, for the North America Welding, Europe Welding and Asia Pacific Welding segments excluded special item charges of $827 , $3,534 and $4,993 , respectively, primarily related to employee severance and other costs associated with the consolidation of manufacturing operations.The South America Welding segment EBIT, as adjusted, excluded a special item charge of $1,381 , related to a change in Venezuelan labor law, which provides for increased employee severance obligations. In 2011 , EBIT, as adjusted, for the Europe Welding and Asia Pacific Welding segments excluded special item net charges of $188 and $93 , respectively, primarily related to employee severance and other cost associated with the consolidation of manufacturing operations.                        
+ - Performance: (R: 0.9310344827586207; P: 0.23478260869565218)                        
+ - Truth: ['$827', '$3,534', '$4,993', 'South', 'America', 'Welding', 'segment', 'EBIT,', 'as', 'adjusted,', 'excluded', 'a', 'special', 'item', 'charge', 'of', '$1,381', 'related', 'to', 'a', 'change', 'in', 'Venezuelan', 'labor', 'law,', 'increased', 'employee', 'severance', 'obligations.']                        
+ - Predict: ['obligations.In', 'Venezuelan', 'net', '$3,534', 'consolidation', 'consolidation', 'increased', '$4,993', 'labor', '$1,381', 'manufacturing', 'cost', 'South', 'costs', 'provides', 'operations.', 'manufacturing', 'change', 'operations.The', 'associated', 'Europe', 'associated', 'severance', 'severance', 'law,', 'Welding,', 'employee', 'employee', 'severance', 'segments', 'America', 'Welding', 'Welding', 'America', 'segment', 'North', 'segments', 'charge', 'employee', 'item', 'Europe', 'excluded', 'Welding', 'charges', 'respectively,', 'item', '$188', 'charges', 'item', 'Welding', 'Welding', 'respectively,', 'excluded', '$827', 'special', 'excluded', 'related', 'Pacific', '$93', 'adjusted,', 'Pacific', 'special', 'primarily', 'related', 'Asia', 'primarily', 'adjusted,', 'adjusted,', 'related', 'EBIT,', '2012', 'special', 'Asia', 'EBIT,', '2011', 'EBIT,', 'and', 'and', 'in', 'for', 'and', 'and', 'and', 'other', 'a', 'to', 'and', 'of', 'of', 'other', 'as', 'as', 'of', 'of', 'a', 'to', 'to', 'which', ',', ',', ',', ',', ',', ',', 'In', 'with', 'the', 'of', 'with', 'for', 'the', 'as', 'the', 'the', 'for']
+# Arizant Inc. is a leading manufacturer of patient warming solutions designed to prevent hypothermia in surgical settings.
+# Acquisition growth primarily related to Arizant Inc., a leading manufacturer of patient warming solutions designed to prevent hypothermia in surgical settings.                        
+ - Performance: (R: 1.0; P: 0.09523809523809523)                        
+ - Truth: ['Acquisition', 'growth']                        
+ - Predict: ['warming', 'Acquisition', 'Arizant', 'patient', 'growth', 'hypothermia', 'primarily', 'prevent', 'settings.', 'related', 'surgical', 'manufacturer', 'solutions', 'Inc.,', 'leading', 'designed', 'of', 'to', 'to', 'in', 'a']
+# For computing compliance with our revolving credit agreement covenants, we are required to adjust our leverage ratio by subtracting members subordinated certificates from total liabilities and adding members subordinated certificates to total equity.
+# For computing compliance with our revolving credit agreement covenants, we are required to adjust our leverage ratio by subtracting subordinated deferrable debt from total liabilities and adding it to total equity.                        
+ - Performance: (R: 1.0; P: 0.12903225806451613)                        
+ - Truth: ['subtracting', 'subordinated', 'deferrable', 'debt']                        
+ - Predict: ['adjust', 'leverage', 'liabilities', 'revolving', 'equity.', 'compliance', 'computing', 'ratio', 'subtracting', 'adding', 'credit', 'covenants,', 'subordinated', 'deferrable', 'debt', 'agreement', 'required', 'total', 'total', 'it', 'to', 'from', 'with', 'our', 'For', 'we', 'and', 'to', 'our', 'by', 'are']
+# The increase in salaries and employee benefits expenses during the year ended May 31, 2013 was due to the voluntary $13 million contribution that CFC made to its NRECA sponsored Retirement Security Plan in January 2013.
+# The decrease in salaries and employee benefits during the year ended May 31, 2014 was due to the voluntary $13 million contribution that CFC made to its NRECA-sponsored Retirement Security Plan in January 2013.                        
+ - Performance: (R: 1.0; P: 0.029411764705882353)                        
+ - Truth: ['decrease']                        
+ - Predict: ['contribution', 'Retirement', 'voluntary', 'NRECA-sponsored', 'benefits', 'January', 'salaries', 'Security', 'million', 'employee', 'decrease', '$13', '31,', 'CFC', 'ended', 'Plan', 'May', 'year', 'due', '2013.', '2014', 'made', 'in', 'and', 'to', 'during', 'in', 'its', 'the', 'the', 'to', 'The', 'that', 'was']
+# Prior to issuing a letter of credit, we would confirm that there has been no material adverse change in the business or condition, financial or otherwise, of the borrower since the time the loan was approved and confirm that the borrower is currently in compliance with the letter of credit terms and conditions.
+# Prior to making an advance on these facilities, we confirm that there has been no material adverse change in the business or condition, financial or otherwise, of the borrower since the time the loan was approved and confirm that the borrower is currently in compliance with loan terms and conditions.                        
+ - Performance: (R: 1.0; P: 0.12)                        
+ - Truth: ['making', 'an', 'advance', 'on', 'these', 'facilities,']                        
+ - Predict: ['compliance', 'loan', 'terms', 'financial', 'borrower', 'borrower', 'adverse', 'material', 'advance', 'approved', 'loan', 'facilities,', 'condition,', 'business', 'change', 'conditions.', 'confirm', 'currently', 'confirm', 'otherwise,', 'making', 'time', 'Prior', 'since', 'and', 'with', 'no', 'an', 'was', 'in', 'is', 'we', 'or', 'or', 'on', 'has', 'been', 'in', 'the', 'of', 'these', 'to', 'the', 'that', 'there', 'the', 'the', 'that', 'the', 'and']
+# The leverage and debt-to-equity ratios adjusted to treat members subordinated certificates as equity rather than debt reflect management s perspective on our operations and, therefore, we believe these are useful financial measures for investors.
+# The leverage and debt-to-equity ratios adjusted to exclude the effect of foreign currency translation reflect management s perspective on our operations and, therefore, we believe these are useful financial measures for investors.                        
+ - Performance: (R: 1.0; P: 0.21875)                        
+ - Truth: ['exclude', 'the', 'effect', 'of', 'foreign', 'currency', 'translation']                        
+ - Predict: ['debt-to-equity', 'leverage', 'financial', 'currency', 'exclude', 'ratios', 'measures', 'adjusted', 'investors.', 'useful', 'perspective', 'operations', 'foreign', 'management', 'effect', 'believe', 'translation', 'reflect', 'therefore,', 's', 'we', 'and', 'for', 'on', 'to', 'are', 'the', 'of', 'our', 'and,', 'these', 'The']
+# We recorded a provision for loan losses of $6 million in fiscal year 2017 .
+# We recorded a benefit for loan losses of $18 million in fiscal year 2018 , compared with a provision of $6 million in fiscal year 2017 .                        
+ - Performance: (R: 1.0; P: 0.1111111111111111)                        
+ - Truth: ['benefit', '$18', 'million']                        
+ - Predict: ['loan', 'benefit', 'losses', 'compared', '$18', 'provision', 'year', 'million', 'year', 'million', '$6', 'fiscal', 'recorded', '2018', 'fiscal', '2017', 'We', 'of', 'a', 'of', 'with', 'for', 'in', 'in', 'a', ',', '.']
+# In 2011 and 2010, Virginia Power recorded, in AOCI and regulatory liabilities, a net increase in unrealized gains on these investments of $25 million and $67 million, respectively.
+# In 2012 and 2011, Dominion recorded, in AOCI and regulatory liabilities, a net increase in unrealized gains on these investments of $210 million and $52 million, respectively.                        
+ - Performance: (R: 1.0; P: 0.1111111111111111)                        
+ - Truth: ['Dominion', '$210', '$52']                        
+ - Predict: ['liabilities,', 'regulatory', 'unrealized', 'investments', 'gains', 'AOCI', 'net', 'increase', 'million,', 'Dominion', '$210', 'recorded,', 'respectively.', '$52', 'million', '2012', '2011,', 'and', 'and', 'in', 'of', 'in', 'and', 'a', 'on', 'In', 'these']
+# As a percentage of sales, gross margin decreased in 2011 from the prior year.
+# As a percentage of sales, gross margin increased in 2011 from the prior year.                        
+ - Performance: (R: 1.0; P: 0.07142857142857142)                        
+ - Truth: ['increased']                        
+ - Predict: ['margin', 'percentage', 'sales,', 'gross', 'prior', 'increased', '2011', 'year.', 'of', 'from', 'a', 'As', 'in', 'the']
+# As these differences between the actual investment returns and the expected investment returns are incorporated into the market-related value, the differences are recognized over the expected average remaining years of service for active employees.
+# As these differences between the actual investment returns and the expected investment returns are incorporated into the market-related value, the differences are recognized in pension cost over the expected average remaining years of service for active employees.                        
+ - Performance: (R: 1.0; P: 0.08108108108108109)                        
+ - Truth: ['in', 'pension', 'cost']                        
+ - Predict: ['pension', 'active', 'investment', 'investment', 'actual', 'market-related', 'recognized', 'incorporated', 'returns', 'remaining', 'cost', 'returns', 'expected', 'average', 'value,', 'expected', 'service', 'employees.', 'years', 'differences', 'differences', 'of', 'into', 'between', 'and', 'over', 'in', 'the', 'for', 'are', 'the', 'the', 'the', 'are', 'these', 'As', 'the']
+# PSCo used a portion of the net proceeds from the sale of the first mortgage bonds to repay short-term debt borrowings incurred to fund daily operational needs.
+# NSP-Wisconsin used a portion of the net proceeds from the sale of the first mortgage bonds to repay short-term debt borrowings incurred to fund daily operational needs.                        
+ - Performance: (R: 1.0; P: 0.037037037037037035)                        
+ - Truth: ['NSP-Wisconsin']                        
+ - Predict: ['bonds', 'mortgage', 'proceeds', 'NSP-Wisconsin', 'net', 'borrowings', 'debt', 'repay', 'operational', 'sale', 'short-term', 'fund', 'incurred', 'daily', 'needs.', 'used', 'portion', 'first', 'of', 'a', 'from', 'to', 'of', 'the', 'the', 'to', 'the']
+# 2012 Comparison to 2011 Natural gas revenues decreased primarily due to the purchased natural gas adjustment clause recovery, which is offset in operating expense.
+# 2014 Comparison to 2013 Natural gas revenues increased primarily due to the purchased natural gas adjustment clause recovery, which is offset in operating expense.                        
+ - Performance: (R: 1.0; P: 0.041666666666666664)                        
+ - Truth: ['increased']                        
+ - Predict: ['expense.', 'offset', 'adjustment', 'recovery,', 'revenues', 'purchased', 'operating', 'primarily', 'Comparison', 'gas', 'clause', 'increased', 'Natural', 'gas', 'natural', '2014', 'due', '2013', 'in', 'to', 'the', 'to', 'is', 'which']
+# Obligations of this type are dependent on several factors, including management discretion, and therefore, they are not included in the table.
+# Obligations of this type are dependent on several factors, including management discretion and various minimum contribution requirements determined by the Pension Protection Act, and therefore, are not included in the table.                        
+ - Performance: (R: 1.0; P: 0.3225806451612903)                        
+ - Truth: ['various', 'minimum', 'contribution', 'requirements', 'determined', 'by', 'the', 'Pension', 'Protection', 'Act,']                        
+ - Predict: ['contribution', 'discretion', 'Pension', 'minimum', 'factors,', 'management', 'Protection', 'dependent', 'Obligations', 'requirements', 'several', 'determined', 'table.', 'included', 'Act,', 'including', 'various', 'type', 'therefore,', 'not', 'in', 'on', 'the', 'the', 'are', 'and', 'are', 'by', 'this', 'of', 'and']
+# The ETR is projected to be approximately 32 percent to 34 percent.
+# The ETR is projected to be approximately 8 percent to 10 percent.                        
+ - Performance: (R: 1.0; P: 0.4166666666666667)                        
+ - Truth: ['8', 'percent', 'to', '10', 'percent.']                        
+ - Predict: ['8', '10', 'ETR', 'projected', 'percent', 'percent.', 'approximately', 'to', 'be', 'to', 'is', 'The']
+# (1) See definitions of operating revenues and operating expenses for the components of such adjustments.
+# ______________ (1) See definitions of operating revenues and operating expenses under Non-GAAP and Other Financial Disclosures for the components of such adjustments.                        
+ - Performance: (R: 1.0; P: 0.045454545454545456)                        
+ - Truth: ['Non-GAAP']                        
+ - Predict: ['Disclosures', 'Non-GAAP', 'components', 'definitions', 'adjustments.', 'revenues', 'expenses', 'Financial', 'operating', 'operating', 'See', '(1)', 'under', 'and', 'and', 'of', 'such', 'for', 'Other', '______________', 'of', 'the']
+# 8 A non-Lifeline wireless line in service is defined as a revenue generating wireless device that is not eligible for Lifeline support.
+# 9 A Lifeline wireless line in service is defined as a revenue generating wireless device that is eligible for Lifeline support.                        
+ - Performance: (R: 1.0; P: 0.047619047619047616)                        
+ - Truth: ['Lifeline']                        
+ - Predict: ['eligible', 'generating', 'revenue', 'support.', 'service', 'defined', 'Lifeline', 'wireless', 'device', 'line', 'Lifeline', 'wireless', '9', 'for', 'in', 'as', 'A', 'is', 'a', 'is', 'that']
+# The increase in Adjusted EBITDA in 2014 is primarily due to increased revenue as described above in Wireless Segment Revenues.
+# The decrease in Adjusted EBITDA in 2016 is primarily due to decreased revenue as described above in Wireless Segment Revenues.                        
+ - Performance: (R: 1.0; P: 0.1)                        
+ - Truth: ['decrease', 'decreased']                        
+ - Predict: ['EBITDA', 'decreased', 'Adjusted', 'Wireless', 'decrease', 'Segment', 'Revenues.', 'revenue', 'primarily', 'due', '2016', 'described', 'above', 'in', 'in', 'to', 'in', 'The', 'as', 'is']
+# This includes an increase of $19.9 million from the recent acquisitions.
+# This includes an increase of $8.8 million from the recent acquisitions.                        
+ - Performance: (R: 1.0; P: 0.09090909090909091)                        
+ - Truth: ['$8.8']                        
+ - Predict: ['$8.8', 'acquisitions.', 'increase', 'recent', 'million', 'includes', 'of', 'an', 'the', 'This', 'from']
+# These proved undeveloped reserve additions were offset by transfers of 315 million BOE to the proved developed category as a result of the 2014 development programs including 214 million BOE from Al Hosn gas project reserves.
+# These proved undeveloped reserve additions were offset by transfers of 106 million BOE to the proved developed category as a result of the 2015 development programs.                        
+ - Performance: (R: 1.0; P: 0.11538461538461539)                        
+ - Truth: ['106', 'million', '2015']                        
+ - Predict: ['undeveloped', 'reserve', 'transfers', 'offset', 'developed', 'programs.', 'proved', 'million', 'category', 'development', '106', 'additions', 'result', 'BOE', 'proved', '2015', 'of', 'of', 'a', 'the', 'by', 'to', 'as', 'the', 'were', 'These']
+# In addition, we also experienced loss of production due to the unexpected shut-in of some of our production from operational issues experienced at a third party facility that processes our Segno field production.
+# In addition, our 2010 production was curtailed because of the unexpected shut-in of some of our production from operational issues experienced at a third party facility that processes our Segno field production.                        
+ - Performance: (R: 1.0; P: 0.09375)                        
+ - Truth: ['2010', 'production', 'curtailed']                        
+ - Predict: ['curtailed', 'shut-in', 'unexpected', 'processes', 'Segno', 'operational', 'production', 'issues', 'production', 'production.', 'experienced', 'field', 'facility', 'addition,', 'third', '2010', 'party', 'some', 'was', 'In', 'because', 'at', 'of', 'from', 'the', 'of', 'our', 'our', 'our', 'of', 'a', 'that']
+# The following discussion of international net income excludes the effect of currency translation.
+# The following discussion of costs and expenses excludes the effect of currency translation.                        
+ - Performance: (R: 1.0; P: 0.15384615384615385)                        
+ - Truth: ['costs', 'expenses']                        
+ - Predict: ['excludes', 'currency', 'discussion', 'expenses', 'translation.', 'costs', 'effect', 'following', 'and', 'of', 'the', 'of', 'The']
+# An increase/decrease in the assumed medical trend rate of 1% would impact service and interest costs by approximately $1.5 million to $2.0 million.
+# An increase/decrease in the assumed medical trend rate of 1% would impact service and interest costs by approximately $2.0 million to $2.6 million in relation to the Union VEBA.                        
+ - Performance: (R: 1.0; P: 0.27586206896551724)                        
+ - Truth: ['$2.0', '$2.6', 'in', 'relation', 'to', 'the', 'Union', 'VEBA.']                        
+ - Predict: ['$2.6', 'medical', '$2.0', 'relation', 'assumed', 'interest', 'increase/decrease', 'impact', 'rate', '1%', 'service', 'trend', 'approximately', 'costs', 'VEBA.', 'million', 'million', 'Union', 'would', 'of', 'to', 'to', 'by', 'the', 'and', 'the', 'An', 'in', 'in']
+# Cost of goods sold for the year ended December 31, 2012 increased by $48 million (4%) compared to the prior year.
+# Cost of goods sold for the year ended December 31, 2014 decreased by $220 million (23)% compared to the prior year.                        
+ - Performance: (R: 1.0; P: 0.09523809523809523)                        
+ - Truth: ['$220', '(23)%']                        
+ - Predict: ['decreased', '$220', 'ended', '31,', 'compared', 'million', 'Cost', '(23)%', 'December', 'sold', 'prior', 'goods', '2014', 'year', 'year.', 'by', 'to', 'of', 'the', 'for', 'the']
+# Gross margin from manufacturing operations as a percentage of manufacturing revenues increased to 27% for the year ended December 31, 2014 from 23% for the comparable prior year period.
+# Gross margin from manufacturing operations as a percentage of manufacturing revenues decreased to 15% for the year ended December 31, 2016 from 23% for the comparable prior year period.                        
+ - Performance: (R: 1.0; P: 0.06896551724137931)                        
+ - Truth: ['decreased', '15%']                        
+ - Predict: ['decreased', 'comparable', 'margin', 'revenues', 'operations', 'prior', 'ended', 'percentage', 'Gross', 'period.', 'manufacturing', '31,', 'manufacturing', 'December', '15%', '23%', '2016', 'year', 'year', 'to', 'a', 'of', 'as', 'from', 'the', 'for', 'the', 'for', 'from']
+# Years Ended December 31, 2016 and 2015 Net sales for the year ended December 31, 2016 decreased by $94 million ( 26% ) compared to the comparable prior year period.
+# Years Ended December 31, 2016 and 2015 Net sales for the year ended December 31, 2016 increased by $41 million as compared to the comparable prior year period.                        
+ - Performance: (R: 1.0; P: 0.07142857142857142)                        
+ - Truth: ['$41', 'million']                        
+ - Predict: ['Net', 'comparable', 'increased', 'million', 'sales', '$41', 'Years', 'prior', 'compared', '2015', 'period.', 'year', 'December', 'year', '31,', 'Ended', 'ended', 'December', '2016', '2016', '31,', 'by', 'and', 'to', 'for', 'the', 'the', 'as']
+# In addition, in 2011, the golf clubs operating segment absorbed $5.6 million in charges related to the Company s Reorganization and Reinvestment Initiatives, most of which was recognized in operating expenses.
+# In addition, in 2011, the golf balls operating segment absorbed $1.3 million in charges related to the Company s Reorganization and Reinvestment Initiatives, most of which was recognized in operating expenses.                        
+ - Performance: (R: 1.0; P: 0.03225806451612903)                        
+ - Truth: ['$1.3']                        
+ - Predict: ['expenses.', 'Reinvestment', '$1.3', 'Reorganization', 'absorbed', 'Initiatives,', 'recognized', 'charges', 'operating', 'golf', 'segment', 'operating', 'million', 'balls', 'related', 'addition,', '2011,', 'Company', 'most', 's', 'in', 'in', 'to', 'and', 'was', 'In', 'of', 'the', 'in', 'the', 'which']
+# levels are also impacted by the timing of new product launches.The Company s inventories decreased $56.3 million to $ 207.2 million as of December 31, 2014 compared to $ 263.5 million as of December 31, 2013 .
+# Inventory levels start to decline toward the end of the second quarter and are at their lowest during the third quarter.Inventory levels are also impacted by the timing of new product launches.The Company s inventories increased slightly by $1.7 million to $ 208.9 million as of December 31, 2015 from $ 207.2 million as of December 31, 2014 .                        
+ - Performance: (R: 1.0; P: 0.0847457627118644)                        
+ - Truth: ['increased', 'slightly', '$1.7', '$', '208.9']                        
+ - Predict: ['207.2', '$1.7', 'timing', '208.9', 'lowest', 'impacted', 'launches.The', 'inventories', '31,', 'decline', 'increased', 'December', 'product', 'third', 'second', 'slightly', '31,', 'December', 'end', 'levels', 'levels', 'new', 'quarter', 'also', 'Inventory', '2015', 'quarter.Inventory', 'start', 'Company', 'million', 'million', 'million', '2014', 'toward', 'to', 'at', 'by', 'during', '$', 'to', '$', 'their', 'of', 's', 'from', 'are', 'the', 'of', 'are', 'the', 'of', 'as', 'the', 'by', 'as', 'of', 'the', 'and', '.']
+# Our ability to generate royalty revenues from other licensees and franchisees sufficient to replace Target s historical royalty payments to us is yet to be determined and we may experience decreased revenue levels as a result of the expiration of this relationship, particularly in the near term as our wholesale arrangements intended to replace our license agreement with Target for the Cherokee brand begin to gain traction with new retailers and their consumer bases.
+# While we have entered into agreements with new licensees for the sale of Hawk Signature and Tony Hawk branded products, our ability to generate royalty revenues from other licensees sufficient to replace Kohl s historical royalty payments to us is yet to be determined, and we may experience decreased revenue levels result from the expiration of this relationship, particularly in the near term as our wholesale arrangements intended to replace our license agreement with Kohl s begin to gain traction with new retailers and their customers.                        
+ - Performance: (R: 0.9411764705882353; P: 0.18604651162790697)                        
+ - Truth: ['entered', 'into', 'agreements', 'with', 'new', 'licensees', 'for', 'the', 'sale', 'of', 'Hawk', 'Signature', 'Tony', 'Hawk', 'branded', 'products,', 'Kohl']                        
+ - Predict: ['wholesale', 'decreased', 'term', 'traction', 'royalty', 'royalty', 'expiration', 'generate', 'agreements', 'payments', 'revenues', 'levels', 'historical', 'Signature', 'intended', 'determined,', 'revenue', 'begin', 'sufficient', 'arrangements', 'particularly', 'experience', 'retailers', 'entered', 'gain', 'Hawk', 'near', 'Hawk', 'branded', 'licensees', 'relationship,', 'customers.', 'agreement', 'license', 'sale', 'ability', 'result', 'Tony', 'replace', 'licensees', 'yet', 'replace', 'us', 'products,', 'new', 'new', 'Kohl', 'may', 'Kohl', 'into', 'and', 'While', 's', 'with', 'to', 'be', 'and', 'to', 'to', 'to', 'the', 'with', 'to', 'their', 'in', 'the', 'is', 'of', 'to', 'other', 'from', 's', 'we', 'have', 'we', 'from', 'for', 'of', 'with', 'the', 'our', 'our', 'our', 'this', 'as', 'and']
+# (1) Excludes the effect of consolidated trusts with beneficial interests owned by third parties.
+# (4) Includes the effect of consolidated trusts with beneficial interests owned by third parties.                        
+ - Performance: (R: 1.0; P: 0.07142857142857142)                        
+ - Truth: ['Includes']                        
+ - Predict: ['trusts', 'beneficial', 'consolidated', 'interests', 'third', 'parties.', 'Includes', 'effect', 'owned', '(4)', 'by', 'with', 'of', 'the']
+# CFC is currently the only servicer of rural utilities loans in the Rural Utilities line of business.
+# CFC is currently the only servicer of rural utilities loans in the Rural Utilities line of business and securing AgVantage securities in the Institutional Credit line of business.                        
+ - Performance: (R: 1.0; P: 0.21428571428571427)                        
+ - Truth: ['securing', 'AgVantage', 'securities', 'Institutional', 'Credit', 'line']                        
+ - Predict: ['Institutional', 'Credit', 'AgVantage', 'rural', 'Rural', 'business.', 'loans', 'securities', 'utilities', 'Utilities', 'securing', 'servicer', 'business', 'CFC', 'line', 'line', 'only', 'currently', 'of', 'of', 'is', 'of', 'in', 'in', 'the', 'the', 'the', 'and']
+# Of the Farm Ranch loans purchased in 2016 , none had yield maintenance or another form of prepayment protection.
+# Of the Farm Ranch loans purchased in 2017 , 5 percent had yield maintenance or another form of prepayment protection.                        
+ - Performance: (R: 1.0; P: 0.1)                        
+ - Truth: ['5', 'percent']                        
+ - Predict: ['loans', 'prepayment', 'yield', 'Farm', 'maintenance', 'protection.', 'Ranch', '2017', '5', 'form', 'purchased', 'percent', 'or', 'had', 'another', 'of', 'Of', 'in', 'the', ',']
+# by a lower average balance in cash and cash equivalents primarily during the second half of 2016.The year-over-year increase in dollars was attributable to growth in outstanding business volume.
+# The increase was offset in part by (1) higher net yield adjustments from amortization of purchase premiums on certain Farm Ranch loans and (2) a tighter spread on a large AgVantage security that was refinanced in first quarter 2016 at a shorter maturity than the original security.The 2 basis point increase in net interest yield for 2016 compared to 2015 was primarily driven by a lower average balance in cash and cash equivalents primarily during the second half of 2016.                        
+ - Performance: (R: 0.9583333333333334; P: 0.2875)                        
+ - Truth: ['increase', 'offset', 'higher', 'net', 'yield', 'adjustments', 'from', 'amortization', 'purchase', 'premiums', 'Farm', 'Ranch', 'loans', 'tighter', 'spread', 'large', 'AgVantage', 'security', 'shorter', 'maturity', '2', 'basis', 'point', 'increase']                        
+ - Predict: ['amortization', 'yield', 'maturity', 'interest', 'tighter', 'yield', 'spread', 'refinanced', 'adjustments', 'balance', 'AgVantage', 'loans', 'net', 'equivalents', 'net', 'shorter', 'average', 'premiums', 'offset', 'cash', 'purchase', 'basis', 'quarter', 'second', 'security.The', 'driven', 'security', 'lower', 'cash', 'Farm', 'Ranch', 'primarily', 'point', 'part', 'large', 'increase', 'original', 'half', 'primarily', 'increase', 'first', 'compared', 'higher', '2016', '2016', '2015', 'certain', '2016.', '(1)', '2', '(2)', 'and', 'of', 'than', 'in', 'to', 'by', 'that', 'in', 'of', 'a', 'a', 'in', 'the', 'the', 'in', 'during', 'for', 'and', 'from', 'a', 'a', 'on', 'on', 'was', 'was', 'at', 'by', 'was', 'The']
+# Cash generated in financing activities in 2016 of $7.5 million is primarily due to a $10.0 million net draw on our Silicon Valley Bank line of credit and proceeds from the issuance of common stock.
+# Cash used in financing activities in 2017 of $8.6 million is primarily due to a $9.0 million net repayment on our Silicon Valley Bank line of credit and proceeds from the issuance of common stock.                        
+ - Performance: (R: 0.8571428571428571; P: 0.17142857142857143)                        
+ - Truth: ['used', '$8.6', 'million', '$9.0', 'million', 'net', 'repayment']                        
+ - Predict: ['issuance', 'stock.', 'repayment', 'common', 'Silicon', '$8.6', '$9.0', 'proceeds', 'financing', 'net', 'Cash', 'credit', 'Valley', 'primarily', 'activities', 'Bank', 'million', 'million', 'due', 'used', '2017', 'line', 'of', 'of', 'from', 'of', 'in', 'on', 'a', 'to', 'in', 'our', 'the', 'and', 'is']
+# The provision for income taxes from continuing operations increased by $0.6 million to $0.8 million, or an effective rate of 34%, for 2015 from $0.2 million, or an effective rate of 25%, for the same period last year.
+# The provision for income taxes from continuing operations decreased by $0.6 million to $0.2 million, or an effective rate of 38%, for 2016 from $0.8 million, or an effective rate of 34%, for the same period last year.                        
+ - Performance: (R: 1.0; P: 0.2631578947368421)                        
+ - Truth: ['decreased', 'by', '$0.6', 'million', 'to', '$0.2', 'million,', '38%,', 'for', '2016']                        
+ - Predict: ['decreased', 'continuing', 'operations', '$0.8', '$0.6', 'effective', '$0.2', 'taxes', 'income', 'period', 'effective', 'rate', '34%,', '38%,', 'rate', 'provision', 'million,', 'million', 'million,', '2016', 'year.', 'last', 'by', 'of', 'of', 'to', 'from', 'for', 'same', 'from', 'the', 'an', 'for', 'an', 'The', 'for', 'or', 'or']
+# Within one year of the last project in-service date, scheduled for early 2016, the Partnership will also have the option to increase its economic interest held at that time by up to 15 percentage points.
+# Within one year of the in-service date, scheduled for 2017, we will have the option to increase its economic interest held at that time by up to 15% at cost.                        
+ - Performance: (R: 1.0; P: 0.03333333333333333)                        
+ - Truth: ['2017,']                        
+ - Predict: ['15%', 'in-service', 'option', 'economic', 'interest', 'cost.', '2017,', 'increase', 'date,', 'scheduled', 'held', 'year', 'one', 'Within', 'time', 'up', 'have', 'by', 'to', 'its', 'we', 'of', 'to', 'at', 'that', 'for', 'will', 'the', 'the', 'at']
+# Ship Accounting Our ships represent our most significant assets and are stated at cost less accumulated depreciation.
+# We believe our most critical accounting policies are as follows: Ship Accounting Our ships represent our most significant assets and are stated at cost less accumulated depreciation and amortization.                        
+ - Performance: (R: 1.0; P: 0.13793103448275862)                        
+ - Truth: ['most', 'critical', 'accounting', 'policies']                        
+ - Predict: ['amortization.', 'depreciation', 'Accounting', 'accumulated', 'assets', 'cost', 'accounting', 'critical', 'policies', 'significant', 'stated', 'less', 'represent', 'Ship', 'believe', 'ships', 'follows:', 'most', 'and', 'as', 'We', 'most', 'are', 'our', 'at', 'are', 'Our', 'our', 'and']
+# Financial Statements and Supplementary Data for further information.
+# Financial Statements and Supplementary Data for further information on the ASR transaction.                        
+ - Performance: (R: 1.0; P: 0.16666666666666666)                        
+ - Truth: ['ASR', 'transaction.']                        
+ - Predict: ['Financial', 'Statements', 'Supplementary', 'Data', 'ASR', 'transaction.', 'information', 'and', 'on', 'for', 'further', 'the']
+# General and administrative expense from Search decreased primarily due to lower professional fees, including a decrease in litigation related expenses, and the inclusion in 2010 of lease termination costs associated with the Ask.com restructuring, partially offset by an increase in compensation and other employee-related costs at Mindspark and CityGrid Media.
+# The decrease in general and administrative expense is primarily due to a decrease in compensation and other employee-related costs, lower professional fees, including a decrease in litigation related expenses, and the inclusion in 2010 of lease termination costs associated with the Ask.com restructuring.                        
+ - Performance: (R: 1.0; P: 0.11627906976744186)                        
+ - Truth: ['decrease', 'in', 'compensation', 'employee-related', 'costs,']                        
+ - Predict: ['lease', 'termination', 'restructuring.', 'expense', 'employee-related', 'litigation', 'inclusion', 'compensation', 'general', 'expenses,', 'Ask.com', 'fees,', 'administrative', 'decrease', 'professional', 'lower', 'primarily', 'costs,', 'associated', 'decrease', 'including', 'costs', 'decrease', 'related', 'due', '2010', 'and', 'and', 'the', 'in', 'in', 'with', 'in', 'to', 'of', 'in', 'and', 'a', 'other', 'a', 'the', 'is', 'The']
+# Non-Cash Expenses That Are Excluded From IAC's Non-GAAP Measure Stock-based compensation expense consists principally of expense associated with the grants of stock options, restricted stock units ("RSUs"), performance-based RSUs and market-based awards.
+# Non-Cash Expenses That Are Excluded From Non-GAAP Measure Stock-based compensation expense consists principally of expense associated with the grants, including unvested grants assumed in acquisitions (including the Combination), of stock options, restricted stock units ("RSUs"), performance-based RSUs and market-based awards.                        
+ - Performance: (R: 1.0; P: 0.025)                        
+ - Truth: ['Non-GAAP']                        
+ - Predict: ['Non-Cash', 'Excluded', 'acquisitions', 'RSUs', 'Non-GAAP', 'performance-based', '("RSUs"),', 'grants,', 'restricted', 'market-based', 'assumed', 'awards.', 'expense', 'options,', 'Expenses', 'Stock-based', 'stock', 'compensation', 'expense', 'grants', 'Combination),', 'units', 'stock', 'principally', 'Measure', 'associated', 'unvested', '(including', 'consists', 'including', 'in', 'and', 'with', 'of', 'the', 'Are', 'From', 'of', 'the', 'That']
+# 2011 Note Offering, the Company obtained the consent of Bank of America to the 2011 Note Offering and the agreement of Bank of America that the 2011 Note Offering will not constitute a default under the Credit Agreement.
+# In connection with the 2008 Note Offering, the Company obtained the consent of Bank of America to the 2008 Note Offering and the agreement of Bank of America that the 2008 Note Offering will not constitute a default under the Credit Agreement.                        
+ - Performance: (R: 1.0; P: 0.16666666666666666)                        
+ - Truth: ['In', 'connection', 'with', 'the', '2008', 'Note', 'Offering,']                        
+ - Predict: ['default', 'Credit', 'consent', 'Note', 'Offering,', 'Note', 'Offering', 'Note', 'connection', 'Offering', 'constitute', 'Agreement.', 'agreement', 'Bank', 'America', 'America', 'obtained', 'Bank', 'Company', '2008', '2008', '2008', 'not', 'of', 'of', 'will', 'under', 'a', 'the', 'of', 'of', 'the', 'that', 'In', 'to', 'with', 'and', 'the', 'the', 'the', 'the', 'the']
+# Our Galvanizing Segment, which consisted of forty-one hot dip galvanizing facilities as of February 28, 2017, generated net sales of $375.5 million , a 6.7% decrease from the prior year s net sales of $402.4 million .
+# Our Metal Coatings Segment, which consisted of forty-one metal coating facilities as of February 28, 2017, generated net sales of $375.5 million, a 6.7% decrease from the prior year s net sales of $402.4 million.                        
+ - Performance: (R: 1.0; P: 0.11428571428571428)                        
+ - Truth: ['Metal', 'Coatings', 'metal', 'coating']                        
+ - Predict: ['$402.4', '$375.5', 'decrease', 'facilities', 'net', 'net', 'sales', 'generated', 'February', 'Coatings', 'sales', '6.7%', '28,', 'forty-one', 'prior', 'Segment,', 'coating', 'consisted', 'Metal', '2017,', 'year', 'metal', 'million.', 'million,', 'of', 'of', 'from', 'as', 'of', 's', 'of', 'a', 'the', 'which', 'Our']
+# (2) On January 14, 2011, we entered into a new credit agreement for a five-year $750 million Revolver, which matures in January of 2016.
+# (1) On January 14, 2011, we entered into a new credit agreement for a five-year $750 million Revolving Credit Facility, which matures in January of 2016.                        
+ - Performance: (R: 1.0; P: 0.11538461538461539)                        
+ - Truth: ['Revolving', 'Credit', 'Facility,']                        
+ - Predict: ['matures', 'Revolving', '$750', 'credit', 'Credit', 'Facility,', 'million', 'January', 'January', 'agreement', 'five-year', 'entered', '14,', '2016.', '2011,', '(1)', 'new', 'into', 'we', 'a', 'of', 'for', 'in', 'a', 'which', 'On']
+# We believe the increased sales achieved by our stores are the result of store growth and the high levels of customer service provided by our well-trained and technically proficient Team Members, superior inventory availability, including same day and over-night access to inventory in our regional distribution centers, enhanced services and programs offered in our stores, a broader selection of product offerings in most stores with a dynamic catalog system to identify and source parts, a targeted promotional and advertising effort through a variety of media and localized promotional events, continued improvement in the merchandising and store layouts of our stores, compensation programs for all store Team Members that provide incentives for performance and our continued focus on serving both DIY and professional service provider customers.
+# We believe the increased sales achieved by our stores were the result of store growth, sales from one additional day due to Leap Day for the year ended December 31, 2016, sales from the acquired 48 Bond stores, the high levels of customer service provided by our well-trained and technically proficient Team Members, superior inventory availability, including same day and over-night access to inventory in our regional distribution centers, enhanced services and programs offered in our stores, a broader selection of product offerings in most stores with a dynamic catalog system to identify and source parts, a targeted promotional and advertising effort through a variety of media and localized promotional events, continued improvement in the merchandising and store layouts of our stores, compensation programs for all store Team Members that provide incentives for performance and our continued focus on serving both DIY and professional service provider customers.                        
+ - Performance: (R: 0.875; P: 0.09523809523809523)                        
+ - Truth: ['sales', 'from', 'one', 'additional', 'day', 'due', 'to', 'Leap', 'Day', 'sales', 'from', 'the', 'acquired', '48', 'Bond', 'stores,']                        
+ - Predict: ['compensation', 'Leap', 'dynamic', 'broader', 'incentives', 'localized', 'improvement', 'merchandising', 'proficient', 'enhanced', 'growth,', 'ended', 'superior', 'focus', 'inventory', 'catalog', 'Bond', 'levels', 'well-trained', 'targeted', 'over-night', 'professional', 'availability,', 'events,', 'advertising', 'increased', 'provider', 'performance', 'offerings', 'selection', 'identify', 'variety', 'media', 'programs', 'serving', 'promotional', 'December', 'result', 'regional', 'layouts', 'service', 'DIY', 'promotional', 'access', 'source', 'customer', 'centers,', 'continued', 'inventory', 'technically', 'due', '31,', 'services', 'product', 'offered', 'acquired', 'additional', 'including', 'service', '48', 'system', 'sales', 'distribution', 'high', 'effort', 'achieved', 'year', 'Day', 'provided', 'parts,', 'provide', 'programs', 'store', 'sales', 'Team', 'one', 'day', 'store', 'continued', 'believe', 'sales', 'customers.', 'Team', 'stores', 'stores,', 'stores', 'store', 'day', 'stores,', '2016,', 'stores,', 'Members', 'Members,', 'both', 'same', 'most', 'We', 'and', 'all', 'of', 'of', 'and', 'to', 'and', 'and', 'and', 'of', 'through', 'and', 'from', 'for', 'to', 'and', 'were', 'and', 'a', 'the', 'in', 'with', 'on', 'for', 'the', 'a', 'and', 'to', 'from', 'a', 'the', 'our', 'our', 'of', 'in', 'in', 'by', 'the', 'our', 'our', 'the', 'our', 'by', 'of', 'for', 'in', 'that', 'the', 'our', 'a']
+# We have not made any material changes in the methodology used to recognize shrinkage in the financial periods presented.
+# We have not made any material changes in the accounting methodology used to recognize inventory impairment reserves in the financial periods presented.                        
+ - Performance: (R: 1.0; P: 0.09090909090909091)                        
+ - Truth: ['inventory', 'impairment']                        
+ - Predict: ['reserves', 'periods', 'financial', 'recognize', 'accounting', 'impairment', 'methodology', 'inventory', 'material', 'changes', 'presented.', 'made', 'used', 'not', 'any', 'We', 'in', 'to', 'in', 'have', 'the', 'the']
+# We do not believe there is a reasonable likelihood that there will be a material change in the future estimates or assumptions we use to calculate impairment.
+# We do not believe there is a reasonable likelihood that there will be a material change in the reserves established for tax benefits not recognized.                        
+ - Performance: (R: 1.0; P: 0.24)                        
+ - Truth: ['reserves', 'established', 'tax', 'benefits', 'not', 'recognized.']                        
+ - Predict: ['reserves', 'recognized.', 'likelihood', 'material', 'reasonable', 'benefits', 'established', 'change', 'believe', 'tax', 'not', 'will', 'We', 'do', 'not', 'in', 'that', 'be', 'the', 'for', 'a', 'a', 'is', 'there', 'there']
+# We have not made any material changes in the accounting methodology used to establish our vendor support reserves in the financial periods presented.
+# We have not made any material changes in the accounting methodology used to establish our tax contingencies in the financial periods presented.                        
+ - Performance: (R: 1.0; P: 0.09090909090909091)                        
+ - Truth: ['tax', 'contingencies']                        
+ - Predict: ['financial', 'accounting', 'periods', 'material', 'establish', 'methodology', 'contingencies', 'changes', 'tax', 'presented.', 'made', 'used', 'not', 'any', 'to', 'in', 'in', 'our', 'We', 'the', 'the', 'have']
+# We have not made any material changes in the accounting methodology used to recognize inventory impairment reserves in the financial periods presented.
+# We have not made any material changes in the accounting methodology used to recognize shrinkage in the financial periods presented.                        
+ - Performance: (R: 1.0; P: 0.05)                        
+ - Truth: ['shrinkage']                        
+ - Predict: ['financial', 'periods', 'shrinkage', 'accounting', 'material', 'recognize', 'methodology', 'changes', 'presented.', 'made', 'used', 'not', 'any', 'We', 'in', 'to', 'have', 'in', 'the', 'the']
+# However, if our estimates regarding inventory losses are inaccurate, we may be exposed to losses or gains that could be material.
+# However, if our estimates regarding the ultimate sales tax liability are inaccurate, we may be exposed to losses or gains that could be material.                        
+ - Performance: (R: 1.0; P: 0.16666666666666666)                        
+ - Truth: ['ultimate', 'sales', 'tax', 'liability']                        
+ - Predict: ['gains', 'losses', 'exposed', 'liability', 'estimates', 'ultimate', 'tax', 'sales', 'inaccurate,', 'material.', 'However,', 'could', 'regarding', 'may', 'if', 'are', 'be', 'to', 'or', 'the', 'we', 'be', 'our', 'that']
+# Due to the sale of Indemnity s property and casualty subsidiaries to the Exchange on December 31, 2010, all property and casualty underwriting results and all investment results for these companies accrue to the benefit of the subscribers (policyholders) of the Exchange, or noncontrolling interest, after December 31, 2010.
+# Due to the sale of Indemnity s property and casualty insurance subsidiaries to the Exchange on December 31, 2010, all property and casualty loss and loss expense reserves accrue to the interest of the subscribers (policyholders) of the Exchange, or noncontrolling interest, after December 31, 2010.                        
+ - Performance: (R: 0.8333333333333334; P: 0.21739130434782608)                        
+ - Truth: ['insurance', 'loss', 'loss', 'expense', 'reserves', 'accrue', 'to', 'the', 'interest', 'of', 'the', 'subscribers']                        
+ - Predict: ['(policyholders)', 'Indemnity', 'reserves', 'noncontrolling', 'casualty', 'casualty', 'expense', 'insurance', 'accrue', 'subscribers', 'subsidiaries', 'loss', 'sale', 'interest,', 'loss', 'Due', 'property', 'Exchange', 'property', 'interest', 'Exchange,', 'December', 'December', '31,', '31,', '2010,', '2010.', 'after', 'and', 'all', 's', 'of', 'and', 'to', 'or', 'to', 'and', 'to', 'of', 'the', 'the', 'the', 'the', 'on', 'the', 'of']
+# During 2013, we controlled the growth of our balance sheet and shifted the mix of funding to lower cost sources (non-interest bearing transaction accounts, interest-bearing transaction accounts, money-market accounts and savings deposits).
+# We continued to shift the mix of funding to lower cost sources (non-interest bearing transaction accounts, interest-bearing transaction accounts, money-market accounts and savings deposits).                        
+ - Performance: (R: 1.0; P: 0.041666666666666664)                        
+ - Truth: ['continued']                        
+ - Predict: ['bearing', 'money-market', 'deposits).', '(non-interest', 'interest-bearing', 'savings', 'transaction', 'funding', 'transaction', 'accounts,', 'lower', 'cost', 'accounts', 'accounts,', 'shift', 'sources', 'mix', 'continued', 'We', 'of', 'to', 'to', 'the', 'and']
+# This decrease was mainly the result of our previously announced cost management program as well as reduction in force tied to volume declines, primarily in mortgage services.
+# These decreases were mainly the result of our cost management program as well as reduction in force tied to volume declines, primarily in the ancillary services operations.                        
+ - Performance: (R: 1.0; P: 0.1111111111111111)                        
+ - Truth: ['ancillary', 'services', 'operations.']                        
+ - Predict: ['decreases', 'cost', 'volume', 'ancillary', 'declines,', 'services', 'reduction', 'force', 'tied', 'operations.', 'management', 'program', 'primarily', 'result', 'mainly', 'well', 'in', 'to', 'were', 'as', 'the', 'in', 'These', 'the', 'of', 'our', 'as']
+# We funded this redemption with cash on hand and borrowings under our revolving credit facility.
+# We funded this acquisition using cash on hand and borrowings under our unsecured revolving credit facility.                        
+ - Performance: (R: 1.0; P: 0.0625)                        
+ - Truth: ['acquisition']                        
+ - Predict: ['revolving', 'credit', 'unsecured', 'funded', 'borrowings', 'cash', 'facility.', 'acquisition', 'hand', 'using', 'on', 'under', 'We', 'this', 'and', 'our']
+# No. 1 agreement using cash on hand and borrowings under our revolving credit facility.
+# No. 234 agreement using cash on hand and borrowings under our revolving credit facility.                        
+ - Performance: (R: 1.0; P: 0.14285714285714285)                        
+ - Truth: ['No.', '234']                        
+ - Predict: ['revolving', 'credit', 'borrowings', 'cash', 'facility.', '234', 'hand', 'agreement', 'using', 'on', 'under', 'No.', 'and', 'our']
+# As a result of this analysis, the Company recognized a long-lived asset impairment charge of $18.7 million in the fiscal quarter ended September 30, 2011 which was allocated to the intangible assets of $13.4 million and $5.3 million to equipment and improvements, primarily related to our leasehold improvements.
+# As a result of this analysis, the Company recognized a long-lived asset impairment charge of $18.7 million in the fiscal quarter ended September 30, 2011 which was allocated pro-rata to the intangible assets of $13.4 million and $5.3 million to equipment and improvements, primarily related to our leasehold improvements.                        
+ - Performance: (R: 1.0; P: 0.02040816326530612)                        
+ - Truth: ['pro-rata']                        
+ - Predict: ['leasehold', 'intangible', '$13.4', '$18.7', 'quarter', 'impairment', '$5.3', 'long-lived', 'allocated', 'recognized', 'fiscal', 'asset', 'pro-rata', 'improvements.', 'primarily', 'assets', 'equipment', 'charge', 'analysis,', 'ended', 'improvements,', 'related', '30,', 'September', 'result', '2011', 'million', 'million', 'million', 'Company', 'and', 'of', 'of', 'to', 'and', 'to', 'of', 'the', 'in', 'to', 'a', 'a', 'the', 'was', 'As', 'this', 'which', 'our', 'the']
+********************************            
+File: fin10k.eval.type2.results-further-finetune-blind            
+Mean precision: 0.13169117958450416            
+Mean recall   : 0.9878083076100216            
+Mean f1-score : 0.22237339722492572            
+Mean Rprecision: 0.2514983467493351            
+Num of evaluated samples: 197            
+********************************

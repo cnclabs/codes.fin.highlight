@@ -2,7 +2,7 @@ export CUDA_VISIBLE_DEVICES=0
 BS=16
 
 for MODEL in cross-domain-transfer-0.125  esnli-zs-highlighter from-scratch further-finetune;do
-    EVAL=data/esnli/esnli.dev.sent_highlight.contradiction.jsonl
+    EVAL=data/esnli/esnli.dev.highlight.contradiction.jsonl
     OUTPUT=${EVAL##*/}
     python3 inference.py \
       --model_name_or_path checkpoints/$MODEL/checkpoint-12500/ \

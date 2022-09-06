@@ -1,5 +1,6 @@
 import collections
 from spacy.lang.en import English
+import re
 
 def read_esnli(path, class_selected=('contradiction', 'neutral', 'entailment')):
     """
@@ -68,6 +69,10 @@ def token_extraction(srcA, srcB, pair_type=2, spacy_sep=False):
         srcA, srcB: Strings of sentence pair.
         spacy_sep: separate by using `spacy tokenizer`, used when creating train data.
     """
+    # normalized strings
+    srcA = re.sub("\s\s+" , " ", srcA)
+    srcB = re.sub("\s\s+" , " ", srcB)
+
     if spacy_sep:
         nlp = English()
         tokensA = [tok.text for tok in nlp(srcA)]
