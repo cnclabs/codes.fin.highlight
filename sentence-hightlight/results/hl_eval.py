@@ -6,8 +6,12 @@ from utils import load_pred, load_truth
 
 def main(args):
 
-    truth, text = load_truth(args.path_truth_file)
-    prediction = load_pred(args.path_pred_file, args.threshold,)
+    truth = load_truth(args.path_truth_file)
+    prediction = load_pred(
+            args.path_pred_file, 
+            special_token=False, # since we only evaluate sentB' highlights
+            prob_threshold=args.threshold
+    )
 
     if len(truth) != len(prediction):
         print(f"[WARNING] Inconsisent sizes of truth and prediction, ",
@@ -19,16 +23,19 @@ def main(args):
 
     # for i, truth_tokens in enumerate(truth.values()):
     i = 0
-    for (pair_id, truth_tokens) in truth.items():
+    for (pair_id, truth_dict) in truth.items():
 
         # get topk
         pred_tokens = [t for (t, p) in sorted(prediction[pair_id], key=lambda x: x[1], reverse=True)][:args.topk]
+
+        truth_tokens = truth_dict['keywords']
+        text_pair = truth_dict['text_pair']
 
         n_truth = len(truth_tokens)
         n_pred = len(pred_tokens)
 
         hits = set(truth_tokens) & set(pred_tokens)
-        hits_recall = set(pred_tokens[:n_truth]) & set(truth_tokens)
+        hits_recall = set(truth_tokens) & set(pred_tokens[:n_truth]) 
 
         precision = (len(hits) / n_pred) if n_pred != 0 else 0
         recall = (len(hits) / n_truth) if n_truth != 0 else 0
@@ -39,7 +46,7 @@ def main(args):
         else:
             fscore = 0
 
-        if len(truth_tokens) != 0:
+        if len(truth_dict) != 0:
             metrics['precision'].append(precision)
             metrics['recall'].append(recall)
             metrics['f1'].append(fscore)
@@ -47,7 +54,7 @@ def main(args):
             i += 1
 
             if args.verbose:
-                print(f"{text[pair_id]}\
+                print(f"{text_pair}\
                         \n - Performance: (R: {recall}; P: {precision})\
                         \n - Truth: {truth_tokens}\
                         \n - Predict: {pred_tokens}")

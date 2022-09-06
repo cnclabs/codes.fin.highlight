@@ -1,11 +1,9 @@
 import collections
-import argparse
 import numpy as np
 import json
 
 def load_truth(file_path, sentA=True):
-    truth = collections.OrderedDict()
-    text = collections.OrderedDict()
+    truth = {}
 
     with open(file_path, 'r') as f:
         for i, line in enumerate(f):
@@ -15,12 +13,14 @@ def load_truth(file_path, sentA=True):
             except:
                 pair_id = i
 
-            truth[pair_id] = data['keywordsB']
-            text[pair_id] = f"# {data['sentA']}\n# {data['sentB']}"
+            truth[pair_id] = {
+                    "keywords": data['keywordsB'], 
+                    "text_pair": f"# {data['sentA']}\n# {data['sentB']}"
+            }
 
-    return truth, text
+    return truth
 
-def load_pred(file_path, prob_threshold=0):
+def load_pred(file_path, special_token=False, prob_threshold=0):
     prediction = {}
     with open(file_path, 'r') as f:
         for i, line in enumerate(f):
@@ -36,7 +36,13 @@ def load_pred(file_path, prob_threshold=0):
             for j, (w, p) in enumerate(zip(data['words'], data['probs'])):
 
                 if p == -1:
-                    flag = False if j == 0 else True
+                    # when aggregation
+                    if special_token:
+                        prediction[pair_id].append( (w, p) )
+                        flag = True
+                    # when evalaution
+                    else:
+                        flag = False if j == 0 else True
                 elif flag:
                     if p >= prob_threshold:
                         prediction[pair_id].append( (w, p) )
