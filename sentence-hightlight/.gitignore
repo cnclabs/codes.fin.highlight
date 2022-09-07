@@ -23,6 +23,9 @@ results/fin10k/
 results/esnli*
 results/fin10k-demo/
 
+# Results 
+dev/*soft/
+
 # Others
 __pycache__/
 logs/

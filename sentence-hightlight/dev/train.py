@@ -111,7 +111,9 @@ def main():
             "gamma": model_args.gamma
     }
     model = BertForHighlightPrediction.from_pretrained(
-            model_args.model_name_or_path, config, **model_args
+            model_args.model_name_or_path, 
+            config=config, 
+            **model_kwargs
     )
 
     # Dataset 
@@ -124,15 +126,15 @@ def main():
             token_labels = word_labels
             for i, idx in enumerate(word_id_list):
                 if idx == None:
-                    if i <= len(token_labels) - 1:
+                    try:
                         token_labels[i] = ignore_index
-                    else:
+                    except:
                         token_labels.insert(i, ignore_index)
                 elif word_id_list[i-1] == word_id_list[i]:
                     # token_labels.insert(i, -100)
                     token_labels.insert(i, token_labels[i-1])
 
-            assert len(token_labels) == len(word_id_list), 'wrong token sequence.'
+            assert len(token_labels) == len(word_id_list), f'wrong token sequence.{len(word_labels)} and {len(word_id_list)} {token_labels}'
 
             return token_labels
 

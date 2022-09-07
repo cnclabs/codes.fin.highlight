@@ -25,6 +25,7 @@ class BertForHighlightPrediction(BertPreTrainedModel):
 
         self.tau = model_kwargs.pop('tau', 1)
         self.gamma = model_kwargs.pop('gamma', 1)
+        self.soft_labeling = model_kwargs.pop('soft_labeling', 1)
 
         self.init_weights()
         self.softmax = nn.Softmax(dim=-1)

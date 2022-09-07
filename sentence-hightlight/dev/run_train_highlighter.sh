@@ -2,13 +2,13 @@
 # Codes (1)-(4) provide differnet way to finetuen the highlgiht model 
 
 # Dataset for finetunning 
-TRAIN_ESNLI=esnli/esnli.train.highlight.contradiction.jsonl
-EVAL_ESNLI=esnli/esnli.dev.highlight.contradiction.jsonl
+TRAIN_ESNLI=../data/esnli/esnli.train.highlight.contradiction.jsonl
+EVAL_ESNLI=../data/esnli/esnli.dev.highlight.contradiction.jsonl
 
 # Heurtic labeling
-TRAIN_FIN10K_FURTHER=fin10k/fin10k.heuristic.synthetic.balance.soft.train.type2.jsonl
-TRAIN_FIN10K_CROSS=fin10k/fin10k.heuristic.synthetic.balance.soft.train.type2.jsonl
-TRAIN_FIN10K_FROMSCRATCH=fin10k/fin10k.heuristic.synthetic.balance.soft.train.type2.jsonl
+TRAIN_FIN10K_FURTHER=../data/fin10k/fin10k.heuristic.synthetic.balance.soft.train.type2.jsonl
+TRAIN_FIN10K_CROSS=../data/fin10k/fin10k.heuristic.synthetic.balance.soft.train.type2.jsonl
+TRAIN_FIN10K_FROMSCRATCH=../data/fin10k/fin10k.heuristic.synthetic.balance.soft.train.type2.jsonl
 EXP=$2
 
 # (1) training with Esnli (zero-shot fin10k highlighter)
@@ -65,11 +65,13 @@ then
     TYPE=from-scratch-$EXP
     BS=24
     python3 train.py \
+      --ignore_data_skip \
       --model_name_or_path bert-base-uncased \
       --config_name bert-base-uncased \
-      --output_dir checkpoints/$TYPE \
-      --train_file data/$TRAIN_FIN10K_FROMSCRATCH \
-      --eval_file data/$EVAL_ESNLI \
+      --output_dir $TYPE \
+      --remove_unused_columns false \
+      --train_file $TRAIN_FIN10K_FROMSCRATCH \
+      --eval_file $EVAL_ESNLI \
       --per_device_train_batch_size $BS \
       --max_steps 12500 \
       --save_steps 2500 \
@@ -77,8 +79,9 @@ then
       --max_seq_length 512 \
       --evaluation_strategy 'steps'\
       --evaluate_during_training \
+      --soft_labeling true \
       --do_train \
-      --do_eval
+      --do_eval 
 fi
 
 # (4) Further training for out-domain transfer:w
