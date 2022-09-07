@@ -64,7 +64,7 @@ def heuristic_labeling(example,
     example.update({
             'keywordsA': keywordsA_pseudo,
             'keywordsB': keywordsB_pseudo,
-            'labels': labelsA_pseudo + labelsB_pseudo
+            'labels': [-1] + labelsA_pseudo + [-1] + labelsB_pseudo + [-1],
     })
 
     if positive_threshold:
@@ -135,7 +135,7 @@ def lexicon_based_labeling(example,
     example.update({
             'keywordsA': keywordsA_pseudo,
             'keywordsB': keywordsB_pseudo,
-            'labels': labelsA_pseudo + labelsB_pseudo
+            'labels': [-1] + labelsA_pseudo + [-1] + labelsB_pseudo + [-1],
     })
 
     if positive_threshold:

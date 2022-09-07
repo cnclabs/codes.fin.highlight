@@ -15,6 +15,7 @@ data/fin10k/*
 data/fin10k/*jsonl.bak
 data/fin10k/archived/
 data/fin10k/type2.segments
+dev/*.jsonl
 
 # Results 
 results/esnli/

@@ -99,7 +99,6 @@ def main():
             max_length=data_args.max_seq_length,
             sentA_removal=data_args.blind_predict
     )
-
     # loader
     dataloader = DataLoader(
             dataset,
@@ -146,24 +145,16 @@ def main():
                 
             # allocate prob/label 
             predictions['probs'][sosB:] = probs_holder
-            predictions['labels'][sosB:] = labels_holder
+            # no need to rewrite the labels (ranomd is OK)
+            # predictions['labels'][sosB:] = labels_holder
 
             if len(predictions['words']) != len(predictions['probs']):
                 print(predictions)
-            # assert len(predictions['words']) == len(predictions['probs']), \
-            #         f"Inconsistent length of words and probs: {len(predictions['words'])} and {len(predictions['probs'])}"
 
             f.write(json.dumps(predictions) + '\n')
 
         if b % 10 == 0:
             print(f"Output post-processing {b} batch...")
-            # print("Output: {}".format(
-            #     [(w, p, l) for w, p, l in zip(
-            #         predictions['words'][sosB:],
-            #         predictions['probs'][sosB:],
-            #         predictions['labels'][sosB:]
-            #     )]
-            # ))
 
     f.close()
 
