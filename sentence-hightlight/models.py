@@ -5,16 +5,16 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.nn import CrossEntropyLoss
+from torch.nn import CrossEntropyLoss, KLDivLoss
 from transformers.modeling_outputs import TokenClassifierOutput
 from transformers import BertModel, BertPreTrainedModel
 
 class BertForHighlightPrediction(BertPreTrainedModel):
     _keys_to_ignore_on_load_unexpected = [r"pooler"]
 
-    def __init__(self, config, *model_args, **model_kargs):
+    def __init__(self, config, **model_kwargs):
         super().__init__(config)
-        self.model_args = model_kargs["model_args"]
+        # self.model_args = model_kargs["model_args"]
         self.num_labels = config.num_labels
         self.bert = BertModel(config, add_pooling_layer=False)
         classifier_dropout = (
@@ -23,11 +23,16 @@ class BertForHighlightPrediction(BertPreTrainedModel):
         self.dropout = nn.Dropout(classifier_dropout)
         self.tokens_clf = nn.Linear(config.hidden_size, config.num_labels)
 
+        self.tau = model_kwargs.pop('tau', 1)
+        self.gamma = model_kwargs.pop('gamma', 1)
+        self.soft_labeling = model_kwargs.pop('soft_labeling', 1)
+
         self.init_weights()
         self.softmax = nn.Softmax(dim=-1)
 
     def forward(self,
                 input_ids=None,
+                probs=None, # soft-labeling
                 attention_mask=None,
                 token_type_ids=None,
                 position_ids=None,
@@ -52,10 +57,10 @@ class BertForHighlightPrediction(BertPreTrainedModel):
 
         tokens_output = outputs[0]
         highlight_logits = self.tokens_clf(self.dropout(tokens_output))
-        highlight_loss = None
 
+        loss = None
         if labels is not None:
-            loss_fct = CrossEntropyLoss(label_smoothing=self.model_args.label_smoothing)
+            loss_fct = CrossEntropyLoss()
             active_loss = attention_mask.view(-1) == 1
             active_logits = highlight_logits.view(-1, self.num_labels)
             active_labels = torch.where(
@@ -63,10 +68,23 @@ class BertForHighlightPrediction(BertPreTrainedModel):
                     labels.view(-1),
                     torch.tensor(loss_fct.ignore_index).type_as(labels)
             )
-            highlight_loss = loss_fct(active_logits, active_labels)
+            loss_ce = loss_fct(active_logits, active_labels)
+
+            loss_kl = 0
+            if self.soft_labeling:
+                loss_fct = KLDivLoss(reduction='sum')
+                active_mask = (attention_mask * token_type_ids).view(-1, 1) # BL 1
+                n_active = (active_mask == 1).sum()
+                active_mask = active_mask.repeat(1, 2) # BL 2
+                input_logp = F.log_softmax(highlight_logits.view(-1, 2), -1) # BL 2
+                target_p = torch.cat(( (1-probs).view(-1, 1), probs.view(-1, 1)), -1) # BL 2
+
+                loss_kl = loss_fct(input_logp, target_p * active_mask) / n_active
+
+            loss = loss_ce + loss_kl
 
         return TokenClassifierOutput(
-            loss=highlight_loss,
+            loss=loss,
             logits=highlight_logits,
             hidden_states=outputs.hidden_states,
             attentions=outputs.attentions,

@@ -14,19 +14,19 @@ EXP=$2
 # (1) training with Esnli (zero-shot fin10k highlighter)
 if [[ "$1" = 'zero-shot' ]]
 then
-    TYPE=esnli-zs-highlighter
+    TYPE=esnli-zs-highlighter-$EXP
     BS=8
     python3 train.py \
       --model_name_or_path bert-base-uncased \
       --config_name bert-base-uncased \
       --output_dir checkpoints/$TYPE \
-      --train_file data/$TRAIN_ESNLI \
-      --eval_file data/$EVAL_ESNLI \
+      --train_file $TRAIN_ESNLI \
+      --eval_file $EVAL_ESNLI \
       --per_device_train_batch_size $BS \
       --max_steps 12500 \
       --save_steps 2500 \
       --eval_steps 2500 \
-      --max_seq_length 256 \
+      --max_seq_length 512 \
       --evaluation_strategy 'steps'\
       --evaluate_during_training \
       --do_train \
@@ -37,15 +37,15 @@ fi
 if [[ "$1" = 'cross-domain-transfer' ]]
 then
     TYPE=cross-domain-transfer-$EXP
-    BS=8
+    BS=24
     MIXING_RATE=0.125 # indicate 8 * 0.125 instances out of 8
     python3 train.py \
       --model_name_or_path bert-base-uncased \
       --config_name bert-base-uncased \
       --output_dir checkpoints/$TYPE-$MIXING_RATE \
-      --train_file data/$TRAIN_ESNLI \
-      --train_file_2 data/$TRAIN_FIN10K_CROSS \
-      --eval_file data/$EVAL_ESNLI \
+      --train_file $TRAIN_ESNLI \
+      --train_file_2 $TRAIN_FIN10K_CROSS \
+      --eval_file $EVAL_ESNLI \
       --per_device_train_batch_size $BS \
       --max_steps 12500 \
       --save_steps 2500 \
@@ -68,8 +68,8 @@ then
       --model_name_or_path bert-base-uncased \
       --config_name bert-base-uncased \
       --output_dir checkpoints/$TYPE \
-      --train_file data/$TRAIN_FIN10K_FROMSCRATCH \
-      --eval_file data/$EVAL_ESNLI \
+      --train_file $TRAIN_FIN10K_FROMSCRATCH \
+      --eval_file $EVAL_ESNLI \
       --per_device_train_batch_size $BS \
       --max_steps 12500 \
       --save_steps 2500 \
@@ -86,15 +86,15 @@ if [[ "$1" = 'further-finetune' ]]
 then
     export CUDA_VISIBLE_DEVICES=0
     TYPE=further-finetune-$EXP
-    BS=6 # 10
+    BS=24 # 10
     python3 train.py \
       --ignore_data_skip \
       --resume_from_checkpoint checkpoints/esnli-zs-highlighter/checkpoint-10000 \
       --model_name_or_path bert-base-uncased \
       --config_name bert-base-uncased \
       --output_dir checkpoints/$TYPE \
-      --train_file data/$TRAIN_FIN10K_FURTHER \
-      --eval_file data/$EVAL_ESNLI \
+      --train_file $TRAIN_FIN10K_FURTHER \
+      --eval_file $EVAL_ESNLI \
       --per_device_train_batch_size $BS \
       --max_steps 12500 \
       --save_steps 2500 \

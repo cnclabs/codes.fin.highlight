@@ -18,7 +18,7 @@ def heuristic_labeling(example,
     labelsA_pseudo, labelsB_pseudo = list(), list()
     keywordsA_pseudo, keywordsB_pseudo = list(), list()
 
-    # POSITIVE/NEGATIVE list of tokens
+    # Positive from different tokens
     overlaps = [1 if tok in example['wordsA'] else 0 for tok in example['wordsB']]
 
     # Condtition functions
@@ -34,7 +34,7 @@ def heuristic_labeling(example,
     # Extract sentence B 
     for i, tok in enumerate(example['wordsB']):
         tokc = tok.casefold()
-        if selfs(i):
+        if not selfs(i):
             labelsB_pseudo += [0]
         elif stops(tokc) or punc(tokc):
             labelsB_pseudo += [0]
@@ -102,8 +102,10 @@ def lexicon_based_labeling(example,
     # Extract sentence B (fs_fin10k_v1)
     for i, tok in enumerate(example['wordsB']):
         tokc = tok.casefold()
-        if selfs(i):
-            labelsB_pseudo += [0]
+        # postive tokens
+        if not selfs(i) and fins(tokc):
+            labelsB_pseudo += [1]
+        # different tokens
         elif stops(tokc) or punc(tokc) or finstops(tokc):
             labelsB_pseudo += [0]
         elif numbers(tokc):
