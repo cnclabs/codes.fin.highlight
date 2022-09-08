@@ -25,7 +25,7 @@ class BertForHighlightPrediction(BertPreTrainedModel):
 
         self.tau = model_kwargs.pop('tau', 1)
         self.gamma = model_kwargs.pop('gamma', 1)
-        self.soft_labeling = model_kwargs.pop('soft_labeling', 1)
+        self.soft_labeling = model_kwargs.pop('soft_labeling', False)
 
         self.init_weights()
         self.softmax = nn.Softmax(dim=-1)
@@ -76,12 +76,17 @@ class BertForHighlightPrediction(BertPreTrainedModel):
                 active_mask = (attention_mask * token_type_ids).view(-1, 1) # BL 1
                 n_active = (active_mask == 1).sum()
                 active_mask = active_mask.repeat(1, 2) # BL 2
-                input_logp = F.log_softmax(highlight_logits.view(-1, 2), -1) # BL 2
+                input_logp = F.log_softmax(active_logits / self.tau, -1) # BL 2
                 target_p = torch.cat(( (1-probs).view(-1, 1), probs.view(-1, 1)), -1) # BL 2
 
                 loss_kl = loss_fct(input_logp, target_p * active_mask) / n_active
 
-            loss = loss_ce + loss_kl
+            loss = self.gamma * loss_ce + (1-self.gamma) * loss_kl
+
+            # print("Loss:\n")
+            # print(loss)
+            # print(loss_kl)
+            # print(loss_ce)
 
         return TokenClassifierOutput(
             loss=loss,

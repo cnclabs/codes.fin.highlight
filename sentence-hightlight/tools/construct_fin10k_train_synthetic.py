@@ -24,7 +24,7 @@ def heuristic_labeling(example,
     # Condtition functions
     punc = (lambda x: x in string.punctuation)
     stops = (lambda x: x in STOPWORDS)
-    selfs = (lambda i: overlaps[i] == 1) 
+    appeared = (lambda i: overlaps[i] == 1) 
     neighbors = (lambda i, x: ((overlaps+[1])[i+1] * ([1]+overlaps)[i]) == 1) 
     numbers = (lambda x: x.isdigit())
 
@@ -34,16 +34,18 @@ def heuristic_labeling(example,
     # Extract sentence B 
     for i, tok in enumerate(example['wordsB']):
         tokc = tok.casefold()
-        if not selfs(i):
+        # repeated tokens
+        if appeared(i):
             labelsB_pseudo += [0]
+        # new tokens
         elif stops(tokc) or punc(tokc):
             labelsB_pseudo += [0]
         elif numbers(tokc):
             if neighbors(i, tokc):
-                labelsB_pseudo += [0]
-            else:
                 labelsB_pseudo += [1]
                 keywordsB_pseudo += [tok]
+            else:
+                labelsB_pseudo += [-100]
         elif neighbors(i, tokc):
             labelsB_pseudo += [1]
             keywordsB_pseudo += [tok]
@@ -89,7 +91,7 @@ def lexicon_based_labeling(example,
     stops = (lambda x: x in STOPWORDS)
     finstops = (lambda x: x in FINSTOPWORDS)
     fins = (lambda x: x in FINWORDS)
-    selfs = (lambda i: overlaps[i] == 1) 
+    appeared = (lambda i: overlaps[i] == 1) 
     # True if index i was appeared
     neighbors = (lambda i, x: ((overlaps+[1])[i+1] * ([1]+overlaps)[i]) == 1) 
     # True if index i's neighbors were appered
@@ -103,7 +105,7 @@ def lexicon_based_labeling(example,
     for i, tok in enumerate(example['wordsB']):
         tokc = tok.casefold()
         # postive tokens
-        if not selfs(i) and fins(tokc):
+        if not appeared(i) and fins(tokc):
             labelsB_pseudo += [1]
         # different tokens
         elif stops(tokc) or punc(tokc) or finstops(tokc):

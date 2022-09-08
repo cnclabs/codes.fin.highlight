@@ -35,9 +35,8 @@ class OurModelArguments:
     num_labels: float = field(default=2)
     # Cutomized arguments
     soft_labeling: bool = field(default=False)
-    tau: float = field(default=0.25)
-    gamma: float = field(default=0.1)
-
+    tau: float = field(default=1)
+    gamma: float = field(default=1)
 
 @dataclass
 class OurDataArguments:

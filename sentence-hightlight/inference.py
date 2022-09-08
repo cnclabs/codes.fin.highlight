@@ -145,7 +145,7 @@ def main():
                 
             # allocate prob/label 
             predictions['probs'][sosB:] = probs_holder
-            predictions['labels'][sosB:] = labels_holder
+            # predictions['labels'][sosB:] = labels_holder
             # no need to rewrite the labels (ranomd is OK)
 
             if len(predictions['words']) != len(predictions['probs']):
