@@ -1,7 +1,8 @@
-TRAIN_ESNLI=esnli/esnli.train.highlight.contradiction.jsonl
-EVAL_ESNLI=esnli/esnli.dev.highlight.contradiction.jsonl
+TRAIN_ESNLI=data/esnli/esnli.train.highlight.contradiction.jsonl
+EVAL_ESNLI=data/esnli/esnli.dev.highlight.contradiction.jsonl
 
-TYPE=esnli-zs-highlighter-$EXP
+export CUDA_VISIBLE_DEVICES=0
+TYPE=esnli-zs-highlighter-base
 BS=24
 python3 train.py \
   --model_name_or_path bert-base-uncased \
@@ -13,7 +14,7 @@ python3 train.py \
   --max_steps 12500 \
   --save_steps 2500 \
   --eval_steps 2500 \
-  --max_seq_length 512 \
+  --max_seq_length 384 \
   --evaluation_strategy 'steps'\
   --evaluate_during_training \
   --do_train \
