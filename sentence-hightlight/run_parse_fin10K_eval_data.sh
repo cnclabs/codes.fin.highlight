@@ -21,8 +21,10 @@ python3 tools/convert_text_to_jsonl.py \
     -type 1
 python3 tools/filter_overlength_pair.py \
     -in data/fin10k/fin10k.eval.type1.hard.jsonl \
-    -out_ol data/fin10k/fin10k.eval.type1.hard.overlength.jsonl &
-rm data/fin10k/fin10k.eval.type1.hard.jsonl.bak
+    -out_ol data/fin10k/fin10k.eval.type1.hard.overlength.jsonl
+python3 tools/create_fin10k_annotation_sheet.py \
+    -input data/fin10k/fin10k.eval.type1.hard.jsonl \
+    -output data/fin10k/fin10k.eval.type1.hard.tsv
 
 # Evaluation data from type1 (easy)
 python3 tools/convert_text_to_jsonl.py \
@@ -31,5 +33,9 @@ python3 tools/convert_text_to_jsonl.py \
     -type 1
 python3 tools/filter_overlength_pair.py \
     -in data/fin10k/fin10k.eval.type1.easy.jsonl \
-    -out_ol data/fin10k/fin10k.eval.type1.easy.overlength.jsonl &
-rm data/fin10k/fin10k.eval.type1.easy.jsonl.bak
+    -out_ol data/fin10k/fin10k.eval.type1.easy.overlength.jsonl
+python3 tools/create_fin10k_annotation_sheet.py \
+    -input data/fin10k/fin10k.eval.type1.easy.jsonl \
+    -output data/fin10k/fin10k.eval.type1.easy.tsv
+
+rm data/fin10k/*eval*bak

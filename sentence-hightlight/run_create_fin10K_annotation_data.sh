@@ -18,11 +18,10 @@ rm data/fin10k/fin10k.annotation.type2.jsonl.raw.bak
 
 python3 tools/construct_fin10k_eval_annotation.py \
     -input data/fin10k/fin10k.annotation.type2.jsonl.raw \
-    -output data/fin10k/fin10k.annotation.type2.jsonl \
-    --output_csv 
+    -output data/fin10k/fin10k.annotation.type2.jsonl
 
 python3 tools/get_dataset_stats.py \
-    -data data/fin10k/fin10k.annotation.type2.jsonl
+    -data data/fin10k/fin10k.annotation.type2.jsol
 
 python3 tools/create_fin10k_annotation_sheet.py \
     -input data/fin10k/fin10k.annotation.type2.jsonl \
