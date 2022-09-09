@@ -42,8 +42,9 @@ if __name__ == '__main__':
         # so far, we use 'contradiction' pair
         data = read_esnli(args.path_input_file, ("contradiction"))
         convert_to_bert(args, data)
-    if 'fin10k' in args.path_input_file:
-        data = read_fin10k(args.path_input_file, )
+    else:
+    # if 'fin10k' in args.path_input_file:
+        data = read_fin10k(args.path_input_file)
         convert_to_bert(args, data)
 
 

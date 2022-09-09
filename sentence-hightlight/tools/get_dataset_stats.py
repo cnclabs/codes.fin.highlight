@@ -13,7 +13,7 @@ def main(args):
         stats['neg_label'].append(sum([1 for l in data_dict['labels'] if l == 0]))
         stats['no_label'].append(sum([1 for l in data_dict['labels'] if l == -100]))
 
-    return stats, n
+    return stats, n+1
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
