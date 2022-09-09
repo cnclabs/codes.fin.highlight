@@ -5,14 +5,14 @@
 # ---------------------
 EVAL_FOLDER=/tmp2/yshuang/fintext/new-data/eval.result/
 
-# Evaluation data from type2
-python3 tools/convert_text_to_jsonl.py \
-    -input ${EVAL_FOLDER}/eval.type2.segments.all \
-    -output data/fin10k/fin10k.eval.type2.jsonl \
-    -type 2
-python3 tools/filter_overlength_pair.py \
-    -in data/fin10k/fin10k.eval.type2.jsonl \
-    -out_ol data/fin10k/fin10k.eval.type2.overlength.jsonl &
+# Evaluation data from type2 (use `run_create_fin10K_annotation_data.sh` instead)
+# python3 tools/convert_text_to_jsonl.py \
+#     -input ${EVAL_FOLDER}/eval.type2.segments.all \
+#     -output data/fin10k/fin10k.eval.type2.jsonl \
+#     -type 2
+# python3 tools/filter_overlength_pair.py \
+#     -in data/fin10k/fin10k.eval.type2.jsonl \
+#     -out_ol data/fin10k/fin10k.eval.type2.overlength.jsonl &
 
 # Evaluation data from type1 (hard)
 python3 tools/convert_text_to_jsonl.py \
@@ -22,6 +22,7 @@ python3 tools/convert_text_to_jsonl.py \
 python3 tools/filter_overlength_pair.py \
     -in data/fin10k/fin10k.eval.type1.hard.jsonl \
     -out_ol data/fin10k/fin10k.eval.type1.hard.overlength.jsonl &
+rm data/fin10k/fin10k.eval.type1.hard.jsonl.bak
 
 # Evaluation data from type1 (easy)
 python3 tools/convert_text_to_jsonl.py \
@@ -31,4 +32,4 @@ python3 tools/convert_text_to_jsonl.py \
 python3 tools/filter_overlength_pair.py \
     -in data/fin10k/fin10k.eval.type1.easy.jsonl \
     -out_ol data/fin10k/fin10k.eval.type1.easy.overlength.jsonl &
-
+rm data/fin10k/fin10k.eval.type1.easy.jsonl.bak

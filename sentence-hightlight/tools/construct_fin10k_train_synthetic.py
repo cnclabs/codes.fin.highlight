@@ -42,10 +42,10 @@ def heuristic_labeling(example,
             labelsB_pseudo += [0]
         elif numbers(tokc):
             if neighbors(i, tokc):
+                labelsB_pseudo += [0]
+            else:
                 labelsB_pseudo += [1]
                 keywordsB_pseudo += [tok]
-            else:
-                labelsB_pseudo += [-100]
         elif neighbors(i, tokc):
             labelsB_pseudo += [1]
             keywordsB_pseudo += [tok]

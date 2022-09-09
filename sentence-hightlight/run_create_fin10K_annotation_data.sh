@@ -13,7 +13,7 @@ python3 tools/convert_text_to_jsonl.py \
 
 python3 tools/filter_overlength_pair.py \
     -in data/fin10k/fin10k.annotation.type2.jsonl.raw \
-    -out_ol data/fin10k/fin10k.annotation.type2.jsonl.overlength
+    -out_ol data/fin10k/fin10k.annotation.type2.overlength.jsonl.overlength
 rm data/fin10k/fin10k.annotation.type2.jsonl.raw.bak
 
 python3 tools/construct_fin10k_eval_annotation.py \
