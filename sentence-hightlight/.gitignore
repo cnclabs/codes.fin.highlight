@@ -10,10 +10,9 @@ data/esnli_train.csv
 
 # Fin10k Data
 data/archived/
-data/fin10k/*
-!data/fin10k/fin10k.eval*jsonl
-data/fin10k/*jsonl.bak
 data/fin10k/archived/
+data/fin10k/*bak
+data/fin10k/*train*
 data/fin10k/type2.segments
 dev/*.jsonl
 
