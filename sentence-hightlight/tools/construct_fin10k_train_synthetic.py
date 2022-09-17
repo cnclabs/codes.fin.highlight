@@ -83,20 +83,19 @@ def lexicon_based_labeling(example,
     labelsA_pseudo, labelsB_pseudo = list(), list()
     keywordsA_pseudo, keywordsB_pseudo = list(), list()
 
-    # POSITIVE/NEGATIVE list of tokens
+    # Positive from different tokens
     overlaps = [1 if tok in example['wordsA'] else 0 for tok in example['wordsB']]
 
     # Condtition functions
     punc = (lambda x: x in string.punctuation)
     stops = (lambda x: x in STOPWORDS)
+    appeared = (lambda i: overlaps[i] == 1) 
+    neighbors = (lambda i, x: ((overlaps+[1])[i+1] * ([1]+overlaps)[i]) == 1) 
+    numbers = (lambda x: x.isdigit())
+
+    # Lexicon-based labeling
     finstops = (lambda x: x in FINSTOPWORDS)
     fins = (lambda x: x in FINWORDS)
-    appeared = (lambda i: overlaps[i] == 1) 
-    # True if index i was appeared
-    neighbors = (lambda i, x: ((overlaps+[1])[i+1] * ([1]+overlaps)[i]) == 1) 
-    # True if index i's neighbors were appered
-    numbers = (lambda x: x.isdigit())
-    # times = (lambda x: x in list(map(str, range(2010, 2018))))
 
     # No label on sentence A
     labelsA_pseudo = [-100] * len(example['wordsA'])
@@ -104,30 +103,35 @@ def lexicon_based_labeling(example,
     # Extract sentence B (fs_fin10k_v1)
     for i, tok in enumerate(example['wordsB']):
         tokc = tok.casefold()
-        # postive tokens
-        if not appeared(i) and fins(tokc):
+
+        # Lexicon positive/negative labeling
+        if fins(tokc):
             labelsB_pseudo += [1]
-        # different tokens
-        elif stops(tokc) or punc(tokc) or finstops(tokc):
+            keywordsB_pseudo += [tok]
+        elif finstops(tokc):
             labelsB_pseudo += [0]
-        elif numbers(tokc):
-            if neighbors(i, tokc):
-                labelsB_pseudo += [0]
-            else:
-                labelsB_pseudo += [1]
-                keywordsB_pseudo += [tok]
-        elif fins(tokc):
-            labelsB_pseudo += [1]
-            keywordsB_pseudo += [tok]
-        elif neighbors(i, tokc):
-            labelsB_pseudo += [1]
-            keywordsB_pseudo += [tok]
         else:
-            if random_ratio >= random.uniform(0, 1):
+            # repeated tokens
+            if appeared(i):
+                labelsB_pseudo += [0]
+            # new tokens
+            elif stops(tokc) or punc(tokc):
+                labelsB_pseudo += [0]
+            elif numbers(tokc):
+                if neighbors(i, tokc):
+                    labelsB_pseudo += [0]
+                else:
+                    labelsB_pseudo += [1]
+                    keywordsB_pseudo += [tok]
+            elif neighbors(i, tokc):
                 labelsB_pseudo += [1]
                 keywordsB_pseudo += [tok]
             else:
-                labelsB_pseudo += [0]
+                if random_ratio >= random.uniform(0, 1):
+                    labelsB_pseudo += [1]
+                    keywordsB_pseudo += [tok]
+                else:
+                    labelsB_pseudo += [0]
 
     if negative_ratio > 1:
         negative_indices = [i for i, l in enumerate(labelsB_pseudo) if l == 0]
@@ -204,7 +208,6 @@ if __name__ == '__main__':
     random.seed(1234)
     # makedirs
     os.makedirs(os.path.dirname(args.path_output_file), exist_ok=True)
-
 
     STOPWORDS = load_stopwords(args.stopword_source)
 
