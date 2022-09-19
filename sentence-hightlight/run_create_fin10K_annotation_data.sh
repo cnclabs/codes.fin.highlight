@@ -1,28 +1,13 @@
-# Fin10k annation data 
-# ---------------------
-# include (1) type2 
-# procudre (1) convert text to jsonl (2) filter overlegnth example
-# ---------------------
-EVAL_FOLDER=/tmp2/yshuang/fintext/new-data/eval.result/
+# first annotator
+python3 tools/extract_fin10k_eval_annotation.py \
+    -raw data/fin10k/fin10k.annotation.type2.jsonl \
+    -input data/fin10k/our.fin10k.annotation.type2.csv \
+    -output data/fin10k/fin10k.annotation.type2.jsonl.1 \
+    -annotator 1
 
-# Evaluation data from type2
-python3 tools/convert_text_to_jsonl.py \
-    -input ${EVAL_FOLDER}/eval.type2.segments.annotation.highlight.final \
-    -output data/fin10k/fin10k.annotation.type2.jsonl.raw \
-    -type 2 
-
-python3 tools/filter_overlength_pair.py \
-    -in data/fin10k/fin10k.annotation.type2.jsonl.raw \
-    -out_ol data/fin10k/fin10k.annotation.type2.overlength.jsonl.overlength
-rm data/fin10k/fin10k.annotation.type2.jsonl.raw.bak
-
-python3 tools/construct_fin10k_eval_annotation.py \
-    -input data/fin10k/fin10k.annotation.type2.jsonl.raw \
-    -output data/fin10k/fin10k.annotation.type2.jsonl
-
-python3 tools/get_dataset_stats.py \
-    -data data/fin10k/fin10k.annotation.type2.jsol
-
-python3 tools/create_fin10k_annotation_sheet.py \
-    -input data/fin10k/fin10k.annotation.type2.jsonl \
-    -output data/fin10k/fin10k.annotation.type2.tsv
+# third annotator
+python3 tools/extract_fin10k_eval_annotation.py \
+    -raw data/fin10k/fin10k.annotation.type2.jsonl \
+    -input data/fin10k/our.fin10k.annotation.type2.csv \
+    -output data/fin10k/fin10k.annotation.type2.jsonl.3 \
+    -annotator 3

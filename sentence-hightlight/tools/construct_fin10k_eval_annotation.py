@@ -56,17 +56,6 @@ def convert_raw_to_highlight(args):
             fout.write(json.dumps(data_dict) + '\n')
             start_of_b = data_dict['labels'][1:].index(-1) + 1
             labelsB = data_dict['labels'][(start_of_b+1):-1]
-            if args.output_csv:
-                fout_csv.write(
-                    f"{data_dict['idA']}#{data_dict['sentA']}\
-                        \n{data_dict['idB']}#{data_dict['sentB']}\
-                        \nTokensB#{'#'.join(data_dict['wordsB'])}\
-                        \nAnnotation-1#{'#'.join([str(l) for l in labelsB])}\
-                        \nAnnotation-2#{'#'.join([str(0) for l in labelsB])}\
-                        \nAnnotation-3#{'#'.join([str(0) for l in labelsB])}\
-                        \nAnnotation-4#{'#'.join([str(0) for l in labelsB])}\
-                        \nAnnotation-5#{'#'.join([str(0) for l in labelsB])}\n"
-                )
 
             print(f"{i} annotation examples with {highlight} highlighted tokens.")
 

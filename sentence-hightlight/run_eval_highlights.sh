@@ -8,15 +8,22 @@
 #############################################
 
 # fin10k type2 
-# for RESULT in results/fin10k/type2/fin10k.eval.type2*;do
-#     echo Loading prediction ${RESULT##*/} > logs/fin10k.eval/${RESULT##*/}.log
-#     python3 tools/judge_highlights.py \
-#       -truth data/fin10k/fin10k.annotation.type2.jsonl \
-#       -pred $RESULT \
-#       --verbose >> logs/fin10k.eval/${RESULT##*/}.log
-#       # -topk 2
-#       # -thres 0 
-# done
+for RESULT in results/fin10k/type2/fin10k.eval.type2*;do
+    echo Loading prediction ${RESULT##*/} > logs/fin10k.eval/${RESULT##*/}.log.1
+    python3 tools/judge_highlights.py \
+      -truth data/fin10k/fin10k.annotation.type2.jsonl.1 \
+      -pred $RESULT \
+      --verbose >> logs/fin10k.eval/${RESULT##*/}.log.1
+      # -topk 2
+      # -thres 0 
+done
+for RESULT in results/fin10k/type2/fin10k.eval.type2*;do
+    echo Loading prediction ${RESULT##*/} > logs/fin10k.eval/${RESULT##*/}.log.3
+    python3 tools/judge_highlights.py \
+      -truth data/fin10k/fin10k.annotation.type2.jsonl.3 \
+      -pred $RESULT \
+      --verbose >> logs/fin10k.eval/${RESULT##*/}.log.3
+done
 
 # # fin10k type1 easy
 # for RESULT in results/fin10k/type1/fin10k.eval.type1.easy*;do
@@ -38,22 +45,18 @@
 #       # -thres 0 
 # done
 
-for RESULT in results/esnli/esnli*dev*results*;do
-    echo Loading prediction ${RESULT##*/} > logs/esnli.dev/${RESULT##*/}.log
-    python3 tools/judge_highlights.py \
-      -truth data/esnli/esnli.dev.highlight.contradiction.jsonl \
-      -pred $RESULT \
-      --verbose >> logs/esnli.dev/${RESULT##*/}.log
-      # -topk 2 \
-      # -thres 0.01 \
-done
-
-for RESULT in results/esnli/esnli*test*results*;do
-    echo Loading prediction ${RESULT##*/} > logs/esnli.test/${RESULT##*/}.log
-    python3 tools/judge_highlights.py \
-      -truth data/esnli/esnli.test.highlight.contradiction.jsonl \
-      -pred $RESULT \
-      --verbose >> logs/esnli.test/${RESULT##*/}.log
-      # -topk 2 \
-      # -thres 0.01 \
-done
+# for RESULT in results/esnli/esnli*dev*results*;do
+#     echo Loading prediction ${RESULT##*/} > logs/esnli.dev/${RESULT##*/}.log
+#     python3 tools/judge_highlights.py \
+#       -truth data/esnli/esnli.dev.highlight.contradiction.jsonl \
+#       -pred $RESULT \
+#       --verbose >> logs/esnli.dev/${RESULT##*/}.log
+# done
+#
+# for RESULT in results/esnli/esnli*test*results*;do
+#     echo Loading prediction ${RESULT##*/} > logs/esnli.test/${RESULT##*/}.log
+#     python3 tools/judge_highlights.py \
+#       -truth data/esnli/esnli.test.highlight.contradiction.jsonl \
+#       -pred $RESULT \
+#       --verbose >> logs/esnli.test/${RESULT##*/}.log
+# done
