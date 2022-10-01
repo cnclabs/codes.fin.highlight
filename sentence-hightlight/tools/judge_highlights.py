@@ -2,21 +2,17 @@ import collections
 import argparse
 import numpy as np
 import json
-from utils import load_pred, load_truth
+from utils import load_pred, load_truth, load_json
 
-def main(args):
+def highlight_eval(args):
 
-    truth = load_truth(args.path_truth_file)
-    prediction = load_pred(
-            args.path_pred_file, 
-            special_token=False, # since we only evaluate sentB' highlights
-            prob_threshold=args.threshold
-    )
+    truth = load_json(args.path_truth_file)
+    pred = load_json(args.path_pred_file)
 
-    if len(truth) != len(prediction):
+    if len(truth) != len(pred):
         print(f"[WARNING] Inconsisent sizes of truth and prediction, ",
-                "{len(truth)} and {len(prediction)}")
-        n = len([pk for pk in prediction.keys() if pk in truth.keys()])
+                "{len(truth)} and {len(pred)}")
+        n = len([pk for pk in pred.keys() if pk in truth.keys()])
         print(f"n examples annotated.")
 
     metrics = collections.defaultdict(list)
@@ -26,9 +22,11 @@ def main(args):
     for (pair_id, truth_dict) in truth.items():
 
         # get topk
-        pred_tokens = [t for (t, p) in sorted(prediction[pair_id], key=lambda x: x[1], reverse=True)][:args.topk]
-
         truth_tokens = truth_dict['keywords']
+        pred_tokens = [w for (w, p) in sorted(pred[pair_id]['WP'], key=lambda x: x[1], reverse=True)][:args.topk]
+        pred_probs = [p for (w, p) in pred[pair_id]['WP']]
+        truth_probs = [p for (w, p) in truth_dict['WP']]
+
         text_pair = truth_dict['text_pair']
 
         n_truth = len(truth_tokens)
@@ -41,6 +39,8 @@ def main(args):
         recall = (len(hits) / n_truth) if n_truth != 0 else 0
         r_precision = len(hits_recall) / n_truth if n_truth != 0 else 0
 
+        correlation = np.corrcoef(truth_probs, pred_probs)[0, 1] if n_truth != 0 else 0
+
         if precision + recall != 0:
             fscore = 2 * precision * recall / (precision + recall)
         else:
@@ -48,14 +48,19 @@ def main(args):
 
         if len(truth_dict) != 0:
             metrics['precision'].append(precision)
-            metrics['recall'].append(recall)
-            metrics['f1'].append(fscore)
-            metrics['rp'].append(r_precision)
-            i += 1
+            if n_truth != 0:
+                metrics['f1'].append(fscore)
+                metrics['rp'].append(r_precision)
+                metrics['recall'].append(recall)
+                metrics['pearson'].append(correlation)
+                i += 1
 
             if args.verbose:
                 print(f"{text_pair}\
-                        \n - Performance: (R: {recall}; P: {precision}; Rprec: {r_precision})\
+                        \n - Performance\
+                        \n - Recall: {recall}; P: {precision}\
+                        \n - R-Prec: {r_precision}\
+                        \n - Pearson: {correlation}\
                         \n - Truth: {truth_tokens}\
                         \n - Predict: {pred_tokens}")
 
@@ -65,14 +70,18 @@ def main(args):
             \nMean {:<9}: {:<5}\
             \nMean {:<9}: {:<5}\
             \nMean {:<9}: {:<5}\
+            \nMean {:<9}: {:<5}\
             \nNum of evaluated samples: {}\
             \n********************************".format( 
                 args.path_pred_file.split('/')[-1],
-                'precision', np.mean(metrics['precision']), 
-                'recall', np.mean(metrics['recall']), 
-                'f1-score', np.mean(metrics['f1']),
-                'Rprecision', np.mean(metrics['rp']), i+1
+                'precision', np.nanmean(metrics['precision']), 
+                'recall', np.nanmean(metrics['recall']), 
+                'f1-score', np.nanmean(metrics['f1']),
+                'Pearson', np.nanmean(metrics['pearson']),
+                'RPrecision', np.nanmean(metrics['rp']), i+1
             ))
+
+    return metrics
 
 
 if __name__ == "__main__":
@@ -84,4 +93,4 @@ if __name__ == "__main__":
     parser.add_argument("-topk", "--topk", type=int, default=None)
     args = parser.parse_args()
 
-    main(args)
+    highlight_eval(args)

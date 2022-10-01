@@ -100,6 +100,48 @@ def token_extraction(srcA, srcB, pair_type=2, spacy_sep=False):
             'labels': [-1] + labelsA + [-1] + labelsB + [-1],
             'probs': [-1] + probsA + [-1] + probsB + [-1],}
 
+def load_json(file_path, sentA=False, special_token=False, prob_threshold=0):
+    out_dict = {}
+
+    with open(file_path, 'r') as f:
+        for i, line in enumerate(f):
+            data = json.loads(line)
+            try:
+                pair_id = data.pop('idA') + "#" + data.pop('idB')
+            except:
+                pair_id = i
+
+            out_dict[pair_id] = collections.defaultdict(list)
+
+            # text pair
+            out_dict[pair_id]['text_pair'] = f"# {data['sentA']}\n# {data['sentB']}"
+
+            # keywords
+            out_dict[pair_id]['keywords'] = data['keywordsB']
+            if sentA: 
+                out_dict[pair_id]['keywords'] += data['keywordsA']
+
+            # words and probs
+            if sentA:
+                W = data['words'][1:]
+                P = data['probs'][1:]
+            else:
+                sosB = data['probs'].index(-1)
+                W = data['words'][sosB:]
+                P = data['probs'][sosB:]
+
+            # remove special tokens
+            if special_token:
+                WP = [(w_1, p_1) for (w_1, p_1) in zip(W, P)]
+            else:
+                WP = [(w_1, p_1) for (w_1, p_1) in zip(W, P) if p_1 != -1]
+
+            # prob threshold
+            out_dict[pair_id]['WP'] = [(w_1, p_1) if (p_1 < 0 or p_1 > prob_threshold) \
+                    else (w_1, 0) for (w_1, p_1) in WP]
+
+    return out_dict
+
 def load_truth(file_path, sentA=True):
     truth = {}
 
@@ -112,6 +154,7 @@ def load_truth(file_path, sentA=True):
                 pair_id = i
 
             truth[pair_id] = {
+                    "labels": data['labels'], 
                     "keywords": data['keywordsB'], 
                     "text_pair": f"# {data['sentA']}\n# {data['sentB']}"
             }
