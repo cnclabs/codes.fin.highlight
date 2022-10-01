@@ -24,7 +24,7 @@ def convert_raw_to_highlight(args):
                 i = annotator_i.split('-')[1]
 
                 if i in args.annotators:
-                    annotations[pairs_id][i] = [l for l in annotation.split(',') if l != ""]
+                    annotations[pairs_id][i] = [int(l) for l in annotation.split(',') if l != ""]
 
     # annotataion comprehensiveness
     # laod raw
@@ -50,7 +50,7 @@ def convert_raw_to_highlight(args):
 
             # keywords
             assert len(wordsB) == len(labelsB), 'Inconsistent lenght of words'
-            tokensB_hl = [w for (w, l) in zip(wordsB, labelsB) if l == '1']
+            tokensB_hl = [w for (w, l) in zip(wordsB, labelsB) if l == 1]
 
             data_dict.update({
                 'keywordsA': [], 'keywordsB': tokensB_hl,
