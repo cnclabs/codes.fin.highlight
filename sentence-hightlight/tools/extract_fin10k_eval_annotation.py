@@ -24,7 +24,11 @@ def convert_raw_to_highlight(args):
                 i = annotator_i.split('-')[1]
 
                 if i in args.annotators:
-                    annotations[pairs_id][i] = [int(l) for l in annotation.split(',') if l != ""]
+                    try:
+                        annotations[pairs_id][i] = [int(l) for l in annotation.split(',') if l != ""]
+                    except:
+                        print(pairs_id)
+                        print(annotation.split(','))
 
     # annotataion comprehensiveness
     # laod raw
@@ -60,7 +64,7 @@ def convert_raw_to_highlight(args):
             highlight += len(tokensB_hl) 
 
             fout.write(json.dumps(data_dict) + '\n')
-            print(f"{n+1} annotation examples with {highlight} highlighted tokens.")
+            # print(f"{n+1} annotation examples with {highlight} highlighted tokens.")
 
     fout.close()
 
