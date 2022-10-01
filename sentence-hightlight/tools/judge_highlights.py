@@ -55,7 +55,7 @@ def main(args):
 
             if args.verbose:
                 print(f"{text_pair}\
-                        \n - Performance: (R: {recall}; P: {precision})\
+                        \n - Performance: (R: {recall}; P: {precision}; Rprec: {r_precision})\
                         \n - Truth: {truth_tokens}\
                         \n - Predict: {pred_tokens}")
 

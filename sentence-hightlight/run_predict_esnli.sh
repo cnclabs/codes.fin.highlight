@@ -1,9 +1,10 @@
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=2
+split=dev
 BS=16
 
 CKPT=10000
 for MODEL in checkpoints/esnli-zs-highlighter;do 
-    for EVAL in data/esnli/esnli.dev.highlight.contradiction.jsonl;do
+    for EVAL in data/esnli.${splie}/esnli.${split}.highlight.contradiction.jsonl;do
         OUTPUT=${EVAL##*/}
         python3 inference.py \
           --model_name_or_path $MODEL/checkpoint-$CKPT/ \
@@ -20,7 +21,7 @@ done
 
 CKPT=6000
 for MODEL in checkpoints/from-scratch*;do 
-    for EVAL in data/esnli/esnli.dev.highlight.contradiction.jsonl;do
+    for EVAL in data/esnli.${split}/esnli.${split}.highlight.contradiction.jsonl;do
         OUTPUT=${EVAL##*/}
         python3 inference.py \
           --model_name_or_path $MODEL/checkpoint-$CKPT/ \
@@ -37,7 +38,7 @@ done
 
 CKPT=18000
 for MODEL in checkpoints/further-finetune*;do
-    for EVAL in data/esnli/esnli.dev.highlight.contradiction.jsonl;do
+    for EVAL in data/esnli.${split}/esnli.${split}.highlight.contradiction.jsonl;do
         OUTPUT=${EVAL##*/}
         python3 inference.py \
           --model_name_or_path $MODEL/checkpoint-$CKPT/ \
