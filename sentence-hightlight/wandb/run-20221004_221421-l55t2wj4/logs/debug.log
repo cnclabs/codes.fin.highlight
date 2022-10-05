@@ -1,0 +1,68 @@
+2022-10-04 22:14:21,598 INFO    MainThread:178904 [wandb_setup.py:_flush():70] setting env: {}
+2022-10-04 22:14:21,599 INFO    MainThread:178904 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2022-10-04 22:14:21,599 INFO    MainThread:178904 [wandb_setup.py:_flush():70] setting login settings: {}
+2022-10-04 22:14:21,599 INFO    MainThread:178904 [wandb_init.py:_log_setup():303] Logging user logs to /tmp2/jhju/codes.fin.highlight/sentence-hightlight/wandb/run-20221004_221421-l55t2wj4/logs/debug.log
+2022-10-04 22:14:21,599 INFO    MainThread:178904 [wandb_init.py:_log_setup():304] Logging internal logs to /tmp2/jhju/codes.fin.highlight/sentence-hightlight/wandb/run-20221004_221421-l55t2wj4/logs/debug-internal.log
+2022-10-04 22:14:23,552 INFO    MainThread:178904 [wandb_run.py:_console_start():1237] atexit reg
+2022-10-04 22:14:23,553 INFO    MainThread:178904 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.REDIRECT
+2022-10-04 22:14:23,554 INFO    MainThread:178904 [wandb_run.py:_redirect():1107] Redirecting console.
+2022-10-04 22:14:23,554 INFO    MainThread:178904 [redirect.py:install():204] install start
+2022-10-04 22:14:23,555 INFO    MainThread:178904 [redirect.py:install():219] install stop
+2022-10-04 22:14:23,555 INFO    MainThread:178904 [redirect.py:install():204] install start
+2022-10-04 22:14:23,556 INFO    MainThread:178904 [redirect.py:install():219] install stop
+2022-10-04 22:14:23,556 INFO    MainThread:178904 [wandb_run.py:_redirect():1151] Redirects installed.
+2022-10-04 22:14:23,558 INFO    MainThread:178904 [wandb_run.py:_config_callback():549] config_cb None None {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.10', 'is_jupyter_run': False, 'is_kaggle_kernel': False, 'huggingface_version': '4.20.1', 'framework': 'torch'}, 'return_dict': True, 'output_hidden_states': True, 'output_attentions': False, 'torchscript': False, 'torch_dtype': None, 'use_bfloat16': False, 'pruned_heads': {}, 'tie_word_embeddings': True, 'is_encoder_decoder': False, 'is_decoder': False, 'cross_attention_hidden_size': None, 'add_cross_attention': False, 'tie_encoder_decoder': False, 'max_length': 20, 'min_length': 0, 'do_sample': False, 'early_stopping': False, 'num_beams': 1, 'num_beam_groups': 1, 'diversity_penalty': 0.0, 'temperature': 1.0, 'top_k': 50, 'top_p': 1.0, 'typical_p': 1.0, 'repetition_penalty': 1.0, 'length_penalty': 1.0, 'no_repeat_ngram_size': 0, 'encoder_no_repeat_ngram_size': 0, 'bad_words_ids': None, 'num_return_sequences': 1, 'chunk_size_feed_forward': 0, 'output_scores': False, 'return_dict_in_generate': False, 'forced_bos_token_id': None, 'forced_eos_token_id': None, 'remove_invalid_values': False, 'exponential_decay_length_penalty': None, 'architectures': ['BertForMaskedLM'], 'finetuning_task': None, 'id2label': {0: 'LABEL_0', 1: 'LABEL_1'}, 'label2id': {'LABEL_0': 0, 'LABEL_1': 1}, 'tokenizer_class': None, 'prefix': None, 'bos_token_id': None, 'pad_token_id': 0, 'eos_token_id': None, 'sep_token_id': None, 'decoder_start_token_id': None, 'task_specific_params': None, 'problem_type': None, '_name_or_path': 'bert-base-uncased', 'transformers_version': '4.20.1', 'gradient_checkpointing': False, 'model_type': 'bert', 'vocab_size': 30522, 'hidden_size': 768, 'num_hidden_layers': 12, 'num_attention_heads': 12, 'hidden_act': 'gelu', 'intermediate_size': 3072, 'hidden_dropout_prob': 0.1, 'attention_probs_dropout_prob': 0.1, 'max_position_embeddings': 512, 'type_vocab_size': 2, 'initializer_range': 0.02, 'layer_norm_eps': 1e-12, 'position_embedding_type': 'absolute', 'use_cache': True, 'classifier_dropout': None, 'output_dir': 'checkpoints/further-finetune-ll-smooth', 'overwrite_output_dir': False, 'do_train': True, 'do_eval': True, 'do_predict': False, 'evaluation_strategy': 'steps', 'prediction_loss_only': False, 'per_device_train_batch_size': 24, 'per_device_eval_batch_size': 4, 'per_gpu_train_batch_size': 'None', 'per_gpu_eval_batch_size': 'None', 'gradient_accumulation_steps': 1, 'eval_accumulation_steps': 'None', 'eval_delay': 0, 'learning_rate': 5e-05, 'weight_decay': 0.0, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 3.0, 'max_steps': 20000, 'lr_scheduler_type': 'linear', 'warmup_ratio': 0.0, 'warmup_steps': 1000, 'log_level': -1, 'log_level_replica': -1, 'log_on_each_node': True, 'logging_dir': './logs', 'logging_strategy': 'steps', 'logging_first_step': False, 'logging_steps': 500, 'logging_nan_inf_filter': True, 'save_strategy': 'steps', 'save_steps': 1500, 'save_total_limit': 'None', 'save_on_each_node': False, 'no_cuda': False, 'seed': 42, 'data_seed': 'None', 'jit_mode_eval': False, 'use_ipex': False, 'bf16': False, 'fp16': False, 'fp16_opt_level': 'O1', 'half_precision_backend': 'auto', 'bf16_full_eval': False, 'fp16_full_eval': False, 'tf32': 'None', 'local_rank': -1, 'xpu_backend': 'None', 'tpu_num_cores': 'None', 'tpu_metrics_debug': False, 'debug': '[]', 'dataloader_drop_last': False, 'eval_steps': 1500, 'dataloader_num_workers': 0, 'past_index': -1, 'run_name': 'checkpoints/further-finetune-ll-smooth', 'disable_tqdm': False, 'remove_unused_columns': False, 'label_names': 'None', 'load_best_model_at_end': False, 'metric_for_best_model': 'None', 'greater_is_better': 'None', 'ignore_data_skip': True, 'sharded_ddp': '[]', 'fsdp': '[]', 'fsdp_min_num_params': 0, 'deepspeed': 'None', 'label_smoothing_factor': 0.0, 'optim': 'adamw_hf', 'adafactor': False, 'group_by_length': False, 'length_column_name': 'length', 'report_to': "['tensorboard', 'wandb']", 'ddp_find_unused_parameters': 'None', 'ddp_bucket_cap_mb': 'None', 'dataloader_pin_memory': True, 'skip_memory_metrics': True, 'use_legacy_prediction_loop': False, 'push_to_hub': False, 'resume_from_checkpoint': 'checkpoints/esnli-zs-highlighter/checkpoint-15000', 'hub_model_id': 'None', 'hub_strategy': 'every_save', 'hub_token': '<HUB_TOKEN>', 'hub_private_repo': False, 'include_inputs_for_metrics': False, 'fp16_backend': 'auto', 'push_to_hub_model_id': 'None', 'push_to_hub_organization': 'None', 'push_to_hub_token': '<PUSH_TO_HUB_TOKEN>', '_n_gpu': 1, 'mp_parameters': '', 'auto_find_batch_size': False, 'full_determinism': False, 'torchdynamo': 'None', 'ray_scope': 'last', 'evaluate_during_training': True, 'mixing_ratio': 0, 'subset_index': 'None', 'train_batch_size': 24, 'eval_batch_size': 4}
+2022-10-04 22:14:23,563 INFO    MainThread:178904 [wandb_watch.py:watch():35] Watching
+2022-10-04 23:40:41,651 INFO    MainThread:178904 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 0
+2022-10-04 23:40:41,653 INFO    MainThread:178904 [wandb_run.py:_restore():1179] restore
+2022-10-04 23:40:41,653 INFO    MainThread:178904 [redirect.py:uninstall():223] uninstall start
+2022-10-04 23:40:41,654 INFO    MainThread:178904 [redirect.py:_stop():278] _stop: stdout
+2022-10-04 23:40:41,654 INFO    MainThread:178904 [redirect.py:_stop():284] _stop closed: stdout
+2022-10-04 23:40:41,654 INFO    stdout    :178904 [redirect.py:_pipe_relay():120] relay done saw last write: stdout
+2022-10-04 23:40:41,654 INFO    stdout    :178904 [redirect.py:_pipe_relay():136] relay done done: stdout
+2022-10-04 23:40:41,655 INFO    MainThread:178904 [redirect.py:_stop():290] _stop joined: stdout
+2022-10-04 23:40:41,655 INFO    MainThread:178904 [redirect.py:_stop():292] _stop rd closed: stdout
+2022-10-04 23:40:41,655 INFO    MainThread:178904 [redirect.py:uninstall():227] uninstall done
+2022-10-04 23:40:41,655 INFO    MainThread:178904 [redirect.py:uninstall():223] uninstall start
+2022-10-04 23:40:41,655 INFO    MainThread:178904 [redirect.py:_stop():278] _stop: stderr
+2022-10-04 23:40:41,655 INFO    MainThread:178904 [redirect.py:_stop():284] _stop closed: stderr
+2022-10-04 23:40:41,655 INFO    stderr    :178904 [redirect.py:_pipe_relay():120] relay done saw last write: stderr
+2022-10-04 23:40:41,655 INFO    stderr    :178904 [redirect.py:_pipe_relay():136] relay done done: stderr
+2022-10-04 23:40:41,655 INFO    MainThread:178904 [redirect.py:_stop():290] _stop joined: stderr
+2022-10-04 23:40:41,656 INFO    MainThread:178904 [redirect.py:_stop():292] _stop rd closed: stderr
+2022-10-04 23:40:41,656 INFO    MainThread:178904 [redirect.py:uninstall():227] uninstall done
+2022-10-04 23:40:41,767 INFO    MainThread:178904 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "7bd24e124dbd457f876ab4306b1a45dd"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+      media_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 28135
+      total_bytes: 28135
+    }
+  }
+}
+
+2022-10-04 23:40:43,774 INFO    MainThread:178904 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "71dbb57ca54340eea6f4a0c52095018d"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+      media_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 871670
+      total_bytes: 871670
+    }
+  }
+}
+
+2022-10-04 23:40:45,018 INFO    MainThread:178904 [wandb_run.py:_show_summary():1469] rendering summary
+2022-10-04 23:40:45,019 INFO    MainThread:178904 [wandb_run.py:_show_history():1507] rendering history
+2022-10-04 23:40:45,020 INFO    MainThread:178904 [wandb_run.py:_show_files():1536] logging synced files
+2022-10-04 23:40:45,025 INFO    MainThread:178904 [internal.py:handle_exit():138] Internal process exited

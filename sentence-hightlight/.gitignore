@@ -31,6 +31,7 @@ logs/
 wandb/
 *.swp
 diff
+*/archived/
 
 # Excepted run file (for local experiments)
 run_training_highlighter.sh

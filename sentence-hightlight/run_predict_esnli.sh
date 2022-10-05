@@ -1,10 +1,10 @@
-export CUDA_VISIBLE_DEVICES=2
+export CUDA_VISIBLE_DEVICES=1
 split=dev
 BS=16
 
 CKPT=10000
 for MODEL in checkpoints/esnli-zs-highlighter;do 
-    for EVAL in data/esnli.${splie}/esnli.${split}.highlight.contradiction.jsonl;do
+    for EVAL in data/esnli/esnli.${split}.highlight.contradiction.jsonl;do
         OUTPUT=${EVAL##*/}
         python3 inference.py \
           --model_name_or_path $MODEL/checkpoint-$CKPT/ \
@@ -21,13 +21,13 @@ done
 
 CKPT=6000
 for MODEL in checkpoints/from-scratch*;do 
-    for EVAL in data/esnli.${split}/esnli.${split}.highlight.contradiction.jsonl;do
+    for EVAL in data/esnli/esnli.${split}.highlight.contradiction.jsonl;do
         OUTPUT=${EVAL##*/}
         python3 inference.py \
           --model_name_or_path $MODEL/checkpoint-$CKPT/ \
           --config_name bert-base-uncased \
           --eval_file $EVAL \
-          --output_file results/esnli/${OUTPUT/jsonl/results}-${MODEL##*/} \
+          --output_file results/esnli.${split}/${OUTPUT/jsonl/results}-${MODEL##*/} \
           --remove_unused_columns false \
           --max_seq_length 512 \
           --per_device_eval_batch_size $BS \
@@ -38,13 +38,13 @@ done
 
 CKPT=18000
 for MODEL in checkpoints/further-finetune*;do
-    for EVAL in data/esnli.${split}/esnli.${split}.highlight.contradiction.jsonl;do
+    for EVAL in data/esnli/esnli.${split}.highlight.contradiction.jsonl;do
         OUTPUT=${EVAL##*/}
         python3 inference.py \
           --model_name_or_path $MODEL/checkpoint-$CKPT/ \
           --config_name bert-base-uncased \
           --eval_file $EVAL \
-          --output_file results/esnli/${OUTPUT/jsonl/results}-${MODEL##*/} \
+          --output_file results/esnli.${split}/${OUTPUT/jsonl/results}-${MODEL##*/} \
           --remove_unused_columns false \
           --max_seq_length 512 \
           --per_device_eval_batch_size $BS \

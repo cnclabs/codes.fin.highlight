@@ -38,22 +38,20 @@ def highlight_eval(args):
         precision = (len(hits) / n_pred) if n_pred != 0 else 0
         recall = (len(hits) / n_truth) if n_truth != 0 else 0
         r_precision = len(hits_recall) / n_truth if n_truth != 0 else 0
-
-        correlation = np.corrcoef(truth_probs, pred_probs)[0, 1] if n_truth != 0 else 0
-
-        if precision + recall != 0:
-            fscore = 2 * precision * recall / (precision + recall)
-        else:
-            fscore = 0
+        fscore = 2 * precision * recall / (precision + recall) if (precision + recall != 0) else 0
 
         if len(truth_dict) != 0:
             metrics['precision'].append(precision)
             if n_truth != 0:
-                metrics['f1'].append(fscore)
+                i += 1
                 metrics['rp'].append(r_precision)
                 metrics['recall'].append(recall)
-                metrics['pearson'].append(correlation)
-                i += 1
+                metrics['f1'].append(fscore)
+
+                if np.std(truth_probs) != 0:
+                    correlation = np.corrcoef(truth_probs, pred_probs)[0, 1] if n_truth != 0 else 0
+                    metrics['pearson'].append(correlation)
+                    # less 1 examples
 
             if args.verbose:
                 print(f"{text_pair}\

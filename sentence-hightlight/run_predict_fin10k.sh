@@ -1,4 +1,4 @@
-TYPE=type2
+TYPE=$1
 
 export CUDA_VISIBLE_DEVICES=1
 BS=16
@@ -11,7 +11,7 @@ for MODEL in checkpoints/esnli-zs-highlighter;do
           --model_name_or_path $MODEL/checkpoint-$CKPT/ \
           --config_name bert-base-uncased \
           --eval_file $EVAL \
-          --output_file results/fin10k/${TYPE}/${OUTPUT/jsonl/results}-${MODEL##*/} \
+          --output_file results/fin10k.eval/${TYPE}/${OUTPUT/jsonl/results}-${MODEL##*/} \
           --remove_unused_columns false \
           --max_seq_length 512 \
           --per_device_eval_batch_size $BS \
@@ -28,7 +28,7 @@ for MODEL in checkpoints/from-scratch*;do
           --model_name_or_path $MODEL/checkpoint-$CKPT/ \
           --config_name bert-base-uncased \
           --eval_file $EVAL \
-          --output_file results/fin10k/${TYPE}/${OUTPUT/jsonl/results}-${MODEL##*/} \
+          --output_file results/fin10k.eval/${TYPE}/${OUTPUT/jsonl/results}-${MODEL##*/} \
           --remove_unused_columns false \
           --max_seq_length 512 \
           --per_device_eval_batch_size $BS \
@@ -45,7 +45,7 @@ for MODEL in checkpoints/further-finetune*;do
           --model_name_or_path $MODEL/checkpoint-$CKPT/ \
           --config_name bert-base-uncased \
           --eval_file $EVAL \
-          --output_file results/fin10k/${TYPE}/${OUTPUT/jsonl/results}-${MODEL##*/} \
+          --output_file results/fin10k.eval/${TYPE}/${OUTPUT/jsonl/results}-${MODEL##*/} \
           --remove_unused_columns false \
           --max_seq_length 512 \
           --per_device_eval_batch_size $BS \

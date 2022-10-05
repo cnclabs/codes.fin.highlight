@@ -126,7 +126,7 @@ def load_json(file_path, sentA=False, special_token=False, prob_threshold=0):
                 W = data['words'][1:]
                 P = data['probs'][1:]
             else:
-                sosB = data['probs'].index(-1)
+                sosB = data['probs'][1:].index(-1) + 1
                 W = data['words'][sosB:]
                 P = data['probs'][sosB:]
 
