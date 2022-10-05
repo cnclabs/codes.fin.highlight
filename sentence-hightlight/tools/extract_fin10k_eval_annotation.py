@@ -53,7 +53,11 @@ def convert_raw_to_highlight(args):
             probs = [-1] + [0]*len(wordsA) + [-1] + labelsB + [-1]
 
             # keywords
-            assert len(wordsB) == len(labelsB), 'Inconsistent lenght of words'
+            # assert len(wordsB) == len(labelsB), 'Inconsistent lenght of words'
+            if len(wordsB) != len(labelsB):
+                print('Inconsistent lenght of words')
+                print(f"{idB}-{idA}")
+
             tokensB_hl = [w for (w, l) in zip(wordsB, labelsB) if l == 1]
 
             data_dict.update({
