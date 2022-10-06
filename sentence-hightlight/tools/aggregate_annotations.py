@@ -28,10 +28,11 @@ for type in ['type2', 'type1.easy', 'type1.hard']:
 
         counter_keywords = collections.Counter()
         # counter_WP = collections.Counter()
-        W, P = map(list, list(zip(*annotations[f"annotator1"][pair_id]['WP'])))
-        aggregation = annotations[f"annotator1"][pair_id]
+        W, P = [], []
+        aggregation = {"idB": pair_id.split("#")[1], "idA": pair_id.split("#")[0]}
+        aggregation.update(annotations[f"annotator1"][pair_id])
 
-        for annotator_i in [2,3]:
+        for annotator_i in [1,2,3]:
             # keywords adding
             counter_keywords += collections.Counter(
                     annotations[f"annotator{annotator_i}"][pair_id].pop('keywords')
@@ -44,9 +45,9 @@ for type in ['type2', 'type1.easy', 'type1.hard']:
 
         # keywords aggregated:w
         aggregation.update({
-            "idB": pair_id.split("#")[1], "idA": pair_id.split("#")[0],
-            "keywords": [k for k, v in counter_keywords.items() if v >= 2],
-            "WP": (P/3).tolist()
+            "keywordsB": [k for k, v in counter_keywords.items() if v >= 2],
+            "labels": P.tolist(),
+            "probs": (P/3).tolist()
         })
         f.write(json.dumps(aggregation) + '\n')
 

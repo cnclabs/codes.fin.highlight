@@ -4,6 +4,34 @@ import re
 import json
 import numpy as np
 
+def aggregate_annotation(jsons):
+
+    annotated_pair_ids = list(jsons[0].keys())
+    if len([i for i in annotated_pair_ids if i not in jsons[0].keys()]) != 0:
+        print('Inconsistent')
+    if len([i for i in annotated_pair_ids if i not in jsons[1].keys()]) != 0:
+        print('Inconsistent')
+
+    aggregated_dict = collections.defaultdict(dict)
+
+    for pair_id in annotated_pair_ids:
+        keywords = collections.Counter()
+        probabilities = []
+        for json in jsons:
+            keywords += collections.Counter(json[pair_id]['keywords'])
+            W, P = map(list, list(zip(*json[pair_id]['WP'])))
+            probabilities.append(P)
+
+        # aggregation
+        P = np.array(probabilities).mean(axis=0).tolist()
+        aggregated_dict[pair_id] = {
+                'text_pair': json[pair_id]['text_pair'], 
+                'keywords': [k for k, v in keywords.items() if v >= 2], 
+                'WP': [(w, p) for (w, p) in zip(W, P)]
+        }
+
+    return aggregated_dict
+
 def read_esnli(path, class_selected=('contradiction', 'neutral', 'entailment')):
     """
     Returns:

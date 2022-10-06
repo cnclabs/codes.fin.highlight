@@ -2,11 +2,17 @@ import collections
 import argparse
 import numpy as np
 import json
-from utils import load_pred, load_truth, load_json
+from utils import load_pred, load_truth, load_json, aggregate_annotation
 
 def highlight_eval(args):
 
-    truth = load_json(args.path_truth_file)
+    if len(args.aggregate) > 1:
+        truth_list = []
+        for i in args.aggregate:
+            truth_list.append(load_json(args.path_truth_file+f".{i}"))
+        truth = aggregate_annotation(truth_list)
+    else:
+        truth = load_json(args.path_truth_file)
     pred = load_json(args.path_pred_file)
 
     if len(truth) != len(pred):
@@ -87,6 +93,7 @@ if __name__ == "__main__":
     parser.add_argument("-truth", "--path_truth_file", type=str, default=None)
     parser.add_argument("-pred", "--path_pred_file", type=str)
     parser.add_argument("--verbose", action='store_true', default=False)
+    parser.add_argument("--aggregate", default=[], action='append')
     parser.add_argument("-thres", "--threshold", type=float, default=0)
     parser.add_argument("-topk", "--topk", type=int, default=None)
     args = parser.parse_args()
