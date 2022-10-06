@@ -9,7 +9,7 @@
 LOG=results-good-read
 
 # fin10k type2 
-for RESULT in results/fin10k.eval/type2/fin10k.eval.type2*;do
+for RESULT in results/fin10k.eval/type2/fin10k.eval.type2*bp;do
     for i in 1 2 3;do
         echo Loading prediction ${RESULT##*/} > ${LOG}/fin10k.eval/type2/${RESULT##*/}.log.$i
         python3 tools/judge_highlights.py \
@@ -20,18 +20,18 @@ for RESULT in results/fin10k.eval/type2/fin10k.eval.type2*;do
 done
 
 # fin10k type1 easy
-for result in results/fin10k.eval/type1.easy/fin10k.eval.type1.easy*;do
+for RESULT in results/fin10k.eval/type1.easy/fin10k.eval.type1.easy*bp;do
     for i in 1 2 3;do
-        echo loading prediction ${result##*/} > ${log}/fin10k.eval/type1.easy/${result##*/}.log.$i
+        echo loading prediction ${RESULT##*/} > ${LOG}/fin10k.eval/type1.easy/${RESULT##*/}.log.$i
         python3 tools/judge_highlights.py \
           -truth data/fin10k/fin10k.annotation.type1.easy.jsonl.$i \
-          -pred $result \
-          --verbose >> ${log}/fin10k.eval/type1.easy/${result##*/}.log.$i
+          -pred $RESULT \
+          --verbose >> ${LOG}/fin10k.eval/type1.easy/${RESULT##*/}.log.$i
     done
 done
 
 # fin10k type1 hard
-for RESULT in results/fin10k.eval/type1.hard/fin10k.eval.type1.hard*;do
+for RESULT in results/fin10k.eval/type1.hard/fin10k.eval.type1.hard*bp;do
     for i in 1 2 3;do
         echo Loading prediction ${RESULT##*/} > ${LOG}/fin10k.eval/type1.hard/${RESULT##*/}.log.$i
         python3 tools/judge_highlights.py \

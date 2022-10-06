@@ -9,7 +9,7 @@ def main(args):
         data_dict = json.loads(jsonl.strip())
         stats['sentA_length'].append(len(data_dict['wordsA']))
         stats['sentB_length'].append(len(data_dict['wordsB']))
-        stats['pos_label'].append(sum([1 for l in data_dict['labels'] if l == 1]))
+        stats['pos_label'].append(sum([1 for l in data_dict['labels'] if l >= 0.5]))
         stats['neg_label'].append(sum([1 for l in data_dict['labels'] if l == 0]))
         stats['no_label'].append(sum([1 for l in data_dict['labels'] if l == -100]))
 

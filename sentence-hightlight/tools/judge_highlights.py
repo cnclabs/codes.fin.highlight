@@ -3,7 +3,6 @@ import argparse
 import numpy as np
 import json
 from utils import load_pred, load_truth, load_json, aggregate_annotation
-
 def highlight_eval(args):
 
     if len(args.aggregate) > 1:
@@ -11,9 +10,14 @@ def highlight_eval(args):
         for i in args.aggregate:
             truth_list.append(load_json(args.path_truth_file+f".{i}"))
         truth = aggregate_annotation(truth_list)
+        # for output checking
         with open(args.path_truth_file, 'w') as f:
             for pair_id in truth:
-                f.write(json.dumps(truth[pair_id]) + '\n')
+                f.write(json.dumps({
+                    "idB": pair_id.split("#")[1], "idA": pair_id.split("#")[0],
+                    "wordsA": [], "wordsB": [],
+                    "labels": [p for (w, p) in truth[pair_id]['WP']], 
+                }) + '\n')
     else:
         truth = load_json(args.path_truth_file)
     pred = load_json(args.path_pred_file)
