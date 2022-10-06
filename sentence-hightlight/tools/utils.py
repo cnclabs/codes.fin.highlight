@@ -23,11 +23,11 @@ def aggregate_annotation(jsons):
             probabilities.append(P)
 
         # aggregation
-        P = np.array(probabilities).mean(axis=0).tolist()
+        P_agg = np.array(probabilities).mean(axis=0).tolist()
         aggregated_dict[pair_id] = {
                 'text_pair': json[pair_id]['text_pair'], 
                 'keywords': [k for k, v in keywords.items() if v >= 2], 
-                'WP': [(w, p) for (w, p) in zip(W, P)]
+                'WP': [(w, p) for w, p in zip(W, P_agg)]
         }
 
     return aggregated_dict

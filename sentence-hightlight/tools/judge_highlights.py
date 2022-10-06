@@ -11,6 +11,9 @@ def highlight_eval(args):
         for i in args.aggregate:
             truth_list.append(load_json(args.path_truth_file+f".{i}"))
         truth = aggregate_annotation(truth_list)
+        with open(args.path_truth_file, 'w') as f:
+            for pair_id in truth:
+                f.write(json.dumps(truth[pair_id]) + '\n')
     else:
         truth = load_json(args.path_truth_file)
     pred = load_json(args.path_pred_file)
