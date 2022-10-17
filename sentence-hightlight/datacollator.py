@@ -15,6 +15,7 @@ class TokenHighlightDataCollator(DataCollatorForTokenClassification):
     pad_to_multiple_of: Optional[int] = None
     return_tensors: str = "pt"
     sentA_removal: bool = False
+    sentA_consistent: bool = False
 
     def torch_call(self, features):
         "labels", "features", "word_ids", "probs"
@@ -78,6 +79,8 @@ class Fin10KDataCollator:
     pad_to_multiple_of: Optional[int] = None
     return_tensors: str = "pt"
     sentA_removal: bool = False
+    sentA_consistent: bool = False
+    sentA_shuffle: bool = False
 
     def __call__(self, features: List[Dict[str, Any]]) -> Dict[str, Any]:
 
@@ -87,6 +90,14 @@ class Fin10KDataCollator:
 
         if self.sentA_removal:
             wordsA_features = [["[PAD]"] for ft in features]
+
+        if self.sentA_consistent:
+            wordsA_features = [ft['wordsB'] for ft in features]
+
+        if self.sentA_shuffle:
+            import random
+            shuffled_indices = random.sample(range(len(features)), len(features))
+            wordsA_features = [features[i]['wordsA'] for i in shuffled_indices]
 
         # process input
         features_input = self.tokenizer(

@@ -45,6 +45,8 @@ class OurDataArguments:
     output_file: Optional[str] = field(default="")
     max_seq_length: Optional[int] = field(default=512)
     blind_predict: Optional[bool] = field(default=False)
+    same_predict: Optional[bool] = field(default=False)
+    shuffle_predict: Optional[bool] = field(default=False)
 
 @dataclass
 class OurTrainingArguments(TrainingArguments):
@@ -97,7 +99,9 @@ def main():
             padding=True,
             truncation='only_first',
             max_length=data_args.max_seq_length,
-            sentA_removal=data_args.blind_predict
+            sentA_removal=data_args.blind_predict,
+            sentA_consistent=data_args.same_predict,
+            sentA_shuffle=data_args.shuffle_predict,
     )
     # loader
     dataloader = DataLoader(
