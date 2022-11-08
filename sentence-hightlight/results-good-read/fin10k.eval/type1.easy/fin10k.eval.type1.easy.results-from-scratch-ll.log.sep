@@ -1,0 +1,28 @@
+loading prediction fin10k.eval.type1.easy.results-from-scratch-ll
+********************************            
+File: fin10k.eval.type1.easy.results-from-scratch-ll            
+Mean precision: 0.3786906621464376            
+Mean recall   : 0.9375094086842093            
+Mean f1-score : 0.5215711822063164            
+Mean Pearson  : 0.40167967478387256            
+Mean RPrecision: 0.6219143340290622            
+Num of evaluated samples: 99            
+********************************
+********************************            
+File: fin10k.eval.type1.easy.results-from-scratch-ll            
+Mean precision: 0.31289320673815135            
+Mean recall   : 0.9491285577142888            
+Mean f1-score : 0.4524676836462628            
+Mean Pearson  : 0.5116889571702764            
+Mean RPrecision: 0.6553792211237507            
+Num of evaluated samples: 98            
+********************************
+********************************            
+File: fin10k.eval.type1.easy.results-from-scratch-ll            
+Mean precision: 0.2263063997899718            
+Mean recall   : 0.9749660607749463            
+Mean f1-score : 0.3684935328056025            
+Mean Pearson  : 0.5403059312932645            
+Mean RPrecision: 0.6330502924181856            
+Num of evaluated samples: 96            
+********************************

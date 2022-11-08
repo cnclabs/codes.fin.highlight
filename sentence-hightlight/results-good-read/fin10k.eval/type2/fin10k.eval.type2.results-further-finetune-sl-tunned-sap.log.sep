@@ -1,0 +1,28 @@
+Loading prediction fin10k.eval.type2.results-further-finetune-sl-tunned-sap
+********************************            
+File: fin10k.eval.type2.results-further-finetune-sl-tunned-sap            
+Mean precision: 0.19208603586408451            
+Mean recall   : 0.9768996098734625            
+Mean f1-score : 0.30359751347393593            
+Mean Pearson  : 0.28160098224574437            
+Mean RPrecision: 0.4061777547131106            
+Num of evaluated samples: 200            
+********************************
+********************************            
+File: fin10k.eval.type2.results-further-finetune-sl-tunned-sap            
+Mean precision: 0.16109643564731116            
+Mean recall   : 0.9814920919405161            
+Mean f1-score : 0.26561273244744993            
+Mean Pearson  : 0.29549437262079564            
+Mean RPrecision: 0.3790659272006816            
+Num of evaluated samples: 199            
+********************************
+********************************            
+File: fin10k.eval.type2.results-further-finetune-sl-tunned-sap            
+Mean precision: 0.1113148366630548            
+Mean recall   : 0.9886295876375242            
+Mean f1-score : 0.20300864833091506            
+Mean Pearson  : 0.3286215205915767            
+Mean RPrecision: 0.36046834558739316            
+Num of evaluated samples: 190            
+********************************

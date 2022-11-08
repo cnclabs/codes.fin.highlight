@@ -1,0 +1,28 @@
+Loading prediction fin10k.eval.type1.hard.results-further-finetune-sl-smooth-bp
+********************************            
+File: fin10k.eval.type1.hard.results-further-finetune-sl-smooth-bp            
+Mean precision: 0.42679943900296236            
+Mean recall   : 0.9540139691410764            
+Mean f1-score : 0.5753537869785122            
+Mean Pearson  : 0.5475437317535979            
+Mean RPrecision: 0.6959044854717384            
+Num of evaluated samples: 101            
+********************************
+********************************            
+File: fin10k.eval.type1.hard.results-further-finetune-sl-smooth-bp            
+Mean precision: 0.4302049771839499            
+Mean recall   : 0.9382199328874228            
+Mean f1-score : 0.5742723107041161            
+Mean Pearson  : 0.5757580211905773            
+Mean RPrecision: 0.6946161408824107            
+Num of evaluated samples: 100            
+********************************
+********************************            
+File: fin10k.eval.type1.hard.results-further-finetune-sl-smooth-bp            
+Mean precision: 0.3332823886857718            
+Mean recall   : 0.9594698141564028            
+Mean f1-score : 0.4840397710670378            
+Mean Pearson  : 0.5511814399421747            
+Mean RPrecision: 0.6357764690994621            
+Num of evaluated samples: 100            
+********************************

@@ -1,0 +1,28 @@
+Loading prediction fin10k.eval.type2.results-further-finetune-sl-balance
+********************************            
+File: fin10k.eval.type2.results-further-finetune-sl-balance            
+Mean precision: 0.19208603586408451            
+Mean recall   : 0.9768996098734625            
+Mean f1-score : 0.30359751347393593            
+Mean Pearson  : 0.701549912064549            
+Mean RPrecision: 0.8011080544460359            
+Num of evaluated samples: 200            
+********************************
+********************************            
+File: fin10k.eval.type2.results-further-finetune-sl-balance            
+Mean precision: 0.16109643564731116            
+Mean recall   : 0.9814920919405161            
+Mean f1-score : 0.26561273244744993            
+Mean Pearson  : 0.7464988755844456            
+Mean RPrecision: 0.8133362556709645            
+Num of evaluated samples: 199            
+********************************
+********************************            
+File: fin10k.eval.type2.results-further-finetune-sl-balance            
+Mean precision: 0.1113148366630548            
+Mean recall   : 0.9886295876375242            
+Mean f1-score : 0.20300864833091506            
+Mean Pearson  : 0.7693649856690872            
+Mean RPrecision: 0.8021875501042167            
+Num of evaluated samples: 190            
+********************************
