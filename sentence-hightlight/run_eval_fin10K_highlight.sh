@@ -5,7 +5,12 @@
 # (3) Fin10k Type1 # 100 (hard)
 #############################################
 LOG=results-good-read
-select=$1
+select=$1 # specify the model setting to infernece the results
+
+mkdir -p ${LOG}/fin10k.eval
+mkdir -p ${LOG}/fin10k.eval/type2
+mkdir -p ${LOG}/fin10k.eval/type1.easy
+mkdir -p ${LOG}/fin10k.eval/type1.hard
 
 # FIN10K
 # fin10k type2 
@@ -17,6 +22,7 @@ for RESULT in results/fin10k.eval/type2/fin10k.eval.type2*${select}*;do
       -pred $RESULT \
       --verbose >> ${LOG}/fin10k.eval/type2/${RESULT##*/}.log
 done
+
 # fin10k type1 easy
 for RESULT in results/fin10k.eval/type1.easy/fin10k.eval.type1.easy*${select}*;do
     echo loading prediction ${RESULT##*/} > ${LOG}/fin10k.eval/type1.easy/${RESULT##*/}.log
@@ -26,6 +32,7 @@ for RESULT in results/fin10k.eval/type1.easy/fin10k.eval.type1.easy*${select}*;d
       -pred $RESULT \
       --verbose >> ${LOG}/fin10k.eval/type1.easy/${RESULT##*/}.log
 done
+
 # fin10k type1 hard
 for RESULT in results/fin10k.eval/type1.hard/fin10k.eval.type1.hard*${select}*;do
     echo Loading prediction ${RESULT##*/} > ${LOG}/fin10k.eval/type1.hard/${RESULT##*/}.log

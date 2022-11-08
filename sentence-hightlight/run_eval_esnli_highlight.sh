@@ -6,6 +6,9 @@
 LOG=results-good-read
 select=$1
 
+mkdir -p ${LOG}/esnli.dev
+mkdir -p ${LOG}/esnli.test
+
 # e-SNLI
 # dev
 for RESULT in results/esnli.dev/*${select}*;do

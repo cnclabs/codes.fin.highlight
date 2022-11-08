@@ -1,13 +1,15 @@
-export CUDA_VISIBLE_DEVICES=0
-TYPE=type2
+export CUDA_VISIBLE_DEVICES=1
+# TYPE=type2
 # TYPE=type1.easy
-# TYPE=type1.hard
+TYPE=type1.hard
 BS=16
+mkdir -p results/fin10k.eval/${TYPE}
 
 CKPT=18000
-for MODEL in checkpoints/*;do
+for MODEL in checkpoints/further*;do
     for EVAL in data/fin10k/fin10k.eval.${TYPE}*;do
         OUTPUT=${EVAL##*/}
+        echo $MODEL
         python3 inference.py \
           --model_name_or_path $MODEL/checkpoint-$CKPT/ \
           --config_name bert-base-uncased \

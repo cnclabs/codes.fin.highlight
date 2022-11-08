@@ -4,7 +4,7 @@ File: esnli.dev.highlight.contradiction.results-further-finetune-sl-soft
 Mean precision: 0.27314811303315606            
 Mean recall   : 0.9990888026961852            
 Mean f1-score : 0.40311552685139185            
-Mean Pearson  : 0.7555609071554171            
-Mean RPrecision: 0.8519834996878926            
+Mean Pearson  : 0.7572147136109736            
+Mean RPrecision: 0.850886358573973            
 Num of evaluated samples: 3279            
 ********************************

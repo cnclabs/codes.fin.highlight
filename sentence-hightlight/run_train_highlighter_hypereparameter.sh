@@ -1,8 +1,7 @@
-# Abalation: hyperparameter setting (tau), fixed gamma at 0.1
+# Abalation: hyperparameter setting (tau), fixed gamma at -1.1
 TRAIN_ESNLI=data/esnli/esnli.train.highlight.contradiction.jsonl
 EVAL_ESNLI=data/esnli/esnli.dev.highlight.contradiction.jsonl
 TRAIN_FIN10K=data/fin10k/fin10k.heuristic.synthetic.balance.train.type2.jsonl
-# TRAIN_FIN10K_SOFT=data/fin10k/fin10k.heuristic.synthetic.balance.train.type2.jsonl
 export CUDA_VISIBLE_DEVICES=0
 
 TYPE=further-finetune-sl-smooth-2 # tau=2; gamma=0.1
