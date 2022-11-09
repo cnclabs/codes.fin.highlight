@@ -1,13 +1,11 @@
 export CUDA_VISIBLE_DEVICES=1
-# TYPE=type2
-# TYPE=type1.easy
-TYPE=type1.hard
 BS=16
 mkdir -p results/fin10k.eval/${TYPE}
 
 CKPT=18000
 for MODEL in checkpoints/further*;do
-    for EVAL in data/fin10k/fin10k.eval.${TYPE}*;do
+    for TYPE in type1.easy type1.hard type2;do
+        EVAL=data/fin10k/fin10k.eval.${TYPE}.jsonl
         OUTPUT=${EVAL##*/}
         echo $MODEL
         python3 inference.py \

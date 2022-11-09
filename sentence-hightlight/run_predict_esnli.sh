@@ -1,12 +1,13 @@
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=1
 # split=dev
-split=test
+# split=test
 BS=16
-mkdir -p results/esnli.${split}/
 
 CKPT=18000
 for MODEL in checkpoints/further*;do
-    for EVAL in data/esnli/esnli.${split}.highlight.contradiction.jsonl;do
+    for split in dev test;do
+        mkdir -p results/esnli.${split}/
+        EVAL=data/esnli/esnli.${split}.highlight.contradiction.jsonl
         OUTPUT=${EVAL##*/}
         python3 inference.py \
           --model_name_or_path $MODEL/checkpoint-$CKPT/ \
