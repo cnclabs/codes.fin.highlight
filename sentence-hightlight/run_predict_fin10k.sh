@@ -1,4 +1,4 @@
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=2
 BS=16
 
 # CKPT=18000
@@ -22,7 +22,7 @@ BS=16
 # done
 
 CKPT=6000
-for MODEL in checkpoints/from*ll;do
+for MODEL in checkpoints/from-scratch;do
     for TYPE in type1.easy type1.hard type2;do
         mkdir -p results/fin10k.eval/${TYPE}
         EVAL=data/fin10k/fin10k.eval.${TYPE}.jsonl

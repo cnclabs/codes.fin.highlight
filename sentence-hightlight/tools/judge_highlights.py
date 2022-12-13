@@ -3,6 +3,7 @@ import argparse
 import numpy as np
 import json
 from utils import load_pred, load_json, aggregate_annotation
+
 def highlight_eval(args):
 
     if len(args.aggregate) > 1:

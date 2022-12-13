@@ -2,9 +2,9 @@
 TRAIN_ESNLI=data/esnli/esnli.train.highlight.contradiction.jsonl
 EVAL_ESNLI=data/esnli/esnli.dev.highlight.contradiction.jsonl
 TRAIN_FIN10K=data/fin10k/fin10k.heuristic.synthetic.balance.train.type2.jsonl
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=1
 
-TYPE=further-finetune-sl-smooth-2 # tau=2; gamma=0.1
+TYPE=further-finetune-sl-smooth-0.25 # tau=2; gamma=0.1
 BS=24
 python3 train_ablation.py \
   --ignore_data_skip \
@@ -22,12 +22,12 @@ python3 train_ablation.py \
   --evaluation_strategy 'steps'\
   --evaluate_during_training \
   --soft_labeling true  \
-  --tau 2 \
+  --tau 0.25 \
   --gamma 0.1 \
   --do_train \
   --do_eval 
 
-TYPE=further-finetune-sl-smooth-0.5 # tau=0.5, gamma = 0.1
+TYPE=further-finetune-sl-smooth-0.1 # tau=0.5, gamma = 0.1
 BS=24 
 python3 train_ablation.py \
   --ignore_data_skip \
@@ -45,7 +45,7 @@ python3 train_ablation.py \
   --evaluation_strategy 'steps'\
   --evaluate_during_training \
   --soft_labeling true  \
-  --tau 0.5 \
+  --tau 0.1 \
   --gamma 0.1 \
   --do_train \
   --do_eval 

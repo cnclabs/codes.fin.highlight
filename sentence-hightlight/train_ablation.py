@@ -15,7 +15,7 @@ from transformers import (
 )
 
 from datasets import load_dataset, Dataset, concatenate_datasets
-from models_abalation import BertForHighlightPrediction
+from models_ablation import BertForHighlightPrediction
 from trainers import BertTrainer
 from datacollator import TokenHighlightDataCollator
 

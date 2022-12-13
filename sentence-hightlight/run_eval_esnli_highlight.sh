@@ -11,12 +11,12 @@ mkdir -p ${LOG}/esnli.test
 
 # e-SNLI
 # dev
-for RESULT in results/esnli.dev/*${select}*;do
-    echo Loading prediction ${RESULT##*/} > ${LOG}/esnli.dev/${RESULT##*/}.log
-    python3 tools/judge_highlights.py \
-      -truth data/esnli/esnli.dev.highlight.contradiction.jsonl \
-      -pred $RESULT  >> ${LOG}/esnli.dev/${RESULT##*/}.log
-done
+# for RESULT in results/esnli.dev/*${select}*;do
+#     echo Loading prediction ${RESULT##*/} > ${LOG}/esnli.dev/${RESULT##*/}.log
+#     python3 tools/judge_highlights.py \
+#       -truth data/esnli/esnli.dev.highlight.contradiction.jsonl \
+#       -pred $RESULT  >> ${LOG}/esnli.dev/${RESULT##*/}.log
+# done
 # test
 for RESULT in results/esnli.test/*${select}*;do
     echo Loading prediction ${RESULT##*/} > ${LOG}/esnli.test/${RESULT##*/}.log

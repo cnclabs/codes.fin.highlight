@@ -7,7 +7,7 @@ EVAL_FOLDER=/tmp2/yshuang/fintext/new-data/eval.result/
 
 # Evaluation data from type2
 python3 tools/convert_text_to_jsonl.py \
-    -input ${EVAL_FOLDER}/eval.type2.segments.annotation.highlight.final \
+    -input /tmp2/yshuang/fintext/new-data/eval.result/eval.type2.segments.annotation.highlight.final \
     -output data/fin10k/fin10k.annotation.type2.jsonl \
     -type 2 
 python3 tools/filter_overlength_pair.py \
