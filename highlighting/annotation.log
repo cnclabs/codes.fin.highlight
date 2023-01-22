@@ -1,0 +1,90 @@
+Annotator 1 type2
+-----------------
+Done
+n_examples: 200
+sentA_length: 31.325
+sentB_length: 33.225
+pos_label: 6.66
+neg_label: 57.89
+no_label: 0.0
+-----------------
+Annotator 2 type2
+-----------------
+Done
+n_examples: 200
+sentA_length: 31.325
+sentB_length: 33.225
+pos_label: 5.605
+neg_label: 58.945
+no_label: 0.0
+-----------------
+Annotator 3 type2
+-----------------
+Done
+n_examples: 200
+sentA_length: 31.325
+sentB_length: 33.225
+pos_label: 3.73
+neg_label: 60.82
+no_label: 0.0
+-----------------
+Annotator 1 type1 easy
+-----------------
+Done
+n_examples: 100
+sentA_length: 28.59
+sentB_length: 30.39
+pos_label: 13.21
+neg_label: 45.77
+no_label: 0.0
+-----------------
+Annotator 2 type1 easy
+-----------------
+Done
+n_examples: 100
+sentA_length: 28.59
+sentB_length: 30.39
+pos_label: 10.98
+neg_label: 48.0
+no_label: 0.0
+-----------------
+Annotator 3 type1 easy
+-----------------
+Done
+n_examples: 100
+sentA_length: 28.59
+sentB_length: 30.39
+pos_label: 7.14
+neg_label: 51.84
+no_label: 0.0
+-----------------
+Annotator 1 type1 hard
+-----------------
+Done
+n_examples: 100
+sentA_length: 29.4
+sentB_length: 28.75
+pos_label: 12.83
+neg_label: 45.32
+no_label: 0.0
+-----------------
+Annotator 2 type1 hard
+-----------------
+Done
+n_examples: 100
+sentA_length: 29.4
+sentB_length: 28.75
+pos_label: 12.98
+neg_label: 45.17
+no_label: 0.0
+-----------------
+Annotator 3 type1 hard
+-----------------
+Done
+n_examples: 100
+sentA_length: 29.4
+sentB_length: 28.75
+pos_label: 9.68
+neg_label: 48.46
+no_label: 0.0
+-----------------

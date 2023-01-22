@@ -1,0 +1,810 @@
+loading prediction fin10k.eval.type1.easy.results-further-finetune-ll
+# The overall change in operating results in each geographic region benefited as a result of the accelerated orders during the current year, as discussed above, as follows:
+# The overall change in operating results in each geographic region was negatively impacted by the accelerated orders into the fiscal 2014 fourth quarter from certain of our retailers due to our implementation of SMI as follows:                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5833333333333334                        
+ - R-Prec: 0.9047619047619048                        
+ - Pearson: 0.6440163935932119                        
+ - Truth: ['was', 'negatively', 'impacted', 'by', 'the', 'accelerated', 'orders', 'into', 'fiscal', '2014', 'fourth', 'quarter', 'from', 'certain', 'of', 'our', 'retailers', 'due', 'to', 'implementation', 'SMI']                        
+ - Predict: ['negatively', 'impacted', 'fourth', 'implementation', 'retailers', 'quarter', 'SMI', 'fiscal', 'certain', 'due', '2014', 'orders', 'accelerated', 'into', 'our', 'of', 'to', 'our', 'geographic', 'from', 'was', 'of', 'region', 'change', 'operating', 'by', 'the', 'follows:', 'overall', 'results', 'The', 'the', 'as', 'in', 'in', 'each']
+# Operating margin decreased to 14.9% of net sales as compared with 16.7% in the prior year, reflecting an increase in our operating expense margin, partially offset by our higher gross margin.
+# In fiscal 2015, operating margin decreased reflecting an increase in our operating expense margin, partially offset by our higher gross margin.                        
+ - Performance                        
+ - Recall: 0; P: 0.0                        
+ - R-Prec: 0                        
+ - Pearson: 0.6440163935932119                        
+ - Truth: []                        
+ - Predict: ['fiscal', '2015,', 'operating', 'margin.', 'margin', 'operating', 'In', 'gross', 'reflecting', 'higher', 'decreased', 'expense', 'partially', 'margin,', 'increase', 'offset', 'by', 'an', 'in', 'our', 'our']
+# Fiscal 2017 foreign currency exchange loss includes a loss on a foreign currency option related to the acquisition of STAHL in the amount of $1,590,000.
+# STAHL contributed an additional $18,396,000 in selling expense and $616,000 of integration costs were incurred related to the acquisition of STAHL that are classified as selling expense, offset by $247,000 in expense that did not reoccur related to the Canadian lump sum pension settlement in the year ended March 31, 2018 .                        
+ - Performance                        
+ - Recall: 1.0; P: 0.6538461538461539                        
+ - R-Prec: 0.7647058823529411                        
+ - Pearson: 0.47849558411781346                        
+ - Truth: ['STAHL', 'contributed', 'an', 'additional', '$18,396,000', 'in', 'selling', 'expense', 'and', '$616,000', 'of', 'integration', 'costs', 'the', 'classified', 'as', 'expense,', 'offset', 'by', '$247,000', 'not', 'reoccur', 'related', 'to', 'Canadian', 'lump', 'sum', 'pension', 'settlement', 'year', 'ended', 'March', '31,', '2018']                        
+ - Predict: ['$247,000', '$616,000', '$18,396,000', 'reoccur', 'pension', 'lump', 'classified', 'contributed', 'incurred', 'settlement', 'integration', 'Canadian', 'costs', 'March', 'ended', 'expense', 'selling', 'expense,', 'expense', 'offset', 'year', '31,', 'selling', 'sum', 'additional', 'STAHL', '2018', 'STAHL', 'acquisition', '.', 'did', 'not', 'related', 'related', 'an', 'by', 'and', 'of', 'as', 'in', 'the', 'in', 'are', 'were', 'that', 'in', 'the', 'that', 'to', 'of', 'to', 'the']
+# This increase of 1.0%, as a percentage of revenues, was primarily attributable to higher compensation costs of 0.4% primarily related to higher wage rates, higher facility-related costs of 0.2% principally from the expansion of U.S. facilities and lease termination costs in connection with the Fourth Quarter 2011 Exit Plan, higher software maintenance of 0.2%, higher legal and professional fees of 0.1%, higher taxes of 0.1% and higher other costs of 0.3%, partially offset by lower equipment and maintenance costs of 0.3%.
+# The decrease in Americas general and administrative expenses, as a percentage of revenues, was primarily attributable to lower compensation costs of 0.6%, lower facility-related costs of 0.4% due to rationalization of facilities, lower equipment and maintenance costs of 0.2% and lower other costs of 0.1%.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4888888888888889                        
+ - R-Prec: 0.7272727272727273                        
+ - Pearson: 0.5952771212802028                        
+ - Truth: ['The', 'decrease', 'in', 'Americas', 'general', 'and', 'administrative', 'expenses,', 'to', 'lower', 'costs', 'of', '0.6%,', 'facility-related', '0.4%', 'due', 'rationalization', 'facilities,', 'equipment', 'maintenance', '0.2%', '0.1%.']                        
+ - Predict: ['rationalization', 'administrative', '0.6%,', 'Americas', 'due', 'general', 'expenses,', 'decrease', '0.4%', '0.1%.', '0.2%', 'facilities,', 'facility-related', 'equipment', 'lower', 'lower', 'lower', 'maintenance', 'lower', 'revenues,', 'compensation', 'attributable', 'costs', 'and', 'in', 'costs', 'other', 'costs', 'percentage', 'costs', 'of', 'The', 'primarily', 'as', 'of', 'of', 'a', 'of', 'to', 'of', 'to', 'and', 'was', 'of', 'and']
+# Our invested assets at December 31, 2010 , totaled $2.5 billion , compared to $2.4 billion at December 31, 2009 .
+# Changes in the credit ratings of our fixed maturity securities at December 31, 2011 , as compared to December 31, 2010 , are primarily due to the inclusion of Mercer Insurance Group's invested assets in our portfolio.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4594594594594595                        
+ - R-Prec: 0.7647058823529411                        
+ - Pearson: 0.557613198539682                        
+ - Truth: ['Changes', 'in', 'the', 'credit', 'ratings', 'of', 'our', 'fixed', 'maturity', 'securities', 'inclusion', 'Mercer', 'Insurance', "Group's", 'invested', 'assets', 'portfolio.']                        
+ - Predict: ['credit', 'fixed', 'ratings', 'maturity', 'securities', 'Mercer', 'inclusion', 'primarily', 'Insurance', 'Changes', 'due', 'portfolio.', "Group's", 'assets', 'invested', '2011', 'compared', 'the', 'in', 'the', 'to', 'of', 'in', ',', 'our', 'as', 'are', 'of', ',', 'our', '31,', '2010', 'December', '31,', 'December', 'to', 'at']
+# The carload increase was primarily due to higher pulpboard traffic in the southeastern United States and 2,730 carloads from HCRY.
+# The carload increase was primarily due to an increase in carloads due to the expansion of a plant we serve in the southern United States.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.6                        
+ - R-Prec: 0.8666666666666667                        
+ - Pearson: 0.42667179206152256                        
+ - Truth: ['increase', 'in', 'carloads', 'due', 'to', 'the', 'expansion', 'of', 'a', 'plant', 'we', 'serve', 'southern', 'United', 'States.']                        
+ - Predict: ['expansion', 'plant', 'southern', 'serve', 'United', 'States.', 'we', 'a', 'carloads', 'carload', 'increase', 'of', 'increase', 'due', 'the', 'primarily', 'to', 'an', 'due', 'The', 'the', 'in', 'was', 'to', 'in']
+# Incidents involving entities previously owned by RailAmerica that occurred prior to this renewal would be considered under RailAmerica s legacy liability and property insurance policies.
+# Incidents involving entities previously owned by RailAmerica that occurred prior to our August 1, 2013 insurance renewal are insured under RailAmerica's legacy liability and property insurance policies.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2222222222222222                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.5981501831625077                        
+ - Truth: ['our', 'August', '1,', '2013', 'insurance', 'renewal']                        
+ - Predict: ['insured', 'August', '1,', "RailAmerica's", '2013', 'insurance', 'renewal', 'Incidents', 'legacy', 'RailAmerica', 'involving', 'policies.', 'insurance', 'entities', 'property', 'liability', 'occurred', 'our', 'are', 'owned', 'previously', 'prior', 'to', 'that', 'under', 'by', 'and']
+# The following information discusses the significant changes in operating expenses from our U.K./European Operations, excluding a decrease of $43.4 million due to the net impact from foreign currency depreciation.
+# The following information discusses the significant changes in operating expenses of our Australian Operations excluding a $1.9 million decrease due to the net impact from foreign currency depreciation.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.14285714285714285                        
+ - R-Prec: 0.75                        
+ - Pearson: 0.7267448632482288                        
+ - Truth: ['Australian', 'Operations', '$1.9', 'million']                        
+ - Predict: ['$1.9', 'Australian', 'Operations', 'depreciation.', 'operating', 'net', 'decrease', 'foreign', 'expenses', 'excluding', 'currency', 'significant', 'impact', 'discusses', 'a', 'million', 'information', 'changes', 'following', 'The', 'our', 'due', 'the', 'the', 'to', 'from', 'of', 'in']
+# The increase from existing operations was primarily due to capital expenditures in 2014.
+# The increase in our operating income in 2017 was primarily due to new operations, including GRail, Providence and Worcester Railroad Company (Providence and Worcester Railroad) and Pentalver.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5185185185185185                        
+ - R-Prec: 0.8571428571428571                        
+ - Pearson: 0.7754770332399386                        
+ - Truth: ['in', 'income', 'new', 'operations,', 'including', 'GRail,', 'Providence', 'and', 'Worcester', 'Railroad', 'Company', '(Providence', 'Railroad)', 'Pentalver.']                        
+ - Predict: ['GRail,', 'Pentalver.', 'operating', 'income', 'new', 'Providence', 'including', 'Worcester', 'Railroad', 'Company', 'Worcester', '(Providence', 'Railroad)', 'operations,', 'and', '2017', 'and', 'increase', 'our', 'and', 'in', 'in', 'primarily', 'The', 'due', 'to', 'was']
+# Net loss for fiscal year 2014 was $836 thousand compared to net income of $662 thousand for the prior year period, a decrease of $1.5 million .
+# Net income for fiscal year 2015 was $364 thousand compared to a net loss of $836 thousand for the prior year period, an increase of $1.2 million .                        
+ - Performance                        
+ - Recall: 1.0; P: 0.17857142857142858                        
+ - R-Prec: 0.6                        
+ - Pearson: 0.41692451748731374                        
+ - Truth: ['$364', 'thousand', 'increase', '$1.2', 'million']                        
+ - Predict: ['$1.2', 'increase', 'loss', 'Net', '$364', 'thousand', '2015', '$836', '.', 'net', 'income', 'fiscal', 'thousand', 'year', 'year', 'compared', 'million', 'period,', 'prior', 'an', 'of', 'was', 'a', 'for', 'to', 'the', 'of', 'for']
+# Changes in the level of investment activities from period to period reflect our strategy as it relates to acquisitions, dispositions, development, redevelopment, and capital expenditures.
+# The change in investing activities was due to changes in the level of investment activities, which reflect our strategy as it relates to our investments in unconsolidated joint ventures and partnerships, acquisitions, dispositions, capital expenditures, and development activities, all of which are discussed in further detail throughout this Report.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2857142857142857                        
+ - R-Prec: 0.5714285714285714                        
+ - Pearson: 0.5465287718460119                        
+ - Truth: ['in', 'unconsolidated', 'joint', 'ventures', 'and', 'partnerships,', 'discussed', 'further', 'detail', 'throughout', 'this', 'Report.', 'development', 'activities,']                        
+ - Predict: ['unconsolidated', 'partnerships,', 'discussed', 'joint', 'ventures', 'detail', 'due', 'Report.', 'throughout', 'investing', 'investments', 'change', 'activities', 'changes', 'acquisitions,', 'investment', 'expenditures,', 'dispositions,', 'in', 'further', 'strategy', 'activities,', 'reflect', 'development', 'and', 'in', 'relates', 'all', 'this', 'was', 'level', 'are', 'capital', 'activities,', 'of', 'which', 'in', 'which', 'The', 'to', 'it', 'in', 'our', 'to', 'the', 'and', 'of', 'as', 'our']
+# As of December 31, 2012, we had cash and cash equivalents of $98.8 million and marketable investments of $143.8 million.
+# As of December 31, 2013 our remaining stock repurchase authorization was approximately $55.9 million.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.42857142857142855                        
+ - R-Prec: 0.8333333333333334                        
+ - Pearson: 0.636060659591121                        
+ - Truth: ['remaining', 'stock', 'repurchase', 'authorization', '$55.9', 'million.']                        
+ - Predict: ['repurchase', '$55.9', 'approximately', 'authorization', 'remaining', 'stock', '2013', 'million.', 'our', 'was', 'As', '31,', 'December', 'of']
+# Other revenues increased $0.5 million primarily due to an increase in maintenance company revenues and other one-time revenue transactions.
+# General and administrative expense for the Company increased by $1.9 million, or 8.3% and increased for the Operating Partnership by $2.1 million, or 9.0%, primarily due to an increase in employee compensation and incentive compensation.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.6285714285714286                        
+ - R-Prec: 0.8636363636363636                        
+ - Pearson: 0.5644041814937372                        
+ - Truth: ['General', 'and', 'administrative', 'expense', 'increased', 'by', '$1.9', 'million,', 'or', '8.3%', 'for', 'the', 'Operating', 'Partnership', '$2.1', '9.0%,', 'increase', 'in', 'employee', 'compensation', 'incentive', 'compensation.']                        
+ - Predict: ['9.0%,', '8.3%', '$2.1', 'incentive', '$1.9', 'administrative', 'Partnership', 'General', 'compensation', 'Operating', 'expense', 'employee', 'compensation.', 'Company', 'increased', 'or', 'or', 'increased', 'million,', 'and', 'the', 'increase', 'the', 'million,', 'for', 'primarily', 'and', 'for', 'and', 'by', 'by', 'due', 'in', 'an', 'to']
+# The leasing of property, in general, and occupancy rates, rental rates, operating expenses and certain non-operating expenses, in particular, are impacted, variously, by property specific, market specific, general economic and other conditions, many of which are beyond our control.
+# The sale of properties is impacted, variously, by property specific, market specific, general economic and other conditions, many of which are beyond our control.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.041666666666666664                        
+ - R-Prec: 1.0                        
+ - Pearson: 0.7463549280986641                        
+ - Truth: ['sale']                        
+ - Predict: ['sale', 'properties', 'variously,', 'beyond', 'control.', 'impacted,', 'market', 'general', 'economic', 'of', 'property', 'conditions,', 'many', 'specific,', 'is', 'The', 'specific,', 'other', 'our', 'of', 'which', 'by', 'and', 'are']
+# However, the income or loss of our U.S. operations does impact the effective tax rate.
+# The impact on the effective rate due to the PST valuation allowance was offset by the impact of the improvement in the performance of our U.S. operations, which do not attract tax due to the full valuation allowance, and the prior year impact of the nondeductible goodwill impairment in 2014 that did not impact the effective tax rate for 2015.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5166666666666667                        
+ - R-Prec: 0.7096774193548387                        
+ - Pearson: 0.39062682268559684                        
+ - Truth: ['impact', 'the', 'effective', 'rate', 'PST', 'valuation', 'allowance', 'offset', 'by', 'of', 'improvement', 'in', 'performance', 'our', 'U.S.', 'operations,', 'prior', 'year', 'nondeductible', 'goodwill', 'impairment', '2014', 'that', 'did', 'not', 'tax', 'for', '2015.', 'attract', 'full', 'allowance,']                        
+ - Predict: ['nondeductible', 'impairment', 'improvement', 'effective', 'PST', 'effective', 'goodwill', 'attract', 'allowance', 'offset', 'performance', 'prior', 'valuation', 'allowance,', 'valuation', 'full', 'year', 'due', 'due', 'impact', '2014', '2015.', 'impact', 'impact', 'tax', 'rate', 'rate', 'tax', 'U.S.', 'operations,', 'impact', 'did', 'in', 'to', 'was', 'and', 'to', 'by', 'do', 'which', 'not', 'the', 'in', 'on', 'The', 'the', 'the', 'that', 'the', 'the', 'for', 'not', 'the', 'the', 'of', 'the', 'of', 'of', 'our', 'the']
+# Net cash used for investing and financing activities combined totaled $397.2 million in fiscal 2011.
+# Global attendance decreased 11.0% to 50.7 million in fiscal 2012 from 57.0 million in fiscal 2011.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5                        
+ - R-Prec: 0.75                        
+ - Pearson: 0.661386511473998                        
+ - Truth: ['Global', 'attendance', 'decreased', '11.0%', '50.7', 'million', 'from', '57.0']                        
+ - Predict: ['57.0', 'attendance', '11.0%', 'decreased', '50.7', 'Global', '2012', '2011.', 'million', 'to', 'million', 'from', 'fiscal', 'fiscal', 'in', 'in']
+# The consolidation of Post Woods' operations resulted in the recognition by the Company of net operating income of $747,000 and $344,000 on net revenue of approximately $1.49 million and $1.36 million in 2011 and 2010 respectively.
+# The consolidation of Willow Bend's operations resulted in recognition by the Company of net operating income of approximately $336,000 and $351,000 on net revenue of approximately $832,000 and $788,000 in 2012 and 2011 , respectively.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2857142857142857                        
+ - R-Prec: 0.7                        
+ - Pearson: 0.801251706394062                        
+ - Truth: ['Willow', "Bend's", 'net', 'of', 'approximately', '$336,000', 'and', '$351,000', '$832,000', '$788,000']                        
+ - Predict: ['Willow', '$832,000', '$788,000', '$336,000', '$351,000', "Bend's", 'approximately', 'approximately', 'operations', '2012', 'respectively.', '2011', 'consolidation', 'Company', 'net', 'operating', 'net', 'and', 'and', 'revenue', ',', 'recognition', 'resulted', 'income', 'The', 'of', 'of', 'of', 'the', 'and', 'in', 'on', 'in', 'of', 'by']
+# We offer legal spend management solutions that help manage legal and claims vendor expenditures and that automate receipt and review of legal invoices for insurance companies and other large corporate consumers of outside legal services.
+# We also offer legal spend management solutions that help manage and determine the right amount to pay for legal services and claims vendor expenditures for insurance companies and other large corporate consumers of outside legal services.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.19444444444444445                        
+ - R-Prec: 0.42857142857142855                        
+ - Pearson: 0.47628007170728637                        
+ - Truth: ['and', 'determine', 'the', 'right', 'amount', 'to', 'pay']                        
+ - Predict: ['legal', 'legal', 'legal', 'determine', 'amount', 'pay', 'claims', 'also', 'right', 'manage', 'offer', 'services.', 'vendor', 'spend', 'management', 'insurance', 'solutions', 'help', 'services', 'the', 'outside', 'expenditures', 'to', 'corporate', 'companies', 'consumers', 'large', 'We', 'other', 'for', 'and', 'and', 'of', 'for', 'that', 'and']
+# 2016 compared to 2015 Natural Gas Operating Revenue Natural gas operating revenue decreased $57.0 million primarily due to lower natural gas retail sales revenue of $53.7 million due to a decrease of $90.6 million related to the PGA rate reduction, partially offset by an increase of $41.0 million in gas sales due to higher therms sold.
+# Natural gas retail sales revenue decreased $53.7 million due to a decrease in revenue per therm of $90.6 million, partially offset by an increase of $41.0 million in natural gas sales, due to an increase in natural gas load of 4.6% from 2015.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.023255813953488372                        
+ - R-Prec: 0.0                        
+ - Pearson: 0.3151560919937974                        
+ - Truth: ['4.6%']                        
+ - Predict: ['load', '4.6%', 'per', 'therm', 'Natural', 'gas', 'retail', '2015.', 'sales', 'gas', 'revenue', '$90.6', '$41.0', '$53.7', 'natural', 'revenue', 'natural', 'decrease', 'from', 'increase', 'sales,', 'increase', 'partially', 'gas', 'decreased', 'in', 'million,', 'offset', 'of', 'in', 'million', 'million', 'to', 'of', 'due', 'a', 'due', 'an', 'of', 'an', 'to', 'by', 'in']
+# See Note 4 to the Company's financial statements included herein for restrictions on dividend payments.
+# See Note 6 to the Company's financial statements included herein for additional details regarding the pension plans.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.47058823529411764                        
+ - R-Prec: 0.75                        
+ - Pearson: 0.6005966802152429                        
+ - Truth: ['Note', '6', 'additional', 'details', 'regarding', 'the', 'pension', 'plans.']                        
+ - Predict: ['herein', 'details', 'pension', 'additional', 'plans.', 'regarding', '6', 'See', 'Note', "Company's", 'the', 'included', 'financial', 'statements', 'to', 'for', 'the']
+# The shares of common stock purchased under the share repurchase authorization are being retired.
+# During the twelve months ended December 31, 2015 , the Company repurchased 1.7 million shares of common stock.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3888888888888889                        
+ - R-Prec: 0.2857142857142857                        
+ - Pearson: 0.027811103213452752                        
+ - Truth: ['2015', 'repurchased', '1.7', 'million', 'shares', 'common', 'stock.']                        
+ - Predict: ['1.7', 'million', 'months', 'December', 'ended', 'twelve', '31,', 'repurchased', 'Company', '2015', 'shares', 'common', 'stock.', ',', 'During', 'the', 'the', 'of']
+# The loss in 2013 is largely attributable to the non-cash amortization expense associated with intangible assets acquired with the April 2013 acquisition of Orbital Gas Systems.
+# Depreciation and amortization has decreased in 2015 compared to 2014 as the intangible asset associated with the order backlog acquired with Orbital Gas Systems Limited was fully amortized during the first quarter of 2015.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2647058823529412                        
+ - R-Prec: 0.3333333333333333                        
+ - Pearson: 0.3339305556990837                        
+ - Truth: ['Depreciation', 'and', 'amortization', 'has', 'decreased', 'in', '2015', 'fully', 'amortized']                        
+ - Predict: ['intangible', 'Depreciation', 'backlog', 'order', 'amortized', 'decreased', 'compared', 'quarter', 'Limited', 'fully', 'first', 'asset', 'amortization', '2014', '2015', '2015.', 'Systems', 'Orbital', 'Gas', 'has', 'acquired', 'associated', 'of', 'was', 'and', 'as', 'the', 'the', 'to', 'during', 'the', 'in', 'with', 'with']
+# Other: During the fourth quarter of fiscal year 2011, we recognized $2 million of losses associated with the sale of certain assets in connection with the closure of our EU Trailer business.
+# Also included in other charges are costs associated with the sale of our EU Trailer business.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.0625                        
+ - R-Prec: 1.0                        
+ - Pearson: 0.059899780360351575                        
+ - Truth: ['costs']                        
+ - Predict: ['costs', 'charges', 'included', 'Also', 'Trailer', 'sale', 'business.', 'EU', 'other', 'associated', 'in', 'are', 'the', 'our', 'of', 'with']
+# This alternative method of revenue recognition is not the preferred method of revenue recognition as prescribed within generally accepted accounting principles in the United States of America (US GAAP).
+# Generally accepted accounting principles in the United States ( US GAAP ) require that we recognize the BCF related to the Series A Preferred Stock as a discount on the Series A Preferred Stock and amortize such amount as a deemed distribution through the earliest conversion date.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3617021276595745                        
+ - R-Prec: 0.7058823529411765                        
+ - Pearson: 0.5640055894624363                        
+ - Truth: ['require', 'recognize', 'the', 'BCF', 'related', 'to', 'Series', 'A', 'Preferred', 'Stock', 'amortize', 'deemed', 'distribution', 'through', 'earliest', 'conversion', 'date.']                        
+ - Predict: ['require', 'discount', 'conversion', 'BCF', 'related', 'earliest', 'deemed', 'amortize', 'Series', 'Series', 'Stock', 'distribution', 'Stock', 'amount', 'date.', 'recognize', 'Generally', 'Preferred', 'Preferred', 'accepted', 'accounting', ')', 'principles', 'States', 'United', 'GAAP', 'US', 'that', 'on', 'such', 'A', 'through', 'the', 'A', 'to', 'the', 'the', 'we', 'the', 'a', 'and', 'as', 'a', 'as', 'the', '(', 'in']
+# Such amounts are included in either Other current liabilities or Other liabilities in the accompanying Consolidated Balance Sheets, based upon our expected time of recognition.
+# Related expenses deferred under drilling contracts totaled $55.7 million at December 31, 2017 as compared to $72.8 million at December 31, 2016 and are included in either Prepaid expenses and other current assets, Other assets, or Property and equipment, net in the accompanying Consolidated Balance Sheets, based upon our expected time of recognition.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.32075471698113206                        
+ - R-Prec: 0.7647058823529411                        
+ - Pearson: 0.5178262335982019                        
+ - Truth: ['Related', 'expenses', 'deferred', 'under', 'drilling', 'contracts', 'totaled', '$55.7', 'million', '$72.8', 'Prepaid', 'and', 'other', 'current', 'assets,', 'Property', 'equipment,']                        
+ - Predict: ['Prepaid', 'deferred', 'compared', 'totaled', '$55.7', '$72.8', 'contracts', 'drilling', 'assets,', 'assets,', 'Property', 'Related', 'net', 'equipment,', 'million', 'December', 'expenses', 'December', 'million', '31,', '31,', '2017', 'expenses', '2016', 'current', 'recognition.', 'Other', 'under', 'and', 'either', 'or', 'to', 'Consolidated', 'other', 'Balance', 'Sheets,', 'as', 'at', 'and', 'at', 'and', 'time', 'accompanying', 'included', 'expected', 'upon', 'of', 'the', 'in', 'based', 'our', 'are', 'in']
+# MHMB originates single family residential mortgage loans and sells these loans in the secondary market.
+# The Company also generates non-interest income by providing fee based banking services and by the origination and sale of conventional conforming and FHA/VA residential mortgage loans to the secondary market.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5                        
+ - R-Prec: 0.7333333333333333                        
+ - Pearson: 0.5661960825895244                        
+ - Truth: ['non-interest', 'income', 'providing', 'fee', 'based', 'banking', 'services', 'sale', 'of', 'conventional', 'conforming', 'FHA/VA', 'residential', 'mortgage', 'loans']                        
+ - Predict: ['conforming', 'FHA/VA', 'non-interest', 'conventional', 'fee', 'providing', 'banking', 'generates', 'origination', 'Company', 'income', 'based', 'sale', 'services', 'also', 'mortgage', 'loans', 'residential', 'secondary', 'market.', 'The', 'and', 'of', 'and', 'the', 'and', 'to', 'by', 'by', 'the']
+# Our other expenses were $34,355,000 for the year ended December 31, 2013 , as compared to $28,464,000 for the year ended December 31, 2012 , an increase of $5,891,000 , or 21% .
+# Our property expenses were $22,678,000 for the year ended December 31, 2013 , as compared to $16,842,000 for the year ended December 31, 2012 , an increase of $5,836,000 , or 35% .                        
+ - Performance                        
+ - Recall: 1.0; P: 0.21212121212121213                        
+ - R-Prec: 0.7142857142857143                        
+ - Pearson: 0.8005775729936969                        
+ - Truth: ['property', '$22,678,000', '$16,842,000', 'increase', 'of', '$5,836,000', '35%']                        
+ - Predict: ['$16,842,000', '$5,836,000', '$22,678,000', 'property', '35%', '.', ',', 'expenses', 'year', 'year', 'Our', 'ended', 'or', 'increase', '31,', 'ended', 'compared', '31,', 'of', '2013', 'to', '2012', 'an', 'December', 'the', 'the', 'December', 'were', 'for', 'for', ',', 'as', ',']
+# Our primary capital projects for 2015 include the construction of our ORV condensate pipeline, Bearkat plant facilities and West Texas expansion project.
+# Our primary capital projects for 2016 include completing the construction of our Riptide plant in our Texas segment, commencing construction of our Marathon joint venture NGL pipeline in our Louisiana segment, developing our Tall Oak assets in our Oklahoma segment and investing in HEP to fund our equity share of its pipeline expansion projects in our Corporate segment.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4482758620689655                        
+ - R-Prec: 0.8076923076923077                        
+ - Pearson: 0.6977711478757969                        
+ - Truth: ['completing', 'construction', 'Riptide', 'plant', 'Texas', 'segment,', 'Marathon', 'joint', 'venture', 'NGL', 'pipeline', 'Louisiana', 'Tall', 'Oak', 'assets', 'Oklahoma', 'investing', 'in', 'HEP', 'to', 'fund', 'our', 'equity', 'share', 'Corporate', 'commencing']                        
+ - Predict: ['Riptide', 'Corporate', 'Louisiana', 'equity', 'Marathon', 'completing', 'NGL', 'commencing', 'investing', 'venture', 'Oklahoma', 'joint', 'developing', 'Oak', 'HEP', 'Tall', 'fund', 'segment,', 'segment.', 'assets', 'segment,', 'share', 'segment', 'projects', 'Texas', 'plant', 'pipeline', 'pipeline', 'expansion', 'construction', 'in', '2016', 'construction', 'to', 'our', 'primary', 'capital', 'projects', 'its', 'our', 'our', 'our', 'in', 'in', 'our', 'in', 'in', 'include', 'our', 'and', 'our', 'our', 'the', 'Our', 'of', 'of', 'for', 'of']
+# This increase was primarily attributable to a $3.7 million, or 5.4%, increase driven by increased average selling prices of PAD Systems during the year ended June 30, 2012 compared to the year ended June 30, 2011.
+# This increase was primarily attributable to an $18.2 million , or 25.0% , increase in the number of PAD Systems sold and a $3.2 million , or 33.6% , increase in sales of supplemental and other revenue during the year ended June 30, 2013 , compared to the year ended June 30, 2012 .                        
+ - Performance                        
+ - Recall: 1.0; P: 0.16666666666666666                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.5746896173522544                        
+ - Truth: ['$18.2', 'million', '25.0%', '$3.2', '33.6%', 'increase', 'supplemental', 'other', 'revenue']                        
+ - Predict: ['supplemental', '25.0%', '33.6%', '$18.2', '$3.2', 'revenue', 'sold', 'number', 'sales', 'Systems', 'PAD', 'increase', '.', 'increase', 'other', 'year', 'and', 'year', ',', '2013', ',', 'in', 'increase', 'the', 'in', 'of', 'a', 'attributable', 'and', 'or', 'million', 'ended', 'million', 'compared', 'ended', ',', 'an', ',', ',', 'or', 'to', 'primarily', '30,', 'June', 'June', '30,', 'of', '2012', 'the', 'was', 'the', 'to', 'This', 'during']
+# No other legislation passed during the 2013 regular legislative session is expected to have a substantial impact on our financial position, results of operations or cash flows.
+# This move to the Oncor OPEB Plan is not expected to have a material effect on our net assets or cash flows.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4090909090909091                        
+ - R-Prec: 0.7777777777777778                        
+ - Pearson: 0.6878976002496778                        
+ - Truth: ['Oncor', 'OPEB', 'Plan', 'not', 'expected', 'material', 'effect', 'net', 'assets']                        
+ - Predict: ['assets', 'OPEB', 'material', 'Plan', 'net', 'Oncor', 'move', 'effect', 'flows.', 'to', 'the', 'expected', 'cash', 'This', 'not', 'a', 'on', 'is', 'our', 'have', 'or', 'to']
+# We paid cash of approximately $40.7 million under our share repurchase program in 2011 .
+# In 2012, we received cash of approximately $5.7 million as proceeds from the sale of two businesses.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.47058823529411764                        
+ - R-Prec: 0.625                        
+ - Pearson: 0.4878208714138845                        
+ - Truth: ['received', 'cash', 'of', '$5.7', 'million', 'sale', 'two', 'businesses.']                        
+ - Predict: ['businesses.', 'proceeds', '$5.7', 'sale', 'approximately', 'received', 'two', '2012,', 'cash', 'from', 'million', 'the', 'of', 'as', 'we', 'In', 'of']
+# From time to time we may purchase additional Senior Notes.
+# From time to time we may be in the market for the purpose of repurchasing our Senior Notes.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2222222222222222                        
+ - R-Prec: 0.5                        
+ - Pearson: 0.2680979289350382                        
+ - Truth: ['in', 'the', 'market', 'repurchasing']                        
+ - Predict: ['repurchasing', 'market', 'may', 'purpose', 'in', 'Notes.', 'Senior', 'the', 'be', 'our', 'of', 'the', 'for', 'time', 'we', 'time', 'From', 'to']
+# Cash used in investing activities were approximately $60.0 million for the year ended December 31, 2013 , consisting primarily of approximately $52.0 million of cash used, net of cash acquired, in the acquisition of Tinet.
+# Net cash provided by financing activities was $253.5 million for the year ended December 31, 2015 , consisting primarily of the net proceeds from the October 2015 Credit Agreement used to fund the acquisition of One Source.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.35135135135135137                        
+ - R-Prec: 0.6923076923076923                        
+ - Pearson: 0.5496579500260017                        
+ - Truth: ['Net', 'cash', 'financing', 'activities', '$253.5', 'million', 'net', 'proceeds', 'Credit', 'Agreement', 'One', 'Source.', 'fund']                        
+ - Predict: ['financing', 'Credit', '$253.5', 'Source.', 'provided', 'proceeds', 'One', 'October', 'Agreement', 'fund', '2015', 'acquisition', 'Net', 'net', 'activities', 'used', 'cash', 'from', 'consisting', '2015', 'year', 'million', 'of', 'by', 'to', 'the', 'ended', 'primarily', 'the', 'was', '31,', 'the', 'of', 'December', ',', 'for', 'the']
+# We provide services to leading multinational enterprises, carriers and government customers in over 100 countries.
+# We provide cloud networking services to leading multinational enterprise, carrier, and government clients in more than 100 countries.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.1111111111111111                        
+ - R-Prec: 1.0                        
+ - Pearson: 0.553360998037035                        
+ - Truth: ['cloud', 'networking']                        
+ - Predict: ['cloud', 'networking', 'leading', 'clients', 'carrier,', 'enterprise,', 'than', 'multinational', 'services', 'more', 'government', 'provide', '100', 'countries.', 'We', 'in', 'to', 'and']
+# We elected to early adopt ASU 2014-08, which had no impact on our consolidated financial statements.
+# The guidance in this ASU did not have an impact on our consolidated financial statements.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.26666666666666666                        
+ - R-Prec: 0.5                        
+ - Pearson: 0.514513171410322                        
+ - Truth: ['guidance', 'in', 'this', 'ASU']                        
+ - Predict: ['guidance', 'ASU', 'did', 'have', 'not', 'statements.', 'consolidated', 'impact', 'financial', 'this', 'The', 'in', 'an', 'on', 'our']
+# Interest Income and Asset Yield The following table summarizes our interest income for the fiscal years 2012 and 2011 (dollars in millions):
+# The following table summarizes recent prepayment trends for our portfolio:                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3                        
+ - R-Prec: 1.0                        
+ - Pearson: 0.78448462814033                        
+ - Truth: ['prepayment', 'trends', 'portfolio:']                        
+ - Predict: ['prepayment', 'trends', 'portfolio:', 'recent', 'summarizes', 'table', 'our', 'following', 'The', 'for']
+# These increases were offset by a decrease in information technology expense of $0.9 million and other general and administrative of $0.9 million.
+# These increases were offset by a decrease in an ESOP charge of $6.2 million that occurred in 2016.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2777777777777778                        
+ - R-Prec: 0.6                        
+ - Pearson: 0.6176321051965253                        
+ - Truth: ['ESOP', 'charge', 'of', '$6.2', 'million']                        
+ - Predict: ['ESOP', '$6.2', 'charge', 'occurred', '2016.', 'decrease', 'that', 'an', 'increases', 'million', 'in', 'in', 'of', 'These', 'offset', 'a', 'by', 'were']
+# The Company is currently evaluating this guidance, but does not expect its adoption will have a material effect on its consolidated financial statements.
+# The adoption of this pronouncement did not have a material impact on our consolidated financial statements.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4375                        
+ - R-Prec: 0.42857142857142855                        
+ - Pearson: 0.5436388556694208                        
+ - Truth: ['this', 'pronouncement', 'not', 'have', 'a', 'material', 'impact']                        
+ - Predict: ['pronouncement', 'impact', 'adoption', 'material', 'consolidated', 'financial', 'did', 'statements.', 'have', 'this', 'not', 'our', 'The', 'of', 'a', 'on']
+# Our gross profit rate decreased by 0.4% to 39.4% in fiscal 2014 from 39.8% in fiscal 2013 primarily due to unfavorable product margins (0.4%) resulting from unfavorable mix in the OEM and instrumentation and material processing markets in the CLC segment and unfavorable impact of foreign exchange rates in the SLS segment as well as higher intangibles amortization (0.2%) due to the acquisitions of Lumera at the end of the first quarter of fiscal 2013 and Innolight in the first quarter of fiscal 2013 partially offset by lower warranty costs as a percentage of sales (0.2%) due to fewer warranty events in the SLS segment.
+# Our gross profit rate increased by 2.4% to 41.8% in fiscal 2015 from 39.4% in fiscal 2014 primarily due to favorable product margins (1.2%) resulting from favorable mix in the microelectronics market and the favorable impact from foreign currency fluctuations net of the impact of lower volumes in certain business units.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2549019607843137                        
+ - R-Prec: 0.3076923076923077                        
+ - Pearson: 0.3113604836574787                        
+ - Truth: ['increased', '2.4%', '41.8%', 'favorable', 'product', 'margins', '(1.2%)', 'mix', 'in', 'the', 'microelectronics', 'market', '39.4%']                        
+ - Predict: ['microelectronics', 'fluctuations', 'favorable', 'favorable', 'favorable', 'currency', 'units.', 'volumes', 'business', 'increased', '(1.2%)', 'net', 'certain', 'market', '41.8%', '2.4%', 'lower', 'foreign', '39.4%', 'impact', '2015', 'mix', 'rate', 'impact', 'margins', 'product', 'gross', 'profit', 'fiscal', 'fiscal', 'resulting', 'primarily', 'and', 'the', 'of', 'in', 'the', '2014', 'the', 'to', 'Our', 'in', 'of', 'by', 'to', 'from', 'from', 'from', 'due', 'in', 'in']
+# This was primarily due to the benefit of income subject to foreign tax rates that are lower than U.S. tax rates and the benefit of releasing state tax reserves accrued under ASC 740-10 and related interest.
+# This was primarily due to differences related to the benefit of income subject to foreign tax rates that are lower than U.S. tax rates including South Korea and Singapore tax exemptions, the benefit of foreign tax credits, the benefit of the federal research and development tax credits including renewal of the federal research and development tax credits for fiscal 2012 and the benefit of releasing foreign tax reserves accrued under ASC 740-10 Income Taxes and related interest.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3116883116883117                        
+ - R-Prec: 0.5416666666666666                        
+ - Pearson: 0.3892639074887636                        
+ - Truth: ['differences', 'South', 'Korea', 'Singapore', 'tax', 'exemptions,', 'the', 'benefit', 'of', 'foreign', 'credits,', 'accrued', 'under', 'ASC', '740-10', 'Income', 'Taxes', 'related', 'interest.', 'federal', 'research', 'development', 'credits', 'renewal']                        
+ - Predict: ['benefit', 'benefit', 'benefit', 'benefit', 'exemptions,', 'credits', 'differences', 'credits', 'including', 'renewal', 'research', 'including', 'South', 'credits,', 'research', 'Korea', 'fiscal', 'Singapore', 'federal', 'development', 'development', 'federal', '2012', 'Taxes', 'tax', 'tax', 'tax', 'tax', 'foreign', 'interest.', 'tax', 'Income', 'U.S.', 'ASC', 'related', 'tax', 'releasing', 'income', '740-10', 'foreign', 'rates', 'foreign', 'reserves', 'related', 'and', 'and', 'and', 'accrued', 'the', 'tax', 'the', 'of', 'the', 'the', 'of', 'for', 'the', 'rates', 'lower', 'and', 'subject', 'primarily', 'the', 'of', 'to', 'due', 'of', 'This', 'that', 'than', 'of', 'to', 'was', 'to', 'under', 'are', 'and']
+# The election was made in consideration of the lower financial performance of the reporting unit when compared to fiscal 2013, mostly due to softness in market conditions, predominantly in the advanced packaging market.
+# Although the reporting unit had better financial performance in fiscal 2015 compared to fiscal 2014, such performance was not significant enough to justify performing only a qualitative assessment in fiscal 2015.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3870967741935484                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.5753968981315172                        
+ - Truth: ['had', 'better', 'performance', 'was', 'not', 'significant', 'enough', 'to', 'justify', 'performing', 'qualitative', 'assessment']                        
+ - Predict: ['qualitative', 'significant', 'justify', 'better', 'assessment', 'performing', 'Although', 'unit', 'enough', 'reporting', 'financial', 'performance', '2014,', 'only', '2015.', 'not', '2015', 'performance', 'fiscal', 'such', 'fiscal', 'had', 'a', 'fiscal', 'compared', 'was', 'to', 'the', 'in', 'in', 'to']
+# There were no gross unrealized losses on equity securities as of December 31, 2010.
+# There were no other states or individual issuer holdings that represented or exceeded 10% of the total municipal portfolio as of December 31, 2011.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.375                        
+ - R-Prec: 0.8888888888888888                        
+ - Pearson: 0.8816975770629968                        
+ - Truth: ['states', 'individual', 'issuer', 'holdings', 'exceeded', '10%', 'municipal', 'portfolio', 'represented']                        
+ - Predict: ['states', 'municipal', 'issuer', 'holdings', 'represented', 'exceeded', 'individual', 'portfolio', 'total', '10%', '2011.', 'other', 'or', 'of', 'the', 'no', 'or', 'that', 'There', '31,', 'December', 'of', 'were', 'as']
+# Net investment income has increased as our overall portfolio yield has increased 16 basis points from 2014 yield as discussed in the Consolidated Results of Operations above.
+# Net investment income decreased in 2016 as our average invested assets decreased as did the overall portfolio yield by 2 basis points from 2015 .                        
+ - Performance                        
+ - Recall: 1.0; P: 0.36                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.5693972676472695                        
+ - Truth: ['decreased', 'average', 'invested', 'assets', '2', 'basis', 'points', 'from', '2015']                        
+ - Predict: ['assets', 'average', 'decreased', 'decreased', 'did', '2', 'invested', '2016', '2015', 'portfolio', 'basis', 'overall', 'yield', 'Net', '.', 'points', 'investment', 'income', 'by', 'the', 'in', 'as', 'our', 'as', 'from']
+# The Company is currently under examination by various state and local taxing jurisdictions for various fiscal years.
+# The Company is currently under examination by the IRS for fiscal tax year 2011.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.21428571428571427                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.8092640756773273                        
+ - Truth: ['IRS', '2011.', 'tax']                        
+ - Predict: ['tax', 'IRS', 'year', '2011.', 'fiscal', 'Company', 'examination', 'the', 'currently', 'The', 'under', 'by', 'for', 'is']
+# Table 21 below displays information regarding the credit characteristics of the loans in our single-family conventional guaranty book of business by acquisition period.
+# The following table displays the amount of jumbo-conforming and high-balance loans in our single-family conventional guaranty book of business.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3157894736842105                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.4736418830834972                        
+ - Truth: ['the', 'amount', 'of', 'jumbo-conforming', 'high-balance', 'loans']                        
+ - Predict: ['jumbo-conforming', 'high-balance', 'amount', 'following', 'table', 'loans', 'displays', 'conventional', 'business.', 'single-family', 'and', 'of', 'The', 'the', 'book', 'guaranty', 'of', 'in', 'our']
+# Net sales were negatively impacted by 2.9% due to changes in price and 1.1% due to the unfavorable impact of foreign currency exchange rates.
+# Orthopaedics net sales in 2014 increased 5.2% as reported and 6.3% in constant currency, as net sales were negatively impacted by 1.1% due to the impact of foreign currency exchange rates.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3225806451612903                        
+ - R-Prec: 0.6                        
+ - Pearson: 0.5177809863455181                        
+ - Truth: ['Orthopaedics', 'increased', '5.2%', '6.3%', 'constant', 'currency,', 'negatively', 'impacted', 'by', '1.1%']                        
+ - Predict: ['6.3%', 'Orthopaedics', '5.2%', 'increased', 'constant', 'negatively', 'reported', '2014', 'net', 'net', 'currency,', '1.1%', 'sales', 'sales', 'rates.', 'impact', 'as', 'exchange', 'as', 'foreign', 'impacted', 'currency', 'in', 'and', 'in', 'the', 'were', 'due', 'by', 'to', 'of']
+# The equity options resulted in net pre-tax losses of $15.1 million and volatility swaps resulted in a net pre-tax loss of $0.2 million for the year ended December 31, 2011, respectively.
+# The interest rate swaps resulted in net pre-tax gains of $3.3 million and interest rate swaptions resulted in a net pre-tax loss of $2.3 million for year ended December 31, 2012.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3548387096774194                        
+ - R-Prec: 0.7272727272727273                        
+ - Pearson: 0.7773973532561319                        
+ - Truth: ['interest', 'rate', 'swaps', 'pre-tax', 'gains', 'of', '$3.3', 'million', 'swaptions', 'loss', '$2.3']                        
+ - Predict: ['interest', 'rate', 'rate', '$3.3', '$2.3', 'interest', 'gains', 'loss', 'swaptions', 'swaps', '2012.', 'resulted', 'pre-tax', 'pre-tax', 'year', 'and', 'resulted', 'million', 'net', 'net', 'The', '31,', 'million', 'ended', 'December', 'of', 'of', 'for', 'a', 'in', 'in']
+# Ceded benefits and settlement expenses were lower for the year ended December 31, 2013, as compared to the year ended December 31, 2012, due to a smaller increase in ceded reserves, largely offset by higher ceded claims.
+# Ceded benefits and settlement expenses were primarily driven by ceded claims.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.18181818181818182                        
+ - R-Prec: 0.0                        
+ - Pearson: 0.1378001002646338                        
+ - Truth: ['ceded', 'claims.']                        
+ - Predict: ['driven', 'settlement', 'primarily', 'claims.', 'ceded', 'Ceded', 'expenses', 'benefits', 'by', 'were', 'and']
+# Ceded benefits and settlement expenses were $776.5 million for the year ended December 31, 2016.
+# Benefits and settlement expenses Benefits and settlement expenses increased $20.2 million, or 19.3%, for the year ended December 31, 2017, as compared to the year ended December 31, 2016.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.27586206896551724                        
+ - R-Prec: 0.625                        
+ - Pearson: 0.5034660887096126                        
+ - Truth: ['Benefits', 'and', 'settlement', 'expenses', 'increased', '$20.2', 'million,', '19.3%,']                        
+ - Predict: ['compared', '$20.2', '19.3%,', 'increased', 'settlement', 'settlement', 'Benefits', '2017,', 'year', 'expenses', 'expenses', '2016.', 'Benefits', 'or', 'year', 'to', 'ended', 'as', 'million,', 'the', 'December', 'ended', '31,', '31,', 'and', 'and', 'December', 'the', 'for']
+# As of December 31, 2011 and 2010, our allowances for product returns were $6.8 million and $3.5 million, respectively.
+# As of December 31, 2012 and 2011, our allowances for product returns were $8.4 million and $6.8 million, respectively.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.21052631578947367                        
+ - R-Prec: 0.5                        
+ - Pearson: 0.6151590018600707                        
+ - Truth: ['$8.4', 'million', '$6.8', 'million,']                        
+ - Predict: ['$8.4', '$6.8', 'respectively.', '2012', 'product', 'allowances', 'As', '2011,', 'million', 'returns', '31,', 'December', 'million,', 'our', 'of', 'were', 'and', 'for', 'and']
+# In addition, through its Consumer Health reportable segment, the Company manufactures and markets animal health and OTC products, both branded and private label.
+# Consumer Health , we manufacture and market branded and private-label animal health and OTC products, respectively.                        
+ - Performance                        
+ - Recall: 0; P: 0.0                        
+ - R-Prec: 0                        
+ - Pearson: 0.6151590018600707                        
+ - Truth: []                        
+ - Predict: ['manufacture', 'respectively.', 'market', 'Consumer', 'Health', 'private-label', 'branded', 'animal', 'OTC', 'health', 'products,', 'we', ',', 'and', 'and', 'and']
+# Interest Expense increased in 2010, as compared to 2009, due primarily to higher Interest on Long-Term Debt resulting from the $150 million debt issuance in December 2009, offset by lower Interest on RRBs resulting from lower principal balances outstanding.
+# Interest Expense increased in 2011, as compared to 2010, due primarily to higher Other Interest in 2011, as compared to 2010, due to the prior year inclusion of a tax-related benefit, partially offset by lower Interest on RRBs in 2011, as compared to 2010, resulting from the maturity of CL P s RRBs in December 2010 and lower principal balances on the remaining PSNH and WMECO RRBs outstanding.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3235294117647059                        
+ - R-Prec: 0.7727272727272727                        
+ - Pearson: 0.5486215066478168                        
+ - Truth: ['Other', 'Interest', 'prior', 'year', 'inclusion', 'tax-related', 'benefit,', 'RRBs', 'maturity', 'of', 'CL', 'P', 's', 'lower', 'principal', 'balances', 'remaining', 'PSNH', 'and', 'WMECO', 'outstanding.', '2011,']                        
+ - Predict: ['PSNH', 'benefit,', 'inclusion', 'WMECO', 'maturity', 'CL', 'prior', 'tax-related', 'remaining', 'year', 'partially', 'P', 'RRBs', 'RRBs', 'Interest', 'outstanding.', 'Interest', 'lower', 'balances', 's', 'higher', 'RRBs', 'Other', 'Expense', 'and', 'principal', 'a', 'of', 'lower', '2011,', '2011,', 'of', '2011,', 'resulting', 'the', '2010', 'the', 'the', 'Interest', 'primarily', 'and', 'compared', 'compared', 'on', 'to', '2010,', 'due', 'to', 'compared', '2010,', 'offset', 'due', '2010,', 'increased', 'December', 'in', 'in', 'in', 'to', 'in', 'to', 'to', 'from', 'as', 'by', 'as', 'as', 'on']
+# Although additional testimony was submitted by the complainants and the New England transmission owners in November and December 2011, the FERC has not yet issued an order in this proceeding and we cannot predict when this proceeding will be concluded, the outcome of this proceeding, or its impact on our financial position, results of operations or cash flows.
+# We are still evaluating the other provisions of this legislation, which are not expected to have a significant impact on our financial position, results of operations or cash flows.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3793103448275862                        
+ - R-Prec: 0.6363636363636364                        
+ - Pearson: 0.560158497147351                        
+ - Truth: ['evaluating', 'provisions', 'this', 'legislation,', 'not', 'expected', 'to', 'have', 'a', 'significant', 'impact']                        
+ - Predict: ['evaluating', 'provisions', 'expected', 'significant', 'legislation,', 'still', 'flows.', 'impact', 'other', 'have', 'the', 'to', 'not', 'are', 'financial', 'position,', 'are', 'We', 'this', 'a', 'operations', 'results', 'cash', 'which', 'of', 'or', 'of', 'on', 'our']
+# Excluding the impact of merger-related costs, NSTAR Electric s earnings increased $67.4 million in 2013, as compared to 2012, due primarily to lower overall operations and maintenance costs and higher retail electric sales due primarily to colder weather in the first and fourth quarters in 2013.
+# NSTAR Electric's earnings increased in 2014, as compared to 2013, due primarily to lower operations and maintenance costs primarily attributable to lower employee-related costs and higher transmission earnings, partially offset by higher interest expense, higher depreciation expense, higher property tax expense and the after-tax reserve recorded for the 2014 FERC ROE orders as compared to the reserve recorded in 2013 for the FERC ALJ initial decision in the FERC base ROE complaints.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2916666666666667                        
+ - R-Prec: 0.5714285714285714                        
+ - Pearson: 0.5322408081732626                        
+ - Truth: ['lower', 'employee-related', 'costs', 'higher', 'transmission', 'earnings,', 'partially', 'offset', 'by', 'interest', 'expense,', 'depreciation', 'property', 'tax', 'expense', 'after-tax', 'reserve', '2014', 'FERC', 'ROE', 'orders']                        
+ - Predict: ['complaints.', 'depreciation', 'attributable', 'interest', 'ROE', 'reserve', 'transmission', 'offset', 'reserve', 'orders', 'property', 'employee-related', 'base', 'ROE', 'FERC', 'partially', 'FERC', 'ALJ', 'initial', 'FERC', 'after-tax', 'decision', 'tax', 'expense,', "Electric's", 'expense,', 'recorded', 'recorded', 'expense', '2014', 'earnings,', 'higher', 'higher', 'NSTAR', 'higher', 'higher', 'lower', 'earnings', '2013', 'primarily', 'compared', 'costs', '2013,', 'in', 'lower', 'maintenance', 'operations', '2014,', 'the', 'for', 'the', 'the', 'the', 'and', 'by', 'for', 'increased', 'the', 'primarily', 'and', 'to', 'costs', 'due', 'compared', 'to', 'in', 'to', 'in', 'as', 'to', 'as', 'and']
+# Although we are uncertain on the final outcome of the second and third complaints regarding the ROE, we believe the current reserves established are appropriate to reflect probable and reasonably estimable refunds.
+# On March 22, 2016, the FERC ALJ issued an initial decision on the second and third complaints.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5294117647058824                        
+ - R-Prec: 0.8888888888888888                        
+ - Pearson: 0.7682287380830405                        
+ - Truth: ['On', 'March', '22,', '2016,', 'FERC', 'ALJ', 'issued', 'initial', 'decision']                        
+ - Predict: ['complaints.', 'March', 'FERC', 'ALJ', 'initial', 'decision', 'issued', '22,', '2016,', 'third', 'second', 'an', 'On', 'the', 'on', 'the', 'and']
+# In accordance with the 2015 Public Service Company of New Hampshire Restructuring and Rate Stabilization Agreement, PSNH agreed to not seek a general distribution rate increase effective before July 1, 2017.
+# I have reviewed this Annual Report on Form 10-K of Public Service Company of New Hampshire (the registrant); 2.                        
+ - Performance                        
+ - Recall: 0; P: 0.0                        
+ - R-Prec: 0                        
+ - Pearson: 0.7682287380830405                        
+ - Truth: []                        
+ - Predict: ['registrant);', 'reviewed', 'Report', 'Annual', 'Form', '10-K', '2.', 'Company', 'Public', 'Hampshire', 'Service', '(the', 'I', 'New', 'this', 'have', 'on', 'of', 'of']
+# We also recognized a $3.9 million pre-tax restructuring charge in our Environmental Health segment related to a workforce reduction from reorganization activities.
+# As a result of our Q4 2010 Plan, we recognized a $5.7 million pre-tax restructuring charge in our Human Health segment related to a workforce reduction from reorganization activities and the closure of excess facility space.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3888888888888889                        
+ - R-Prec: 0.7142857142857143                        
+ - Pearson: 0.6807273636104195                        
+ - Truth: ['Q4', '2010', 'Plan,', '$5.7', 'million', 'Human', 'Health', 'reorganization', 'activities', 'closure', 'of', 'excess', 'facility', 'space.']                        
+ - Predict: ['closure', '$5.7', 'excess', 'space.', 'Plan,', 'result', 'Q4', 'facility', 'Human', 'restructuring', '2010', 'reorganization', 'segment', 'recognized', 'Health', 'workforce', 'reduction', 'charge', 'a', 'activities', 'pre-tax', 'we', 'As', 'of', 'of', 'the', 'and', 'million', 'our', 'a', 'related', 'our', 'a', 'to', 'from', 'in']
+# In April 2015, the FASB issued Accounting Standards Update No. 2015-03, Interest - Imputation of Interest - Simplifying the Presentation of Debt Issuance Costs .
+# In January 2017, the FASB issued Accounting Standards Update No. 2017-04, Intangibles-Goodwill and Other Topic (Topic 350), Simplifying the Test for Goodwill Impairment ("ASU 2017-04") , which amends Topic 350 to simplify the subsequent measurement of goodwill by eliminating Step 2 from the goodwill impairment test.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5                        
+ - R-Prec: 0.6521739130434783                        
+ - Pearson: 0.4358179395575729                        
+ - Truth: ['January', '2017,', 'No.', '2017-04,', 'Simplifying', 'the', 'Test', 'for', 'Goodwill', 'Impairment', 'subsequent', 'measurement', 'of', 'goodwill', 'eliminating', 'Step', '2', 'from', 'impairment', 'test.', 'Intangibles-Goodwill', '("ASU', '2017-04")']                        
+ - Predict: ['Intangibles-Goodwill', 'Impairment', 'Topic', 'amends', 'Goodwill', 'impairment', 'eliminating', 'January', 'Test', '(Topic', 'goodwill', '("ASU', 'measurement', 'goodwill', 'Topic', 'Step', '350),', 'subsequent', '350', 'test.', '2', 'simplify', '2017,', '2017-04")', '2017-04,', 'Simplifying', 'Update', 'Other', 'Standards', 'No.', 'and', 'Accounting', 'of', 'from', 'FASB', 'which', 'for', 'to', ',', 'by', 'the', 'issued', 'the', 'In', 'the', 'the']
+# This increase is primarily due to growth in earnings at same-center properties, properties acquired in 2013 and 2012, and redevelopment properties.
+# This decrease is primarily due to lower lease termination and other fees at our same-center and redevelopment properties.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2222222222222222                        
+ - R-Prec: 0.75                        
+ - Pearson: 0.8617419687047628                        
+ - Truth: ['decrease', 'lower', 'lease', 'termination']                        
+ - Predict: ['termination', 'fees', 'lease', 'lower', 'decrease', 'same-center', 'properties.', 'redevelopment', 'other', 'our', 'and', 'primarily', 'due', 'to', 'This', 'is', 'at', 'and']
+# Net cash used in investing activities increased $51.0 million to $396.2 million during 2014 from $345.2 million during 2013 .
+# Net cash used in investing activities decreased $42.4 million to $353.8 million during 2015 from $396.2 million during 2014 .                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.741911303114512                        
+ - Truth: ['decreased', '$42.4', 'million', 'to', '$353.8', '$396.2']                        
+ - Predict: ['$353.8', '$42.4', 'decreased', '2015', '$396.2', '.', 'Net', 'cash', 'million', 'activities', 'investing', 'million', '2014', 'to', 'used', 'million', 'from', 'in', 'during', 'during']
+# Growth in the supplies-driven channel of the office furniture segment was modest as employment and broader economic concerns weighed on small business confidence.
+# Growth in the contract channel of the office furniture segment was modest as many large corporations delayed or postponed major projects in reaction to economic uncertainty.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.38461538461538464                        
+ - R-Prec: 0.9                        
+ - Pearson: 0.8260039095486724                        
+ - Truth: ['contract', 'many', 'large', 'corporations', 'delayed', 'postponed', 'major', 'projects', 'economic', 'uncertainty.']                        
+ - Predict: ['uncertainty.', 'delayed', 'postponed', 'contract', 'corporations', 'reaction', 'projects', 'large', 'major', 'many', 'economic', 'channel', 'to', 'Growth', 'furniture', 'segment', 'modest', 'office', 'or', 'in', 'the', 'as', 'in', 'the', 'of', 'was']
+# The new standard becomes effective for the Corporation in fiscal 2018.
+# The new standard becomes effective for the Corporation in fiscal 2020 and requires a cumulative effect adjustment in retained earnings as of the beginning of the year of adoption.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.27586206896551724                        
+ - R-Prec: 0.75                        
+ - Pearson: 0.5987804711904671                        
+ - Truth: ['requires', 'a', 'cumulative', 'effect', 'adjustment', 'in', 'retained', 'earnings']                        
+ - Predict: ['requires', 'cumulative', 'retained', 'adjustment', 'earnings', 'effect', 'effective', 'adoption.', 'beginning', 'year', '2020', 'standard', 'of', 'Corporation', 'the', 'of', 'fiscal', 'becomes', 'new', 'of', 'as', 'in', 'a', 'the', 'and', 'The', 'the', 'for', 'in']
+# Circulation expenses rose $10.1 million in fiscal 2014.
+# No such sales occurred in fiscal 2014.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.42857142857142855                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.1829103507526453                        
+ - Truth: ['No', 'such', 'sales']                        
+ - Predict: ['sales', 'occurred', 'No', 'such', '2014.', 'fiscal', 'in']
+# Geographically, local-currency sales growth was broad-based, led by Latin America and Asia Pacific.
+# Organic local-currency sales growth was led by Latin American/Canada at 10.9 percent and the United States at 4.2 percent.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.42105263157894735                        
+ - R-Prec: 1.0                        
+ - Pearson: 0.9803555141453114                        
+ - Truth: ['Organic', 'American/Canada', '10.9', 'percent', 'United', 'States', '4.2', 'percent.']                        
+ - Predict: ['States', 'Organic', '4.2', '10.9', 'United', 'American/Canada', 'percent', 'percent.', 'local-currency', 'Latin', 'sales', 'the', 'at', 'growth', 'at', 'led', 'and', 'by', 'was']
+# For 201 5 , international operations represented 6 0 .2 percent of 3M s sales.
+# For 2016, international operations represented 59.5 percent of 3M s sales.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.18181818181818182                        
+ - R-Prec: 0.5                        
+ - Pearson: 0.6705760310980629                        
+ - Truth: ['59.5', 'percent']                        
+ - Predict: ['59.5', 'international', '2016,', 'sales.', '3M', 'operations', 'represented', 'percent', 'For', 's', 'of']
+# With respect to Company-owned restaurants, our cost of sales during the fiscal 2016 period was $9,153,000 or 54.9% of restaurant sales, as compared to $9,072,000 or 57.2% of restaurant sales in the fiscal 2015 period due primarily to the impact of lower food and labor costs .
+# Sales at our Company-owned restaurants were unfavorably affected during the fiscal 2017 period due primarily to unfavorable summer weather conditions, in addition to the rain and unseasonably cool weather during April and May 2016, as compared to weather conditions in 2015.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.1951219512195122                        
+ - R-Prec: 0.875                        
+ - Pearson: 0.6944450921251564                        
+ - Truth: ['unfavorably', 'affected', 'unfavorable', 'summer', 'weather', 'rain', 'unseasonably', 'cool']                        
+ - Predict: ['unfavorable', 'unfavorably', 'unseasonably', 'affected', 'rain', 'cool', 'summer', 'April', 'addition', 'weather', 'May', 'weather', 'weather', 'conditions', 'conditions,', 'Sales', 'Company-owned', '2017', 'restaurants', '2015.', '2016,', 'period', 'and', 'fiscal', 'and', 'were', 'in', 'the', 'primarily', 'at', 'to', 'to', 'our', 'during', 'compared', 'to', 'the', 'due', 'in', 'during', 'as']
+# Restaurant operating expenses were $3,557,000 in the fiscal 2016 period compared to $3,747,000 in the fiscal 2015 period.
+# Restaurant operating expenses were $3,386,000 in the fiscal 2017 period as compared to $3,557,000 in the fiscal 2016 period.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.10526315789473684                        
+ - R-Prec: 0.5                        
+ - Pearson: 0.5475609610602333                        
+ - Truth: ['$3,386,000', '$3,557,000']                        
+ - Predict: ['$3,386,000', '2017', 'period', 'Restaurant', 'operating', 'compared', '$3,557,000', 'period.', 'fiscal', '2016', 'expenses', 'fiscal', 'as', 'were', 'the', 'the', 'in', 'to', 'in']
+# These earnings increases were partially offset by the earnings impact associated with lower efficiency gas revenues ($6.1 million), as discussed above, higher depreciation expense ($0.6 million) and higher property taxes ($0.4 million).
+# The earnings increases were also partially offset by higher operating expenses ($2.6 million), a decrease in the allowance for funds used during construction (equity component) of $1.4 million, higher property taxes ($0.5 million), higher interest expense ($0.4 million) and higher income taxes ($1.0 million).                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5909090909090909                        
+ - R-Prec: 0.7307692307692307                        
+ - Pearson: 0.28286883604086904                        
+ - Truth: ['higher', 'operating', 'expenses', '($2.6', 'million),', 'decrease', 'in', 'the', 'allowance', 'for', 'funds', 'used', 'during', 'construction', '$1.4', 'million,', 'property', 'taxes', '($0.5', 'interest', 'expense', '($0.4', 'million)', 'income', '($1.0', 'million).']                        
+ - Predict: ['operating', 'funds', '(equity', 'allowance', 'expenses', 'interest', 'construction', 'used', '($2.6', 'decrease', '($0.5', '($1.0', 'also', 'component)', 'income', '$1.4', '($0.4', 'higher', 'higher', 'expense', 'higher', 'million).', 'million),', 'million),', 'million)', 'earnings', 'during', 'taxes', 'higher', 'property', 'in', 'for', 'increases', 'the', 'a', 'taxes', 'partially', 'million,', 'of', 'The', 'offset', 'were', 'by', 'and']
+# If actual developments differ from our expectations, our liquidity could be adversely affected.
+# If actual developments differ from Kronos expectations, its results of operations could be unfavorably affected.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.272437926279408                        
+ - Truth: ['Kronos', 'unfavorably', 'affected.']                        
+ - Predict: ['unfavorably', 'Kronos', 'could', 'operations', 'differ', 'results', 'affected.', 'expectations,', 'its', 'of', 'developments', 'actual', 'be', 'If', 'from']
+# Approximately $8 million from net currency translation gains caused primarily by a strengthening of the U.S. dollar relative to the Canadian dollar and the Norwegian krone, as their local currency-denominated operating costs were translated into fewer U.S. dollars in 2016 as compared to 2015, (and such translation, as it related to the U.S. dollar relative to the euro, had a negative effect on income from operations in 2016 as compared to 2015, as the negative impact of the stronger U.S. dollar on euro-denominated sales more than offset the favorable effect of euro-denominated operating costs being translated into fewer U.S. dollars in 2016 compared to 2015).
+# Approximately $4 million from net currency translation losses primarily caused by a weakening of the U.S. dollar relative to the Canadian dollar, as its local currency-denominated operating costs were translated into more U.S. dollars in 2017 as compared to 2016, and such translation, as it related to the U.S. dollar relative to the euro, had a nominal effect on Kronos income from operations in 2017 as compared to 2016.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.11594202898550725                        
+ - R-Prec: 0.75                        
+ - Pearson: 0.606851768622243                        
+ - Truth: ['$4', 'million', 'losses', 'weakening', 'nominal', 'effect', 'Kronos', 'income']                        
+ - Predict: ['weakening', 'Kronos', 'losses', 'nominal', 'Approximately', 'U.S.', 'income', '$4', 'U.S.', 'Canadian', 'dollar', 'effect', 'U.S.', '2016.', 'dollar', 'dollar,', 'translation', 'dollars', 'currency-denominated', 'euro,', '2016,', 'operating', 'currency', '2017', 'net', 'million', 'operations', '2017', 'relative', 'translation,', 'primarily', 'more', 'local', 'translated', 'relative', 'costs', 'compared', 'related', 'caused', 'compared', 'such', 'its', 'it', 'from', 'on', 'from', 'a', 'had', 'of', 'the', 'a', 'as', 'and', 'to', 'to', 'to', 'the', 'as', 'as', 'in', 'into', 'to', 'by', 'the', 'as', 'in', 'the', 'to', 'were']
+# In December 2011, January 2012 and February 2012, we declared distributions of $0.1455 per share, which were paid in January 2012 and will be paid in February 2012 and March 2012, respectively.
+# In December 2012, we declared dividends of $0.15175 per share, which were paid in January 2013.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.25                        
+ - R-Prec: 0.5                        
+ - Pearson: 0.6431782289294988                        
+ - Truth: ['dividends', '$0.15175', 'per', 'share,']                        
+ - Predict: ['dividends', '$0.15175', '2013.', 'declared', 'share,', 'paid', 'per', 'December', 'of', 'January', '2012,', 'In', 'we', 'in', 'which', 'were']
+# This was primarily due to long-term interest rates increasing in the current year but decreasing in the prior year, unfavorably impacting receive-fixed interest rate swaps and long interest rate floors.
+# These favorable impacts were partially offset by long-term interest rates increasing more in 2013 than in 2012, unfavorably impacting receive-fixed interest rate swaps and net long interest rate floors.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.1724137931034483                        
+ - R-Prec: 0.6                        
+ - Pearson: 0.6324625398099778                        
+ - Truth: ['favorable', 'impacts', 'were', 'partially', 'offset']                        
+ - Predict: ['favorable', 'unfavorably', 'offset', 'partially', 'net', 'impacts', '2013', '2012,', 'long-term', 'long', 'increasing', 'interest', 'interest', 'rates', 'rate', 'swaps', 'floors.', 'receive-fixed', 'rate', 'interest', 'more', 'than', 'impacting', 'by', 'in', 'These', 'were', 'in', 'and']
+# The Preferred Stock and Included Warrants were sold in units (the Units ), with each Unit consisting of one share of Preferred Stock and an Included Warrant to purchase up to 416.6666 shares of common stock at an exercise price of $3.25 per whole share of common stock.
+# The common stock and warrants were sold in units, with each unit consisting of one share of common stock and a warrant to purchase one share of common stock.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.10344827586206896                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.46876251513859507                        
+ - Truth: ['one', 'share', 'common']                        
+ - Predict: ['common', 'one', 'warrants', 'share', 'units,', 'warrant', 'common', 'stock', 'common', 'one', 'share', 'unit', 'purchase', 'stock.', 'stock', 'sold', 'consisting', 'The', 'a', 'in', 'with', 'each', 'and', 'were', 'and', 'of', 'of', 'of', 'to']
+# Gain on sales of interests of real estate, net was $12.7 million in 2014, as a result of the following transactions:
+# Gain on Sales of Interests in Real Estate, net Gain on sales of interests of real estate, net was $23.0 million in 2016, primarily as a result of the following transactions:                        
+ - Performance                        
+ - Recall: 1.0; P: 0.06451612903225806                        
+ - R-Prec: 0.5                        
+ - Pearson: 0.34435138552977723                        
+ - Truth: ['$23.0', 'million']                        
+ - Predict: ['$23.0', 'Gain', 'primarily', 'Gain', 'net', 'Real', 'Estate,', 'Interests', 'Sales', 'real', 'sales', 'net', '2016,', 'interests', 'estate,', 'transactions:', 'in', 'of', 'million', 'on', 'on', 'a', 'of', 'result', 'was', 'the', 'of', 'following', 'of', 'as', 'in']
+# Net sales for fiscal 2012 increased $75.5 million , or 3.4 percent , as compared to fiscal 2011 .
+# Net sales for fiscal 2014 in the AMER segment increased $175.4 million, or 16.5 percent, as compared to fiscal 2013, primarily due to increased net sales of $154.8 million to a key networking/communications customer resulting from a new product ramp.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4                        
+ - R-Prec: 0.6875                        
+ - Pearson: 0.35192301416546984                        
+ - Truth: ['AMER', 'segment', 'increased', '$175.4', 'million,', '16.5', 'percent,', 'net', 'sales', '$154.8', 'million', 'key', 'networking/communications', 'customer', 'product', 'ramp.']                        
+ - Predict: ['networking/communications', '$154.8', '16.5', '$175.4', 'due', 'segment', 'primarily', 'AMER', 'key', 'resulting', 'customer', 'ramp.', 'product', 'new', '2014', 'sales', 'increased', 'net', 'million', 'Net', 'increased', 'sales', '2013,', 'in', 'fiscal', 'a', 'the', 'a', 'percent,', 'from', 'to', 'of', 'fiscal', 'million,', 'to', 'compared', 'or', 'for', 'as', 'to']
+# Net sales for fiscal 2013 in the healthcare/life sciences sector increased $68.8 million as compared to fiscal 2012.
+# Net sales for fiscal 2015 in the networking/communications sector increased $82.0 million , or 10.8 percent , as compared to fiscal 2014 .                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2608695652173913                        
+ - R-Prec: 0.8333333333333334                        
+ - Pearson: 0.7560575029861372                        
+ - Truth: ['networking/communications', 'sector', '$82.0', 'million', '10.8', 'percent']                        
+ - Predict: ['networking/communications', '$82.0', '10.8', 'percent', 'sector', '2015', '.', 'Net', ',', 'or', '2014', 'sales', 'increased', 'fiscal', ',', 'million', 'fiscal', 'the', 'in', 'compared', 'for', 'to', 'as']
+# Days in accounts payable for the three months ended October 3, 2015 was consistent compared to the three months ended September 27, 2014 .
+# Days in accounts receivable for the three months ended October 1, 2016 increased five days compared to the three months ended October 3, 2015 .                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2                        
+ - R-Prec: 0.8                        
+ - Pearson: 0.6003712174644898                        
+ - Truth: ['accounts', 'receivable', 'increased', 'five', 'days']                        
+ - Predict: ['receivable', 'increased', 'five', '2016', 'days', 'October', '1,', 'accounts', 'three', 'three', '.', 'Days', 'compared', 'months', 'ended', 'months', '2015', 'October', 'ended', '3,', 'for', 'the', 'in', 'the', 'to']
+# Inclusive of the potential for modest sales mix and pricing improvements, the Company expects that it will grow its sales at a mid single digit rate in fiscal 2013.
+# These actions, coupled with the recent improvement in the U.S. housing market and the Company s continued ability to grow its sales at a faster rate than its competitors, have enabled the Company to generate net income and reduce its deferred tax assets and unfunded pension obligation during fiscal 2013.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.82                        
+ - R-Prec: 0.926829268292683                        
+ - Pearson: 0.6224208184075556                        
+ - Truth: ['These', 'actions,', 'coupled', 'with', 'the', 'recent', 'improvement', 'in', 'U.S.', 'housing', 'market', 'and', 'Company', 's', 'continued', 'ability', 'to', 'grow', 'its', 'sales', 'at', 'a', 'faster', 'rate', 'than', 'competitors,', 'have', 'enabled', 'generate', 'net', 'income', 'reduce', 'deferred', 'tax', 'assets', 'unfunded', 'pension', 'obligation', 'during', 'fiscal', '2013.']                        
+ - Predict: ['unfunded', 'obligation', 'deferred', 'improvement', 'enabled', 'housing', 'continued', 'pension', 'assets', 'U.S.', 'competitors,', 'coupled', 'faster', 'actions,', 'income', 'market', 'recent', 'ability', 'tax', 'generate', 'reduce', 'net', 'Company', 'Company', 'rate', '2013.', 'grow', 'fiscal', 'than', 's', 'with', 'to', 'in', 'its', 'the', 'and', 'These', 'sales', 'and', 'to', 'have', 'its', 'the', 'the', 'and', 'the', 'during', 'a', 'at', 'its']
+# Occidental incurred approximately $1.4 billion in 2010 to convert proved undeveloped reserves to proved developed reserves.
+# Costs to develop proved undeveloped reserves have increased over time and costs of transfers to proved developed reserves may continue to increase.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5                        
+ - R-Prec: 0.7272727272727273                        
+ - Pearson: 0.4074387072107728                        
+ - Truth: ['Costs', 'to', 'develop', 'proved', 'undeveloped', 'reserves', 'have', 'increased', 'may', 'continue', 'increase.']                        
+ - Predict: ['costs', 'transfers', 'Costs', 'may', 'time', 'increased', 'continue', 'increase.', 'develop', 'reserves', 'undeveloped', 'reserves', 'over', 'proved', 'developed', 'proved', 'have', 'of', 'to', 'and', 'to', 'to']
+# Cash flows from continuing operations in 2016 also included collections of $325 million of federal and state tax refunds.
+# Cash flows from continuing operations in 2017 also included $761 million of federal tax refunds.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.13333333333333333                        
+ - R-Prec: 0.5                        
+ - Pearson: 0.7337887787961943                        
+ - Truth: ['$761', 'million']                        
+ - Predict: ['$761', 'federal', 'refunds.', 'Cash', 'tax', '2017', 'continuing', 'flows', 'million', 'operations', 'included', 'also', 'in', 'from', 'of']
+# We estimated the fair value of the rigs and other assets based on the estimate market value from third-party assessments (Level 3 fair value measurement).
+# During the second quarter, we recorded an additional write-down on the remaining drilling rigs and other equipment of approximately $8.3 million pre-tax based on the estimated market value from similar auctions.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.6774193548387096                        
+ - R-Prec: 0.7619047619047619                        
+ - Pearson: 0.35860682703479857                        
+ - Truth: ['During', 'the', 'second', 'quarter,', 'additional', 'write-down', 'on', 'remaining', 'drilling', 'rigs', '$8.3', 'million', 'pre-tax', 'based', 'estimated', 'market', 'value', 'from', 'similar', 'auctions.', 'equipment']                        
+ - Predict: ['auctions.', '$8.3', 'write-down', 'million', 'approximately', 'pre-tax', 'quarter,', 'remaining', 'recorded', 'similar', 'drilling', 'equipment', 'second', 'additional', 'rigs', 'an', 'estimated', 'other', 'market', 'we', 'value', 'During', 'of', 'the', 'the', 'on', 'and', 'based', 'from', 'the', 'on']
+# In the Appalachian region, we completed the northern expansion of the Pittsburgh Mills gathering system into Butler County, Pennsylvania.
+# I n the Appalachian region, at our Pittsburgh Mills gathering system, we continue to connect new well pads to this system.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.38095238095238093                        
+ - R-Prec: 0.75                        
+ - Pearson: 0.7535671554855607                        
+ - Truth: ['continue', 'to', 'connect', 'new', 'well', 'pads', 'this', 'system.']                        
+ - Predict: ['pads', 'connect', 'well', 'continue', 'new', 'n', 'system.', 'Pittsburgh', 'Mills', 'system,', 'gathering', 'region,', 'Appalachian', 'I', 'this', 'to', 'to', 'the', 'at', 'our', 'we']
+# The 2012 effective tax rate is lower than the 35% U.S. federal statutory tax rate primarily due to inclusion of earnings in jurisdictions with lower tax rates than the U.S. federal statutory rate where such earnings are permanently reinvested.
+# $1.3 million, or 6.1%, decrease resulting from earnings in jurisdictions with lower tax rates than the U.S. federal statutory rate where such earnings are permanently reinvested.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.19230769230769232                        
+ - R-Prec: 0.4                        
+ - Pearson: 0.6597778075454045                        
+ - Truth: ['$1.3', 'million,', 'or', '6.1%,', 'decrease']                        
+ - Predict: ['jurisdictions', 'statutory', '6.1%,', 'resulting', '$1.3', 'million,', 'decrease', 'earnings', 'lower', 'U.S.', 'reinvested.', 'rate', 'federal', 'permanently', 'or', 'from', 'rates', 'tax', 'earnings', 'in', 'with', 'where', 'the', 'than', 'such', 'are']
+# The following table summarizes total revenues, net income (loss) and net income (loss) attributable to Icahn Enterprises Holdings for our Holding Company and the consolidated totals with respect to Icahn Enterprises Holdings for the years ended December 31, 2013 , 2012 and 2011.
+# The following table summarizes total revenues, net income (loss) and net income (loss) attributable to Icahn Enterprises for each of our reporting segments and our Holding Company for the years ended December 31, 2014 , 2013 and 2012.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.15789473684210525                        
+ - R-Prec: 0.3333333333333333                        
+ - Pearson: 0.3206765086050505                        
+ - Truth: ['each', 'of', 'our', 'reporting', 'segments', 'and']                        
+ - Predict: ['reporting', 'segments', '(loss)', '(loss)', 'Enterprises', 'Holding', '2012.', 'Company', 'Icahn', 'each', 'years', 'net', 'income', 'net', 'attributable', 'income', 'summarizes', '2014', 'total', 'table', 'revenues,', 'of', 'ended', 'December', 'following', '2013', '31,', 'The', 'our', ',', 'our', 'the', 'for', 'to', 'for', 'and', 'and', 'and']
+# Management has been working on a plan and has made the determination it is in the Company's best long term interest to relocate its main operations from Springfield, Illinois to Stanford, Kentucky.
+# During 2015, Management determined it was in the Company s best long term interest to relocate its main operations from Springfield, Illinois to Stanford, Kentucky.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.08                        
+ - R-Prec: 0.5                        
+ - Pearson: 0.3248445086146333                        
+ - Truth: ['During', '2015,']                        
+ - Predict: ['best', '2015,', 'determined', 'Management', 'Company', 'long', 'term', 'interest', 'relocate', 'main', 's', 'During', 'Springfield,', 'Kentucky.', 'Stanford,', 'Illinois', 'operations', 'was', 'in', 'the', 'it', 'to', 'its', 'from', 'to']
+# The table below compares the provision for income taxes for the years ended December 31, 2013, 2012 and 2011 (dollars in millions):
+# The table below compares G A expenses for the years ended December 31, 2014, 2013 and 2012 (dollars in millions):                        
+ - Performance                        
+ - Recall: 1.0; P: 0.15                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.7375607564495337                        
+ - Truth: ['G', 'A', 'expenses']                        
+ - Predict: ['expenses', 'G', 'millions):', 'compares', 'A', 'table', '2014,', 'years', '(dollars', 'ended', '2013', 'December', '2012', '31,', 'below', 'The', 'the', 'in', 'for', 'and']
+# Based on the Company s consolidated leverage ratio covenant and adjusted EBITDA for the four quarters ended December 31, 2010, the maximum amount of Consolidated Funded Indebtedness, including borrowings under the Line of Credit, that could have been outstanding on December 31, 2010, was $63.8 million.
+# The maximum amount of Consolidated Funded Indebtedness, including borrowings under the ABL Facility, that could have been outstanding on December 31, 2011, was approximately $87.7 million.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.15384615384615385                        
+ - R-Prec: 0.75                        
+ - Pearson: 0.5037585774142364                        
+ - Truth: ['$87.7', 'million.', 'ABL', 'Facility,']                        
+ - Predict: ['ABL', 'Facility,', '$87.7', 'approximately', 'could', 'maximum', 'million.', 'Indebtedness,', 'borrowings', 'Consolidated', 'amount', '2011,', 'Funded', 'the', 'outstanding', 'including', 'under', '31,', 'December', 'was', 'The', 'have', 'that', 'of', 'on', 'been']
+# In July 2012, the Company adopted the Financial Accounting Standards Board ("FASB") Accounting Standards Update ("ASU") 2011-05, Comprehensive Income (Topic 220): Presentation of Comprehensive Income.
+# In May 2014, the Financial Accounting Standards Board ("FASB") issued Accounting Standards Update ("ASU") 2014-09, "Revenue from Contracts with Customers," which outlines a single comprehensive model for entities to use in accounting for revenue arising from contracts with customers and supersedes most current revenue recognition guidance, including industry-specific guidance.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3877551020408163                        
+ - R-Prec: 0.5789473684210527                        
+ - Pearson: 0.3182322388818503                        
+ - Truth: ['Contracts', 'with', 'Customers,"', 'which', 'outlines', 'use', 'in', 'accounting', 'for', 'revenue', 'arising', 'contracts', 'customers', 'and', 'supersedes', 'most', 'current', 'recognition', '"Revenue']                        
+ - Predict: ['Contracts', 'contracts', 'entities', 'May', 'supersedes', 'arising', '"Revenue', 'issued', 'single', 'outlines', 'including', 'revenue', 'recognition', 'Customers,"', 'industry-specific', 'model', 'current', 'revenue', 'customers', 'use', 'guidance,', 'guidance.', '2014,', 'accounting', '2014-09,', 'comprehensive', 'with', 'with', 'Board', 'Accounting', 'Standards', 'Update', '("FASB")', '("ASU")', 'Standards', 'most', 'Accounting', 'Financial', 'from', 'from', 'to', 'for', 'which', 'a', 'for', 'in', 'and', 'In', 'the']
+# Research and development expenses increased during 2012 as compared to 2011 due to a $35.8 million increase in compensation and other employee-related costs, primarily related to increased headcount due to strategic hiring and acquisitions, and an increase in stock-based compensation expense of $22.0 million, primarily related to retention-focused awards granted to new and existing employees and assumed in conjunction with our acquisitions.
+# Research and development expenses increased during 2013 as compared to 2012 primarily due to an increase in compensation, including stock-based compensation and employee-related costs, primarily related to increased headcount from strategic hiring and acquisitions.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3235294117647059                        
+ - R-Prec: 0.5454545454545454                        
+ - Pearson: -0.10723051702222165                        
+ - Truth: ['primarily', 'related', 'to', 'increased', 'headcount', 'from', 'strategic', 'hiring', 'acquisitions.', 'stock-based', 'compensation']                        
+ - Predict: ['including', 'headcount', 'stock-based', 'hiring', 'strategic', 'Research', 'employee-related', 'acquisitions.', 'compensation', '2013', 'compensation,', 'expenses', 'costs,', 'development', 'related', 'primarily', 'increase', 'primarily', 'compared', '2012', 'increased', 'increased', 'from', 'due', 'and', 'and', 'in', 'an', 'during', 'to', 'to', 'to', 'as', 'and']
+# Operating Impact of Lines 6A and 6B Crude Oil Releases We experienced two releases of crude oil from our Lakehead system during the year ended December 31, 2010 that significantly affected the operating results of our Liquids business.
+# Additional environmental costs and insurance recoveries are discussed below under Operating Impact of Lines 6A and 6B Crude Oil Release s.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.23809523809523808                        
+ - R-Prec: 0.8                        
+ - Pearson: 0.7176817684588086                        
+ - Truth: ['Additional', 'environmental', 'costs', 'insurance', 'recoveries']                        
+ - Predict: ['insurance', 'recoveries', 'costs', 'environmental', 'discussed', 'Release', 'Additional', 's.', 'Operating', 'Oil', 'Crude', '6B', 'Lines', 'below', '6A', 'Impact', 'under', 'are', 'and', 'of', 'and']
+# We provide services to our customers and returns for our unitholders primarily through the following activities:
+# We provide services to our customers and returns for our unitholders through our liquids business, which consists of interstate pipeline transportation and storage of crude oil and liquid petroleum.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3793103448275862                        
+ - R-Prec: 0.9090909090909091                        
+ - Pearson: 0.8424620195977898                        
+ - Truth: ['liquids', 'business,', 'interstate', 'pipeline', 'transportation', 'and', 'storage', 'crude', 'oil', 'liquid', 'petroleum.']                        
+ - Predict: ['liquids', 'consists', 'transportation', 'interstate', 'pipeline', 'business,', 'petroleum.', 'storage', 'crude', 'liquid', 'oil', 'unitholders', 'provide', 'of', 'and', 'of', 'which', 'and', 'customers', 'services', 'returns', 'We', 'our', 'for', 'through', 'and', 'our', 'to', 'our']
+# These results also include income from discontinued operations of $624,000, or $0.03 per diluted share, in 2012 primarily related to the sale of land associated with previously sold operations and $451,000, or $0.02 per diluted share, in 2011 relating to obligations associated with previously sold operations.
+# Income from discontinued operations of $ 1.1 million primarily related to the sale of land associated with previously sold operations Marketing Events U.S.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2608695652173913                        
+ - R-Prec: 0.8333333333333334                        
+ - Pearson: 0.6303847679532067                        
+ - Truth: ['$', '1.1', 'million', 'Marketing', 'Events', 'U.S.']                        
+ - Predict: ['Marketing', 'Events', '1.1', 'discontinued', 'million', 'U.S.', 'Income', 'operations', 'sold', 'operations', 'sale', 'land', '$', 'primarily', 'previously', 'associated', 'of', 'related', 'from', 'the', 'to', 'of', 'with']
+# Net Yields decreased 1.0% in 2015 compared to 2014 primarily due to the unfavorable effect of changes in foreign currency exchange rates related to our passenger ticket revenue transactions denominated in currencies other than the US dollar noted above.
+# The effect of changes in foreign currency exchange rates related to our passenger ticket and onboard and other revenue transactions and cruise operating expenses denominated in currencies other than the United States dollar resulted in a decrease to total revenues of $187.9 million for the year ended December 31, 2016 compared to the same period in 2015 and a decrease to cruise operating expenses of $40.9 million for the year ended December 31, 2016 compared to the same period in 2015 .                        
+ - Performance                        
+ - Recall: 1.0; P: 0.13414634146341464                        
+ - R-Prec: 0.2727272727272727                        
+ - Pearson: 0.4345993239315395                        
+ - Truth: ['of', 'decrease', 'to', 'total', 'revenues', '$187.9', 'million', 'cruise', 'operating', 'expenses', '$40.9']                        
+ - Predict: ['onboard', 'resulted', 'ended', 'ended', 'States', '$40.9', '$187.9', 'expenses', 'United', 'expenses', 'period', 'period', 'revenues', 'cruise', 'total', 'cruise', 'December', 'December', 'million', 'million', 'decrease', 'operating', 'operating', 'year', '31,', '31,', 'year', 'decrease', 'ticket', 'revenue', '2016', 'dollar', 'passenger', 'transactions', '2016', '.', 'effect', 'compared', 'other', 'compared', 'changes', 'denominated', 'same', 'same', 'of', 'foreign', '2015', 'exchange', 'in', 'rates', 'of', 'and', 'to', 'the', 'a', 'the', 'and', 'The', '2015', 'currency', 'and', 'a', 'currencies', 'for', 'and', 'for', 'to', 'the', 'the', 'to', 'related', 'the', 'of', 'in', 'to', 'in', 'than', 'to', 'other', 'in', 'in', 'our']
+# Net cash used in financing activities was $253.5 million for 2015 compared to Net cash provided by financing activities of $17.5 million in 2014.
+# Net cash used in financing activities was $2.7 billion in 2017 compared to Net cash provided in financing activities of $243.8 million in 2016 .                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2                        
+ - R-Prec: 0.6                        
+ - Pearson: 0.7896846051652218                        
+ - Truth: ['$2.7', 'billion', 'in', '$243.8', 'million']                        
+ - Predict: ['$243.8', '$2.7', 'billion', 'Net', '.', '2016', '2017', 'Net', 'million', 'cash', 'financing', 'cash', 'compared', 'financing', 'was', 'activities', 'activities', 'in', 'provided', 'of', 'used', 'in', 'to', 'in', 'in']
+# Commercial vehicle products had their best year ever with double-digit sales growth and improved operating margin driven by strength in the North American heavy duty truck market and integration-related cost savings.
+# For the CVP business, the main contributor to sales was the North American heavy duty truck market.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.23529411764705882                        
+ - R-Prec: 1.0                        
+ - Pearson: 0.8205837931415698                        
+ - Truth: ['main', 'contributor', 'CVP', 'business,']                        
+ - Predict: ['contributor', 'CVP', 'business,', 'main', 'sales', 'heavy', 'truck', 'North', 'market.', 'American', 'duty', 'to', 'the', 'For', 'the', 'was', 'the']
+# The decrease in amortization of intangibles was primarily related to lower amortization expense at Dating due to certain intangible assets becoming fully amortized, and the inclusion in the prior year of a $3.4 million impairment charge associated with an indefinite-lived intangible asset related to the CityGrid restructuring, partially offset by amortization of intangibles related to recent acquisitions.
+# The operating income decline was due to the decrease in Adjusted EBITDA, an $88.0 million impairment charge related to certain indefinite-lived intangible assets at Publishing, an increase of $45.8 million in stock-based compensation ($29.2 million at Match Group and $15.8 million at Corporate) and a $14.1 million goodwill impairment charge at Other.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4230769230769231                        
+ - R-Prec: 0.8181818181818182                        
+ - Pearson: 0.5751743039184699                        
+ - Truth: ['operating', 'income', 'decline', 'decrease', 'in', 'Adjusted', 'EBITDA,', '$88.0', 'million', 'impairment', 'charge', 'Publishing,', 'increase', '$45.8', 'stock-based', 'compensation', '($29.2', 'Match', 'Group', '$15.8', '$14.1', 'goodwill']                        
+ - Predict: ['intangible', 'EBITDA,', '$88.0', 'decline', '$14.1', 'Publishing,', 'impairment', '$45.8', 'Adjusted', 'goodwill', '($29.2', 'impairment', 'stock-based', '$15.8', 'income', 'operating', 'indefinite-lived', 'Corporate)', 'Match', 'Group', 'compensation', 'increase', 'charge', 'charge', 'million', 'Other.', 'assets', 'million', 'million', 'million', 'decrease', 'million', 'and', 'at', 'and', 'certain', 'at', 'at', 'in', 'at', 'an', 'due', 'an', 'a', 'related', 'The', 'of', 'in', 'the', 'to', 'was', 'to']
+# Cash used by investing activities decreased mainly due to the slowdown in construction for infrastructure, and proceeds from the sale of property.
+# The decrease in cash used by investing activities was primarily due to the receipt of proceeds from the sale of California Assets by SPPC and telecommunication towers by NPC, as discussed in Note 16, Assets Held for Sale, of the Notes to Financial Statements.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5909090909090909                        
+ - R-Prec: 0.8076923076923077                        
+ - Pearson: 0.5455987712873748                        
+ - Truth: ['decrease', 'the', 'receipt', 'of', 'proceeds', 'from', 'sale', 'California', 'Assets', 'by', 'SPPC', 'telecommunication', 'towers', 'NPC,', 'as', 'discussed', 'in', 'Note', '16,', 'Held', 'for', 'Sale,', 'Notes', 'to', 'Financial', 'Statements.']                        
+ - Predict: ['discussed', 'SPPC', 'Financial', 'towers', 'NPC,', 'receipt', 'Statements.', 'telecommunication', 'Notes', 'California', 'Held', 'Note', 'Assets', '16,', 'decrease', 'Assets', 'Sale,', 'sale', 'primarily', 'as', 'in', 'cash', 'the', 'and', 'investing', 'to', 'proceeds', 'of', 'for', 'of', 'by', 'by', 'The', 'was', 'activities', 'the', 'used', 'due', 'to', 'in', 'of', 'the', 'by', 'from']
+# At year-end 2014 , demand deposits represented 27% of total deposits, savings represented 56% and time deposits represented 17%.
+# At year-end 2016 , demand deposits represented 31% of total deposits, savings represented 54% and time deposits represented 15%.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.15789473684210525                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.694733108489427                        
+ - Truth: ['31%', '54%', '15%.']                        
+ - Predict: ['15%.', '54%', 'demand', 'savings', 'time', '31%', '2016', 'year-end', 'represented', 'represented', 'represented', 'deposits', 'deposits', 'deposits,', 'total', ',', 'At', 'of', 'and']
+# Currency affected net revenues favorably by approximately $23 million.
+# Currency favorably impacted other SG A by approximately $10 million.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.7                        
+ - R-Prec: 0.8571428571428571                        
+ - Pearson: 0.2081317307579137                        
+ - Truth: ['favorably', 'impacted', 'other', 'SG', 'A', '$10', 'million.']                        
+ - Predict: ['favorably', 'approximately', 'SG', 'impacted', 'A', '$10', 'other', 'Currency', 'million.', 'by']
+# Product gross profit margin decrease d from 32% in 2013 to 30% in 2014 .
+# Product gross profit margin decrease d from 30% in 2014 to 29% in 2015 .                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3333333333333333                        
+ - R-Prec: 0.4                        
+ - Pearson: 0.035131836073615134                        
+ - Truth: ['from', '30%', 'in', 'to', '29%']                        
+ - Predict: ['2015', 'Product', '29%', 'gross', '30%', 'decrease', 'margin', 'profit', '.', '2014', 'd', 'to', 'in', 'from', 'in']
+********************************            
+File: fin10k.eval.type1.easy.results-further-finetune-ll            
+Mean precision: 0.3125460303378294            
+Mean recall   : 1.0              
+Mean f1-score : 0.46530685861549            
+Mean Pearson  : 0.548313485708885            
+Mean RPrecision: 0.6751073072102359            
+Num of evaluated samples: 98            
+********************************
