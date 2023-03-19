@@ -1,6 +1,10 @@
 # A Compare-and-contrast Multistage Pipeline for Uncovering Financial Signals in Financial Reports
 
-> This repo is the temporary anonymous repositary for double-blind reviews.
+This repo is the temporary anonymous repositary for double-blind reviews.
+
+We releasd our FINAL (FINancial-ALpha) dataset, including the pseudo-labeled training data and the humna-annotated labels.
+
+---
 
 ## FINAL_v1.0 Dataset
 The data used in this paper includes one (pseudo) labeled training dataset and two set of evaluation data.
@@ -12,8 +16,8 @@ The data used in this paper includes one (pseudo) labeled training dataset and t
 Split  | Type       | Descrption       | Number of Pairs |
 ---    | ---        | ---              | ---    |
 Train  | Revised    | Pseudo-label     | 30000  |
-Eval   | Revised    | Human-annotation | 200    |
-Eval   | Mismatched | Human-annotation | 200    |
+Eval   | Revised $\mathcal(T)^{\alpha}_1$   | Human-annotation | 200    |
+Eval   | Mismatched $\mathcal(T)^{\alpha}_2$| Human-annotation | 200    |
 
 - Data example 
 Note that we use the 'jsonl' format; each line in files is an instance.
@@ -21,15 +25,15 @@ An instance is compiled into a 'dict' object as one line in the file.
 
 Key     | contents | Descrption |
 ---     | ---      | ---- |              
-sentA   | raw text (string) | the `reference` segment in a report.
-sentB   | raw text (string) | the `target` segment in a report.
-wordsA  | a list of strings | splitted tokens of `sentA`.
-wordsB  | a list of strings | splitted tokens of `sentB`.
-words   | A list of strings | splitted tokens of `sentB` and `sentB`, seperated by `<tag>`.
-labels  | A list of labels (binary). | Human annotation: final binary labeling is based on agreement of annotators.
-probs   | A list of labels (float).  | Human annotation: final fine-grained labeling is based on the average of annontated binary labels.
-keywordsA  | a list of strings | the annotated tokens.
-keywordsB  | a list of strings | the annotated tokens. 
+`sentA`   | raw text (string) | the `reference` segment in a report.
+`sentB`   | raw text (string) | the `target` segment in a report.
+`wordsA`  | a list of strings | splitted tokens of `sentA`.
+`wordsB`  | a list of strings | splitted tokens of `sentB`.
+`words`   | A list of strings | splitted tokens of `sentB` and `sentB`, seperated by `<tag>`.
+`labels`  | A list of labels (binary). | Human annotation: final binary labeling is based on agreement of annotators.
+`probs`   | A list of labels (float).  | Human annotation: final fine-grained labeling is based on the average of annontated binary `labels`.
+`keywordsA`  | a list of strings | the annotated tokens.
+`keywordsB`  | a list of strings | the annotated tokens. 
 
 ```
 {
@@ -57,9 +61,12 @@ S_1   | Relation recognition    | Using ROUGE and SBERT cosine score to identify
 S_2 & S_2+| In-domain/Out-domain fine-tuning  | Two-stage domain-adaptive training using out-domain e-SNLI dataset and pseudo-labeld pairs with "revised" relations.
 
 1. Document Segmentation
-TBD
+
+> TBD
+
 2. Segments Alignment
-TBD
+
+> TBD
 
 3. Sentence Highlighting
-See [highlighting](highlighting/) for detail.
+See [highlighting](highlighting/README.md) for detail.
