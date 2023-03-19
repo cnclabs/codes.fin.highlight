@@ -1,8 +1,24 @@
 # Other codes
 
 This stage mainly includes the following process.
+- FINAL data building
+
+
+# Build FINAL data from scratch
+You can run the following shell scripts.
+
+```
+# parsing
+bash run_parse_fin10K_eval_data.sh
+bash run_parse_fin10K_train_data.sh
+
+# synthesize
+bash run_create_fin10K_eval_data.sh
+bash run_create_fin10K_train_data.sh
+```
 
 ## Annoation reliability
+Calculate the annoation reliabilty via Fleiss-kappa.
 ```
 # revised 
 python3 tools/calculate_rater_reliability.py \
