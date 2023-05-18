@@ -1,0 +1,810 @@
+Loading prediction fin10k.eval.type1.hard.results-further-finetune-sl-smooth-2
+# The guidance requires the use of a risk free interest rate based on the implied yield currently available on zero coupon government issues of the country in whose currency the exercise price is expressed, with a remaining term equal to the expected life of the option being valued.
+# ASC 470-20 regarding debt with conversion and other options requires the issuer of a convertible debt instrument that may be settled in cash upon conversion to separately account for the liability (debt) and equity (conversion option) components of the instrument in a manner that reflects the issuer s nonconvertible debt borrowing rate.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.40384615384615385                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.6003129799832896                        
+ - Truth: ['ASC', '470-20', 'regarding', 'debt', 'with', 'conversion', 'settled', 'in', 'cash', 'upon', 'the', 'reflects', 'issuer', 's', 'nonconvertible', 'borrowing', 'rate.', 'convertible', 'instrument', 'separately', 'account']                        
+ - Predict: ['nonconvertible', 'convertible', 'debt', 'debt', 'borrowing', 'settled', '470-20', 'cash', 'equity', 'liability', 'instrument', 'conversion', 'conversion', 'debt', 'ASC', 'separately', '(conversion', '(debt)', 'rate.', 'account', 'in', 'components', 'issuer', 'issuer', 'regarding', 'instrument', 'reflects', 'options', 'option)', 'may', 'requires', 'manner', 'upon', 's', 'be', 'and', 'other', 'a', 'for', 'of', 'to', 'the', 'the', 'with', 'the', 'and', 'the', 'of', 'that', 'that', 'in', 'a']
+# In an effort to limit the number of future claims from multi-unit buildings, we have implemented policy exclusions in recent years that limit subcontractor coverage on any building project with more than 12 units or on single family homes in any subdivision where the contractor is working on more than 15 homes.
+# For the majority of our residential contractors we limit the size of any tracts the contractor is working on to 25 homes or less and removed the continuous trigger with our designated work exclusion.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.47058823529411764                        
+ - R-Prec: 0.8125                        
+ - Pearson: 0.7010300764409024                        
+ - Truth: ['residential', 'contractors', 'limit', 'size', 'of', 'any', 'tracts', 'the', '25', 'homes', 'or', 'less', 'removed', 'continuous', 'trigger', 'designated']                        
+ - Predict: ['25', 'tracts', 'homes', 'less', 'removed', 'size', 'trigger', 'continuous', 'majority', 'designated', 'contractors', 'residential', 'work', 'limit', 'exclusion.', 'or', 'working', 'any', 'contractor', 'to', 'of', 'the', 'on', 'is', 'the', 'the', 'our', 'our', 'we', 'with', 'of', 'For', 'the', 'and']
+# In 2014, the net loss ratio increased 16.7 percentage points compared to 2013.
+# In 2015, the loss ratio increased slightly as compared to 2014 due to a single large claim incurred in the first quarter of 2015.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4166666666666667                        
+ - R-Prec: 0.8                        
+ - Pearson: 0.7252288319821635                        
+ - Truth: ['increased', 'slightly', 'single', 'large', 'claim', 'incurred', 'first', 'quarter', 'of', '2015.']                        
+ - Predict: ['slightly', 'claim', 'single', 'large', 'incurred', 'quarter', '2015,', '2015.', 'increased', 'loss', 'first', 'due', 'ratio', '2014', 'compared', 'In', 'to', 'a', 'the', 'of', 'to', 'in', 'as', 'the']
+# The increase in cash flow from operating activities is primarily due to changes in operating liabilities and is partially offset by a reduction in property operating income.
+# As a result of the percentage changes in property rental income and property operating expenses, the operating margin (property net operating income divided by property rental income) decreased to 66.1% as compared to 66.7% in the comparable period in the prior year.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2857142857142857                        
+ - R-Prec: 0.75                        
+ - Pearson: 0.42800264985261466                        
+ - Truth: ['percentage', 'changes', 'in', 'property', 'rental', 'income', 'operating', 'expenses,', 'margin', 'decreased', 'to', '66.1%']                        
+ - Predict: ['margin', '66.1%', 'percentage', 'decreased', 'net', '66.7%', 'rental', 'expenses,', 'income', 'divided', 'changes', 'operating', 'operating', '(property', 'compared', 'rental', 'period', 'result', 'year.', 'comparable', 'prior', 'income)', 'income', 'property', 'operating', 'to', 'property', 'property', 'to', 'by', 'the', 'in', 'and', 'the', 'of', 'in', 'As', 'in', 'the', 'the', 'as', 'a']
+# As a result, we have been seeking to expand our interests in communities located in California, Boston, Metropolitan D.C., Oregon and Washington state markets over the past years.
+# As a result, we repurchased notes with a notional value of $10.8 million, representing approximately 6.44% of the $167.8 million in aggregate principal amount outstanding, and expensed $207,000 of unamortized financing costs during the three months ended March 31, 2011.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.45                        
+ - R-Prec: 0.6111111111111112                        
+ - Pearson: 0.4753010816949839                        
+ - Truth: ['repurchased', 'notes', 'with', 'a', 'notional', 'value', 'of', '$10.8', 'million,', '6.44%', 'the', '$167.8', 'million', 'expensed', '$207,000', 'unamortized', 'financing', 'costs']                        
+ - Predict: ['repurchased', 'notes', '$207,000', '$10.8', '$167.8', 'unamortized', '31,', 'months', '6.44%', 'expensed', 'March', 'financing', '2011.', 'costs', 'three', 'million,', 'aggregate', 'outstanding,', 'ended', 'principal', 'representing', 'million', 'value', 'notional', 'approximately', 'amount', 'we', 'result,', 'of', 'of', 'during', 'with', 'the', 'of', 'in', 'the', 'a', 'As', 'and', 'a']
+# The decrease in the effective tax rate during 2015 as compared to the prior year is primarily due to a one-time $0.6 million benefit in 2015 for a change in tax legislation related to the U.S. Tax Court opinion in the Altera case, and an immaterial out-of-period error recorded in 2014 that increased tax expense by $0.5 million.
+# In addition, Event costs increased by $0.8 million in 2017 due to the holding of larger events, and professional services costs increased by $0.5 million due to increased spending on the digitization of our Analytics products.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3888888888888889                        
+ - R-Prec: 0.7857142857142857                        
+ - Pearson: 0.6443655847158603                        
+ - Truth: ['Event', 'costs', 'increased', '$0.8', 'million', 'larger', 'events,', 'professional', 'services', '$0.5', 'spending', 'digitization', 'Analytics', 'products.']                        
+ - Predict: ['services', 'professional', 'digitization', 'events,', 'Event', 'Analytics', 'costs', 'larger', 'costs', 'holding', 'products.', 'spending', '$0.8', '2017', 'increased', 'addition,', 'increased', 'increased', 'of', 'our', '$0.5', 'of', 'million', 'on', 'the', 'in', 'due', 'to', 'the', 'and', 'million', 'by', 'due', 'to', 'In', 'by']
+# We expect net periodic pension cost in 2011 to approximate net periodic pension cost recognized in 2010.
+# The return of the typical pricing pressure for our established MOSFETs products has reduced average selling prices from the historically high levels experienced beginning in 2010.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5                        
+ - R-Prec: 0.9230769230769231                        
+ - Pearson: 0.8197016983005817                        
+ - Truth: ['typical', 'pricing', 'pressure', 'established', 'MOSFETs', 'products', 'reduced', 'average', 'selling', 'prices', 'historically', 'high', '2010.']                        
+ - Predict: ['selling', 'pricing', 'reduced', 'prices', 'average', 'typical', 'pressure', 'MOSFETs', 'products', 'return', 'historically', 'high', 'established', 'levels', 'experienced', 'beginning', '2010.', 'of', 'the', 'our', 'The', 'from', 'for', 'has', 'in', 'the']
+# This decrease is primarily due the amounts repaid on the Credit Facility, partially offset by the issuance of the convertible debentures due 2041 and an increase in stockholder s equity primarily driven by net earnings available to Vishay stockholders.
+# Following this reduction in the amount outstanding under the facility, the carrying value of our long-term debt is approximately the same as the carrying value of debt prior to the May 2012 issuance of the convertible debentures due 2042.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.23076923076923078                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.7404721155673661                        
+ - Truth: ['reduction', 'outstanding', 'the', 'carrying', 'value', 'long-term', 'debt', 'same', 'as']                        
+ - Predict: ['carrying', 'long-term', 'reduction', 'debt', 'carrying', 'debt', 'value', 'outstanding', 'value', 'same', 'approximately', 'Following', 'May', '2012', 'amount', 'of', 'prior', 'as', 'under', 'facility,', 'our', 'issuance', 'the', 'in', 'the', 'of', 'the', 'this', 'is', '2042.', 'the', 'the', 'convertible', 'debentures', 'to', 'the', 'due', 'the', 'of']
+# The remaining changes in investing activities is the net result of cash used to acquire the Arboretum Apartment and Eagle Village Student Housing properties; the Briarwood Manor, GMF-Madison and GMF-Warren/Tulane tax-exempt and taxable bonds offset by the release of cash upon foreclosure of the DeCordova and Weatherford properties; the retirement of the Clarkson College and Briarwood Manor bonds; and the repayment of a taxable loan by the Foundation for Affordable Housing.
+# The Company received cash from the sale of the GMF-Madison Tower and GMF-Warren/Tulane tax-exempt mortgage revenue bonds, the restructuring of the Arbors at Hickory Ridge tax-exempt mortgage revenue bond, the sale of a mortgage-backed security, the sale of the Churchland and the Eagle Ridge properties, and the net release of restricted cash of approximately $47.5 million.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.30357142857142855                        
+ - R-Prec: 0.6470588235294118                        
+ - Pearson: 0.5441269800624711                        
+ - Truth: ['cash', 'sale', 'tax-exempt', 'mortgage', 'revenue', 'Arbors', 'at', 'Hickory', 'Ridge', 'mortgage-backed', 'security,', 'Churchland', 'the', 'Eagle', 'properties,', '$47.5', 'million.']                        
+ - Predict: ['Churchland', '$47.5', 'restricted', 'Hickory', 'restructuring', 'Tower', 'Arbors', 'sale', 'Ridge', 'security,', 'million.', 'revenue', 'Company', 'mortgage', 'mortgage-backed', 'revenue', 'received', 'sale', 'mortgage', 'sale', 'approximately', 'Ridge', 'cash', 'bonds,', 'cash', 'bond,', 'GMF-Madison', 'properties,', 'the', 'Eagle', 'release', 'the', 'tax-exempt', 'of', 'of', 'of', 'the', 'from', 'at', 'net', 'and', 'the', 'and', 'tax-exempt', 'a', 'GMF-Warren/Tulane', 'The', 'of', 'of', 'the', 'of', 'the', 'the', 'the', 'the', 'and']
+# While the Partnership and the Funds have the right to seek lower commission rates from other commodity brokers at any time, the General Partner believes that the customer agreements and other arrangements with the commodity broker are fair, reasonable, and competitive.
+# Management has concluded that based on available information in the marketplace, the Funds Level 1 assets and liabilities are actively traded.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3333333333333333                        
+ - R-Prec: 0.7142857142857143                        
+ - Pearson: 0.3571085429141906                        
+ - Truth: ['Funds', 'Level', '1', 'assets', 'liabilities', 'actively', 'traded.']                        
+ - Predict: ['traded.', 'actively', 'Management', 'assets', 'liabilities', 'Level', 'concluded', '1', 'marketplace,', 'information', 'available', 'Funds', 'based', 'are', 'and', 'has', 'that', 'on', 'in', 'the', 'the']
+# See Part I - Item 1 - Business - Government Regulation in this Annual Report on Form 10-K.
+# The amendments in this update are effective for public companies for annual or any interim goodwill impairments tests in fiscal years beginning after December 15, 2019.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3076923076923077                        
+ - R-Prec: 0.875                        
+ - Pearson: 0.7681916019522584                        
+ - Truth: ['amendments', 'public', 'companies', 'interim', 'goodwill', 'impairments', 'tests', 'effective']                        
+ - Predict: ['tests', 'impairments', 'goodwill', 'companies', 'amendments', 'public', '15,', 'effective', 'interim', 'December', 'years', '2019.', 'fiscal', 'beginning', 'annual', 'update', 'after', 'for', 'are', 'The', 'any', 'for', 'in', 'or', 'in', 'this']
+# PSE recognized qualified pension expense of $6.6 million, expense of $8.0 million and income of $3.3 million for the years ended December 31, 2011, 2010 and 2009, respectively.
+# At December 31, 2012 and 2011, the Company s qualified pension plan was $85.1 million and $86.2 million underfunded as measured under GAAP, or 86.2% and 84.8% funded respectively.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2413793103448276                        
+ - R-Prec: 0.7142857142857143                        
+ - Pearson: 0.8060725772425807                        
+ - Truth: ['$85.1', 'million', '$86.2', 'underfunded', 'GAAP,', '86.2%', '84.8%']                        
+ - Predict: ['$85.1', '$86.2', '84.8%', '86.2%', 'underfunded', 'plan', 'funded', 'measured', 'Company', 'million', 'GAAP,', 'million', '2012', 'pension', '2011,', 'December', 'qualified', 'and', 'under', 'and', 's', 'respectively.', 'or', '31,', 'was', 'At', 'the', 'and', 'as']
+# These expenses, in conjunction with continued development efforts related to our Celution System, result primarily from the broad expansion of our research and development efforts.
+# We are actively investigating broadening the use of our technology platform into other areas as well, through internal research and that of our partners.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.25                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.7177100221670002                        
+ - Truth: ['broadening', 'technology', 'platform', 'internal', 'research', 'partners.']                        
+ - Predict: ['investigating', 'internal', 'broadening', 'technology', 'research', 'actively', 'platform', 'use', 'partners.', 'areas', 'the', 'our', 'other', 'well,', 'of', 'into', 'through', 'We', 'our', 'that', 'of', 'are', 'and', 'as']
+# The cost of revenue for the year ended December 31, 2012 and 2011 was $25,707,893 and $24,133,073, respectively.
+# These currencies operate primarily as the functional currency for the Company s U.S., U.K. and Japanese operations, respectively .                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3157894736842105                        
+ - R-Prec: 0.8333333333333334                        
+ - Pearson: 0.8997118897504164                        
+ - Truth: ['currencies', 'functional', 'currency', 'U.S.,', 'U.K.', 'Japanese']                        
+ - Predict: ['currencies', 'functional', 'currency', 'Japanese', 'U.K.', 'operate', 'U.S.,', 'primarily', 'operations,', 'Company', 'respectively', 'These', 'the', 'and', 'as', 's', 'for', 'the', '.']
+# Revenues and operating expenses are primarily denominated in the currencies of the countries in which our operations are located, the U.S., U.K. and Japan.
+# Said forward-looking statements involve risks and uncertainties that may cause the actual results, performance or achievements of the Company to be materially different from any future results, performance or achievements, express or implied by such forward-looking statements.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.24324324324324326                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.8030514288400743                        
+ - Truth: ['forward-looking', 'statements', 'risks', 'uncertainties', 'materially', 'different', 'actual', 'results,', 'performance']                        
+ - Predict: ['risks', 'uncertainties', 'statements', 'implied', 'forward-looking', 'different', 'involve', 'results,', 'future', 'actual', 'materially', 'results,', 'express', 'performance', 'performance', 'achievements', 'Company', 'achievements,', 'cause', 'statements.', 'forward-looking', 'from', 'and', 'Said', 'may', 'be', 'any', 'or', 'the', 'or', 'such', 'the', 'to', 'by', 'of', 'or', 'that']
+# The table below details the percentage of revenues and expenses by the three principal currencies for the fiscal years ended December 31, 2013 and December 31, 2012:
+# The Company incurred $0.5 million, $0.4 million and $0.6 million of interest expense during 2014, 2013 and 2012, respectively.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3684210526315789                        
+ - R-Prec: 0.7142857142857143                        
+ - Pearson: 0.7729909456829431                        
+ - Truth: ['$0.5', 'million,', '$0.4', 'million', '$0.6', 'interest', 'expense']                        
+ - Predict: ['$0.5', '$0.4', '$0.6', 'interest', 'Company', 'expense', 'incurred', 'million', 'million,', 'respectively.', '2014,', 'million', 'and', 'of', '2013', 'The', 'during', '2012,', 'and']
+# The Amendment provided for (1) a limited waiver to the minimum tangible net worth financial covenant, (2) a modification of the minimum tangible net worth financial covenant, and (3) a modification to the interest rate such that the interest will accrue at a per annum rate equal to 2.50 percentage points above the prime rate, payable monthly.
+# As a result of the private placement and public offering of our common stock, the newly re-calculated minimum tangible net worth is approximately $7.5 million.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.48                        
+ - R-Prec: 0.8333333333333334                        
+ - Pearson: 0.7730951128160358                        
+ - Truth: ['private', 'placement', 'public', 'common', 'stock,', 're-calculated', 'minimum', 'tangible', '$7.5', 'million.', 'offering', 'newly']                        
+ - Predict: ['$7.5', 'million.', 'private', 'offering', 'placement', 'public', 're-calculated', 'stock,', 'common', 'newly', 'approximately', 'worth', 'result', 'tangible', 'net', 'minimum', 'our', 'of', 'is', 'and', 'the', 'of', 'the', 'a', 'As']
+# In September 2011, pursuant to the Investment Agreement, we issued, for $75.0 million in cash: (i) an aggregate of 75,000 shares of our Series A Convertible Perpetual Preferred Stock (the Series A Preferred Stock ), which are initially convertible into an aggregate of 10,714,286 shares of our common stock, and (ii) warrants initially exercisable for an aggregate of 10,714,286 shares of our common stock at an initial exercise price of $7.00 per common share (the Warrants ).
+# Management believes that these estimates are reasonable and has discussed them with the audit committee of our board of directors.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.1                        
+ - R-Prec: 0.0                        
+ - Pearson: 0.495459687096313                        
+ - Truth: ['estimates', 'reasonable']                        
+ - Predict: ['audit', 'committee', 'discussed', 'Management', 'estimates', 'reasonable', 'directors.', 'board', 'believes', 'of', 'them', 'are', 'the', 'with', 'these', 'our', 'of', 'that', 'has', 'and']
+# This increase was driven largely by the acquisitions of Turbo, 3PD, Covered, Interide, East Coast Air Charter, and Optima, as well as the organic growth of our freight brokerage cold-start locations.
+# We have built XPO to capitalize on this trend, as well as the trend toward outsourcing in both transportation and logistics, the boom in e-commerce, the adoption of just-in-time inventory practices, and the near-shoring in Mexico.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3611111111111111                        
+ - R-Prec: 0.7692307692307693                        
+ - Pearson: 0.7008805045399616                        
+ - Truth: ['XPO', 'capitalize', 'this', 'trend,', 'outsourcing', 'transportation', 'logistics,', 'e-commerce,', 'just-in-time', 'inventory', 'practices,', 'near-shoring', 'Mexico.']                        
+ - Predict: ['XPO', 'built', 'e-commerce,', 'just-in-time', 'near-shoring', 'outsourcing', 'inventory', 'Mexico.', 'practices,', 'boom', 'adoption', 'logistics,', 'transportation', 'trend,', 'trend', 'capitalize', 'toward', 'both', 'in', 'in', 'We', 'have', 'in', 'and', 'of', 'to', 'the', 'and', 'well', 'the', 'the', 'on', 'this', 'the', 'as', 'as']
+# The Company evaluates the appropriateness of the valuation methodology utilized by the third party valuation firm.
+# The acquisition of the Great Escape Theatres circuit enhanced Regal's presence in Georgia, Illinois, Indiana, Kentucky, Missouri, Nebraska, Ohio, Pennsylvania, South Carolina, Tennessee and West Virginia.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.7692307692307693                        
+ - R-Prec: 0.95                        
+ - Pearson: 0.681556263095201                        
+ - Truth: ['acquisition', 'Great', 'Escape', 'Theatres', 'Georgia,', 'Illinois,', 'Indiana,', 'Kentucky,', 'Missouri,', 'Nebraska,', 'Ohio,', 'Pennsylvania,', 'South', 'Carolina,', 'Tennessee', 'West', 'Virginia.', 'circuit', "Regal's", 'presence']                        
+ - Predict: ['Carolina,', 'Georgia,', 'Tennessee', 'Pennsylvania,', 'Illinois,', 'Missouri,', 'Kentucky,', 'Ohio,', 'Virginia.', 'South', 'Indiana,', 'West', 'Nebraska,', 'Theatres', 'Escape', "Regal's", 'Great', 'circuit', 'acquisition', 'enhanced', 'presence', 'and', 'in', 'the', 'The', 'of']
+# If these estimates or their related assumptions change in the future, we may be required to record impairment charges for these assets in future periods.
+# The decrease in cost of concessions as a percentage of concessions revenues during the Fiscal 2012 Period was primarily related to an increase in the amount of vendor marketing revenue recorded as a reduction of cost of concessions during the Fiscal 2012 Period, partially offset by slightly higher raw material costs for certain items.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3333333333333333                        
+ - R-Prec: 0.7777777777777778                        
+ - Pearson: 0.7672490987030588                        
+ - Truth: ['decrease', 'cost', 'of', 'concessions', 'increase', 'vendor', 'marketing', 'revenue', 'recorded', 'reduction', 'offset', 'by', 'slightly', 'higher', 'raw', 'material', 'costs', 'revenues']                        
+ - Predict: ['raw', 'material', 'decrease', 'marketing', 'vendor', 'reduction', 'cost', 'concessions', 'increase', 'costs', 'higher', 'concessions', 'revenue', 'revenues', 'cost', 'offset', 'percentage', 'primarily', 'items.', 'related', 'concessions', 'amount', 'slightly', 'in', 'partially', 'recorded', 'Fiscal', 'certain', '2012', 'of', 'in', 'of', 'of', 'Period', 'the', 'Fiscal', '2012', 'of', 'Period,', 'of', 'a', 'The', 'an', 'to', 'by', 'as', 'for', 'a', 'as', 'was', 'during', 'the', 'the', 'during']
+# Due to improving market conditions, we expect the minimum aggregate contributions to our non-U.S. and U.S. plans in 2011, subject to applicable law, to be $6 million.
+# Certain of our non-U.S. income tax returns have been examined for the 2002 through 2008 periods and audit claims have been assessed for approximately $262 million (including interest and penalties), primarily in Mexico.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3333333333333333                        
+ - R-Prec: 0.8181818181818182                        
+ - Pearson: 0.7749250710367457                        
+ - Truth: ['non-U.S.', 'income', 'tax', 'returns', 'examined', '$262', 'million', 'Mexico.', 'audit', 'claims', 'assessed']                        
+ - Predict: ['$262', 'income', 'tax', 'returns', 'Mexico.', 'examined', 'audit', 'penalties),', 'interest', 'claims', 'assessed', '2002', 'Certain', 'million', 'primarily', '(including', 'approximately', 'periods', '2008', 'and', 'non-U.S.', 'through', 'in', 'been', 'of', 'our', 'for', 'have', 'been', 'have', 'for', 'and', 'the']
+# This standard was not early adopted in connection with the Spin-off.
+# In February 2016, we entered into an agreement in principle for a settlement with Paragon Offshore under which, in exchange for a full and unconditional release of any claims by Paragon Offshore in connection with the Spin-off (including certain claims that could be brought on behalf of Paragon Offshore s creditors), we agreed to assume the administration of Mexican tax claims for specified years up to and including 2010, as well as the related bonding obligations and certain of the related tax liabilities.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.20481927710843373                        
+ - R-Prec: 0.5882352941176471                        
+ - Pearson: 0.6478300448239308                        
+ - Truth: ['agreement', 'Paragon', 'Offshore', 'for', 'full', 'unconditional', 'release', 'Spin-off', 'agreed', 'assume', 'Mexican', 'tax', 'claims', 'bonding', 'obligations', 'related', 'liabilities.']                        
+ - Predict: ['agreement', 'bonding', 'settlement', 'full', 'Mexican', 'principle', 'administration', 'obligations', 'assume', '2016,', 'liabilities.', 'entered', 'unconditional', 'February', 'claims', 'release', 'claims', 'tax', 'specified', 'claims', 'creditors),', '2010,', 'agreed', 'exchange', 'Offshore', 'into', 'years', 'related', 'tax', 'Paragon', 'related', 'including', 'Offshore', 'brought', 'certain', 'Offshore', 'Paragon', '(including', 'an', 'with', 'Paragon', 'behalf', 'up', 'certain', 'under', 'we', 'in', 'In', 'a', 'any', 'to', 'could', 'the', 'for', 's', 'to', 'and', 'we', 'Spin-off', 'by', 'well', 'of', 'and', 'of', 'a', 'the', 'for', 'of', 'connection', 'be', 'of', 'as', 'for', 'the', 'which,', 'on', 'and', 'in', 'the', 'that', 'with', 'as', 'in']
+# The increase was due mainly to the higher average number of customer deposit accounts as a result of the increase in deposits .
+# For example, whether a lease is similar to a sale of the underlying asset depends on whether the lessee, in effect, obtains control of the underlying asset as a result of the lease.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.30303030303030304                        
+ - R-Prec: 0.8                        
+ - Pearson: 0.7252641456128157                        
+ - Truth: ['lease', 'similar', 'sale', 'underlying', 'asset', 'obtains', 'control', 'of', 'the', 'lessee,']                        
+ - Predict: ['lease', 'sale', 'lessee,', 'control', 'obtains', 'asset', 'similar', 'lease.', 'underlying', 'asset', 'underlying', 'depends', 'effect,', 'example,', 'whether', 'to', 'is', 'a', 'of', 'whether', 'a', 'of', 'the', 'the', 'result', 'in', 'the', 'For', 'on', 'the', 'of', 'as', 'a']
+# We expect to fund the growth capital expenditures from the proceeds of planned and completed asset sales, at-the-market equity issuances and borrowings under our credit facility, as well as contributions by joint venture partners that relate to the non-controlling interest share of our consolidated entities.
+# ASU 2016-12 clarifies certain core recognition principles, including collectability, sales tax presentation, noncash consideration, contract modifications and completed contracts at transition and disclosures no longer required if the full retrospective transition method is adopted.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.6764705882352942                        
+ - R-Prec: 0.8695652173913043                        
+ - Pearson: 0.7243263965883462                        
+ - Truth: ['ASU', '2016-12', 'core', 'recognition', 'principles,', 'collectability,', 'sales', 'tax', 'presentation,', 'noncash', 'consideration,', 'contract', 'modifications', 'completed', 'contracts', 'disclosures', 'no', 'longer', 'required', 'full', 'retrospective', 'transition', 'method']                        
+ - Predict: ['retrospective', 'modifications', 'tax', 'collectability,', 'recognition', 'noncash', 'contract', 'sales', 'transition', 'presentation,', 'consideration,', 'clarifies', 'principles,', 'disclosures', 'core', 'transition', 'contracts', 'method', 'full', '2016-12', 'required', 'ASU', 'adopted.', 'completed', 'no', 'longer', 'certain', 'including', 'is', 'the', 'if', 'at', 'and', 'and']
+# Results of operations of Rio Grande and the $14.5 million gain on the sale are presented in discontinued operations.
+# This includes $5.5 million in revenues attributable to a crude pipeline revenue settlement with HFC.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.6                        
+ - R-Prec: 0.7777777777777778                        
+ - Pearson: 0.7902689141095662                        
+ - Truth: ['$5.5', 'million', 'revenues', 'crude', 'pipeline', 'revenue', 'settlement', 'with', 'HFC.']                        
+ - Predict: ['$5.5', 'crude', 'pipeline', 'revenues', 'settlement', 'revenue', 'attributable', 'HFC.', 'includes', 'million', 'in', 'to', 'with', 'a', 'This']
+# This standard will become effective beginning with our 2018 reporting year.
+# Finally, consistent with our existing policy, we have elected to account for forfeitures on an estimated basis.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.29411764705882354                        
+ - R-Prec: 0.8                        
+ - Pearson: 0.807126240796112                        
+ - Truth: ['account', 'for', 'forfeitures', 'estimated', 'basis.']                        
+ - Predict: ['forfeitures', 'account', 'elected', 'estimated', 'basis.', 'for', 'policy,', 'existing', 'consistent', 'Finally,', 'to', 'we', 'have', 'an', 'on', 'with', 'our']
+# This expense did not recur in 2012.
+# We divested several smaller business lines during 2012.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.625                        
+ - R-Prec: 1.0                        
+ - Pearson: 0.8735533467748636                        
+ - Truth: ['divested', 'several', 'smaller', 'business', 'lines']                        
+ - Predict: ['divested', 'smaller', 'lines', 'business', 'several', 'We', '2012.', 'during']
+# As agreed with the FDA, the primary endpoint of the Phase 3 studies will be clinical improvement in the SRI-8 response at 52 weeks.
+# Rather, the analysis suggests that the observed data conforms with the assumptions upon which the trial was designed.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3333333333333333                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.46400219532693693                        
+ - Truth: ['observed', 'data', 'conforms', 'with', 'the', 'assumptions']                        
+ - Predict: ['observed', 'data', 'conforms', 'Rather,', 'assumptions', 'suggests', 'analysis', 'trial', 'designed.', 'with', 'upon', 'the', 'that', 'was', 'the', 'the', 'the', 'which']
+# Deferred tax assets and liabilities are recognized for the future tax consequences attributable to differences between carrying amount of assets and liabilities for financial reporting purposes and the amounts used for income tax purposes.
+# If we cannot determine which estimate in the range is most likely, the amounts within the ranges that would result in the lowest profit margin (the lowest contract revenue estimate and the highest contract cost estimate) is used.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3157894736842105                        
+ - R-Prec: 0.4166666666666667                        
+ - Pearson: 0.336627283814052                        
+ - Truth: ['estimate', 'most', 'likely,', 'the', 'lowest', 'profit', 'margin', 'in', 'range', 'result', 'contract', 'highest']                        
+ - Predict: ['profit', 'contract', 'contract', 'cost', 'revenue', 'margin', 'lowest', 'estimate)', 'estimate', 'estimate', 'cannot', 'ranges', 'lowest', 'determine', 'range', 'likely,', 'amounts', 'highest', 'result', 'most', 'within', 'which', 'used.', 'we', 'would', 'in', 'If', 'the', 'is', '(the', 'in', 'the', 'the', 'the', 'is', 'and', 'the', 'that']
+# A material, sustained downturn in revenue could make it more challenging for the Company to meet debt covenants under its existing long-term debt agreements.
+# Without the execution of the Eleventh Amendment for the applicable periods the Company would have been required to reclassify all of its long-term debt as a current liability at March 31, 2012.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.46875                        
+ - R-Prec: 0.8                        
+ - Pearson: 0.7196560386649332                        
+ - Truth: ['Without', 'the', 'execution', 'Eleventh', 'Amendment', 'applicable', 'periods', 'required', 'to', 'reclassify', 'long-term', 'debt', 'current', 'liability', 'of']                        
+ - Predict: ['reclassify', 'execution', 'Amendment', 'liability', 'Eleventh', 'current', 'Without', 'required', 'applicable', '31,', 'March', '2012.', 'periods', 'debt', 'the', 'all', 'the', 'Company', 'of', 'long-term', 'its', 'to', 'of', 'would', 'as', 'a', 'at', 'have', 'been', 'for', 'the', 'the']
+# The 3% decrease of $1.8 million was primarily the result of decreased agribusiness and real estate development revenue, as detailed below:
+# This decrease was partially offset by increased lemon, specialty citrus and other crops and real estate development revenues of $1.0 million, $0.7 million and $0.2 million, respectively.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5925925925925926                        
+ - R-Prec: 0.6875                        
+ - Pearson: 0.5428135075426095                        
+ - Truth: ['offset', 'by', 'increased', 'lemon,', 'specialty', 'citrus', 'crops', 'real', 'estate', 'development', 'revenues', '$1.0', 'million,', '$0.7', 'million', '$0.2']                        
+ - Predict: ['lemon,', '$0.2', 'citrus', 'offset', 'crops', 'specialty', '$0.7', 'partially', '$1.0', 'respectively.', 'increased', 'million,', 'decrease', 'other', 'by', 'and', 'revenues', 'million', 'and', 'development', 'real', 'million,', 'estate', 'was', 'This', 'of', 'and']
+# Pursuant to the Joint Venture agreement, the Joint Venture will own, develop, subdivide, entitle, maintain, improve, hold for investment, market and dispose of the Joint Venture s property in accordance with the business plan and budget approved by the executive committee.
+# Business Combinations and Asset Acquisitions Business Combinations are accounted for under the acquisition method in accordance with ASC 805, Business Combinations .                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4090909090909091                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.6562674681511454                        
+ - Truth: ['Business', 'Combinations', 'and', 'Asset', 'Acquisitions', 'acquisition', 'ASC', '805,', 'accordance']                        
+ - Predict: ['acquisition', 'Combinations', 'Asset', 'Acquisitions', 'Business', 'accounted', 'ASC', 'Combinations', 'method', 'Combinations', '805,', 'Business', 'Business', 'for', 'under', 'accordance', 'the', 'and', 'with', 'are', 'in', '.']
+# We also issued approximately 872,000 Shares in payment of accrued and unpaid interest on Notes accepted in the Exchanges from the applicable last interest payment date to, but not including, March 28, 2016.
+# Product sales are recorded net of all sales related deductions, including but not limited to: customer loyalty programs, trade discounts, fee for service agreements, sales returns and allowances, commercial and government rebates, and chargebacks.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5294117647058824                        
+ - R-Prec: 0.8333333333333334                        
+ - Pearson: 0.8506303575196233                        
+ - Truth: ['Product', 'sales', 'related', 'deductions,', 'customer', 'loyalty', 'programs,', 'trade', 'discounts,', 'fee', 'service', 'agreements,', 'returns', 'allowances,', 'commercial', 'government', 'rebates,', 'chargebacks.']                        
+ - Predict: ['sales', 'Product', 'discounts,', 'loyalty', 'rebates,', 'sales', 'sales', 'chargebacks.', 'returns', 'programs,', 'fee', 'trade', 'agreements,', 'customer', 'recorded', 'allowances,', 'deductions,', 'service', 'commercial', 'government', 'related', 'limited', 'net', 'all', 'for', 'and', 'of', 'not', 'and', 'including', 'are', 'to:', 'and', 'but']
+# Management individually reviews all accounts receivable balances and, based on an assessment of current creditworthiness, estimates the portion, if any, of the balance that will not be collected.
+# The estimates of recovery can change based on actual experience and therefore can affect the level of reserves we place on existing accounts receivables.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4583333333333333                        
+ - R-Prec: 0.8181818181818182                        
+ - Pearson: 0.7131216056648856                        
+ - Truth: ['estimates', 'recovery', 'actual', 'experience', 'affect', 'the', 'level', 'reserves', 'existing', 'accounts', 'receivables.']                        
+ - Predict: ['experience', 'actual', 'recovery', 'reserves', 'existing', 'estimates', 'level', 'change', 'affect', 'accounts', 'place', 'receivables.', 'of', 'based', 'on', 'of', 'can', 'therefore', 'can', 'the', 'we', 'on', 'The', 'and']
+# We also had negative cash flows from investing activities of approximately $502,000, primarily related to purchase of other assets.
+# Through Finjan, we own a portfolio of patents, related to software that proactively detects malicious code and thereby protects end users from identity and data theft, spyware, malware, phishing, trojans and other online threats.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5294117647058824                        
+ - R-Prec: 0.8333333333333334                        
+ - Pearson: 0.537749632961806                        
+ - Truth: ['Finjan,', 'patents,', 'software', 'proactively', 'detects', 'malicious', 'code', 'protects', 'end', 'users', 'identity', 'data', 'theft,', 'spyware,', 'malware,', 'phishing,', 'trojans', 'portfolio']                        
+ - Predict: ['patents,', 'own', 'portfolio', 'software', 'Finjan,', 'phishing,', 'trojans', 'malware,', 'detects', 'spyware,', 'theft,', 'malicious', 'code', 'data', 'threats.', 'protects', 'identity', 'online', 'users', 'of', 'proactively', 'end', 'related', 'a', 'we', 'Through', 'thereby', 'from', 'to', 'other', 'and', 'and', 'that', 'and']
+# These gains were partially offset by long positions in agricultural markets which detracted due to the reversal in grain prices during the second half of July.
+# As a result, Trading Advisors were net long broadly heading into mid-quarter, and gains were partially offset by poor performance in certain regions like Japan.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.6                        
+ - R-Prec: 0.7333333333333333                        
+ - Pearson: 0.5585092517904453                        
+ - Truth: ['Trading', 'Advisors', 'heading', 'into', 'gains', 'offset', 'by', 'poor', 'performance', 'Japan.', 'mid-quarter,', 'partially', 'certain', 'regions', 'like']                        
+ - Predict: ['poor', 'performance', 'Trading', 'mid-quarter,', 'Advisors', 'Japan.', 'regions', 'net', 'result,', 'heading', 'broadly', 'certain', 'like', 'long', 'into', 'offset', 'were', 'gains', 'in', 'by', 'partially', 'a', 'As', 'were', 'and']
+# In the future, we may also securitize a portion of our investments in first and second lien senior loans or unsecured debt or other assets.
+# The borrower may also elect to have multiple interest reset periods for each loan.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5                        
+ - R-Prec: 1.0                        
+ - Pearson: 0.8154182618248589                        
+ - Truth: ['borrower', 'multiple', 'interest', 'reset', 'periods', 'loan.', 'elect']                        
+ - Predict: ['reset', 'interest', 'periods', 'multiple', 'elect', 'borrower', 'loan.', 'have', 'each', 'to', 'for', 'also', 'may', 'The']
+# The following table provides selected financial data about our company for the years ended December 31, 2010 and 2009.
+# We had no revenues or cost of goods sold during the fiscal years ended December 31, 2011 and 2010.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.42105263157894735                        
+ - R-Prec: 0.75                        
+ - Pearson: 0.6680941883438122                        
+ - Truth: ['no', 'revenues', 'cost', 'of', 'goods', 'sold', '2011', '2010.']                        
+ - Predict: ['revenues', 'no', 'cost', 'goods', 'sold', 'had', 'fiscal', '2011', 'or', 'of', 'We', 'years', '2010.', 'and', '31,', 'December', 'during', 'ended', 'the']
+# The Company had limited operations during the period from November 16, 2007 (date of inception) to December 31, 2010 and generated a net loss of $70,681.
+# The Company received a rent credit of $9,420 in each of the months of November 2010, December 2010 and January 2011.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.19047619047619047                        
+ - R-Prec: 0.75                        
+ - Pearson: 0.7727253320690067                        
+ - Truth: ['rent', 'credit', '$9,420', 'of']                        
+ - Predict: ['$9,420', 'rent', 'credit', '2011.', 'January', 'received', 'months', '2010,', '2010', 'December', 'Company', 'each', 'a', 'November', 'of', 'and', 'in', 'of', 'the', 'of', 'The']
+# See Item 1 "Business Environmental and Other Regulatory Matters Global Climate Change" and Item 1A "Risk Factors" for additional discussion regarding how climate change and other environmental regulatory matters impact our business.
+# This will negatively impact our future realized prices.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5                        
+ - R-Prec: 1.0                        
+ - Pearson: 0.9008938553506208                        
+ - Truth: ['negatively', 'future', 'realized', 'prices.']                        
+ - Predict: ['prices.', 'realized', 'negatively', 'future', 'impact', 'our', 'will', 'This']
+# * * I hereby certify that the foregoing First Amendment was duly adopted by the Compensation Committee of the Board of Directors of Hyatt Hotels Corporation on December 16, 2010.
+# Contemporaneously with the receipt by the Trust of shares of Hyatt Common Stock, joins in and agrees to be bound by the terms and conditions of the A/R Global Hyatt Agreement; and 3.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.45454545454545453                        
+ - R-Prec: 0.8                        
+ - Pearson: 0.5597073589757576                        
+ - Truth: ['receipt', 'Trust', 'of', 'shares', 'Hyatt', 'Common', 'Stock,', 'joins', 'in', 'bound', 'A/R', 'Global', 'Agreement;', 'Contemporaneously', 'the']                        
+ - Predict: ['Contemporaneously', 'Trust', '3.', 'Stock,', 'receipt', 'Common', 'shares', 'Global', 'joins', 'agrees', 'bound', 'Agreement;', 'A/R', 'terms', 'Hyatt', 'conditions', 'and', 'Hyatt', 'in', 'by', 'of', 'with', 'the', 'of', 'and', 'be', 'by', 'the', 'the', 'the', 'to', 'of', 'and']
+# NOW, THEREFORE, the Company hereby amends the Plan in the following particulars:
+# NOW, THEREFORE, the undersigned, in his capacity as trustee of the Trust, adopts the foregoing recitals and, for the benefit of all parties to the A/R Global Hyatt Agreement, hereby: 1. Acknowledges receipt and review of the A/R Global Hyatt Agreement; 2.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.38095238095238093                        
+ - R-Prec: 0.5625                        
+ - Pearson: 0.2768718606534937                        
+ - Truth: ['undersigned,', 'capacity', 'trustee', 'of', 'the', 'Trust,', 'foregoing', 'recitals', 'benefit', 'all', 'parties', 'A/R', 'Global', 'Hyatt', 'Agreement,', 'hereby:']                        
+ - Predict: ['Acknowledges', 'undersigned,', 'review', 'receipt', 'recitals', 'adopts', 'trustee', 'Trust,', 'foregoing', 'parties', '2.', 'Agreement;', 'capacity', 'benefit', '1.', 'Agreement,', 'Hyatt', 'and', 'all', 'Hyatt', 'A/R', 'Global', 'A/R', 'the', 'of', 'Global', 'of', 'the', 'as', 'the', 'his', 'of', 'the', 'for', 'THEREFORE,', 'NOW,', 'the', 'the', 'to', 'hereby:', 'in', 'and,']
+# WHEREAS , the Plan provides certain severance benefits to executives of the Hyatt Hotels Corporation (the Company ) and its affiliates in the event of an involuntary termination of employment; and WHEREAS , the Company desires to clarify the timing of releases under the Plan to be consistent with the terms of Section 409A of the Internal Revenue Code of 1986, as amended and the IRS Notices.
+# Contemporaneously with the receipt by the Trust of shares of Hyatt Common Stock, the Trustee hereby joins in and agrees to be bound by the terms and conditions of the Foreign GH Agreement.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5757575757575758                        
+ - R-Prec: 0.8421052631578947                        
+ - Pearson: 0.6704946186013268                        
+ - Truth: ['Trust', 'of', 'shares', 'Hyatt', 'Common', 'Stock,', 'joins', 'in', 'bound', 'by', 'Foreign', 'GH', 'Agreement.', 'the', 'Trustee', 'agrees', 'terms', 'and', 'conditions']                        
+ - Predict: ['Trust', 'Trustee', 'Stock,', 'Contemporaneously', 'Agreement.', 'Common', 'Foreign', 'GH', 'receipt', 'shares', 'bound', 'agrees', 'joins', 'conditions', 'terms', 'hereby', 'Hyatt', 'in', 'of', 'of', 'by', 'the', 'and', 'by', 'with', 'be', 'the', 'the', 'the', 'the', 'to', 'of', 'and']
+# In connection with the Annual Report of Hyatt Hotels Corporation (the Company ) on Form 10-K for the year ended December 31, 2010, as filed with the Securities and Exchange Commission on the date hereof (the Report ), the undersigned officer of the Company certifies, pursuant to 18 U.S.C. Section 1350, as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002, that, to such officer s knowledge:
+# (b) All parties to this Agreement and their counsel, Joined Agents and other representatives will refrain from all ex parte contacts with the Arbitrator.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4583333333333333                        
+ - R-Prec: 0.8181818181818182                        
+ - Pearson: 0.8307521344812768                        
+ - Truth: ['All', 'parties', 'refrain', 'from', 'ex', 'parte', 'contacts', 'Arbitrator.', 'counsel,', 'Joined', 'Agents']                        
+ - Predict: ['refrain', 'contacts', 'parte', 'parties', 'ex', 'Arbitrator.', 'from', 'Joined', '(b)', 'Agents', 'Agreement', 'representatives', 'counsel,', 'all', 'All', 'with', 'the', 'other', 'will', 'this', 'their', 'to', 'and', 'and']
+# In connection with the Annual Report of Hyatt Hotels Corporation (the Company ) on Form 10-K for the year ended December 31, 2010, as filed with the Securities and Exchange Commission on the date hereof (the Report ), the undersigned officer of the Company certifies, pursuant to 18 U.S.C. Section 1350, as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002, that, to such officer s knowledge:
+# Associates are expected to comply with the Code and all applicable government laws, rules and regulations.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.625                        
+ - R-Prec: 0.9                        
+ - Pearson: 0.706366302644207                        
+ - Truth: ['Associates', 'comply', 'with', 'Code', 'applicable', 'government', 'laws,', 'rules', 'regulations.', 'all']                        
+ - Predict: ['comply', 'Associates', 'Code', 'expected', 'laws,', 'government', 'rules', 'regulations.', 'applicable', 'with', 'and', 'the', 'to', 'all', 'and', 'are']
+# In connection with the Annual Report of Hyatt Hotels Corporation (the Company ) on Form 10-K for the year ended December 31, 2010, as filed with the Securities and Exchange Commission on the date hereof (the Report ), the undersigned officer of the Company certifies, pursuant to 18 U.S.C. Section 1350, as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002, that, to such officer s knowledge:
+# The Trust was heretofore established for the benefit of William J. G. Pritzker.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.6153846153846154                        
+ - R-Prec: 1.0                        
+ - Pearson: 0.8372721555642                        
+ - Truth: ['Trust', 'heretofore', 'established', 'benefit', 'William', 'J.', 'G.', 'Pritzker.']                        
+ - Predict: ['Pritzker.', 'Trust', 'G.', 'J.', 'William', 'established', 'benefit', 'heretofore', 'of', 'the', 'for', 'was', 'The']
+# Effective as of January 1, 2009, Section 1.5 of the Plan is amended by adding the following thereto: Notwithstanding the foregoing, no Change in Control shall exist unless it shall constitute a change in control event as defined in Treasury Regulation 1.409A-3(i)(5).
+# This Acknowledgement and Joinder may be executed in one or more counterparts, each of which shall be deemed to constitute an original and all of which together shall constitute one document.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.41935483870967744                        
+ - R-Prec: 0.7692307692307693                        
+ - Pearson: 0.7575567537826188                        
+ - Truth: ['Acknowledgement', 'Joinder', 'executed', 'in', 'one', 'more', 'counterparts,', 'deemed', 'to', 'constitute', 'original', 'shall', 'document.']                        
+ - Predict: ['executed', 'Acknowledgement', 'Joinder', 'counterparts,', 'document.', 'one', 'original', 'one', 'deemed', 'more', 'constitute', 'together', 'each', 'constitute', 'or', 'may', 'an', 'all', 'shall', 'to', 'and', 'be', 'in', 'This', 'be', 'of', 'shall', 'of', 'which', 'which', 'and']
+# No. 333-172468 and No. 333-176038 on Form S-3 of our reports dated February 13, 2013 relating to the consolidated financial statements and financial statement schedule of Hyatt Hotels Corporation and subsidiaries (the Company ), and the effectiveness of the Company s internal control over financial reporting, appearing in this Annual Report on Form 10-K of the Company for the year ended December 31, 2012.
+# The noncomparable increase was due primarily to a full year of contribution from the acquisition of 23 properties during 2011, two properties acquired in 2012 and the opening of one leased property in 2012, partially offset by 11 hotels that were sold or otherwise left the chain during 2011 and eight hotels sold in 2012.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.43636363636363634                        
+ - R-Prec: 0.7916666666666666                        
+ - Pearson: 0.8145778056744098                        
+ - Truth: ['noncomparable', 'increase', 'full', 'year', 'of', 'contribution', 'acquisition', '23', 'properties', 'two', 'acquired', 'opening', 'one', 'leased', 'property', 'offset', 'by', '11', 'hotels', 'sold', 'left', 'the', 'chain', 'eight']                        
+ - Predict: ['leased', 'property', 'noncomparable', 'full', 'contribution', 'properties', 'hotels', 'increase', 'opening', 'sold', 'eight', '11', '23', 'sold', 'acquisition', 'one', 'offset', 'hotels', 'properties', 'year', 'chain', 'due', 'primarily', 'left', 'two', 'partially', 'acquired', 'otherwise', '2011,', '2011', 'of', '2012.', '2012', '2012,', 'the', 'from', 'to', 'of', 'a', 'by', 'of', 'were', 'the', 'or', 'during', 'in', 'that', 'in', 'the', 'The', 'in', 'during', 'was', 'and', 'and']
+# We believe we are organized and operating in such a manner as to qualify to be taxed as a REIT for the taxable year ended December 31, 2010.
+# We believe that, since real estate values historically rise and fall with market conditions, including inflation, interest rates, the business cycle, unemployment and consumer spending, presentations of operating results for a REIT using historical accounting for depreciation may be less informative.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.6585365853658537                        
+ - R-Prec: 0.8888888888888888                        
+ - Pearson: 0.7287191422605346                        
+ - Truth: ['real', 'estate', 'values', 'historically', 'rise', 'fall', 'with', 'market', 'conditions,', 'presentations', 'of', 'operating', 'results', 'REIT', 'using', 'historical', 'accounting', 'depreciation', 'less', 'informative.', 'inflation,', 'interest', 'rates,', 'business', 'cycle,', 'consumer', 'spending,']                        
+ - Predict: ['estate', 'real', 'values', 'informative.', 'presentations', 'less', 'unemployment', 'results', 'fall', 'depreciation', 'historical', 'inflation,', 'rise', 'accounting', 'consumer', 'interest', 'business', 'conditions,', 'market', 'spending,', 'cycle,', 'rates,', 'operating', 'historically', 'may', 'including', 'using', 'and', 'be', 'REIT', 'believe', 'for', 'with', 'of', 'since', 'and', 'for', 'a', 'that,', 'We', 'the']
+# Gross Profit For fiscal 2014, gross profit decreased $12.3 million, or 4.0%, to $292.2 million, from $304.5 million for fiscal 2013.
+# Operating income for fiscal 2016 was negatively impacted by the $5.9 million in restructuring and other charges described above under Gross Profit and Selling, General, and Administrative Expenses.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5714285714285714                        
+ - R-Prec: 0.875                        
+ - Pearson: 0.7064097699265159                        
+ - Truth: ['Operating', 'income', 'negatively', 'impacted', '$5.9', 'million', 'restructuring', 'charges', 'under', 'Gross', 'Profit', 'and', 'Selling,', 'General,', 'Administrative', 'Expenses.']                        
+ - Predict: ['$5.9', 'restructuring', 'negatively', 'impacted', 'Selling,', '2016', 'Administrative', 'General,', 'Expenses.', 'Operating', 'income', 'charges', 'million', 'described', 'Gross', 'Profit', 'in', 'under', 'fiscal', 'by', 'and', 'the', 'was', 'and', 'for', 'above', 'other', 'and']
+# Restructuring expenses reflect costs associated with the Company s efforts to continuously improve operational efficiency and expand globally in order to remain competitive in the end-user markets we serve.
+# The restructuring and acquisition-related costs have been discussed above in the Company Overview.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.23076923076923078                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.7284033808397594                        
+ - Truth: ['restructuring', 'acquisition-related', 'costs']                        
+ - Predict: ['acquisition-related', 'discussed', 'costs', 'Overview.', 'restructuring', 'Company', 'above', 'and', 'have', 'been', 'The', 'in', 'the']
+# The Capital Markets group s mortgage portfolio decreased to $633.1 billion as of December 31, 2012 from $708.4 billion as of December 31, 2011 primarily due to liquidations, partially offset by purchases of delinquent loans from MBS trusts as discussed below.
+# Partially offsetting these cash inflows were cash outflows from: (1) the acquisition of mortgage loans and advances to lenders, (2) funding debt redemptions outpacing debt issuances, due to lower funding needs, and (3) the acquisition of delinquent loans out of MBS trusts.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5476190476190477                        
+ - R-Prec: 0.6956521739130435                        
+ - Pearson: 0.391972214041108                        
+ - Truth: ['Partially', 'offsetting', 'cash', 'inflows', 'outflows', 'from:', 'acquisition', 'of', 'mortgage', 'loans', 'advances', 'lenders,', 'funding', 'debt', 'redemptions', 'outpacing', 'issuances,', 'lower', 'needs,', 'delinquent', 'out', 'MBS', 'trusts.']                        
+ - Predict: ['advances', 'outflows', 'cash', 'inflows', 'funding', 'acquisition', 'cash', 'redemptions', 'acquisition', '(3)', 'issuances,', 'outpacing', 'debt', '(2)', 'funding', 'needs,', 'lower', 'lenders,', 'offsetting', 'debt', 'loans', '(1)', 'out', 'loans', 'mortgage', 'Partially', 'trusts.', 'delinquent', 'MBS', 'to', 'were', 'of', 'the', 'from:', 'these', 'of', 'and', 'of', 'the', 'due', 'and', 'to']
+# Pass through securities receive principal as principal of the underlying mortgages is received.
+# Each type of specialized ancillary product protects against damage or other loss to a particular aspect of the underlying asset.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.45                        
+ - R-Prec: 0.7777777777777778                        
+ - Pearson: 0.670268493774808                        
+ - Truth: ['specialized', 'ancillary', 'product', 'against', 'damage', 'loss', 'underlying', 'asset.', 'other']                        
+ - Predict: ['protects', 'ancillary', 'damage', 'loss', 'product', 'specialized', 'type', 'asset.', 'against', 'aspect', 'Each', 'other', 'particular', 'underlying', 'or', 'of', 'the', 'of', 'to', 'a']
+# The EROA assumption is based on a combination of formal asset and liability studies that include forward-looking return expectations, given the current asset allocation.
+# The valuation multiples are based on a combination of the last twelve months ( LTM ) financial measures of revenue, earnings before interest, taxes, depreciation and amortization ( EBITDA ) and earnings before interest and taxes ( EBIT ).                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3333333333333333                        
+ - R-Prec: 0.6923076923076923                        
+ - Pearson: 0.791552678231157                        
+ - Truth: ['valuation', 'multiples', 'last', 'twelve', 'months', 'EBITDA', 'EBIT', 'revenue,', 'earnings', 'before', 'taxes,', 'depreciation', 'amortization']                        
+ - Predict: ['twelve', 'months', 'last', 'LTM', 'valuation', 'measures', 'EBITDA', 'EBIT', 'multiples', 'revenue,', 'earnings', 'financial', 'earnings', 'taxes', 'depreciation', 'taxes,', 'amortization', 'interest', 'interest,', 'combination', 'before', 'before', 'based', 'and', 'of', 'the', 'of', '(', 'and', 'and', 'on', 'The', 'a', '(', '(', 'are', ')', ').', ')']
+# Net cash used in financing activities increased $874 million for the year ended December 31, 2013 as compared with the prior year due to the net pay-down of debt in 2013 of approximately $811 million compared with borrowing under the Original Senior DIP Credit Agreement in 2012.
+# The maximum secured leverage ratio permitted under the Senior Secured First Lien Term Credit Agreement (which is more restrictive than the corresponding ratio permitted under the Senior Secured Second Lien Term Credit Agreement) declined on June 30, 2015 from 3.75:1 to 3.25:1 and declined again on December 31, 2015 from 3.25:1 to 2.75:1, with no further adjustments for the remainder of the agreement.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.47619047619047616                        
+ - R-Prec: 0.6333333333333333                        
+ - Pearson: 0.42738472071340217                        
+ - Truth: ['maximum', 'secured', 'leverage', 'ratio', 'Senior', 'Secured', 'First', 'Lien', 'Term', 'Credit', 'Agreement', 'restrictive', 'corresponding', 'permitted', 'under', 'the', 'Second', 'Agreement)', 'declined', '3.75:1', 'to', '3.25:1', 'again', '2.75:1,', 'with', 'no', 'further', 'adjustments', 'from', 'agreement.']                        
+ - Predict: ['leverage', '2.75:1,', 'secured', '3.25:1', '3.75:1', '3.25:1', 'maximum', 'Second', 'ratio', 'adjustments', 'First', 'declined', 'June', 'declined', '2015', 'no', 'Secured', 'remainder', 'restrictive', 'Secured', '2015', 'Lien', 'Term', 'Lien', '30,', 'permitted', 'ratio', 'permitted', 'corresponding', 'further', 'Term', 'agreement.', 'more', 'Credit', 'Agreement', 'to', 'December', 'Senior', 'Credit', 'to', 'again', 'Senior', 'Agreement)', 'from', 'than', 'The', '31,', 'from', 'on', 'on', 'and', 'of', 'the', 'is', 'for', 'the', 'with', 'the', 'the', 'under', 'the', 'under', '(which']
+# To the extent that it is more likely than not that all or a portion of our deferred tax assets in a particular jurisdiction will not be realized, a valuation allowance is recorded.
+# A full valuation allowance is maintained on the tax benefits of the U.S. net deferred tax assets and it is expected that a full valuation allowance on future tax benefits will be recorded until an appropriate level of profitability in the U.S. is sustained.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.38636363636363635                        
+ - R-Prec: 0.7058823529411765                        
+ - Pearson: 0.678466408110277                        
+ - Truth: ['full', 'valuation', 'allowance', 'maintained', 'tax', 'benefits', 'U.S.', 'net', 'deferred', 'assets', 'on', 'future', 'appropriate', 'level', 'of', 'profitability', 'sustained.']                        
+ - Predict: ['full', 'maintained', 'full', 'future', 'profitability', 'benefits', 'sustained.', 'net', 'benefits', 'allowance', 'expected', 'level', 'appropriate', 'valuation', 'U.S.', 'U.S.', 'allowance', 'tax', 'valuation', 'tax', 'deferred', 'assets', 'is', 'tax', 'on', 'of', 'recorded', 'the', 'until', 'on', 'is', 'an', 'A', 'in', 'the', 'be', 'a', 'that', 'the', 'of', 'will', 'is', 'it', 'and']
+# Recovery of these costs will be reflected in the rates anticipated to be effective January 1, 2018, in accordance with the currently filed Massachusetts distribution rate case.
+# Certain terms defined in the New England Power AC Support Agreement are used herein with the meanings there provided.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3684210526315789                        
+ - R-Prec: 0.8571428571428571                        
+ - Pearson: 0.7665527360044727                        
+ - Truth: ['New', 'England', 'Power', 'AC', 'Support', 'Agreement', 'herein']                        
+ - Predict: ['England', 'New', 'terms', 'Power', 'Support', 'AC', 'Agreement', 'meanings', 'defined', 'Certain', 'used', 'provided.', 'herein', 'in', 'the', 'there', 'are', 'with', 'the']
+# We prepared our consolidated financial statements for inclusion in this report in accordance with GAAP.
+# We also incurred additional expenditures in this region for surface acreage, infrastructure and operating facilities.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5333333333333333                        
+ - R-Prec: 1.0                        
+ - Pearson: 0.92219456386645                        
+ - Truth: ['incurred', 'additional', 'expenditures', 'surface', 'acreage,', 'infrastructure', 'operating', 'facilities.']                        
+ - Predict: ['expenditures', 'acreage,', 'incurred', 'surface', 'additional', 'facilities.', 'infrastructure', 'operating', 'region', 'also', 'for', 'We', 'and', 'in', 'this']
+# The facility matures on August 13, 2013 and accrues interest at a variable rate equal to the bank s prime rate plus 300 basis points with a minimum annual interest rate of 5.25%.
+# In both choices, an entity is required to present each component of net income along with total net income, each component of other comprehensive income along with a total for other comprehensive income, and a total amount for comprehensive income.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3                        
+ - R-Prec: 0.5833333333333334                        
+ - Pearson: 0.7069608846294813                        
+ - Truth: ['present', 'each', 'component', 'net', 'income', 'total', 'income,', 'comprehensive', 'amount', 'for', 'income.', 'entity']                        
+ - Predict: ['income', 'net', 'present', 'net', 'income,', 'choices,', 'total', 'total', 'amount', 'comprehensive', 'total', 'required', 'income', 'entity', 'component', 'income.', 'both', 'income,', 'comprehensive', 'comprehensive', 'component', 'each', 'of', 'to', 'other', 'along', 'with', 'each', 'for', 'a', 'In', 'other', 'an', 'with', 'for', 'a', 'is', 'along', 'of', 'and']
+# As part of our ambulatory treatment centers division, we manage and/or own outright or in partnerships with physicians, 5 surgical hospitals and surgery and radiation oncology centers located in 4 states.
+# At December 31, 2014, we had $330 million of outstanding borrowings and $30 million of additional capacity pursuant to the terms of our accounts receivable securitization program.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4444444444444444                        
+ - R-Prec: 0.9166666666666666                        
+ - Pearson: 0.7287245247440582                        
+ - Truth: ['$330', 'million', 'outstanding', 'borrowings', '$30', 'additional', 'capacity', 'pursuant', 'accounts', 'receivable', 'securitization', 'program.']                        
+ - Predict: ['borrowings', '$330', 'outstanding', 'capacity', '$30', 'accounts', 'additional', 'million', 'program.', 'securitization', 'receivable', '31,', 'December', 'terms', 'million', '2014,', 'pursuant', 'we', 'had', 'of', 'At', 'of', 'and', 'our', 'of', 'to', 'the']
+# Payment arrangements include prospectively determined rates per discharge, reimbursed costs, discounted charges and per diem payments.
+# Upon approval by CMS, the managed care payment component will consist of two categories of payments, pass-through payments and directed payments.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5238095238095238                        
+ - R-Prec: 0.7272727272727273                        
+ - Pearson: 0.6781234383606234                        
+ - Truth: ['approval', 'CMS,', 'managed', 'care', 'payment', 'component', 'pass-through', 'payments', 'directed', 'payments.', 'Upon']                        
+ - Predict: ['pass-through', 'directed', 'managed', 'care', 'payments.', 'payments', 'categories', 'approval', 'CMS,', 'payments,', 'two', 'payment', 'component', 'Upon', 'consist', 'and', 'by', 'of', 'will', 'of', 'the']
+# Full-year unit volumes declined in both Wire Drawing and Steel Tubing, reflecting weak bedding, furniture, and store fixtures end markets.
+# Amounts in both years were primarily attributable to tax benefits.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4                        
+ - R-Prec: 1.0                        
+ - Pearson: 0.8896527837647789                        
+ - Truth: ['Amounts', 'attributable', 'tax', 'benefits.']                        
+ - Predict: ['tax', 'benefits.', 'attributable', 'Amounts', 'primarily', 'to', 'both', 'years', 'were', 'in']
+# It is anticipated that this amount will be returned to members in cash in the second quarter of fiscal year 2015.
+# As a result of certain events and developments during fiscal year 2015 , the estimated CAH fair value was reduced below the carrying value, resulting in the recognition of an impairment charge of $111 million , of which $27 million was recorded in the second quarter and $80 million was recorded in the fourth quarter, which, together with CAH s operating losses, resulted in a reduction in CAH s carrying value to $117 million as of May 31, 2015 , from $239 million as of May 31, 2014 .                        
+ - Performance                        
+ - Recall: 1.0; P: 0.24719101123595505                        
+ - R-Prec: 0.7272727272727273                        
+ - Pearson: 0.6239298240441311                        
+ - Truth: ['certain', 'events', 'developments', 'estimated', 'CAH', 'fair', 'value', 'reduced', 'below', 'carrying', 'impairment', 'charge', '$111', 'million', '$27', '$80', 's', 'operating', 'losses,', 'reduction', 'in', '$117']                        
+ - Predict: ['$239', 'fair', 'carrying', '$80', 'reduced', 'value', '$117', 'reduction', 'carrying', '$27', 'below', 'losses,', 'operating', 'fourth', 'value,', '$111', 'value', 'impairment', 'million', 'estimated', 'recognition', 'developments', 'CAH', 'million', 'charge', 'recorded', 'million', 'million', 'resulted', 'CAH', 'events', 'recorded', 'May', 'the', 's', '31,', 'CAH', 'quarter,', 'together', 'million', 'May', 'certain', '2014', 'was', 'in', 'to', '31,', 's', 'result', 'resulting', 'second', 'from', 'quarter', '2015', 'in', 'a', 'and', '2015', 'year', 'with', 'fiscal', 'of', 'was', 'as', 'of', 'the', 'and', 'as', 'an', 'was', 'the', 'in', 'the', 'of', 'of', 'As', 'a', 'of', 'the', 'of', 'in', 'in', 'during', 'which', 'which,', ',', '.', ',', ',']
+# On the other hand, a construction participation loan in the amount of $3.6 million went into non-accrual status in the fourth quarter of 2010.
+# During the third quarter of 2011 certain sweep relationships, in the amount of approximately $37 million, that were previously classified as short term borrowings were discontinued and were moved to interest bearing checking accounts.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.47058823529411764                        
+ - R-Prec: 0.75                        
+ - Pearson: 0.7617255913056882                        
+ - Truth: ['sweep', 'relationships,', '$37', 'million,', 'previously', 'classified', 'short', 'term', 'borrowings', 'discontinued', 'interest', 'bearing', 'checking', 'accounts.', 'third', 'quarter']                        
+ - Predict: ['checking', 'accounts.', 'bearing', '$37', 'interest', 'sweep', 'relationships,', 'short', 'discontinued', 'term', 'moved', 'borrowings', 'approximately', 'classified', '2011', 'certain', 'third', 'million,', 'previously', 'to', 'quarter', 'were', 'were', 'amount', 'of', 'as', 'During', 'and', 'of', 'the', 'were', 'in', 'the', 'that']
+# The Financial Services Segment's revenues are generally based on the number of accounts/members or transactions processed.
+# ALPS derives revenue from asset servicing and asset distribution activities, which are generally based on a percentage of assets for which services are provided.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.375                        
+ - R-Prec: 0.8888888888888888                        
+ - Pearson: 0.8992987152316018                        
+ - Truth: ['ALPS', 'derives', 'asset', 'servicing', 'distribution', 'activities,', 'percentage', 'of', 'assets']                        
+ - Predict: ['ALPS', 'distribution', 'asset', 'assets', 'asset', 'servicing', 'percentage', 'activities,', 'derives', 'of', 'provided.', 'based', 'services', 'revenue', 'on', 'a', 'from', 'for', 'are', 'and', 'generally', 'which', 'are', 'which']
+# IOS also entered into a real estate agreement in the amount of $9.3 million and denominated in British Pounds, which is secured by real estate in the U.K. and matures in July 2018.
+# DST signed a new mutual fund registered account client in January 2013 which is expected to add approximately 0.1 million new accounts in the first quarter 2013.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.37037037037037035                        
+ - R-Prec: 0.8                        
+ - Pearson: 0.7302071164737696                        
+ - Truth: ['DST', 'new', 'mutual', 'fund', 'registered', 'account', 'client', '0.1', 'million', 'accounts']                        
+ - Predict: ['mutual', 'fund', 'DST', 'account', 'January', '0.1', 'registered', 'accounts', 'client', '2013', 'new', 'add', 'new', 'quarter', 'million', 'approximately', 'signed', '2013.', 'first', 'expected', 'a', 'in', 'to', 'in', 'the', 'is', 'which']
+# In addition to the actuarial assumptions discussed above, because we maintain a defined benefit pension plan in the U.K., the amount of recognized defined benefit pension expense and the amount of net pension asset and net pension liability will vary based upon relative changes in currency exchange rates.
+# In addition to the workforce reductions implemented through December 31, 2015, Kronos is also in the process of implementing other cost reduction initiatives throughout the organization, including the implementation of continued process productivity improvements.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.38235294117647056                        
+ - R-Prec: 0.8461538461538461                        
+ - Pearson: 0.7820967894910447                        
+ - Truth: ['workforce', 'reductions', 'Kronos', 'implementing', 'cost', 'reduction', 'initiatives', 'throughout', 'organization,', 'continued', 'process', 'productivity', 'improvements.']                        
+ - Predict: ['reduction', 'cost', 'workforce', 'reductions', 'productivity', 'Kronos', 'initiatives', 'process', 'implementing', 'improvements.', 'continued', 'implementation', '31,', 'December', 'implemented', 'process', '2015,', 'organization,', 'including', 'other', 'also', 'in', 'is', 'throughout', 'addition', 'of', 'the', 'the', 'through', 'of', 'the', 'to', 'the', 'In']
+# Depreciation expense is projected to increase $30 million to $40 million over 2013 levels, reflecting the proposed acceleration of the depreciation reserve as part of NSP-Minnesota s moderation plan in the Minnesota electric rate case.
+# The projected capital rider revenue reflects the transfer of the CACJA project from base rates to the rider per the settlement in the Colorado electric rate case.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4074074074074074                        
+ - R-Prec: 0.8181818181818182                        
+ - Pearson: 0.6953034033156736                        
+ - Truth: ['capital', 'rider', 'revenue', 'transfer', 'CACJA', 'project', 'base', 'rates', 'per', 'settlement', 'electric']                        
+ - Predict: ['Colorado', 'base', 'transfer', 'rider', 'settlement', 'CACJA', 'capital', 'revenue', 'rates', 'project', 'rider', 'per', 'projected', 'reflects', 'electric', 'from', 'rate', 'to', 'the', 'case.', 'the', 'the', 'of', 'the', 'in', 'the', 'The']
+# Xcel Energy Inc. is a public utility holding company.
+# Xcel Energy Inc. may recommit for one additional 364-day period from the December 2018 maturity date, subject to majority consent from lenders.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3181818181818182                        
+ - R-Prec: 0.7142857142857143                        
+ - Pearson: 0.7372746594446042                        
+ - Truth: ['recommit', 'additional', '364-day', 'period', 'from', 'maturity', 'date,']                        
+ - Predict: ['364-day', 'recommit', 'maturity', 'period', 'December', '2018', 'date,', 'lenders.', 'consent', 'majority', 'additional', 'may', 'subject', 'one', 'Xcel', 'from', 'Energy', 'Inc.', 'for', 'the', 'from', 'to']
+# In connection with the preferred stock offering discussed below, the Company agreed to not sell any ATM Shares for a period of one year from February 26, 2013.
+# In connection with the $50,000 reduction of the standby letter of credit in April 2013, the Company reduced the escrow deposit by $50,000.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.30434782608695654                        
+ - R-Prec: 0.8571428571428571                        
+ - Pearson: 0.8129826241578288                        
+ - Truth: ['$50,000', 'reduction', 'reduced', 'escrow', 'deposit', 'by', '$50,000.']                        
+ - Predict: ['$50,000', 'escrow', 'reduced', 'deposit', 'reduction', '$50,000.', 'standby', 'April', 'credit', 'letter', 'the', '2013,', 'by', 'of', 'Company', 'the', 'of', 'in', 'connection', 'the', 'the', 'with', 'In']
+# CONSOLIDATED RESULTS OF OPERATIONS Changes in components of Occidental's results of continuing operations are discussed below:
+# The 2014 and 2013 amounts include the results of Occidental's California operations.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.16666666666666666                        
+ - R-Prec: 0.5                        
+ - Pearson: 0.291258153696714                        
+ - Truth: ['California', 'operations.']                        
+ - Predict: ['California', '2013', '2014', 'amounts', 'include', 'operations.', 'and', 'results', "Occidental's", 'The', 'the', 'of']
+# The terms for ISND, ISSD and Block 12 expire in 2019, 2022 and 2017, respectively.
+# Production from Block 12 was not significant.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5714285714285714                        
+ - R-Prec: 0.75                        
+ - Pearson: 0.4286530881732651                        
+ - Truth: ['Block', '12', 'not', 'significant.']                        
+ - Predict: ['significant.', 'Production', 'not', 'Block', 'was', '12', 'from']
+# The average price for NGLs sold increased 31% and the average price for natural gas sold increased 28%.
+# The Indenture and the Supplemental Indenture contain customary events of default.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.2727272727272727                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.7920580130564522                        
+ - Truth: ['Indenture', 'Supplemental', 'default.']                        
+ - Predict: ['default.', 'Supplemental', 'events', 'customary', 'Indenture', 'Indenture', 'contain', 'of', 'and', 'The', 'the']
+# In March 2013, the FASB issued ASU No. 2013-05, Foreign Currency Matters (Topic 830): Parent s Accounting for the Cumulative Translation Adjustment upon Derecognition of Certain Subsidiaries or Groups of Assets within a Foreign Entity or of an Investment in a Foreign Entity.
+# In August 2014, the FASB issued ASU 2014-15 Presentation of Financial Statements Going Concern (Subtopic 205-40): Disclosure of Uncertainties about an Entity s Ability to Continue as a Going Concern.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.23333333333333334                        
+ - R-Prec: 0.2857142857142857                        
+ - Pearson: 0.07925589011954677                        
+ - Truth: ['ASU', '2014-15', '(Subtopic', '205-40):', 'FASB', 'issued', 'Going']                        
+ - Predict: ['August', '2014-15', '205-40):', 'Statements', '2014,', 'Presentation', 'Disclosure', 'Uncertainties', 'Financial', 'Continue', 'Concern.', 'Ability', '(Subtopic', 'Going', 'Going', 'Concern', 'Entity', 'to', 's', 'about', 'as', 'ASU', 'of', 'a', 'of', 'In', 'issued', 'FASB', 'an', 'the']
+# to a benefit of $55.8 million.
+# Valuation of legal and other contingent claims is subject to a great deal of judgment and substantial uncertainty.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3888888888888889                        
+ - R-Prec: 1.0                        
+ - Pearson: 0.8718918964791141                        
+ - Truth: ['Valuation', 'legal', 'contingent', 'claims', 'judgment', 'substantial', 'uncertainty.']                        
+ - Predict: ['contingent', 'legal', 'claims', 'Valuation', 'uncertainty.', 'judgment', 'substantial', 'subject', 'great', 'deal', 'and', 'of', 'other', 'of', 'to', 'a', 'is', 'and']
+# As a result of this refinancing, we purchased $3,500 million aggregate principal of the 2010-2012 Notes and recognized a loss of $108 million on extinguishment of debt during the first quarter of 2014.
+# As a result of the annual limitation, the NOL carryforward amount available to be used in future periods is $161 million and will begin to expire in the year 2028 and forward.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.28125                        
+ - R-Prec: 0.7777777777777778                        
+ - Pearson: 0.7527767594086207                        
+ - Truth: ['annual', 'limitation,', 'NOL', 'carryforward', 'future', 'periods', '$161', 'million', 'expire']                        
+ - Predict: ['$161', '2028', 'limitation,', 'annual', 'expire', 'periods', 'year', 'future', 'million', 'forward.', 'available', 'NOL', 'carryforward', 'amount', 'begin', 'used', 'and', 'in', 'to', 'the', 'result', 'will', 'in', 'to', 'be', 'is', 'the', 'the', 'of', 'a', 'As', 'and']
+# During 2009, the Company renewed the contract of the largest TPA client for an additional five year period.
+# No extraordinary dividends were paid during the two year period.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4                        
+ - R-Prec: 0.75                        
+ - Pearson: 0.7477255197316857                        
+ - Truth: ['No', 'extraordinary', 'dividends', 'paid']                        
+ - Predict: ['dividends', 'extraordinary', 'No', 'two', 'paid', 'year', 'period.', 'were', 'during', 'the']
+# To provide additional flexibility and liquidity, the Company has categorized all fixed maturity investments as investments held for sale .
+# The following table reflects, by investment category, the investments held by the Company as of December 31:                        
+ - Performance                        
+ - Recall: 0; P: 0.0                        
+ - R-Prec: 0                        
+ - Pearson: 0.7477255197316857                        
+ - Truth: []                        
+ - Predict: ['December', '31:', 'reflects,', 'table', 'category,', 'investment', 'held', 'investments', 'following', 'Company', 'by', 'as', 'of', 'by', 'the', 'the', 'The']
+# The maximum amount of Consolidated Funded Indebtedness, including borrowings under the ABL Facility, that could have been outstanding on December 31, 2011, was approximately $87.7 million.
+# The average outstanding borrowings during 2012 were $50.3 million and average liquidity, defined as cash on hand combined with amounts available under the ABL Facility after outstanding borrowings, was $105.9 million.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.1935483870967742                        
+ - R-Prec: 0.8333333333333334                        
+ - Pearson: 0.7442835047158842                        
+ - Truth: ['average', 'outstanding', 'borrowings', 'liquidity,', '$105.9', 'million.']                        
+ - Predict: ['$50.3', '$105.9', 'average', 'liquidity,', 'borrowings', 'outstanding', 'average', 'cash', 'defined', 'combined', 'hand', '2012', 'million', 'available', 'million.', 'after', 'outstanding', 'amounts', 'borrowings,', 'on', 'during', 'were', 'The', 'Facility', 'was', 'with', 'and', 'as', 'ABL', 'under', 'the']
+# See Note 8 " Goodwill and Intangible Assets " in the Notes to Consolidated Financial Statements in this Form 10-K. Warranty Policy The Company has a stated two-year warranty policy for its golf clubs.
+# The Company has included in this report information to reconcile this non-GAAP information to the most directly correlated GAAP information.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.7465100911447422                        
+ - Truth: ['reconcile', 'non-GAAP', 'information', 'correlated', 'GAAP', 'information.']                        
+ - Predict: ['non-GAAP', 'correlated', 'directly', 'reconcile', 'report', 'GAAP', 'included', 'information', 'information', 'information.', 'most', 'Company', 'this', 'to', 'this', 'the', 'has', 'to', 'in', 'The']
+# As of December 31, 2014 , Farmer Mac had uncollateralized net exposures of $0.4 million to two counterparties.
+# In January 2016, Farmer Mac received $9.8 million to pay off these two Agricultural Storage and Processing loans, which completed the workout of these loans.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.28                        
+ - R-Prec: 0.42857142857142855                        
+ - Pearson: 0.467793147097222                        
+ - Truth: ['$9.8', 'million', 'Agricultural', 'Storage', 'Processing', 'loans,', 'two']                        
+ - Predict: ['$9.8', '2016,', 'January', 'pay', 'Storage', 'Processing', 'received', 'Agricultural', 'loans,', 'workout', 'million', 'off', 'completed', 'loans.', 'two', 'In', 'and', 'Mac', 'Farmer', 'to', 'these', 'these', 'the', 'of', 'which']
+# We incurred and recognized stock-based compensation expense as follows (in thousands):
+# The commitment fee is determined as follows and is payable quarterly in arrears:                        
+ - Performance                        
+ - Recall: 1.0; P: 0.38461538461538464                        
+ - R-Prec: 1.0                        
+ - Pearson: 0.9347541464497475                        
+ - Truth: ['commitment', 'fee', 'payable', 'quarterly', 'arrears:']                        
+ - Predict: ['quarterly', 'commitment', 'fee', 'payable', 'arrears:', 'determined', 'in', 'follows', 'The', 'is', 'is', 'as', 'and']
+# In April 2011, we announced plans to invest an additional $175 million to expand our East Texas system.
+# In April 2012, DCP Midstream LLC, or DCP, announced plans to purchase a 10% ownership in the NGL pipeline portion of TEP from Enterprise Products.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.52                        
+ - R-Prec: 0.9230769230769231                        
+ - Pearson: 0.7990783862651945                        
+ - Truth: ['DCP', 'Midstream', 'LLC,', 'purchase', '10%', 'ownership', 'NGL', 'pipeline', 'portion', 'TEP', 'Enterprise', 'Products.', 'DCP,']                        
+ - Predict: ['Enterprise', 'Midstream', 'purchase', 'DCP', 'DCP,', 'Products.', '2012,', 'LLC,', 'NGL', 'TEP', '10%', 'pipeline', 'ownership', 'portion', 'a', 'from', 'April', 'plans', 'announced', 'in', 'of', 'the', 'or', 'to', 'In']
+# The remaining capacity is expected to be placed into service in line with the expected in-service date of the Sandpiper Project.
+# Three external parties filed motions requesting that the scoping process be re-opened or that a comment period be established because of the issuance of the Consent Decree settling the Line 6B pipeline crude oil release in Marshall, Michigan and the withdrawal of regulatory applications pending with the MNPUC with respect to the Sandpiper Project discussed above.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3392857142857143                        
+ - R-Prec: 0.5789473684210527                        
+ - Pearson: 0.540148886832896                        
+ - Truth: ['external', 'parties', 'scoping', 'process', 're-opened', 'of', 'Consent', 'Decree', 'settling', 'Line', '6B', 'pipeline', 'crude', 'oil', 'Marshall,', 'Michigan', 'withdrawal', 'regulatory', 'applications']                        
+ - Predict: ['scoping', 'Three', 'motions', 'comment', 'process', 'withdrawal', 'parties', 'external', 'filed', 're-opened', 'applications', 'period', 'regulatory', '6B', 'MNPUC', 'pending', 'established', 'Decree', 'Michigan', 'pipeline', 'settling', 'Consent', 'requesting', 'Marshall,', 'crude', 'issuance', 'Line', 'oil', 'release', 'respect', 'be', 'discussed', 'Project', 'Sandpiper', 'be', 'above.', 'a', 'of', 'that', 'the', 'with', 'to', 'or', 'the', 'in', 'because', 'that', 'the', 'and', 'the', 'the', 'the', 'of', 'the', 'with', 'of']
+# The Company has presented these amounts as other deferred items and liabilities with a corresponding receivable in other investments and assets.
+# The Company has commenced discussions regarding those issues with all relevant parties and is working diligently to resolve those issues in a manner that will be reasonable and equitable to employees, customers, and shareholders.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.17647058823529413                        
+ - R-Prec: 0.3333333333333333                        
+ - Pearson: 0.512035687973779                        
+ - Truth: ['commenced', 'working', 'diligently', 'employees,', 'customers,', 'shareholders.']                        
+ - Predict: ['discussions', 'working', 'commenced', 'resolve', 'issues', 'parties', 'relevant', 'shareholders.', 'issues', 'employees,', 'equitable', 'regarding', 'reasonable', 'customers,', 'diligently', 'manner', 'all', 'those', 'Company', 'those', 'with', 'to', 'and', 'and', 'has', 'be', 'will', 'is', 'to', 'and', 'that', 'in', 'a', 'The']
+# We undertake no obligation to publicly update or revise any forward-looking statements, whether as a result of new information, future events or otherwise.
+# Flat Net Cruise Costs per APCD, excluding Fuel Approx.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5555555555555556                        
+ - R-Prec: 0.4                        
+ - Pearson: -0.4424886886995231                        
+ - Truth: ['excluding', 'Fuel', 'Approx.', 'Costs', 'APCD,']                        
+ - Predict: ['Flat', 'Cruise', 'Costs', 'Net', 'excluding', 'Fuel', 'APCD,', 'Approx.', 'per']
+# In December 2009, the FASB issued revised guidance related to the consolidation of variable interest entities ( VIE ).
+# The Company assessed the accounting guidance related to the classification of the preferred shares after the modification on March 31, 2011 and concluded that the preferred shares should be classified as a mandatorily redeemable financial instrument, and presented as a liability on the consolidated balance sheet.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.32608695652173914                        
+ - R-Prec: 0.5333333333333333                        
+ - Pearson: 0.6221289171461489                        
+ - Truth: ['assessed', 'accounting', 'guidance', 'preferred', 'shares', 'as', 'a', 'mandatorily', 'redeemable', 'financial', 'instrument,', 'liability', 'consolidated', 'balance', 'sheet.']                        
+ - Predict: ['preferred', 'shares', 'March', '2011', 'preferred', 'liability', 'shares', '31,', 'classification', 'balance', 'Company', 'redeemable', 'instrument,', 'financial', 'sheet.', 'modification', 'classified', 'assessed', 'accounting', 'consolidated', 'presented', 'mandatorily', 'concluded', 'guidance', 'after', 'of', 'the', 'as', 'the', 'a', 'related', 'on', 'be', 'as', 'should', 'that', 'a', 'The', 'the', 'on', 'the', 'the', 'to', 'the', 'and', 'and']
+# Additionally, in July 2013, we entered into a license agreement with Ethicor Pharma Ltd. for the manufacture and distribution of the oral formulation of lasofoxifene in the European Economic Area, Switzerland and the Indian Subcontinent.
+# Additionally, we entered into a research agreement with TG Therapeutics and we are currently receiving R D service payments associated with that agreement.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.391304347826087                        
+ - R-Prec: 0.8888888888888888                        
+ - Pearson: 0.8753864940331562                        
+ - Truth: ['research', 'agreement', 'TG', 'Therapeutics', 'receiving', 'R', 'D', 'service', 'payments']                        
+ - Predict: ['TG', 'Therapeutics', 'payments', 'service', 'R', 'receiving', 'D', 'research', 'associated', 'currently', 'agreement', 'with', 'agreement.', 'entered', 'we', 'we', 'into', 'with', 'that', 'a', 'are', 'Additionally,', 'and']
+# Based on management s expectations of future trends, we estimate future cash flows over the life of the respective assets or asset groupings in our assessment of impairment.
+# Margin is defined as revenues less direct operating costs and excludes depletion and impairment.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5714285714285714                        
+ - R-Prec: 0.875                        
+ - Pearson: 0.7337342290526226                        
+ - Truth: ['Margin', 'revenues', 'less', 'operating', 'costs', 'excludes', 'depletion', 'impairment.']                        
+ - Predict: ['Margin', 'depletion', 'revenues', 'costs', 'operating', 'excludes', 'direct', 'less', 'impairment.', 'defined', 'and', 'as', 'is', 'and']
+# NVE is unable to make a reasonably reliable estimate of the period of cash payments to relevant tax authorities; consequently, none of the uncertain tax liability is included in the contractual obligations table below (dollars in millions):
+# In that same March 2012 Federal Register notice, the EPA stated that it intended to make a BART determination on those Reid Gardner Generating Station Units at a later date.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3                        
+ - R-Prec: 0.7777777777777778                        
+ - Pearson: 0.7807774010797328                        
+ - Truth: ['EPA', 'BART', 'determination', 'Reid', 'Gardner', 'Generating', 'Station', 'Units', 'later']                        
+ - Predict: ['BART', 'Generating', 'Station', 'Units', 'determination', 'EPA', 'Register', 'Gardner', 'Federal', 'notice,', 'Reid', 'later', 'date.', 'March', '2012', 'intended', 'stated', 'make', 'same', 'those', 'on', 'a', 'to', 'it', 'the', 'a', 'In', 'at', 'that', 'that']
+# The EEIR allows an electric utility to recover lost revenue that is attributable to the measurable and verifiable effects associated with the implementation of efficiency and conservation programs approved by the PUCN.
+# On June 29, 2012, NPC filed its triennial 2013 2032 IRP with the PUCN.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.35714285714285715                        
+ - R-Prec: 0.6                        
+ - Pearson: 0.42315883246647307                        
+ - Truth: ['NPC', 'filed', 'triennial', 'IRP', 'PUCN.']                        
+ - Predict: ['NPC', 'filed', 'IRP', '2032', '2012,', 'June', 'triennial', '29,', '2013', 'its', 'On', 'with', 'PUCN.', 'the']
+# If we raise funds through collaborative or licensing arrangements, we may be required to relinquish, on terms that are not favorable to us, rights to some of our technologies or product candidates that we would otherwise seek to develop or commercialize.
+# The agreement may be terminated by us at any time, at our sole discretion, without any cost or penalty.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3684210526315789                        
+ - R-Prec: 0.7142857142857143                        
+ - Pearson: 0.312148314703647                        
+ - Truth: ['terminated', 'any', 'time,', 'cost', 'penalty.', 'sole', 'discretion,']                        
+ - Predict: ['terminated', 'agreement', 'penalty.', 'discretion,', 'cost', 'sole', 'us', 'time,', 'be', 'may', 'by', 'without', 'any', 'or', 'any', 'The', 'at', 'our', 'at']
+# The purchase price for the Purchased Assets was $16.0 million, which was subject to a post-closing working capital adjustment.
+# Turning Point chose to increase the PIK Toggle Notes for all interest for the first three months of 2016.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.3684210526315789                        
+ - R-Prec: 0.5714285714285714                        
+ - Pearson: 0.6612673217316731                        
+ - Truth: ['Turning', 'Point', 'the', 'PIK', 'Toggle', 'Notes', 'for']                        
+ - Predict: ['Toggle', 'PIK', 'Notes', 'increase', 'interest', 'three', 'Turning', 'months', 'Point', 'all', '2016.', 'chose', 'for', 'the', 'first', 'to', 'of', 'for', 'the']
+# We experienced net realized and unrealized gains on investments of $164.0 million during 2012 , the majority of which were derived from our portfolio of fixed maturity investments.
+# These purchases were partially offset by net sales of other investments of $76.2 million which principally related to the redemption of certain senior secured bank loan funds, with the proceeds being allocated to the purchase of bank loan portfolios included in our portfolio of fixed maturity investments and short term investments, as noted above.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.25925925925925924                        
+ - R-Prec: 0.5                        
+ - Pearson: 0.5273953119767063                        
+ - Truth: ['purchases', 'offset', 'investments', '$76.2', 'million', 'redemption', 'of', 'senior', 'secured', 'bank', 'loan', 'funds,', 'purchase', 'portfolios']                        
+ - Predict: ['term', 'short', '$76.2', 'offset', 'sales', 'partially', 'purchases', 'loan', 'secured', 'redemption', 'bank', 'allocated', 'bank', 'loan', 'purchase', 'senior', 'proceeds', 'funds,', 'principally', 'related', 'portfolios', 'noted', 'investments', 'included', 'certain', 'million', 'net', 'investments,', 'other', 'by', 'fixed', 'investments', 'to', 'of', 'portfolio', 'maturity', 'the', 'above.', 'being', 'of', 'were', 'to', 'the', 'of', 'of', 'These', 'with', 'our', 'and', 'the', 'as', 'of', 'in', 'which']
+# Amounts that are paid after the first five years reflect long-tail lines such as workers compensation and auto bodily injury.
+# The principal commercial lines products are commercial multi-peril, workers compensation and commercial automobile.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.46153846153846156                        
+ - R-Prec: 0.6666666666666666                        
+ - Pearson: 0.5531828405249637                        
+ - Truth: ['principal', 'commercial', 'lines', 'products', 'multi-peril,', 'automobile.']                        
+ - Predict: ['automobile.', 'multi-peril,', 'commercial', 'commercial', 'commercial', 'lines', 'products', 'principal', 'workers', 'compensation', 'and', 'are', 'The']
+# The ALCO has established policy guidelines and strategies with respect to interest rate risk exposure and liquidity.
+# Managing this interest rate risk continues to be a primary focus of management (see discussion of Market Rate and Interest Rate Sensitivity discussion below).                        
+ - Performance                        
+ - Recall: 1.0; P: 0.08333333333333333                        
+ - R-Prec: 0.0                        
+ - Pearson: 0.29248642709167516                        
+ - Truth: ['primary', 'focus']                        
+ - Predict: ['Managing', 'Sensitivity', 'Market', 'continues', 'focus', 'Rate', 'management', 'primary', 'discussion', 'discussion', 'risk', 'Rate', 'Interest', 'interest', '(see', 'rate', 'this', 'to', 'below).', 'of', 'be', 'of', 'and', 'a']
+# The guidance requires an entity to review contracts in five steps: 1) identify the contract, 2) identify performance obligations, 3) determine the transaction price, 4) allocate the transaction price, and 5) recognize revenue.
+# Topic 330, Inventory, currently requires an entity to measure inventory at the lower of cost or market, with market value represented by replacement cost, net realizable value or net realizable value less a normal profit margin.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.4444444444444444                        
+ - R-Prec: 0.6875                        
+ - Pearson: 0.47644616910951987                        
+ - Truth: ['measure', 'inventory', 'lower', 'of', 'cost', 'or', 'market,', 'market', 'value', 'by', 'replacement', 'cost,', 'less', 'normal', 'profit', 'margin.']                        
+ - Predict: ['measure', 'Inventory,', 'lower', 'inventory', 'normal', 'profit', 'Topic', 'margin.', 'market', 'replacement', 'market,', '330,', 'cost', 'value', 'realizable', 'represented', 'realizable', 'cost,', 'less', 'value', 'net', 'value', 'currently', 'net', 'requires', 'of', 'entity', 'or', 'a', 'the', 'by', 'to', 'or', 'at', 'with', 'an']
+# In assessing whether a valuation allowance is required, significant weight is to be given to evidence that can be objectively verified.
+# The core principle of this Topic is to recognize revenues when promised goods or services are transferred to customers in an amount that reflects the consideration that is expected to be received for those goods or services.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.16216216216216217                        
+ - R-Prec: 0.5                        
+ - Pearson: 0.4907242107369932                        
+ - Truth: ['recognize', 'revenues', 'transferred', 'reflects', 'the', 'consideration']                        
+ - Predict: ['revenues', 'transferred', 'recognize', 'goods', 'promised', 'services', 'customers', 'principle', 'consideration', 'received', 'expected', 'core', 'goods', 'Topic', 'reflects', 'services.', 'amount', 'are', 'to', 'or', 'to', 'those', 'when', 'or', 'be', 'to', 'the', 'for', 'in', 'is', 'an', 'is', 'that', 'The', 'this', 'that', 'of']
+# The decrease in pipeline easement income was partially offset by an increase in sundry lease rental income and sundry income.
+# Easements and sundry income for the Water Service and Operations segment includes pipeline easement royalties, commercial lease royalties and income from temporary permits.                        
+ - Performance                        
+ - Recall: 1.0; P: 0.5652173913043478                        
+ - R-Prec: 0.8461538461538461                        
+ - Pearson: 0.5521532906005022                        
+ - Truth: ['Easements', 'income', 'Water', 'Service', 'Operations', 'segment', 'pipeline', 'easement', 'royalties,', 'commercial', 'lease', 'temporary', 'permits.']                        
+ - Predict: ['permits.', 'temporary', 'royalties,', 'commercial', 'royalties', 'includes', 'Service', 'lease', 'Operations', 'segment', 'Water', 'income', 'Easements', 'easement', 'from', 'pipeline', 'income', 'sundry', 'and', 'for', 'the', 'and', 'and']
+********************************            
+File: fin10k.eval.type1.hard.results-further-finetune-sl-smooth-2            
+Mean precision: 0.39226502899769633            
+Mean recall   : 1.0              
+Mean f1-score : 0.5543009890638249            
+Mean Pearson  : 0.656363136444198            
+Mean RPrecision: 0.7348258536745915            
+Num of evaluated samples: 100            
+********************************

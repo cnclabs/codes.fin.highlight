@@ -1,0 +1,10 @@
+Loading prediction esnli.test.highlight.contradiction.results-further-finetune-sl-mod
+********************************            
+File: esnli.test.highlight.contradiction.results-further-finetune-sl-mod            
+Mean precision: 0.2736703406998325            
+Mean recall   : 0.9992235118741143            
+Mean f1-score : 0.40485756984149707            
+Mean Pearson  : 0.7375579673509897            
+Mean RPrecision: 0.8524916404434478            
+Num of evaluated samples: 3238            
+********************************
